@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Böcekler - Hayvanlar Dünyası</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGASYON -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">🌍 Hayvanlar <span>Dünyası</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="memeliler.html">Memeliler</a></li>
+        <li><a href="kuslar.html">Kuşlar</a></li>
+        <li><a href="surungen.html">Sürüngen</a></li>
+        <li><a href="baliklar.html">Balıklar</a></li>
+        <li><a href="amfibiler.html">Amfibiler</a></li>
+        <li><a href="bocekler.html" class="active">Böcekler</a></li>
+        <li><a href="omurgasizlar.html">Omurgasızlar</a></li>
+      </ul>
+      <div class="nav-search">
+        <span class="nav-search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Hayvan ara..." autocomplete="off">
+      </div>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="search-results" id="searchResults"></div>
+
+  <!-- SAYFA HERO -->
+  <section class="page-hero">
+    <span class="page-hero-emoji">🦋</span>
+    <h1>Böcekler</h1>
+    <p>Böcekler, gezegenimizin en tür zenginliğine sahip canlı grubudur. Bilinen bir milyondan fazla tür ile tüm hayvan türlerinin yaklaşık %80'ini oluşturan böcekler, kutuplar hariç her ortamda yaşam alanlarını fethetmiştir. Tozlaşma, ayrışma ve besin zincirindeki kritik rolleriyle ekosistemlerin vazgeçilmez parçasıdır.</p>
+  </section>
+
+  <!-- ==========================================
+       KELEBEKLER
+       ========================================== -->
+  <section class="subcategory">
+    <h2 class="subcategory-title"><span>🦋</span> Kelebekler</h2>
+    <div class="animal-cards">
+
+      <!-- KRAL KELEBEK -->
+      <div class="animal-card fade-in" data-animal='{
+        "isim": "Kral Kelebek",
+        "emoji": "🦋",
+        "latin": "Danaus plexippus",
+        "habitat": "Kuzey Amerika",
+        "beslenme": "Otçul - Çiçek nektarı, sütleğen bitkisi",
+        "boyut": "8-12 cm kanat açıklığı",
+        "yasam": "2-6 hafta (göçmen nesil 8-9 ay)",
+        "aciklama": "Kral kelebek, Kuzey Amerika nın en ikonik kelebek türüdür. Her yıl 4.000 km ye varan mesafeler kat ederek dünyanın en uzun böcek göçünü gerçekleştirir. Turuncu-siyah kanat deseni, avcılara zehirli olduğunu bildiren bir uyarı renklendirmesidir.",
+        "ilgincBilgiler": ["Her yıl 4.000 km ye kadar göç ederek dünyanın en uzun böcek göçünü gerçekleştirir.", "Larvalar sadece sütleğen bitkisiyle beslenir ve bu bitkiden aldıkları toksinler yetişkinleri zehirli kılar.", "Göçmen nesil diğer nesillerden 8-9 kat daha uzun yaşayarak Meksika ya ulaşır.", "Milyon sayıda bir araya gelerek Meksika dağlarındaki kışlak ormanlarında ağaçları tamamen kaplarlar."]
+      }'>
+        <div class="card-emoji">🦋</div>
+        <h3 class="card-title">Kral Kelebek</h3>
+        <p class="card-latin">Danaus plexippus</p>
+        <p class="card-desc">4.000 km göç eden turuncu-siyah kanatlı monarch kelebek. Zehirli ve görkemli.</p>
+        <span class="card-tag">8-12 cm</span>
+        <span class="card-tag">Göçmen</span>
+        <span class="card-tag">Zehirli</span>
+      </div>
+
+      <!-- MAVI MORPHO -->
+      <div class="animal-card fade-in" data-animal='{
+        "isim": "Mavi Morpho",
+        "emoji": "🦋",
+        "latin": "Morpho menelaus",
+        "habitat": "Güney Amerika yağmur ormanları",
+        "beslenme": "Otçul - Çürümüş meyveler, çiçek nektarı, ağaç özsuyu",
+        "boyut": "12-20 cm kanat açıklığı",
+        "yasam": "2-3 hafta (yetişkin)",
+        "aciklama": "Mavi Morpho, Güney Amerika yağmur ormanlarının en göz alıcı kelebeğidir. Parlak mavi kanat rengi aslında pigment içerir değil; kanat yüzeyindeki mikroskobik pulcuların ışığı kırarak yapısal renk oluşturmasıyla ortaya çıkar. Bu doğal nano-teknoloji, bilim insanlarını ilham kaynağı olmuştur.",
+        "ilgincBilgiler": ["Parlak mavi rengi pigmentten değil, kanat pulcularının ışığı kırması sonucu oluşan yapısal bir renktir.", "Kanatlarının alt yüzü kahverengi ve göz desenli olup, kapandığında mükemmel kamuflaj sağlar.", "12-20 cm kanat açıklığıyla dünyanın en büyük kelebeklerinden biridir.", "Yapısal renklendirme prensibi, modern optik teknolojilere ve sahtecilik önleme sistemlerine ilham vermiştir."]
+      }'>
+        <div class="card-emoji">🦋</div>
+        <h3 class="card-title">Mavi Morpho</h3>
+        <p class="card-latin">Morpho menelaus</p>
+        <p class="card-desc">Parlak mavi kanatları pigment değil yapısal renk. Doğal nano-teknoloji harikası.</p>
+        <span class="card-tag">12-20 cm</span>
+        <span class="card-tag">Yapısal Renk</span>
+        <span class="card-tag">Tropikal</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       BÖCEKLER (COLEOPTERA)
+       ========================================== -->
+  <section class="subcategory">
+    <h2 class="subcategory-title"><span>🪲</span> Böcekler</h2>
+    <div class="animal-cards">
+
+      <!-- UĞUR BÖCEĞİ -->
+      <div class="animal-card fade-in" data-animal='{
+        "isim": "Uğur Böceği",
+        "emoji": "🐞",
+        "latin": "Coccinella septempunctata",
+        "habitat": "Tüm dünya - bahçeler, tarlalar, ormanlar",
+        "beslenme": "Etçil - Yaprak bitleri, küçük böcekler",
+        "boyut": "5-8 mm",
+        "yasam": "1-2 yıl",
+        "aciklama": "Uğur böceği, tüm dünyada tanınan ve sevilen küçük bir böcektir. Parlak kırmızı kanat örtülerinin üzerindeki yedi siyah nokta ile kolayca tanınan bu böcek, çiftçinin en yakın dostudur. Bir uğur böceği günde 50 ye kadar yaprak biti yiyerek bitkileri zararlılardan korur.",
+        "ilgincBilgiler": ["Bir uğur böceği yaşamı boyunca 5.000 den fazla yaprak biti yiyebilir.", "Yedi nokta deseni avcılara zehirli veya tatsız olduğu mesajını verir.", "Tehdit altında kaldıklarında bacak eklemlerinden kötü kokulu sarı bir sıvı salgılarlar.", "Birçoğu kültürde şans ve bereket sembolüdür; üzerlerine konmasının iyi şans getirdiğine inanılır."]
+      }'>
+        <div class="card-emoji">🐞</div>
+        <h3 class="card-title">Uğur Böceği</h3>
+        <p class="card-latin">Coccinella septempunctata</p>
+        <p class="card-desc">7 noktalı çiftçinin dostu. Yaprak bitlerini avlayarak doğal tarım koruyucusu.</p>
+        <span class="card-tag">5-8 mm</span>
+        <span class="card-tag">Zararlı Avcısı</span>
+        <span class="card-tag">Şans Sembolü</span>
+      </div>
+
+      <!-- GEYİK BÖCEĞİ -->
+      <div class="animal-card fade-in" data-animal='{
+        "isim": "Geyik Böceği",
+        "emoji": "🪲",
+        "latin": "Lucanus cervus",
+        "habitat": "Avrupa ormanları - meşe ve kayısın ormanları",
+        "beslenme": "Otçul - Ağaç özsuyu, çürümüş meyve (yetişkin); çürümüş odun (larva)",
+        "boyut": "3-8 cm",
+        "yasam": "3-7 yıl (çoğu larva döneminde)",
+        "aciklama": "Geyik böceği, Avrupa nın en büyük böcek türüdür. Erkeklerin geyik boynuzunu andıran devasa çeneleri, dişi için rakiplerle kavga etmekte kullanılır. Larvaları çürümüş odun içinde gelişerek 5 yıla kadar toprakta yaşayabilir, ancak yetişkin böcekler yalnızca birkaç hafta yaşarlar.",
+        "ilgincBilgiler": ["Erkeklerin büyük çeneleri aslında yemek yemek için değil, rakip erkeklerle güreş etmek içindir.", "Larvaları çürümüş ağaç gövdeleri içinde 3-5 yıl boyunca gelişir.", "Avrupa nın en büyük böcek türüdür ve Avrupa Birliği tarafından koruma altına alınmıştır.", "Yetişkin böcekler sadece birkaç hafta yaşarlar ve bu süre içinde eşleşmeye odaklanırlar."]
+      }'>
+        <div class="card-emoji">🪲</div>
+        <h3 class="card-title">Geyik Böceği</h3>
+        <p class="card-latin">Lucanus cervus</p>
+        <p class="card-desc">Avrupa nın en büyük böceği. Erkeklerin büyük çeneleriyle kavga ettiği görkemli tür.</p>
+        <span class="card-tag">3-8 cm</span>
+        <span class="card-tag">Larva 5 Yıl</span>
+        <span class="card-tag">Koruma Altında</span>
+      </div>
+
+      <!-- BÖCEK ÇEŞİTLİLİĞİ -->
+      <div class="animal-card fade-in" data-animal='{
+        "isim": "Böcek Çeşitliliği",
+        "emoji": "🪲",
+        "latin": "Coleoptera",
+        "habitat": "Tüm dünya - kutuplar hariç her ortam",
+        "beslenme": "Çeşitli - Otçul, etçil, hepçil, çürükçül türleri vardır",
+        "boyut": "0.3 mm - 17 cm (türe göre değişir)",
+        "yasam": "Birkaç haftadan 10 yıla kadar (türe göre)",
+        "aciklama": "Coleoptera takımı, 400.000 den fazla bilinen türüyle hayvanlar aleminin en büyük takımıdır. Her dört hayvan türünün biri bir böcektir. Böcekler, çürümüş odun ayrıştırmasından bitki tozlaşmaya, toprak havalandırmasından zararlı kontrolüne kadar ekosistemlerde sayısız kritik görevi üstlenirler.",
+        "ilgincBilgiler": ["400.000 den fazla bilinen türle dünyanın en çeşitli hayvan takımıdır; her dört hayvandan biri böcektir.", "Dünyanın en küçük böceği 0.3 mm lik Scydosella musawasensis, en büyüğü 17 cm lik Titanus giganteus tür.", "Bazı böcek türleri yüzyıllarca yaşayabilirken, bazıları sadece birkaç gün yetişkin olarak yaşarlar.", "Böcekler Trias döneminden bu yana, yani 230 milyon yıldır dünyadaki neredeyse her ekosistemde var olmuştur."]
+      }'>
+        <div class="card-emoji">🪲</div>
+        <h3 class="card-title">Böcek Çeşitliliği</h3>
+        <p class="card-latin">Coleoptera</p>
+        <p class="card-desc">400.000+ türle hayvanlar aleminin en büyük takımı. Her 4 hayvandan biri böcektir.</p>
+        <span class="card-tag">400.000+ Tür</span>
+        <span class="card-tag">Her Ortam</span>
+        <span class="card-tag">230 Milyon Yıl</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       KARINCALAR VE ARILAR
+       ========================================== -->
+  <section class="subcategory">
+    <h2 class="subcategory-title"><span>🐜</span> Karıncalar ve Arılar</h2>
+    <div class="animal-cards">
+
+      <!-- KARINCA -->
+      <div class="animal-card fade-in" data-animal='{
+        "isim": "Karınca",
+        "emoji": "🐜",
+        "latin": "Formicidae",
+        "habitat": "Tüm dünya - kutuplar ve birkaş ada hariç her yer",
+        "beslenme": "Hepçil - Bitkisel maddeler, diğer böcekler, şeker, tohumlar",
+        "boyut": "1-5 mm",
+        "yasam": "İşçi 1-3 yıl, Kraliçe 15-30 yıl",
+        "aciklama": "Karıncalar, dünyanın en başarılı canlılarından biridir. Süper organizma olarak adlandırılan koloniler halinde yaşayan karıncalar, bireysel zekaları sınırlı olmasına rağmen kolektif olarak inanılmaz karmaşık yapılara ve davranışlara sahiptir. Ağırlıklarının 50 katını taşıyabilir ve toplam biyokütleleri insanlığınki kadardır.",
+        "ilgincBilgiler": ["Kendi vücut ağırlıklarının 50 katını taşıyabilirler; bu insanların bir kamyon kaldırmasına eşittir.", "Dünya üzerindeki toplam karınca sayısının 10 katrilyon olduğu tahmin edilmektedir.", "Bazı türler mantar çiftlikleri kurarak tarım yapan tek insan dışı canlılardandır.", "Kraliçe karıncalar 30 yıla kadar yaşayabilir ve bu süre içinde milyonlarca yumurta bırakabilir."]
+      }'>
+        <div class="card-emoji">🐜</div>
+        <h3 class="card-title">Karınca</h3>
+        <p class="card-latin">Formicidae</p>
+        <p class="card-desc">Süper organizma koloniler, ağırlıklarının 50 katı taşır. Dünyanın en başarılı canlısı.</p>
+        <span class="card-tag">1-5 mm</span>
+        <span class="card-tag">Süper Organizma</span>
+        <span class="card-tag">50x Güç</span>
+      </div>
+
+      <!-- BAL ARISI -->
+      <div class="animal-card fade-in" data-animal='{
+        "isim": "Bal Arısı",
+        "emoji": "🐝",
+        "latin": "Apis mellifera",
+        "habitat": "Tüm dünya - her kıtada yaygın (Antarktika hariç)",
+        "beslenme": "Otçul - Çiçek nektarı ve poleni",
+        "boyut": "1-2 cm",
+        "yasam": "İşçi 5-7 hafta, Kraliçe 3-5 yıl",
+        "aciklama": "Bal arısı, insanlık tarihinin en değerli böceklerinden biridir. Bal üretiminin yanısıra, tarımın temel taşlarından biri olan tozlaşmanın en önemli aktörlerdir. Kovandaki dans ile iletişim sistemi, doğadaki en gelişmiş hayvan iletişim yöntemlerinden biridir.",
+        "ilgincBilgiler": ["Yiyecek kaynağının yerini diğer arılara bildirmek için özel bir sallama dansı yaparlar.", "Bir kilo bal üretmek için arıların yaklaşık 4 milyon çiçeği ziyaret etmesi gerekir.", "Dünyada üretilen gıdanın üçte biri bal arısının tozlaşma hizmetine bağlıdır.", "Kovan içindeki sıcaklığı tam 35 derece Celsius de tutmak için kanatlarını yelpaze olarak kullanırlar."]
+      }'>
+        <div class="card-emoji">🐝</div>
+        <h3 class="card-title">Bal Arısı</h3>
+        <p class="card-latin">Apis mellifera</p>
+        <p class="card-desc">Bal üretimi, tozlaşma ve dans ile iletişim. Tarımın vazgeçilmez ortağı.</p>
+        <span class="card-tag">1-2 cm</span>
+        <span class="card-tag">Tozlaşma</span>
+        <span class="card-tag">Dans İletişimi</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <button class="modal-close">&times;</button>
+      <span class="modal-emoji"></span>
+      <h2></h2>
+      <span class="modal-latin"></span>
+      <div class="modal-info-grid"></div>
+      <p class="modal-description"></p>
+      <div class="modal-fun-facts">
+        <h4>İlginç Bilgiler</h4>
+        <ul></ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>🌍 Hayvanlar Dünyası</h4>
+        <p>Gezegenimizin muhteşem canlılarını tanıyın. Bu site, hayvanlar alemi hakkında bilgi edinmek isteyen herkes için hazırlanmıştır.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Kategoriler</h4>
+        <ul class="footer-links">
+          <li><a href="memeliler.html">🦁 Memeliler</a></li>
+          <li><a href="kuslar.html">🦅 Kuşlar</a></li>
+          <li><a href="surungen.html">🐊 Sürüngen</a></li>
+          <li><a href="baliklar.html">🦈 Balıklar</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Diğer</h4>
+        <ul class="footer-links">
+          <li><a href="amfibiler.html">🐸 Amfibiler</a></li>
+          <li><a href="bocekler.html">🦋 Böcekler</a></li>
+          <li><a href="omurgasizlar.html">🐙 Omurgasızlar</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Hayvanlar Dünyası &copy; 2026 - Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

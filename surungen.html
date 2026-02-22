@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sürüngen - Hayvanlar Dünyası</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGASYON -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">🌍 Hayvanlar <span>Dünyası</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="memeliler.html">Memeliler</a></li>
+        <li><a href="kuslar.html">Kuşlar</a></li>
+        <li><a href="surungen.html" class="active">Sürüngen</a></li>
+        <li><a href="baliklar.html">Balıklar</a></li>
+        <li><a href="amfibiler.html">Amfibiler</a></li>
+        <li><a href="bocekler.html">Böcekler</a></li>
+        <li><a href="omurgasizlar.html">Omurgasızlar</a></li>
+      </ul>
+      <div class="nav-search">
+        <span class="nav-search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Hayvan ara..." autocomplete="off">
+      </div>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="search-results" id="searchResults"></div>
+
+  <!-- SAYFA HERO -->
+  <section class="page-hero">
+    <span class="hero-emoji">🐊</span>
+    <h1>Sürüngen</h1>
+    <p>Dinozorların yakın akrabaları olan sürüngenler, 300 milyon yıldan fazla süredir dünyamızda yaşıyor. Pullu derileri, soğukkanlı yapıları ve inanılmaz adaptasyonlarıyla büyüleyici canlıları keşfedin.</p>
+  </section>
+
+  <main class="section">
+
+    <!-- ==========================================
+         TIMSAHLAR - DETAYLI BOLUM
+         ========================================== -->
+    <div class="subcategory" id="timsahlar">
+      <div class="subcategory-header">
+        <span class="sub-emoji">🐊</span>
+        <h2>Timsahlar (Crocodylia)</h2>
+      </div>
+      <p style="color: var(--text-secondary); margin-bottom: 2rem; max-width: 800px; line-height: 1.7;">
+        Timsahlar, 200 milyon yıldan fazla süredir var olan en eski sürüngen grubundan biridir. Güçlü çeneleri, zırhlı derileri ve su içi avlanma yetenekleriyle dünya genelinde tropikal ve subtropikal bölgelerde yaşarlar. Gerçek timsahlar (Crocodylidae), alligatörler (Alligatoridae) ve gavyaller (Gavialidae) olmak üzere üç aileye ayrılırlar.
+      </p>
+
+      <!-- NIL TIMSAHI -->
+      <div class="croc-detail-card fade-in">
+        <div class="croc-detail-header">
+          <span class="croc-emoji">🐊</span>
+          <div>
+            <h3>Nil Timsahı</h3>
+            <span class="croc-latin">Crocodylus niloticus</span>
+          </div>
+        </div>
+        <div class="croc-stats">
+          <div class="croc-stat">
+            <div class="stat-label">Boyut</div>
+            <div class="stat-value">3.5 - 5 m</div>
+          </div>
+          <div class="croc-stat">
+            <div class="stat-label">Ağırlık</div>
+            <div class="stat-value">225 - 750 kg</div>
+          </div>
+          <div class="croc-stat">
+            <div class="stat-label">Yaşam Süresi</div>
+            <div class="stat-value">70 - 100 yıl</div>
+          </div>
+          <div class="croc-stat">
+            <div class="stat-label">Habitat</div>
+            <div class="stat-value">Afrika tatlı suları</div>
+          </div>
+          <div class="croc-stat">
+            <div class="stat-label">Beslenme</div>
+            <div class="stat-value">Etçil</div>
+          </div>
+          <div class="croc-stat">
+            <div class="stat-label">Isırma Gücü</div>
+            <div class="stat-value">5,000 PSI</div>
+          </div>
+        </div>
+        <p class="croc-description">
+          Nil timsahı, Afrika kıtasının en büyük tatlı su yırtıcısıdır. Sahra altı Afrika'nın nehirlerinde, göllerinde ve bataklıklarında yaşarlar. Ölüm dönüşü (death roll) olarak bilinen avlanma teknikleriyle ünlüdürler - avlarını yakalayıp suyun içinde dönerek parçalarlar. Dişi timsahlar yuvalarını karaya kurar ve yumurtalarını yaklaşık 90 gün boyunca korurlar. Yavrular yumurtadan çıktığında anne onları nazikçe ağzında suya taşır.
+        </p>
+        <div class="croc-facts">
+          <h4>İlginç Bilgiler</h4>
+          <ul>
+            <li>Nil timsahları yılda yaklaşık 200 insana saldırarak en tehlikeli timsah türü olarak bilinir.</li>
+            <li>Gözleri, kulakları ve burun delikleri başlarının üstünde olduğu için neredeyse tamamen su altında kalırken etraflarını gözetleyebilirler.</li>
+            <li>80'den fazla dişi vardır ve dökülen dişleri sürekli yenilenir - bir ömür boyunca 4.000'e kadar diş kullanabilirler.</li>
+            <li>Eski Mısır'da Sobek tanrısı timsah başlı olarak tasvir edilirdi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- TUZLU SU TIMSAHI -->
+      <div class="croc-detail-card fade-in">
+        <div class="croc-detail-header">
+          <span class="croc-emoji">🐊</span>
+          <div>
+            <h3>Tuzlu Su Timsahı</h3>
+            <span class="croc-latin">Crocodylus porosus</span>
+          </div>
+        </div>
+        <div class="croc-stats">
+          <div class="croc-stat">
+            <div class="stat-label">Boyut</div>
+            <div class="stat-value">4 - 7 m</div>
+          </div>
+          <div class="croc-stat">
+            <div class="stat-label">Ağırlık</div>
+            <div class="stat-value">400 - 1,000 kg</div>
+          </div>
+          <div class="croc-stat">
+            <div class="stat-label">Yaşam Süresi</div>
+            <div class="stat-value">70 - 100 yıl</div>
+          </div>
+          <div class="croc-stat">
+            <div class="stat-label">Habitat</div>
+            <div class="stat-value">Güneydoğu Asya, Avustralya</div>
+          </div>
+          <div class="croc-stat">
+            <div class="stat-label">Beslenme</div>
+            <div class="stat-value">Etçil</div>
+          </div>
+          <div class="croc-stat">
+            <div class="stat-label">Isırma Gücü</div>
+            <div class="stat-value">3,700 PSI</div>
+          </div>
+        </div>
+        <p class="croc-description">
+          Tuzlu su timsahı, dünyanın en büyük yaşayan sürüngenidir. Avustralya'dan Güneydoğu Asya'ya kadar geniş bir coğrafyada yayılmıştır. İsmine rağmen hem tuzlu hem de tatlı sularda yaşayabilir. Okyanuslarda yüzlerce kilometre yüzebilme yetenekleriyle bilinirler. Güçlü kuyruk ve ayaklarıyla mükemmel yüzücülerdir. Erkekler son derece bölgecidir ve topraklarını şiddetle savunurlar.
+        </p>
+        <div class="croc-facts">
+          <h4>İlginç Bilgiler</h4>
+          <ul>
+            <li>Kayıtlara geçen en büyük tuzlu su timsahı 6.17 metre uzunluğundaydı ve Filipinler'de yakalanmıştı (Lolong).</li>
+            <li>Açık denizde 900 km'den fazla yüzebilirler - okyanus akıntılarına binerek adalararası göç yaparlar.</li>
+            <li>Çene kapatma güçleri tüm hayvanlar arasında en yüksektir, ancak ağızlarını açma kasları o kadar zayıftır ki bir lastik bantla bile ağızları kapatılabilir.</li>
+            <li>Avustralya'da "salties" olarak adlandırılırlar ve kültürel bir ikon haline gelmişlerdir.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- AMERIKAN ALLIGATORU -->
+      <div class="croc-detail-card fade-in">
+        <div class="croc-detail-header">
+          <span class="croc-emoji">🐊</span>
+          <div>
+            <h3>Amerikan Alligatörü</h3>
+            <span class="croc-latin">Alligator mississippiensis</span>
+          </div>
+        </div>
+        <div class="croc-stats">
+          <div class="croc-stat">
+            <div class="stat-label">Boyut</div>
+            <div class="stat-value">3 - 4.5 m</div>
+          </div>
+          <div class="croc-stat">
+            <div class="stat-label">Ağırlık</div>
+            <div class="stat-value">200 - 450 kg</div>
+          </div>
+          <div class="croc-stat">
+            <div class="stat-label">Yaşam Süresi</div>
+            <div class="stat-value">35 - 50 yıl</div>
+          </div>
+          <div class="croc-stat">
+            <div class="stat-label">Habitat</div>
+            <div class="stat-value">ABD güneydoğusu</div>
+          </div>
+          <div class="croc-stat">
+            <div class="stat-label">Beslenme</div>
+            <div class="stat-value">Etçil</div>
+          </div>
+          <div class="croc-stat">
+            <div class="stat-label">Isırma Gücü</div>
+            <div class="stat-value">2,125 PSI</div>
+          </div>
+        </div>
+        <p class="croc-description">
+          Amerikan alligatörü, ABD'nin güneydoğu eyaletlerinde, özellikle Florida ve Louisiana'da yoğun olarak bulunan büyük bir sürüngenidir. Timsahlardan farklı olarak daha geniş ve yuvarlak bir buruna sahiptir. Tatlı su bataklıklarını, gölleri ve nehirleri tercih ederler. 1960'larda nesli tükenme tehlikesiyle karşı karşıya kalmış ancak başarılı koruma programları sayesinde popülasyonları toparlanmıştır - bu, doğal yaşam koruma tarihinin en büyük başarı hikâyelerinden biridir.
+        </p>
+        <div class="croc-facts">
+          <h4>İlginç Bilgiler</h4>
+          <ul>
+            <li>Soğuk havalarda buz tutan göllerin yüzeyinde burun deliklerini dışarıda bırakarak hayatta kalabilirler - buna "buzda uyuma" denir.</li>
+            <li>Timsahlardan ayırt etmenin en kolay yolu burun şeklidir: alligatörların burnu U şeklinde, timsahların V şeklindedir.</li>
+            <li>Florida'da yaklaşık 1.3 milyon alligatör yaşadığı tahmin edilmektedir.</li>
+            <li>"Alligatör delikleri" kazarak kuraklık dönemlerinde diğer hayvanlara da su kaynağı sağlarlar - ekosistemlerin "mühendisleri" olarak bilinirler.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- GAVYAL -->
+      <div class="croc-detail-card fade-in">
+        <div class="croc-detail-header">
+          <span class="croc-emoji">🐊</span>
+          <div>
+            <h3>Gavyal</h3>
+            <span class="croc-latin">Gavialis gangeticus</span>
+          </div>
+        </div>
+        <div class="croc-stats">
+          <div class="croc-stat">
+            <div class="stat-label">Boyut</div>
+            <div class="stat-value">3.5 - 6 m</div>
+          </div>
+          <div class="croc-stat">
+            <div class="stat-label">Ağırlık</div>
+            <div class="stat-value">150 - 250 kg</div>
+          </div>
+          <div class="croc-stat">
+            <div class="stat-label">Yaşam Süresi</div>
+            <div class="stat-value">40 - 60 yıl</div>
+          </div>
+          <div class="croc-stat">
+            <div class="stat-label">Habitat</div>
+            <div class="stat-value">Hindistan nehirleri</div>
+          </div>
+          <div class="croc-stat">
+            <div class="stat-label">Beslenme</div>
+            <div class="stat-value">Balıkla beslenir</div>
+          </div>
+          <div class="croc-stat">
+            <div class="stat-label">Durum</div>
+            <div class="stat-value">Kritik tehlikede</div>
+          </div>
+        </div>
+        <p class="croc-description">
+          Gavyal, çok ince ve uzun burnu ile diğer timsahgillerden kolayca ayırt edilebilen benzersiz bir türdür. Hindistan'ın büyük nehirlerinde, özellikle Ganj, Brahmaputra ve Mahanadi nehirlerinde yaşarlar. Burundaki çıkıntı (ghara) sadece erkeklerde bulunur ve çiftleşme döneminde ses çıkarmak için kullanılır. Neredeyse tamamen balıkla beslenirler - ince burnu hızlı balık yakalamak için idealdir. Ne yazık ki habitat kaybı ve avlanma nedeniyle kritik tehlike altındadır, doğada sadece 650 civarında birey kalmıştır.
+        </p>
+        <div class="croc-facts">
+          <h4>İlginç Bilgiler</h4>
+          <ul>
+            <li>Gavyaller karada çok beceriksizdir - bacakları vücut ağırlıklarını taşımak için çok zayıftır, bu yüzden neredeyse tüm yaşamlarını suda geçirirler.</li>
+            <li>Erkek gavyallerin burnundaki "ghara" adlı çıkıntı sesi amplifiye eder ve su altında vızıldayan bir ses çıkartır.</li>
+            <li>En eski timsahgil türlerinden biridir - 65 milyon yıldır neredeyse değişmeden var olmuşlardır.</li>
+            <li>Hint mitolojisinde kutsal sayılır ve Ganj Nehri'nin koruyucusu olarak görülür.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================
+         YILANLAR
+         ========================================== -->
+    <div class="subcategory" id="yilanlar">
+      <div class="subcategory-header">
+        <span class="sub-emoji">🐍</span>
+        <h2>Yılanlar (Serpentes)</h2>
+      </div>
+
+      <div class="animal-grid">
+        <div class="animal-card" data-animal='{"isim":"Kral Kobra","emoji":"🐍","latin":"Ophiophagus hannah","habitat":"Güneydoğu Asya ormanları","beslenme":"Diğer yılanlar","boyut":"3 - 5.5 metre","yasam":"20 yıl","aciklama":"Kral kobra, dünyanın en uzun zehirli yılanıdır. Diğer yılanlarla beslenen nadir türlerden biridir. Tehdit altında hissettiğinde gövdesinin ön kısmını kaldırarak karakteristik kapişon pozunu alır. Tek bir ısırığı bir fili bile öldürmeye yetecek kadar zehir içerir.","ilgincBilgiler":["Dünyanın en uzun zehirli yılanıdır - 5.5 metreye kadar uzayabilir.","Diğer yılanlarla beslenen ender türlerdendir - ismi de buradan gelir (king = kral).","Anneler yumurtaları için yaprak yığınlarından yuva inşa eder - yılanlarda nadir görülen bir davranıştır.","Tek seferde enjekte ettiği zehir, 11 insanı veya 1 fili öldürebilir."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐍</span>
+            <div>
+              <h3>Kral Kobra</h3>
+              <span class="latin-name">Ophiophagus hannah</span>
+            </div>
+          </div>
+          <p>Dünyanın en uzun zehirli yılanı. Diğer yılanlarla beslenir ve tek ısırığı bir fili öldürebilir.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Asya</span>
+            <span class="tag diet">Etçil</span>
+            <span class="tag danger">Zehirli</span>
+          </div>
+        </div>
+
+        <div class="animal-card" data-animal='{"isim":"Piton","emoji":"🐍","latin":"Python reticulatus","habitat":"Güneydoğu Asya","beslenme":"Memeliler, kuşlar","boyut":"3 - 7 metre","agirlik":"50 - 75 kg","yasam":"15 - 25 yıl","aciklama":"Ağsal piton, dünyanın en uzun yılanı olma unvanını taşır. Avlarını zehirle değil, güçlü kaslarla sıkıştırarak öldürür. Mükemmel yüzücüler ve ağaç tırmanıcılarıdır.","ilgincBilgiler":["10 metreye yakın ölçülen bireyler kaydedilmiştir.","Zehirsizdir - avını sararak boğmuştur.","Derisi moda endüstrisinde çok değerlidir.","Isıya duyarlı çukurcuklarıyla avını karanlıkta bile bulabilir."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐍</span>
+            <div>
+              <h3>Piton</h3>
+              <span class="latin-name">Python reticulatus</span>
+            </div>
+          </div>
+          <p>Dünyanın en uzun yılanı. Avını sararak boğuşturan güçlü bir yılandır.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Asya</span>
+            <span class="tag diet">Etçil</span>
+            <span class="tag">Dev boyut</span>
+          </div>
+        </div>
+
+        <div class="animal-card" data-animal='{"isim":"Yeşil Anakonda","emoji":"🐍","latin":"Eunectes murinus","habitat":"Güney Amerika","beslenme":"Memeliler, timsahlar, balıklar","boyut":"5 - 9 metre","agirlik":"100 - 250 kg","yasam":"10 - 30 yıl","aciklama":"Yeşil anakonda, dünyanın en ağır yılanıdır. Amazon yağmur ormanlarının bataklıklarında ve nehirlerinde yaşarlar. Suda son derece çevik olmalarına rağmen karada yavaş hareket ederler. Geyik, domuz ve hatta timsah gibi büyük avları yakalayabilirler.","ilgincBilgiler":["Dünyanın en ağır yılanıdır - 250 kg a ulaşabilir.","Avını tamamen yuttuktan sonra haftalarca aç kalabilir.","Dişiler erkeklerden çok daha büyüktür.","Çiftleşme sonrası dişiler bazen erkekleri yer."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐍</span>
+            <div>
+              <h3>Yeşil Anakonda</h3>
+              <span class="latin-name">Eunectes murinus</span>
+            </div>
+          </div>
+          <p>Dünyanın en ağır yılanı. Amazon bataklıklarında yaşayan dev bir boğucudur.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Güney Amerika</span>
+            <span class="tag diet">Etçil</span>
+            <span class="tag">Dev boyut</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================
+         KERTENKELELER
+         ========================================== -->
+    <div class="subcategory" id="kertenkeleler">
+      <div class="subcategory-header">
+        <span class="sub-emoji">🦎</span>
+        <h2>Kertenkeleler (Lacertilia)</h2>
+      </div>
+
+      <div class="animal-grid">
+        <div class="animal-card" data-animal='{"isim":"İguana","emoji":"🦎","latin":"Iguana iguana","habitat":"Orta ve Güney Amerika","beslenme":"Otçul (yaprak, çiçek, meyve)","boyut":"1.2 - 1.7 metre","yasam":"15 - 20 yıl","aciklama":"Yeşil iguana, tropikal Orta ve Güney Amerika ormanlarında yaşayan büyük bir kertenkele türüdür. Ağaç üstünde yaşama adapte olmuşlardır ve mükemmel tırmanıcılardır. Tehlike anında yüksek dallardan suya atlayarak kaçabilirler.","ilgincBilgiler":["Alnındaki üçüncü göz (parietal göz) ışık değişimlerini algılayabilir.","10 metreden suya atlayarak predatörlerden kaçabilirler.","Evcil hayvan olarak popülerdirler ancak özel bakım gerektirirler.","Kuyruğu koparıldığında yeniden büyüyebilir."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦎</span>
+            <div>
+              <h3>İguana</h3>
+              <span class="latin-name">Iguana iguana</span>
+            </div>
+          </div>
+          <p>Tropikal ormanlarda yaşayan büyük otçul kertenkele. Mükemmel tırmanıcı ve yüzücü.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Orta/Güney Amerika</span>
+            <span class="tag diet">Otçul</span>
+          </div>
+        </div>
+
+        <div class="animal-card" data-animal='{"isim":"Bukalemun","emoji":"🦎","latin":"Chamaeleo chamaeleon","habitat":"Afrika, Madagaskar","beslenme":"Böcekler","boyut":"15 - 60 cm","yasam":"5 - 10 yıl","aciklama":"Bukalemunlar, renk değiştirme yetenekleriyle ünlü benzersiz kertenkelelerdir. Birbirinden bağımsız hareket eden gözleri sayesinde aynı anda iki farklı yöne bakabilirler. Uzun yapışkan dilleriyle böcekleri yıldırım hızında yakalarlar.","ilgincBilgiler":["Renk değiştirme aslında kamuflaj için değil, sıcaklık düzenleme ve iletişim içindir.","Dilleri vücut uzunluklarının 2 katına ulaşabilir ve 0.07 saniyede fırlatılır.","Her iki gözü birbirinden bağımsız 360 derece dönebilir.","Ayak parmakları dalları kavramak için pense gibi özelleşmiştir."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦎</span>
+            <div>
+              <h3>Bukalemun</h3>
+              <span class="latin-name">Chamaeleo chamaeleon</span>
+            </div>
+          </div>
+          <p>Renk değiştirme ustası. Bağımsız gözleri ve fırlatılan diliyle benzersiz bir avcı.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Afrika</span>
+            <span class="tag diet">Böceklerle beslenir</span>
+          </div>
+        </div>
+
+        <div class="animal-card" data-animal='{"isim":"Komodo Ejderi","emoji":"🦎","latin":"Varanus komodoensis","habitat":"Endonezya adaları","beslenme":"Büyük memeliler, kuşlar, diğer sürüngenler","boyut":"2 - 3 metre","agirlik":"70 - 90 kg","yasam":"30 yıl","aciklama":"Komodo ejderi, dünyanın en büyük yaşayan kertenkele türüdür. Sadece Endonezya nın birkaç adasında doğal olarak bulunurlar. Güçlü pençeleri, keskin dişleri ve tükürüğündeki zehirli bakterilerle tehlikeli avcılardır. Tek bir ısırığı bile enfeksiyonla ölüme yol açabilir.","ilgincBilgiler":["Dünyanın en büyük kertenkele türüdür - 3 metreye ve 90 kg a ulaşabilir.","Tükürüklerinde 50 den fazla bakteri türü bulunur ve zehirli bezleri vardır.","Avlarını koku duyularıyla 10 km uzaktan algılayabilirler.","Dişiler erkek olmadan da üreme yapabilirler (partenogenez)."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦎</span>
+            <div>
+              <h3>Komodo Ejderi</h3>
+              <span class="latin-name">Varanus komodoensis</span>
+            </div>
+          </div>
+          <p>Dünyanın en büyük kertenkele türü. Zehirli ısırığı ve güçlü avcılık becerileriyle korkutucu.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Endonezya</span>
+            <span class="tag diet">Etçil</span>
+            <span class="tag danger">Tehlikeli</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================
+         KAPLUMBAGALAR
+         ========================================== -->
+    <div class="subcategory" id="kaplumbagalar">
+      <div class="subcategory-header">
+        <span class="sub-emoji">🐢</span>
+        <h2>Kaplumbağalar (Testudines)</h2>
+      </div>
+
+      <div class="animal-grid">
+        <div class="animal-card" data-animal='{"isim":"Yeşil Deniz Kaplumbağası","emoji":"🐢","latin":"Chelonia mydas","habitat":"Tropikal ve subtropikal denizler","beslenme":"Deniz çimenleri, yosunlar","boyut":"80 - 150 cm","agirlik":"110 - 190 kg","yasam":"60 - 80 yıl","aciklama":"Yeşil deniz kaplumbağası, dünyanın en büyük sert kabuklu deniz kaplumbağasıdır. Tropikal ve subtropikal denizlerde yaşarlar. Erişkin bireyler çoğunlukla otçuldur - deniz çimenleri ve yosunlarla beslenirler. Binlerce kilometre yüzerek doğdukları sahillere geri dönerek yumurtlarlar.","ilgincBilgiler":["Doğdukları sahile yumurtlamak için binlerce kilometre göç ederler.","Yumurtanın sıcaklığı cinsiyeti belirler: sıcak kumda dişi, serin kumda erkek çıkar.","200 milyon yıldır değişmeyen en eski hayvan gruplarındandır.","Plastik poşetleri denizanasına benzeterek yutarlar - bu en büyük tehditlerinden biridir."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐢</span>
+            <div>
+              <h3>Yeşil Deniz Kaplumbağası</h3>
+              <span class="latin-name">Chelonia mydas</span>
+            </div>
+          </div>
+          <p>Tropikal denizlerin zarif gezgini. Binlerce kilometre yüzebilen inanılmaz göçmenler.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Okyanuslar</span>
+            <span class="tag diet">Otçul</span>
+          </div>
+        </div>
+
+        <div class="animal-card" data-animal='{"isim":"Galapagos Dev Kaplumbağası","emoji":"🐢","latin":"Aldabrachelys gigantea","habitat":"Galapagos ve Aldabra Adaları","beslenme":"Otlar, yapraklar, kaktüs","boyut":"120 - 130 cm","agirlik":"200 - 300 kg","yasam":"100 - 175 yıl","aciklama":"Dev kaplumbağalar, dünyanın en uzun yaşayan omurgalı hayvanlarıdır. Galapagos ve Aldabra adalarında yaşarlar. Charles Darwin in evrim teorisine ilham veren canlılardandır. Yavaş metabolizmaları sayesinde aylarca yiyecek ve su olmadan hayatta kalabilirler.","ilgincBilgiler":["Bilinen en uzun yaşayan kaplumbağa Harriet, tahminen 175 yaşında ölmüştür.","Charles Darwin in evrim teorisine doğrudan ilham vermişlerdir.","Bir yıl boyunca yiyecek ve su olmadan hayatta kalabilirler.","Darwin in topladığı örneklerden biri 2006 yılına kadar yaşamıştır."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐢</span>
+            <div>
+              <h3>Dev Kaplumbağa</h3>
+              <span class="latin-name">Aldabrachelys gigantea</span>
+            </div>
+          </div>
+          <p>175 yıla kadar yaşayabilen dünyanın en uzun ömürlü kara hayvanı.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Adalar</span>
+            <span class="tag diet">Otçul</span>
+            <span class="tag">Uzun ömürlü</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <button class="modal-close">&times;</button>
+      <span class="modal-emoji"></span>
+      <h2></h2>
+      <span class="modal-latin"></span>
+      <div class="modal-info-grid"></div>
+      <p class="modal-description"></p>
+      <div class="modal-fun-facts">
+        <h4>İlginç Bilgiler</h4>
+        <ul></ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>🌍 Hayvanlar Dünyası</h4>
+        <p>Gezegenimizin muhteşem canlılarını tanıyın. Bu site, hayvanlar alemi hakkında bilgi edinmek isteyen herkes için hazırlanmıştır.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Kategoriler</h4>
+        <ul class="footer-links">
+          <li><a href="memeliler.html">🦁 Memeliler</a></li>
+          <li><a href="kuslar.html">🦅 Kuşlar</a></li>
+          <li><a href="surungen.html">🐊 Sürüngen</a></li>
+          <li><a href="baliklar.html">🦈 Balıklar</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Diğer</h4>
+        <ul class="footer-links">
+          <li><a href="amfibiler.html">🐸 Amfibiler</a></li>
+          <li><a href="bocekler.html">🦋 Böcekler</a></li>
+          <li><a href="omurgasizlar.html">🐙 Omurgasızlar</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Hayvanlar Dünyası &copy; 2026 - Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

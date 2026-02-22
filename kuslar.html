@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kuşlar - Hayvanlar Dünyası</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGASYON -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">🌍 Hayvanlar <span>Dünyası</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="memeliler.html">Memeliler</a></li>
+        <li><a href="kuslar.html" class="active">Kuşlar</a></li>
+        <li><a href="surungen.html">Sürüngen</a></li>
+        <li><a href="baliklar.html">Balıklar</a></li>
+        <li><a href="amfibiler.html">Amfibiler</a></li>
+        <li><a href="bocekler.html">Böcekler</a></li>
+        <li><a href="omurgasizlar.html">Omurgasızlar</a></li>
+      </ul>
+      <div class="nav-search">
+        <span class="nav-search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Hayvan ara..." autocomplete="off">
+      </div>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="search-results" id="searchResults"></div>
+
+  <!-- SAYFA HERO -->
+  <section class="page-hero">
+    <span class="hero-emoji">🦅</span>
+    <h1>Kuşlar</h1>
+    <p>Gökyüzünün efendileri olan kuşlar, tüyleri ve kanatlarıyla diğer hayvanlardan ayrılan sıcakkanlı canlılardır. Kutuplardan tropiklere, okyanuslardan çöl kumularına kadar her ortama uyum sağlamış 10.000'den fazla türü ile dünyanın en renkli ve çeşitli hayvan grubunu keşfedin.</p>
+  </section>
+
+  <main class="section">
+
+    <!-- ==========================================
+         YIRTICI KUSLAR
+         ========================================== -->
+    <div class="subcategory" id="yirtici-kuslar">
+      <div class="subcategory-header">
+        <span class="sub-emoji">🦅</span>
+        <h2>Yırtıcı Kuşlar</h2>
+      </div>
+
+      <div class="animal-grid">
+
+        <!-- KARTAL -->
+        <div class="animal-card" data-animal='{"isim":"Kartal","emoji":"🦅","latin":"Aquila chrysaetos","habitat":"Dağlık bölgeler, Kuzey Yarıküre","beslenme":"Etçil (tavşan, sincap, küçük memeliler)","boyut":"Kanat açıklığı 2 metre","agirlik":"3 - 7 kg","yasam":"30 yıl","aciklama":"Kartal, dağlık bölgelerin en görkemli yırtıcısıdır. Güçlü pençeleri ve keskin gözleriyle tanınan kartallar, 2 km uzaktaki bir tavşanı görebilecek kadar keskin bir görme yeteneğine sahiptir. Kanat açıklıkları 2 metreyi bulan bu kuşlar, havada süzülerek avlarını büyük bir ustalıkla yakalarlar.","ilgincBilgiler":["2 km uzaktaki bir tavşanı görebilecek kadar keskin gözlere sahiptirler.","Kanat açıklıkları 2 metreyi bulabilir ve saatte 240 km hıza ulaşabilirler.","Yuvaları nesiller boyu kullanılır ve her yıl büyüyerek devasa boyutlara ulaşabilir.","Birçok kültürde güç ve özgürlüğün sembolüdür."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦅</span>
+            <div>
+              <h3>Kartal</h3>
+              <span class="latin-name">Aquila chrysaetos</span>
+            </div>
+          </div>
+          <p>Dağlık bölgelerin görkemli avcısı. Kanat açıklığı 2 metreyi bulan güçlü yırtıcı kuş.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Dağlık Bölgeler</span>
+            <span class="tag diet">Etçil</span>
+            <span class="tag">Güçlü Avcı</span>
+          </div>
+        </div>
+
+        <!-- SAHIN -->
+        <div class="animal-card" data-animal='{"isim":"Şahin","emoji":"🦅","latin":"Falco peregrinus","habitat":"Tüm dünya","beslenme":"Etçil (küçük kuşlar, yarasalar)","boyut":"Kanat açıklığı 1 metre","agirlik":"0.5 - 1.5 kg","yasam":"15 - 20 yıl","aciklama":"Şahin, dünyanın en hızlı hayvanıdır. Dalışa geçtiğinde saatte 390 km hıza ulaşabilen bu inanılmaz kuş, tüm kıtalarda bulunur. Küçük yapılarına rağmen son derece etkili avcılardır ve havada diğer kuşları yakalayarak beslenirler. Keskin gözleri ve aerodinamik vücut yapıları onları mükemmel bir avcı yapar.","ilgincBilgiler":["Dalışta saatte 390 km ile dünyanın en hızlı hayvanıdır.","Antarktika dahil tüm kıtalarda bulunur - en yaygın yırtıcı kuştur.","Avını havada yakalayarak öldürmek için özel parmak yapısına sahiptir.","Şehir merkezlerindeki yüksek binalarda yuva yaparak kentsel yaşama uyum sağlamıştır."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦅</span>
+            <div>
+              <h3>Şahin</h3>
+              <span class="latin-name">Falco peregrinus</span>
+            </div>
+          </div>
+          <p>Dünyanın en hızlı hayvanı. Dalışta 390 km/s hıza ulaşan inanılmaz avcı.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Tüm Dünya</span>
+            <span class="tag diet">Etçil</span>
+            <span class="tag">En Hızlı Hayvan</span>
+          </div>
+        </div>
+
+        <!-- BAYKUS -->
+        <div class="animal-card" data-animal='{"isim":"Baykuş","emoji":"🦉","latin":"Strix aluco","habitat":"Ormanlar, Avrupa ve Asya","beslenme":"Etçil (fare, böcek, küçük kuşlar)","boyut":"35 - 45 cm","agirlik":"0.5 - 2 kg","yasam":"15 - 20 yıl","aciklama":"Baykuş, gecenin sessiz avcısıdır. Karanlıkta mükemmel görme ve duyma yetenekleriyle donatılmış olan baykuşlar, avlarına neredeyse sessiz bir şekilde yaklaşırlar. Başı 270 derece dönebilen bu gizemli kuş, tüylerinin özel yapısı sayesinde uçuş sırasında neredeyse hiç ses çıkarmaz.","ilgincBilgiler":["Başı 270 derece dönebilir - bu sayede geniş bir görüş alanı elde ederler.","Tüylerinin özel yapısı uçuşu neredeyse tamamen sessiz kılar.","Kulakları asimetrik yerleşimlidir; bu sayede sesin yönünü hassas bir şekilde belirlerler.","Gözleri kafatasına sabitlenmiştir ve hareket ettiremezler, bu yüzden başlarını çevirirler."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦉</span>
+            <div>
+              <h3>Baykuş</h3>
+              <span class="latin-name">Strix aluco</span>
+            </div>
+          </div>
+          <p>Gecenin sessiz avcısı. Başı 270 derece dönebilen, karanlığın gizemli kuşu.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Ormanlar</span>
+            <span class="tag diet">Etçil</span>
+            <span class="tag">Gece Avcısı</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ==========================================
+         SU KUSLARI
+         ========================================== -->
+    <div class="subcategory" id="su-kuslari">
+      <div class="subcategory-header">
+        <span class="sub-emoji">🦩</span>
+        <h2>Su Kuşları</h2>
+      </div>
+
+      <div class="animal-grid">
+
+        <!-- FLAMINGO -->
+        <div class="animal-card" data-animal='{"isim":"Flamingo","emoji":"🦩","latin":"Phoenicopterus roseus","habitat":"Göl ve lagünler, Afrika ve Güney Avrupa","beslenme":"Hepçil (yosun, kabuklu canlılar, larva)","boyut":"1.1 - 1.5 metre","agirlik":"2 - 4 kg","yasam":"20 - 30 yıl","aciklama":"Flamingo, sulak alanların en zarif ve göze çarpan kuşudur. Pembe renkleri doğumdan itibaren değil, yedikleri karides ve yosunlardaki pigmentlerden gelir. Büyük koloniler halinde yaşayan flamingolar, tek ayak üzerinde durmalarıyla ünlüdür. Bu davranış vücut ısısını korumak için yapılır.","ilgincBilgiler":["Pembe renkleri yedikleri kabuklu canlılar ve yosunlardaki pigmentlerden gelir - doğduklarında gridirler.","Tek ayak üzerinde dururlar - bu davranış vücut ısısını korumak içindir.","Gagalarını ters çevirerek suda filtre ederek beslenirler.","Bir flamingo kolonisi milyonlarca bireyden oluşabilir."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦩</span>
+            <div>
+              <h3>Flamingo</h3>
+              <span class="latin-name">Phoenicopterus roseus</span>
+            </div>
+          </div>
+          <p>Sulak alanların pembe güzelliği. Rengi yediklerinden gelen zarif su kuşu.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Göl ve Lagünler</span>
+            <span class="tag diet">Hepçil</span>
+            <span class="tag">Pembe Güzellik</span>
+          </div>
+        </div>
+
+        <!-- PELIKAN -->
+        <div class="animal-card" data-animal='{"isim":"Pelikan","emoji":"🐦","latin":"Pelecanus onocrotalus","habitat":"Kıyılar, göller, nehirler","beslenme":"Etçil (balık)","boyut":"1.4 - 1.8 metre","agirlik":"10 - 13 kg","yasam":"15 - 25 yıl","aciklama":"Pelikan, büyük gaga kesesiyle tanınan etkileyici bir su kuşudur. Gaga kesesi 13 litreye kadar su alabilir ve balık avlamak için bir ağ gibi kullanılır. Gruplar halinde iş birliği yaparak avlanan pelikanlar, suları çevreleyerek balıkları bir araya toplarlar. Büyük kanat açıklıklarıyla zarif bir şekilde süzülürler.","ilgincBilgiler":["Gaga kesesi 13 litreye kadar su alabilir - midelerinden 3 kat fazladır.","Gruplar halinde iş birliği yaparak avlanırlar - balıkları çevreleyerek bir araya toplarlar.","Kanat açıklıkları 3.6 metreyi bulabilir - en büyük uçan kuşlardan biridir.","40 milyon yıllık fosil kayıtlarıyla dünyanın en eski kuş türlerinden biridir."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐦</span>
+            <div>
+              <h3>Pelikan</h3>
+              <span class="latin-name">Pelecanus onocrotalus</span>
+            </div>
+          </div>
+          <p>Büyük gaga kesesiyle ünlü su kuşu. Kesesi 13 litre su alabilen etkileyici avcı.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Kıyılar</span>
+            <span class="tag diet">Etçil</span>
+            <span class="tag">Dev Gaga Kesesi</span>
+          </div>
+        </div>
+
+        <!-- MARTI -->
+        <div class="animal-card" data-animal='{"isim":"Martı","emoji":"🐦","latin":"Larus argentatus","habitat":"Kıyılar, limanlar, şehirler","beslenme":"Hepçil (balık, böcek, atıklar)","boyut":"55 - 65 cm","agirlik":"0.8 - 1.5 kg","yasam":"10 - 15 yıl","aciklama":"Martı, kıyıların en yaygın ve uyumlu kuşudur. Neredeyse her ortamda yaşayabilen martılar, hem deniz kıyılarında hem de şehir merkezlerinde bulunurlar. Fırsatçı beslenme alışkanlıklarıyla bilinen martılar, balıktan insanların yiyecek artıklarına kadar her şeyi yerler. Zeki ve cesur kuşlardır.","ilgincBilgiler":["Hem tatlı hem tuzlu su içebilirler - özel bezleri tuzu filtreler.","Yiyecek bulmak için yağmur yağıyor gibi ayaklarıyla yere vurarak solucanları kandırırlar.","Ebeveynler yavrularını seslerinden tanır - binlerce kuşluk kolonide bile.","Şehir yaşamına mükemmel uyum sağlamış en başarılı kuş türlerinden biridir."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐦</span>
+            <div>
+              <h3>Martı</h3>
+              <span class="latin-name">Larus argentatus</span>
+            </div>
+          </div>
+          <p>Kıyıların uyumlu sakini. Her yerde yaşayabilen, zeki ve fırsatçı kuş.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Kıyılar</span>
+            <span class="tag diet">Hepçil</span>
+            <span class="tag">Uyumlu Kuş</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ==========================================
+         UCAMAYAN KUSLAR
+         ========================================== -->
+    <div class="subcategory" id="ucamayan-kuslar">
+      <div class="subcategory-header">
+        <span class="sub-emoji">🐧</span>
+        <h2>Uçamayan Kuşlar</h2>
+      </div>
+
+      <div class="animal-grid">
+
+        <!-- DEVEKUSU -->
+        <div class="animal-card" data-animal='{"isim":"Devekuşu","emoji":"🐦","latin":"Struthio camelus","habitat":"Afrika savanaları ve çölleri","beslenme":"Hepçil (bitki, tohum, böcek)","boyut":"2.1 - 2.8 metre","agirlik":"100 - 150 kg","yasam":"40 - 45 yıl","aciklama":"Devekuşu, dünyanın en büyük ve en ağır kuşudur. Uçamasa da saatte 70 km hıza ulaşabilen güçlü bacaklarıyla dünyanın en hızlı iki bacaklı hayvanıdır. Afrika savanalarında ve çöllerinde yaşayan devekuşları, tek bir tekmeyle bir aslanı öldürebilecek kadar güçlüdür. Gözleri kara hayvanlarının en büyüğüdür.","ilgincBilgiler":["Dünyanın en büyük kuşudur - 2.8 metreye kadar boylanabilirler.","Saatte 70 km hıza ulaşabilirler - en hızlı iki bacaklı hayvandır.","Gözleri beyinlerinden büyüktür - kara hayvanlarının en büyük gözlerine sahiptirler.","Yumurtaları 1.5 kg ağırlığındadır - en büyük tek hücrelidir."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐦</span>
+            <div>
+              <h3>Devekuşu</h3>
+              <span class="latin-name">Struthio camelus</span>
+            </div>
+          </div>
+          <p>Dünyanın en büyük kuşu. 70 km/s koşabilen, güçlü bacaklarıyla tanınan dev kuş.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Afrika</span>
+            <span class="tag diet">Hepçil</span>
+            <span class="tag">En Büyük Kuş</span>
+          </div>
+        </div>
+
+        <!-- PENGUEN -->
+        <div class="animal-card" data-animal='{"isim":"Penguen","emoji":"🐧","latin":"Aptenodytes forsteri","habitat":"Antarktika","beslenme":"Etçil (balık, kalamar, krill)","boyut":"1.0 - 1.3 metre","agirlik":"22 - 45 kg","yasam":"15 - 20 yıl","aciklama":"İmparator pengueni, dünyanın en büyük penguen türüdür ve Antarktika\'nın en sert koşullarında hayatta kalmayı başaran inanılmaz bir kuştur. -60 derece sıcaklığa dayanabilen penguenler, mükemmel yüzücülerdir ve suda 500 metreye kadar dalabilirler. Erkek penguenler yumurtayı ayaklarının üzerinde 2 ay boyunca kuluçkar.","ilgincBilgiler":["-60 dereceye kadar sıcaklıklara dayanabilirler - dünyanın en dayanıklı kuşlarından biridir.","500 metreye kadar dalabilirler - kuşların dalma rekoru onlara aittir.","Erkekler yumurtayı 2 ay boyunca ayaklarının üzerinde taşıyarak kuluçkar, bu sürede hiç yemek yemezler.","Suda saatte 36 km hıza ulaşabilirler - mükemmel yüzücülerdir."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐧</span>
+            <div>
+              <h3>Penguen</h3>
+              <span class="latin-name">Aptenodytes forsteri</span>
+            </div>
+          </div>
+          <p>Antarktika'nın dayanıklı sakini. -60 dereceye dayanan mükemmel yüzücü kuş.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Antarktika</span>
+            <span class="tag diet">Etçil</span>
+            <span class="tag">Mükemmel Yüzücü</span>
+          </div>
+        </div>
+
+        <!-- KIVI -->
+        <div class="animal-card" data-animal='{"isim":"Kivi","emoji":"🐦","latin":"Apteryx mantelli","habitat":"Yeni Zelanda ormanları","beslenme":"Hepçil (solucan, böcek, meyve)","boyut":"35 - 45 cm","agirlik":"1 - 3 kg","yasam":"25 - 50 yıl","aciklama":"Kivi, Yeni Zelanda\'ya özgü, memeliye benzer özelliklere sahip benzersiz bir kuştur. Uçamayan bu küçük kuş, gagasının ucundaki burun delikleriyle güçlü bir koku duyusuna sahiptir - bu özellik kuşlarda son derece nadirdir. Tüyleri kıl gibi yumuşak ve süreklidir, kanatları ise o kadar küçüktür ki tüylerin altında neredeyse görünmezdir.","ilgincBilgiler":["Gagasının ucundaki burun delikleriyle koku alabilirler - kuşlarda çok nadir bir özelliktir.","Vücut büyüklüğüne göre en büyük yumurtayı bırakan kuştur - vücut ağırlığının %20\'si kadar.","Tüyleri kıl gibidir ve memelilere benzer bir görünüm verir.","Yeni Zelanda\'nın ulusal sembolüdür ve Yeni Zelandalılara Kivi denmesinin nedenidir."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐦</span>
+            <div>
+              <h3>Kivi</h3>
+              <span class="latin-name">Apteryx mantelli</span>
+            </div>
+          </div>
+          <p>Yeni Zelanda'nın benzersiz kuşu. Memeliye benzer, güçlü koku duyusuna sahip kuş.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Yeni Zelanda</span>
+            <span class="tag diet">Hepçil</span>
+            <span class="tag">Koku Duyusu</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <button class="modal-close">&times;</button>
+      <span class="modal-emoji"></span>
+      <h2></h2>
+      <span class="modal-latin"></span>
+      <div class="modal-info-grid"></div>
+      <p class="modal-description"></p>
+      <div class="modal-fun-facts">
+        <h4>İlginç Bilgiler</h4>
+        <ul></ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>🌍 Hayvanlar Dünyası</h4>
+        <p>Gezegenimizin muhteşem canlılarını tanıyın. Bu site, hayvanlar alemi hakkında bilgi edinmek isteyen herkes için hazırlanmıştır.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Kategoriler</h4>
+        <ul class="footer-links">
+          <li><a href="memeliler.html">🦁 Memeliler</a></li>
+          <li><a href="kuslar.html">🦅 Kuşlar</a></li>
+          <li><a href="surungen.html">🐊 Sürüngen</a></li>
+          <li><a href="baliklar.html">🦈 Balıklar</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Diğer</h4>
+        <ul class="footer-links">
+          <li><a href="amfibiler.html">🐸 Amfibiler</a></li>
+          <li><a href="bocekler.html">🦋 Böcekler</a></li>
+          <li><a href="omurgasizlar.html">🐙 Omurgasızlar</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Hayvanlar Dünyası &copy; 2026 - Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

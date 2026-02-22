@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Balıklar - Hayvanlar Dünyası</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">🌍 Hayvanlar <span>Dünyası</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="memeliler.html">Memeliler</a></li>
+        <li><a href="kuslar.html">Kuşlar</a></li>
+        <li><a href="surungen.html">Sürüngen</a></li>
+        <li><a href="baliklar.html" class="active">Balıklar</a></li>
+        <li><a href="amfibiler.html">Amfibiler</a></li>
+        <li><a href="bocekler.html">Böcekler</a></li>
+        <li><a href="omurgasizlar.html">Omurgasızlar</a></li>
+      </ul>
+      <div class="nav-search">
+        <span class="nav-search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Hayvan ara..." autocomplete="off">
+      </div>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="search-results" id="searchResults"></div>
+
+  <section class="page-hero">
+    <span class="page-hero-emoji">🦈</span>
+    <h1>Balıklar</h1>
+    <p>Suların derinliklerinde yaşamlarını sürdüren balıklar, gezegenimizin en eski ve en çeşitli omurgalı grubunu oluşturur. Okyanuslardan tatlı sulara kadar her yerde bulunan bu büyüleyici canlılar, 30.000'den fazla türle doğayı zenginleştirir.</p>
+  </section>
+
+  <section class="subcategory">
+    <h2 class="subcategory-title"><span>🦈</span> Köpekbalıkları</h2>
+    <div class="animal-cards">
+
+      <div class="animal-card fade-in" data-animal='{
+        "isim": "Beyaz Köpekbalığı",
+        "emoji": "🦈",
+        "latin": "Carcharodon carcharias",
+        "habitat": "Tüm okyanuslar",
+        "beslenme": "Etçil - Foklar, balıklar, deniz kaplumbağaları",
+        "boyut": "4-6 metre",
+        "agirlik": "1-2 ton",
+        "yasam": "70 yıl",
+        "aciklama": "Beyaz köpekbalığı, okyanusların en güçlü avcısıdır ve besin zincirinin en tepesinde yer alır. Muazzam boyutları ve güçlü çeneleriyle denizlerin tartışmasız hakimidir. Keskin koku alma duyularıyla kilometrelerce öteden kanın izini sürebilir.",
+        "ilgincBilgiler": ["Ağzında aynı anda yaklaşık 300 diş bulunur ve hayatı boyunca binlerce diş değiştirir.", "Apex predator olarak okyanus ekosisteminin dengesini korumada kritik bir rol oynar.", "Saatte 56 kilometreye kadar hıza ulaşabilir.", "Suyu 1 kilometreden fazla mesafeden koklayabilir."]
+      }'>
+        <div class="card-emoji">🦈</div>
+        <h3 class="card-title">Beyaz Köpekbalığı</h3>
+        <p class="card-latin">Carcharodon carcharias</p>
+        <p class="card-desc">Okyanusların en güçlü avcısı, 300 diş, apex predator.</p>
+        <span class="card-tag">1-2 ton</span>
+        <span class="card-tag">6m</span>
+        <span class="card-tag">70 yıl</span>
+      </div>
+
+      <div class="animal-card fade-in" data-animal='{
+        "isim": "Çekirge Köpekbalığı",
+        "emoji": "🦈",
+        "latin": "Sphyrna mokarran",
+        "habitat": "Tropikal denizler",
+        "beslenme": "Etçil - Balıklar, vatoz, kafadanbacaklılar",
+        "boyut": "4-6 metre",
+        "agirlik": "230-450 kg",
+        "yasam": "30-40 yıl",
+        "aciklama": "Çekirge köpekbalığı, çekiç şeklindeki başıyla tanınan etkileyici bir avcıdır. Bu benzersiz baş yapısı sayesinde 360 derece görüş alanına sahiptir. Tropikal ve ılıman denizlerde yaşayan bu tür, okyanus tabanındaki avlarını kolayca tespit edebilir.",
+        "ilgincBilgiler": ["Çekiç şeklindeki başı 360 derece görüş alanı sağlar.", "Başındaki özel algılayıcılarla avının elektrik sinyallerini algılayabilir.", "Büyük gruplar halinde göçe çıkarlar ve yüzlerce bireyli sürüler oluşturabilirler.", "Vatozları okyanus tabanında tespit edip avlayabilirler."]
+      }'>
+        <div class="card-emoji">🦈</div>
+        <h3 class="card-title">Çekirge Köpekbalığı</h3>
+        <p class="card-latin">Sphyrna mokarran</p>
+        <p class="card-desc">Çekiç şeklinde baş, 360 derece görüş alanı.</p>
+        <span class="card-tag">230-450 kg</span>
+        <span class="card-tag">4-6m</span>
+        <span class="card-tag">Tropikal</span>
+      </div>
+
+      <div class="animal-card fade-in" data-animal='{
+        "isim": "Balina Köpekbalığı",
+        "emoji": "🦈",
+        "latin": "Rhincodon typus",
+        "habitat": "Tropikal denizler",
+        "beslenme": "Plankton, küçük balıklar, balık yumurtaları",
+        "boyut": "12-18 metre",
+        "agirlik": "20 ton",
+        "yasam": "70-100 yıl",
+        "aciklama": "Balina köpekbalığı, dünyanın en büyük balığı olup 18 metreye kadar uzunluğa ulaşabilir. Devasa boyutuna rağmen tamamen zararsızdır ve planktonla beslenir. Tropikal denizlerde yavaşça süzen bu nazik dev, dalgıçların en sevdiği deniz canlılarından biridir.",
+        "ilgincBilgiler": ["Dünyanın en büyük balığı olarak 18 metreye kadar boylanabilir.", "Planktonla beslenir ve insanlar için tamamen zararsızdır.", "Her bireyinin benekli deseni parmak izi gibi benzersizdir.", "Ağzını açarak saatte binlerce litre suyu filtreleyerek beslenir."]
+      }'>
+        <div class="card-emoji">🦈</div>
+        <h3 class="card-title">Balina Köpekbalığı</h3>
+        <p class="card-latin">Rhincodon typus</p>
+        <p class="card-desc">Dünyanın en büyük balığı, planktonla beslenir.</p>
+        <span class="card-tag">20 ton</span>
+        <span class="card-tag">12-18m</span>
+        <span class="card-tag">Zararsız</span>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="subcategory">
+    <h2 class="subcategory-title"><span>🐠</span> Tropikal Balıklar</h2>
+    <div class="animal-cards">
+
+      <div class="animal-card fade-in" data-animal='{
+        "isim": "Palyaço Balığı",
+        "emoji": "🐠",
+        "latin": "Amphiprion ocellaris",
+        "habitat": "Hint-Pasifik Okyanusu",
+        "beslenme": "Hepçil - Algler, plankton, küçük omurgasızlar",
+        "boyut": "10-18 cm",
+        "agirlik": "50-250 gram",
+        "yasam": "6-10 yıl",
+        "aciklama": "Palyaço balığı, denizanalarıyla kurduğu eşsiz ortak yaşam ilişkisiyle ünlenen küçük ve renkli bir tropikal balıktır. Denizanalarının zehirli dokunaçlarında yaşayarak avcılardan korunur. Finding Nemo filmiyle dünya çapında ünlenen bu sevimli tür, mercan resiflerinin vazgeçilmez sakinlerindendir.",
+        "ilgincBilgiler": ["Denizanalarıyla mutualistik bir ilişki kurarak ortak yaşam sürer.", "Finding Nemo animasyon filmiyle dünya çapında tanınan bir tür haline gelmiştir.", "Tüm bireyler erkek olarak doğar, baskın birey dişi hale dönüşebilir.", "Denizanasının zehirli dokunaçlarından özel bir mukus tabakası sayesinde etkilenmez."]
+      }'>
+        <div class="card-emoji">🐠</div>
+        <h3 class="card-title">Palyaço Balığı</h3>
+        <p class="card-latin">Amphiprion ocellaris</p>
+        <p class="card-desc">Denizanalarıyla ortak yaşam, Nemo olarak tanınır.</p>
+        <span class="card-tag">10-18 cm</span>
+        <span class="card-tag">Hint-Pasifik</span>
+        <span class="card-tag">Nemo</span>
+      </div>
+
+      <div class="animal-card fade-in" data-animal='{
+        "isim": "Melek Balığı",
+        "emoji": "🐠",
+        "latin": "Pterophyllum scalare",
+        "habitat": "Amazon havzası",
+        "beslenme": "Hepçil - Küçük böcekler, larvalar, bitkiler",
+        "boyut": "15 cm",
+        "agirlik": "20-60 gram",
+        "yasam": "10-15 yıl",
+        "aciklama": "Melek balığı, zarif görünüşü ve优雅 yüzgeçleriyle akvaryum meraklılarının en gözde türlerinden biridir. Amazon havzasının yavaş akan sularında doğal olarak yaşayan bu tür, uzun ve ince yüzgeçleriyle melekvari bir görünüm sergiler. Akvaryum dünyasının en popüler türlerinden biridir.",
+        "ilgincBilgiler": ["Akvaryum hobisinin en popüler ve zarif türlerinden biridir.", "Eşlerini seçerken çok seçici davranırlar ve çift bağıyla yaşarlar.", "Yumurtalarını geniş yaprakların üzerine bırakır ve ebeveynler birlikte korur.", "Doğada Amazon Nehri havzasının yavaş akan, bitkice zengin sularında yaşarlar."]
+      }'>
+        <div class="card-emoji">🐠</div>
+        <h3 class="card-title">Melek Balığı</h3>
+        <p class="card-latin">Pterophyllum scalare</p>
+        <p class="card-desc">Amazon havzası, akvaryum balığı, zarif görünüş.</p>
+        <span class="card-tag">15 cm</span>
+        <span class="card-tag">Amazon</span>
+        <span class="card-tag">Akvaryum</span>
+      </div>
+
+      <div class="animal-card fade-in" data-animal='{
+        "isim": "Beta Balığı",
+        "emoji": "🐠",
+        "latin": "Betta splendens",
+        "habitat": "Güneydoğu Asya",
+        "beslenme": "Etçil - Böcek larvaları, küçük omurgasızlar",
+        "boyut": "6-8 cm",
+        "agirlik": "5-10 gram",
+        "yasam": "3-5 yıl",
+        "aciklama": "Beta balığı, erkeklerin gösterişli renkli yüzgeçleri ve kavgacı tabiatlarıyla tanınan küçük ama etkileyici bir tatlı su balığıdır. Güneydoğu Asya kökenli bu tür, özellikle erkekler arası şiddetli dövüşleriyle ünlenmiştir. Renkli ve uzun yüzgeçleri bu türü akvaryum hobisinin gözdelerinden biri yapmıştır.",
+        "ilgincBilgiler": ["Erkekler birbirlerine karşı son derece saldırgan olup ölümüne dövüşebilirler.", "Su yüzeyinden hava alarak oksijen ihtiyaçlarını karşılayabilirler.", "Erkekler yumurtaları korumak için su yüzeyinde köpükten yuva inşa ederler.", "Geniş renk yelpazeleri sayesinde akvaryum hobisinde çok popülerdirler."]
+      }'>
+        <div class="card-emoji">🐠</div>
+        <h3 class="card-title">Beta Balığı</h3>
+        <p class="card-latin">Betta splendens</p>
+        <p class="card-desc">Erkekler kavgacı, renkli yüzgeçler, Güneydoğu Asya.</p>
+        <span class="card-tag">6-8 cm</span>
+        <span class="card-tag">Kavgacı</span>
+        <span class="card-tag">Renkli</span>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="subcategory">
+    <h2 class="subcategory-title"><span>🐟</span> Tatlı Su Balıkları</h2>
+    <div class="animal-cards">
+
+      <div class="animal-card fade-in" data-animal='{
+        "isim": "Alabalık",
+        "emoji": "🐟",
+        "latin": "Salmo trutta",
+        "habitat": "Avrupa ve Anadolu dereleri",
+        "beslenme": "Etçil - Böcekler, küçük balıklar, kabuklular",
+        "boyut": "30-80 cm",
+        "agirlik": "1-10 kg",
+        "yasam": "15-20 yıl",
+        "aciklama": "Alabalık, temiz ve soğuk sularda yaşayan, sportif balıkçılığın en gözde türlerinden biridir. Avrupa ve Anadolu derelerinin berrak sularında yaşayan bu tür, hassas doğası ve lezzetli etiyle bilinir. Temiz su göstergesi olarak ekolojik açıdan büyük önem taşır.",
+        "ilgincBilgiler": ["Temiz ve oksijence zengin soğuk sularda yaşar, su kirliliği göstergesidir.", "Sportif balıkçılıkta en çok tercih edilen türlerden biridir.", "Yumurtlamak için doğduğu dereye geri döner.", "Anadolu dereleri dünyanın en kaliteli alabalık habitatları arasındadır."]
+      }'>
+        <div class="card-emoji">🐟</div>
+        <h3 class="card-title">Alabalık</h3>
+        <p class="card-latin">Salmo trutta</p>
+        <p class="card-desc">Temiz soğuk su, sportif balıkçılık, Anadolu dereleri.</p>
+        <span class="card-tag">1-10 kg</span>
+        <span class="card-tag">Soğuk Su</span>
+        <span class="card-tag">Sportif</span>
+      </div>
+
+      <div class="animal-card fade-in" data-animal='{
+        "isim": "Sazan",
+        "emoji": "🐟",
+        "latin": "Cyprinus carpio",
+        "habitat": "Tüm dünya tatlı suları",
+        "beslenme": "Hepçil - Bitkiler, böcekler, küçük omurgasızlar",
+        "boyut": "40-80 cm",
+        "agirlik": "2-40 kg",
+        "yasam": "20-50 yıl",
+        "aciklama": "Sazan, dünyanın en yaygın ve dayanıklı tatlı su balıklarından biridir. Hemen hemen her türlü tatlı su ortamına uyum sağlayabilen bu güçlü balık, uzun ömrü ve büyük boyutlarıyla dikkat çeker. Hem sportif balıkçılıkta hem de ticari yetiştiricilikte büyük öneme sahiptir.",
+        "ilgincBilgiler": ["50 yıla kadar yaşayabilen uzun ömürlü bir türdür.", "Hemen hemen her türlü tatlı su ortamına uyum sağlayabilir.", "Dünyanın en yaygın tatlı su balık türlerinden biridir.", "Bazı bireyleri 40 kilogramın üzerine çıkabilir."]
+      }'>
+        <div class="card-emoji">🐟</div>
+        <h3 class="card-title">Sazan</h3>
+        <p class="card-latin">Cyprinus carpio</p>
+        <p class="card-desc">Tüm dünya tatlı suları, uzun ömürlü, dayanıklı.</p>
+        <span class="card-tag">2-40 kg</span>
+        <span class="card-tag">Uzun Ömür</span>
+        <span class="card-tag">Dayanıklı</span>
+      </div>
+
+      <div class="animal-card fade-in" data-animal='{
+        "isim": "Yayın Balığı",
+        "emoji": "🐟",
+        "latin": "Silurus glanis",
+        "habitat": "Avrupa nehirleri",
+        "beslenme": "Etçil - Balıklar, kurbağalar, kuşlar, küçük memeliler",
+        "boyut": "3-5 metre",
+        "agirlik": "100-300 kg",
+        "yasam": "50-80 yıl",
+        "aciklama": "Yayın balığı, Avrupa kıtasının en büyük tatlı su balığı olarak bilinen devasa bir avcıdır. 5 metreye kadar uzunluğa ve 300 kilogramın üzerine çıkabilen bu tür, nehirlerin karanlık diplerinde yaşar. Gece aktif olan bu güçlü avcı, balıktan kuşlara kadar geniş bir av yelpazesine sahiptir.",
+        "ilgincBilgiler": ["Avrupa'nın en büyük tatlı su balığı olup 5 metreyi aşabilir.", "Gece aktiftir ve güçlü bıyıklarıyla avını algılar.", "Balık, kurbağa, kuş ve hatta küçük memelilerle beslenebilir.", "80 yıla kadar yaşayabilen çok uzun ömürlü bir türdür."]
+      }'>
+        <div class="card-emoji">🐟</div>
+        <h3 class="card-title">Yayın Balığı</h3>
+        <p class="card-latin">Silurus glanis</p>
+        <p class="card-desc">Avrupa'nın en büyük tatlı su balığı, 5 metre, 300 kg.</p>
+        <span class="card-tag">100-300 kg</span>
+        <span class="card-tag">5m</span>
+        <span class="card-tag">Avrupa</span>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <button class="modal-close">&times;</button>
+      <span class="modal-emoji"></span>
+      <h2></h2>
+      <span class="modal-latin"></span>
+      <div class="modal-info-grid"></div>
+      <p class="modal-description"></p>
+      <div class="modal-fun-facts">
+        <h4>İlginç Bilgiler</h4>
+        <ul></ul>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>🌍 Hayvanlar Dünyası</h4>
+        <p>Gezegenimizin muhteşem canlılarını tanıyın.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Kategoriler</h4>
+        <ul class="footer-links">
+          <li><a href="memeliler.html">🦁 Memeliler</a></li>
+          <li><a href="kuslar.html">🦅 Kuşlar</a></li>
+          <li><a href="surungen.html">🐊 Sürüngen</a></li>
+          <li><a href="baliklar.html">🦈 Balıklar</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Diğer</h4>
+        <ul class="footer-links">
+          <li><a href="amfibiler.html">🐸 Amfibiler</a></li>
+          <li><a href="bocekler.html">🦋 Böcekler</a></li>
+          <li><a href="omurgasizlar.html">🐙 Omurgasızlar</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Hayvanlar Dünyası &copy; 2026 - Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

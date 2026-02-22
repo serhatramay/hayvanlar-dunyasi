@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amfibiler - Hayvanlar Dünyası</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">🌍 Hayvanlar <span>Dünyası</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="memeliler.html">Memeliler</a></li>
+        <li><a href="kuslar.html">Kuşlar</a></li>
+        <li><a href="surungen.html">Sürüngen</a></li>
+        <li><a href="baliklar.html">Balıklar</a></li>
+        <li><a href="amfibiler.html" class="active">Amfibiler</a></li>
+        <li><a href="bocekler.html">Böcekler</a></li>
+        <li><a href="omurgasizlar.html">Omurgasızlar</a></li>
+      </ul>
+      <div class="nav-search">
+        <span class="nav-search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Hayvan ara..." autocomplete="off">
+      </div>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="search-results" id="searchResults"></div>
+
+  <section class="page-hero">
+    <span class="page-hero-emoji">🐸</span>
+    <h1>Amfibiler</h1>
+    <p>Hem karada hem suda yaşama yeteneğine sahip amfibiler, iki dünya arasında köprü kuran benzersiz canlılardır. Yaşam döngüleri suda başlayıp karada devam eden bu ilginç omurgalılar, metamorfoz geçirerek tamamen farklı bir forma dönüşür ve doğadaki en büyüleyici adaptasyonlardan birini sergiler.</p>
+  </section>
+
+  <section class="subcategory">
+    <h2 class="subcategory-title"><span>🐸</span> Kurbağalar</h2>
+    <div class="animal-cards">
+
+      <div class="animal-card fade-in" data-animal='{
+        "isim": "Zehirli Ok Kurbağası",
+        "emoji": "🐸",
+        "latin": "Dendrobates tinctorius",
+        "habitat": "Güney Amerika yağmur ormanları",
+        "beslenme": "Etçil - Karıncalar, termitler, küçük böcekler",
+        "boyut": "2-5 cm",
+        "yasam": "10-15 yıl",
+        "aciklama": "Zehirli ok kurbağası, Güney Amerika yağmur ormanlarında yaşayan küçük ama son derece zehirli bir amfibidir. Parlak ve göz alıcı renkleri, avcılara zehirli olduğunu göstermek için bir uyarı görevi görür. Yerliler yüzyıllardır bu kurbağaların zehirini ok uçlarında kullanarak avlanmıştır.",
+        "ilgincBilgiler": ["Parlak renkleri doğada tehlike işareti olarak görev yapar ve avcıları uzak tutar.", "Yerli halklar yüzyıllardır ok uçlarını bu kurbağaların cildiyle zehirleyerek avlanmıştır.", "Esaret altında büyütülenlerde zehir üretimi azalır, çünkü zehir besinlerinden gelir.", "Tek bir bireyin zehri 10 yetişkin insanı öldürmeye yetebilir."]
+      }'>
+        <div class="card-emoji">🐸</div>
+        <h3 class="card-title">Zehirli Ok Kurbağası</h3>
+        <p class="card-latin">Dendrobates tinctorius</p>
+        <p class="card-desc">Parlak renkler zehirli olduğunu gösterir, yerliler ok uçlarına sürer.</p>
+        <span class="card-tag">2-5 cm</span>
+        <span class="card-tag">Zehirli</span>
+        <span class="card-tag">Tropikal</span>
+      </div>
+
+      <div class="animal-card fade-in" data-animal='{
+        "isim": "Ağaç Kurbağası",
+        "emoji": "🐸",
+        "latin": "Hyla arborea",
+        "habitat": "Avrupa ve Batı Asya ormanları",
+        "beslenme": "Etçil - Böcekler, örümcekler, küçük omurgasızlar",
+        "boyut": "3-5 cm",
+        "yasam": "10-15 yıl",
+        "aciklama": "Ağaç kurbağası, Avrupa ve Asya ormanlarında ağaçlarda yaşayan küçük ve çevik bir amfibidir. Parlak yeşil rengi yapraklar arasında mükemmel bir kamuflaj sağlar. Yapışan özel ayak parmakları sayesinde düşey yüzeylerden ve yapraklardan kolayca tırmanabilir.",
+        "ilgincBilgiler": ["Ayak parmaklarındaki yapışan yastıklar sayesinde cam gibi düz yüzeylerden bile tırmanabilir.", "Gece aktif bir tür olup geceleyin avlanır ve gündüz yapraklar arasında saklanır.", "Erkekler üreme döneminde çok yüksek sesli olabilir ve sesleri 1 km öteden duyulabilir.", "Cildinin rengi sıcaklık ve neme bağlı olarak açık yeşilden koyu kahverengiye değişebilir."]
+      }'>
+        <div class="card-emoji">🐸</div>
+        <h3 class="card-title">Ağaç Kurbağası</h3>
+        <p class="card-latin">Hyla arborea</p>
+        <p class="card-desc">Yeşil kamuflaj, yapışan ayak parmakları, gece aktif.</p>
+        <span class="card-tag">3-5 cm</span>
+        <span class="card-tag">Avrupa/Asya</span>
+        <span class="card-tag">Gece Aktif</span>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="subcategory">
+    <h2 class="subcategory-title"><span>🦎</span> Semenderler</h2>
+    <div class="animal-cards">
+
+      <div class="animal-card fade-in" data-animal='{
+        "isim": "Ateş Semenderi",
+        "emoji": "🦎",
+        "latin": "Salamandra salamandra",
+        "habitat": "Avrupa ormanları",
+        "beslenme": "Etçil - Böcekler, solucanlar, küçük omurgasızlar",
+        "boyut": "15-25 cm",
+        "yasam": "20-30 yıl",
+        "aciklama": "Ateş semenderi, Avrupa ormanlarında yaşayan ve göz alıcı siyah-sarı deseniyle tanınan etkileyici bir amfibidir. Cildindeki zehirli salgılar avcılardan korunmasını sağlar. Nemli orman zeminlerinde yaşayan bu tür, özellikle yağmurlu havalarda aktif hale gelir.",
+        "ilgincBilgiler": ["Siyah-sarı renk deseni her bireyde benzersizdir, tıpkı insan parmak izi gibi.", "Cildinden zehirli bir salgı üreterek avcılardan korunur.", "Orta Çağ Avrupasında ateşe atıldığında yangını söndürdüğüne inanılır ve bu yüzden bu adı almıştır.", "Nemli ortamlara ihtiyaç duyar ve kurak havalarda yeraltında saklanır."]
+      }'>
+        <div class="card-emoji">🦎</div>
+        <h3 class="card-title">Ateş Semenderi</h3>
+        <p class="card-latin">Salamandra salamandra</p>
+        <p class="card-desc">Siyah-sarı desen, zehirli cilt, nemli ormanlarda yaşar.</p>
+        <span class="card-tag">15-25 cm</span>
+        <span class="card-tag">Zehirli</span>
+        <span class="card-tag">Avrupa</span>
+      </div>
+
+      <div class="animal-card fade-in" data-animal='{
+        "isim": "Çin Dev Semenderi",
+        "emoji": "🦎",
+        "latin": "Andrias davidianus",
+        "habitat": "Çin dağlık dereleri",
+        "beslenme": "Etçil - Balıklar, kurbağalar, kabuklular, böcekler",
+        "boyut": "1-1.8 metre",
+        "yasam": "50-60 yıl",
+        "aciklama": "Çin dev semenderi, 1.8 metreye kadar uzunluğa ulaşabilen dünyanın en büyük amfibisidir. Çin dağlık bölgelerdeki soğuk ve temiz derelerde yaşar. Nesli tükenme tehlikesi altında olan bu kadim tür, yaşayan bir fosil olarak kabul edilir ve 170 milyon yıllık bir evrimsel geçmişe sahiptir.",
+        "ilgincBilgiler": ["Dünyanın en büyük amfibisi olup 1.8 metreye kadar büyüyebilir.", "170 milyon yıllık evrimsel geçmişiyle yaşayan bir fosil olarak kabul edilir.", "Habitat kaybı ve avcılık nedeniyle nesli kritik düzeyde tehlike altındadır.", "Cildi üzerindeki özel algılayıcılar sayesinde sudaki titreşimleri hissederek avını bulur."]
+      }'>
+        <div class="card-emoji">🦎</div>
+        <h3 class="card-title">Çin Dev Semenderi</h3>
+        <p class="card-latin">Andrias davidianus</p>
+        <p class="card-desc">Dünyanın en büyük amfibisi, 1.8 m, nesli tehlikede.</p>
+        <span class="card-tag">1-1.8 m</span>
+        <span class="card-tag">Yaşayan Fosil</span>
+        <span class="card-tag">Nesli Tehlikede</span>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <button class="modal-close">&times;</button>
+      <span class="modal-emoji"></span>
+      <h2></h2>
+      <span class="modal-latin"></span>
+      <div class="modal-info-grid"></div>
+      <p class="modal-description"></p>
+      <div class="modal-fun-facts">
+        <h4>İlginç Bilgiler</h4>
+        <ul></ul>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>🌍 Hayvanlar Dünyası</h4>
+        <p>Gezegenimizin muhteşem canlılarını tanıyın.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Kategoriler</h4>
+        <ul class="footer-links">
+          <li><a href="memeliler.html">🦁 Memeliler</a></li>
+          <li><a href="kuslar.html">🦅 Kuşlar</a></li>
+          <li><a href="surungen.html">🐊 Sürüngen</a></li>
+          <li><a href="baliklar.html">🦈 Balıklar</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Diğer</h4>
+        <ul class="footer-links">
+          <li><a href="amfibiler.html">🐸 Amfibiler</a></li>
+          <li><a href="bocekler.html">🦋 Böcekler</a></li>
+          <li><a href="omurgasizlar.html">🐙 Omurgasızlar</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Hayvanlar Dünyası &copy; 2026 - Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

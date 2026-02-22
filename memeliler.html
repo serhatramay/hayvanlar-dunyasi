@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memeliler - Hayvanlar Dünyası</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGASYON -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">🌍 Hayvanlar <span>Dünyası</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="memeliler.html" class="active">Memeliler</a></li>
+        <li><a href="kuslar.html">Kuşlar</a></li>
+        <li><a href="surungen.html">Sürüngen</a></li>
+        <li><a href="baliklar.html">Balıklar</a></li>
+        <li><a href="amfibiler.html">Amfibiler</a></li>
+        <li><a href="bocekler.html">Böcekler</a></li>
+        <li><a href="omurgasizlar.html">Omurgasızlar</a></li>
+      </ul>
+      <div class="nav-search">
+        <span class="nav-search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Hayvan ara..." autocomplete="off">
+      </div>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="search-results" id="searchResults"></div>
+
+  <!-- SAYFA HERO -->
+  <section class="page-hero">
+    <span class="hero-emoji">🦁</span>
+    <h1>Memeliler</h1>
+    <p>Sıcakkanlı, yavrularını sütle besleyen ve vücutları tüylerle kaplı olan memeliler, dünyanın en gelişmiş canlılarıdır. Kutuplardan tropiklere, okyanuslardan çöl kumularına kadar her ortama uyum sağlamış 6.000'den fazla türü keşfedin.</p>
+  </section>
+
+  <main class="section">
+
+    <!-- ==========================================
+         ETÇİLLER
+         ========================================== -->
+    <div class="subcategory" id="etciller">
+      <div class="subcategory-header">
+        <span class="sub-emoji">🦁</span>
+        <h2>Etçiller</h2>
+      </div>
+
+      <div class="animal-grid">
+
+        <!-- ASLAN -->
+        <div class="animal-card" data-animal='{"isim":"Aslan","emoji":"🦁","latin":"Panthera leo","habitat":"Afrika savanası","beslenme":"Etçil","boyut":"1.7 - 2.5 metre","agirlik":"180 - 250 kg","yasam":"10 - 14 yıl","aciklama":"Aslan, Afrika savanalarının tartışmasız kralıdır. Kedigiller ailesinin en sosyal üyesi olan aslanlar, sürüler halinde yaşarlar. Erkekler görkemli yelesiyle tanınırken, aslında sürünün avcılık görevini büyük ölçüde dişiler üstlenir.","ilgincBilgiler":["Aslan kükremesi 8 km uzaktan duyulabilir.","Dişiler sürünün ana avcılarıyken, erkekler bölgeyi korur.","Günün yaklaşık 20 saatini uyuyarak veya dinlenerek geçirirler.","Bir aslan sürüsü genellikle 10 ila 15 bireyden oluşur."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦁</span>
+            <div>
+              <h3>Aslan</h3>
+              <span class="latin-name">Panthera leo</span>
+            </div>
+          </div>
+          <p>Afrika savanasının kralı. Sürüler halinde yaşayan ve dişilerinin avladığı görkemli kedigil.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Afrika</span>
+            <span class="tag diet">Etçil</span>
+            <span class="tag">Sürünün Kralı</span>
+          </div>
+        </div>
+
+        <!-- KAPLAN -->
+        <div class="animal-card" data-animal='{"isim":"Kaplan","emoji":"🐅","latin":"Panthera tigris","habitat":"Asya ormanları","beslenme":"Etçil","boyut":"2.5 - 3.9 metre","agirlik":"90 - 310 kg","yasam":"10 - 15 yıl","aciklama":"Kaplan, dünyanın en büyük kedigil türüdür. Asya ormanlarında yalnız yaşayan bu görkemli avcının çizgileri parmak izi gibi benzersizdir; hiçbir iki kaplanın deseni aynı değildir. Güçlü ve sessiz bir avcıdırlar, avlarına pusu kurarak yaklaşırlar.","ilgincBilgiler":["Kaplanların çizgi deseni her bireyde benzersizdir - tıpkı insan parmak izi gibi.","Dünyanın en büyük kedigil türüdür - Sibirya kaplanları 310 kg a ulaşabilir.","Çoğu kedigilden farklı olarak suyu severler ve iyi yüzücülerdir.","Son 100 yılda popülasyonlarının %97 si yok olmuştur."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐅</span>
+            <div>
+              <h3>Kaplan</h3>
+              <span class="latin-name">Panthera tigris</span>
+            </div>
+          </div>
+          <p>Dünyanın en büyük kedigili. Çizgileri parmak izi gibi benzersiz olan yalnız avcı.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Asya</span>
+            <span class="tag diet">Etçil</span>
+            <span class="tag">En Büyük Kedigil</span>
+          </div>
+        </div>
+
+        <!-- KURT -->
+        <div class="animal-card" data-animal='{"isim":"Kurt","emoji":"🐺","latin":"Canis lupus","habitat":"Kuzey yarıküre","beslenme":"Etçil","boyut":"1.0 - 1.6 metre","agirlik":"30 - 80 kg","yasam":"6 - 8 yıl","aciklama":"Kurt, kuzey yarıkürenin en başarılı yırtıcısından biridir. Sürü halinde yaşayan kurtlar, karmaşık bir sosyal hiyerarşiye sahiptir. Alfa çifti sürüyü yönetirken, tüm sürü üyeleri avlanma ve yavru bakımına katılır. Ulumaları kilometrelerce öteden duyulabilir.","ilgincBilgiler":["Sürü halinde avlanarak kendilerinden çok büyük avları devirmeyi başarırlar.","Kurt sürülerinde alfa çifti tarafından yönetilen katmanlı bir sosyal hiyerarşi vardır.","Ulumaları 16 km uzaktan duyulabilir ve sürü üyeleri arasında iletişim sağlar.","Evcil köpeklerin atası olan kurtlar, 15.000 yıl önce evcilleştirilmiştir."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐺</span>
+            <div>
+              <h3>Kurt</h3>
+              <span class="latin-name">Canis lupus</span>
+            </div>
+          </div>
+          <p>Kuzey yarıkürenin sosyal avcısı. Sürü halinde avlanan, karmaşık hiyerarşiye sahip yırtıcı.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Kuzey Yarıküre</span>
+            <span class="tag diet">Etçil</span>
+            <span class="tag">Sürü Avcısı</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ==========================================
+         OTÇULLAR
+         ========================================== -->
+    <div class="subcategory" id="otculler">
+      <div class="subcategory-header">
+        <span class="sub-emoji">🐘</span>
+        <h2>Otçullar</h2>
+      </div>
+
+      <div class="animal-grid">
+
+        <!-- FİL -->
+        <div class="animal-card" data-animal='{"isim":"Fil","emoji":"🐘","latin":"Loxodonta africana","habitat":"Afrika","beslenme":"Otçul","boyut":"3 - 4 metre (omuz yüksekliği)","agirlik":"4000 - 7000 kg","yasam":"60 - 70 yıl","aciklama":"Afrika fili, gezegenimizin en büyük kara hayvanıdır. Mükemmel hafızalarıyla ünlü olan filler, ölmüş yakınlarının kemiklerini ziyaret eden ve yas tutan son derece zeki ve duygusal canlılardır. Hortumlarında 40.000 den fazla kas bulunur.","ilgincBilgiler":["Dünyanın en büyük kara hayvanıdır - 7 tona kadar ağırlık yapabilirler.","Mükemmel hafızaları vardır; yıllarca görmedikleri bireyleri tanıyabilirler.","Hortumlarında 40.000 den fazla kas bulunur ve çok hassas hareketler yapabilirler.","Ölmüş yakınlarının kemiklerini ziyaret ederek yas tuttukları gözlemlenmiştir."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐘</span>
+            <div>
+              <h3>Fil</h3>
+              <span class="latin-name">Loxodonta africana</span>
+            </div>
+          </div>
+          <p>Dünyanın en büyük kara hayvanı. Mükemmel hafızası ve derin duygusal bağlarıyla tanınan dev.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Afrika</span>
+            <span class="tag diet">Otçul</span>
+            <span class="tag">En Büyük Kara Hayvanı</span>
+          </div>
+        </div>
+
+        <!-- ZÜRAFA -->
+        <div class="animal-card" data-animal='{"isim":"Zürafa","emoji":"🦒","latin":"Giraffa camelopardalis","habitat":"Afrika","beslenme":"Otçul","boyut":"4.5 - 5.8 metre","agirlik":"800 - 1200 kg","yasam":"25 yıl","aciklama":"Zürafa, dünyanın en uzun hayvanıdır. Afrika savanalarında yaşayan bu zarif dev, 45 cm uzunluğundaki diliyle ağaç tepelerindeki yapraklara ulaşır. Benzersiz desen kalıpları her bireyde farklıdır, tıpkı insan parmak izi gibi.","ilgincBilgiler":["Dünyanın en uzun hayvanıdır - 5.8 metreye kadar boylanabilirler.","45 cm uzunluğundaki dilleri morumsu-siyah renktedir ve güneş yanığına karşı korunur.","Kalpleri 11 kg ağırlığındadır ve kanı uzun boyunlarında yukarı pompalamak için güçlü basınca sahiptir.","Günde sadece 30 dakika uyurlar - genellikle ayakta ve kısa aralıklarla."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦒</span>
+            <div>
+              <h3>Zürafa</h3>
+              <span class="latin-name">Giraffa camelopardalis</span>
+            </div>
+          </div>
+          <p>Dünyanın en uzun hayvanı. 45 cm lik dili ve benzersiz desen kalıplarıyla tanınan zarif dev.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Afrika</span>
+            <span class="tag diet">Otçul</span>
+            <span class="tag">En Uzun Hayvan</span>
+          </div>
+        </div>
+
+        <!-- ZEBRA -->
+        <div class="animal-card" data-animal='{"isim":"Zebra","emoji":"🦓","latin":"Equus quagga","habitat":"Afrika","beslenme":"Otçul","boyut":"2.2 - 2.5 metre","agirlik":"350 - 450 kg","yasam":"25 yıl","aciklama":"Zebra, Afrika savanalarının en ikonik hayvanlarından biridir. Her zebranın çizgi deseni benzersizdir; anneler yavrularını çizgi desenlerinden tanır. Siyah-beyaz çizgilerinin sinekleri uzaklaştırmaya ve vücudu sıcağa karşı serinletmeye yardımcı olduğu düşünülmektedir.","ilgincBilgiler":["Her zebranın çizgi deseni benzersizdir - hiçbir iki zebra aynı değildir.","Çizgilerin sinekleri uzaklaştırdığı bilimsel olarak kanıtlanmıştır.","Aslında siyah derili hayvanlardır; beyaz çizgiler sonradan oluşur.","Saatte 65 km hıza ulaşarak yırtıcılarından kaçabilirler."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦓</span>
+            <div>
+              <h3>Zebra</h3>
+              <span class="latin-name">Equus quagga</span>
+            </div>
+          </div>
+          <p>Afrika savanasının benzersiz çizgili güzelliği. Her bireyin deseni farklıdır.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Afrika</span>
+            <span class="tag diet">Otçul</span>
+            <span class="tag">Benzersiz Desen</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ==========================================
+         PRİMATLAR
+         ========================================== -->
+    <div class="subcategory" id="primatlar">
+      <div class="subcategory-header">
+        <span class="sub-emoji">🐒</span>
+        <h2>Primatlar</h2>
+      </div>
+
+      <div class="animal-grid">
+
+        <!-- ŞEMPANZE -->
+        <div class="animal-card" data-animal='{"isim":"Şempanze","emoji":"🐵","latin":"Pan troglodytes","habitat":"Afrika ormanları","beslenme":"Hepçil (meyve, yaprak, böcek, et)","boyut":"1.0 - 1.7 metre","agirlik":"40 - 65 kg","yasam":"40 - 50 yıl","aciklama":"Şempanze, insanların en yakın akrabasıdır; DNA mız %98.7 oranında ortaktır. Afrika ormanlarında yaşayan bu son derece zeki primatlar, alet kullanır, karmaşık sosyal ilişkiler kurar ve hatta basit bir kültür aktarımına sahiptir. Duygusal ifadeleri insanlarınkine çok benzer.","ilgincBilgiler":["İnsanlarla DNA larının %98.7 si ortaktır - en yakın akrabamızdır.","Dallardan sopalar yaparak termit avlarlar - alet kullanan nadir hayvanlardan biridir.","Her gece ağaç tepesinde taze bir yatak inşa ederler.","Birbirlerine sarılma, öpüşme ve el sıkma gibi sosyal davranışlar gösterirler."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐵</span>
+            <div>
+              <h3>Şempanze</h3>
+              <span class="latin-name">Pan troglodytes</span>
+            </div>
+          </div>
+          <p>En yakın akrabamız - DNA mız %98.7 ortaktır. Alet kullanan, kültürel öğrenen primat.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Afrika</span>
+            <span class="tag diet">Hepçil</span>
+            <span class="tag">%98.7 DNA</span>
+          </div>
+        </div>
+
+        <!-- GORİL -->
+        <div class="animal-card" data-animal='{"isim":"Goril","emoji":"🦍","latin":"Gorilla gorilla","habitat":"Afrika","beslenme":"Otçul (yaprak, gövde, meyve)","boyut":"1.4 - 1.8 metre","agirlik":"130 - 200 kg","yasam":"35 - 40 yıl","aciklama":"Goril, dünyanın en büyük primatıdır. Devasa yapılarına rağmen son derece nazik ve sosyal canlılardırlar. Aileler halinde yaşayan goriller, gümüşsırt olarak adlandırılan dominant erkekler tarafından yönetilir. Çoğunlukla bitkisel besinlerle beslenirler.","ilgincBilgiler":["Dünyanın en büyük primatıdır - erkekler 200 kg a ulaşabilir.","Nazik devler olarak bilinirler; yavrularıyla oyun oynar ve onlara şefkatle bakarlar.","Gümüşsırt erkekler grubun lideri ve koruyucusudur.","İnsanlara çok yakın zeka seviyesine sahiptirler ve işaret dili öğrenebilirler."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦍</span>
+            <div>
+              <h3>Goril</h3>
+              <span class="latin-name">Gorilla gorilla</span>
+            </div>
+          </div>
+          <p>Dünyanın en büyük primatı. Devasa yapılarına rağmen nazik ve şefkatli aileler kuran dev.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Afrika</span>
+            <span class="tag diet">Otçul</span>
+            <span class="tag">Nazik Dev</span>
+          </div>
+        </div>
+
+        <!-- ORANGUTAN -->
+        <div class="animal-card" data-animal='{"isim":"Orangutan","emoji":"🦧","latin":"Pongo pygmaeus","habitat":"Borneo ve Sumatra ormanları","beslenme":"Hepçil (meyve, yaprak, böcek)","boyut":"1.2 - 1.5 metre","agirlik":"50 - 100 kg","yasam":"35 - 45 yıl","aciklama":"Orangutan, Malay dilinde ormanın insanı anlamına gelir. Borneo ve Sumatra nın tropikal yağmur ormanlarında yaşayan bu büyük primat, ağaçlar üzerinde yalnız bir yaşam sürer. Çok zeki olan orangutanlar, doğada alet kullanımı konusunda üstadırlar ve her gece ağaç dallarından yatak yaparlar.","ilgincBilgiler":["İsimleri Malay dilinde ormanın insanı anlamına gelir.","Doğada alet kullanan en gelişmiş primatlardan biridir - sopalarla böcek çıkarır, yapraklardan şemsiye yaparlar.","Zamanlarının %90 ını ağaçlarda geçirirler - en büyük ağaç yaşayanı primatlardır.","Anneler yavrularına 6-7 yıl boyunca bakar - insanlar dışında en uzun çocukluk dönemidir."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦧</span>
+            <div>
+              <h3>Orangutan</h3>
+              <span class="latin-name">Pongo pygmaeus</span>
+            </div>
+          </div>
+          <p>Ormanın insanları. Alet kullanan, son derece zeki ve ağaç yaşamı üstadı primat.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Borneo/Sumatra</span>
+            <span class="tag diet">Hepçil</span>
+            <span class="tag">Alet Kullanımı</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ==========================================
+         DENİZ MEMELİLERİ
+         ========================================== -->
+    <div class="subcategory" id="deniz-memelileri">
+      <div class="subcategory-header">
+        <span class="sub-emoji">🐬</span>
+        <h2>Deniz Memelileri</h2>
+      </div>
+
+      <div class="animal-grid">
+
+        <!-- YUNUS -->
+        <div class="animal-card" data-animal='{"isim":"Yunus","emoji":"🐬","latin":"Delphinus delphis","habitat":"Tüm denizler","beslenme":"Etçil (balık, kalamar)","boyut":"1.5 - 2.5 metre","agirlik":"70 - 130 kg","yasam":"40 - 50 yıl","aciklama":"Yunus, denizlerin en zeki ve sevilen memelilerinden biridir. Ekolokasyon (yankı ile konum belirleme) yetenekleriyle karanlık ve bulanık sularda bile avlarını bulabilirler. Son derece sosyal canlılardırlar ve gruplar halinde yaşarlar. Oyuncu yapılarıyla insan ile hayvan arasındaki bağın en güzel örneklerinden birini sunarlar.","ilgincBilgiler":["Ekolokasyon kullanarak karanlık sularda bile avlarını tespit edebilirler.","Beyinleri vücut oranına göre en büyük beyinlerden biridir.","Uyurken beyinlerinin sadece yarısı uyur, diğer yarısı nefes almak için uyanık kalır.","Aynada kendilerini tanıyabilen nadir hayvanlardan biridir."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐬</span>
+            <div>
+              <h3>Yunus</h3>
+              <span class="latin-name">Delphinus delphis</span>
+            </div>
+          </div>
+          <p>Denizlerin en zeki memelisi. Ekolokasyon yeteneğiyle avlanan sosyal ve oyuncu canlı.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Tüm Denizler</span>
+            <span class="tag diet">Etçil</span>
+            <span class="tag">Ekolokasyon</span>
+          </div>
+        </div>
+
+        <!-- BALİNA -->
+        <div class="animal-card" data-animal='{"isim":"Mavi Balina","emoji":"🐋","latin":"Balaenoptera musculus","habitat":"Tüm okyanuslar","beslenme":"Krill (küçük kabuklular)","boyut":"24 - 30 metre","agirlik":"100 - 150 ton","yasam":"80 - 90 yıl","aciklama":"Mavi balina, dünyanın şimdiye kadar yaşamış en büyük canlısıdır - dinozorlardan bile büyüktür. Tüm okyanuslarda yaşayan bu devasa memeli, bir araba büyüklüğünde bir kalbe sahiptir. Çoğunlukla krill adı verilen küçük kabuklularla beslenirler ve günde 4 tona kadar krill tüketebilirler.","ilgincBilgiler":["Dünyanın şimdiye kadar yaşamış en büyük canlısıdır - dinozorlardan bile büyüktür.","Kalbi bir araba büyüklüğündedir ve atardamarlarında bir çocuk yüzebilir.","Sesleri 1.600 km uzaktan duyulabilir - dünyanın en yüksek sesli hayvanıdır.","Günde yaklaşık 4 ton krill yiyerek beslenirler."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐋</span>
+            <div>
+              <h3>Mavi Balina</h3>
+              <span class="latin-name">Balaenoptera musculus</span>
+            </div>
+          </div>
+          <p>Dünyanın en büyük canlısı. Kalbi araba büyüklüğünde olan okyanusların muhteşem devi.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Tüm Okyanuslar</span>
+            <span class="tag diet">Krill</span>
+            <span class="tag">En Büyük Canlı</span>
+          </div>
+        </div>
+
+        <!-- FOK -->
+        <div class="animal-card" data-animal='{"isim":"Fok","emoji":"🦭","latin":"Phoca vitulina","habitat":"Kuzey yarıküre kıyıları","beslenme":"Etçil (balık, kabuklu deniz hayvanları)","boyut":"1.5 - 1.9 metre","agirlik":"60 - 170 kg","yasam":"25 - 30 yıl","aciklama":"Fok, hem karada hem denizde yaşayabilen benzersiz bir deniz memelisidir. Kuzey yarıkürenin kıyılarında ve soğuk sularında yaşarlar. Torpil şeklindeki vücut yapıları suyu yarar gibi yüzmelerini sağlar. Karada beceriksiz görünseler de suda inanılmaz çevik ve hızlı avcılardır.","ilgincBilgiler":["Hem karada hem denizde yaşayabilen amfibi memelilerdir.","200 metreye kadar dalabilir ve 30 dakikaya kadar nefeslerini tutabilirler.","Bıyıkları su altındaki titreşimleri algılayarak karanlıkta avlarını bulmalarını sağlar.","Yavruları doğduktan sadece birkaç saat sonra yüzebilirler."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦭</span>
+            <div>
+              <h3>Fok</h3>
+              <span class="latin-name">Phoca vitulina</span>
+            </div>
+          </div>
+          <p>Hem karada hem denizde yaşayan çok yönlü memeli. Soğuk suların çevik avcısı.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Kuzey Yarıküre</span>
+            <span class="tag diet">Etçil</span>
+            <span class="tag">Kara ve Deniz</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <button class="modal-close">&times;</button>
+      <span class="modal-emoji"></span>
+      <h2></h2>
+      <span class="modal-latin"></span>
+      <div class="modal-info-grid"></div>
+      <p class="modal-description"></p>
+      <div class="modal-fun-facts">
+        <h4>İlginç Bilgiler</h4>
+        <ul></ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>🌍 Hayvanlar Dünyası</h4>
+        <p>Gezegenimizin muhteşem canlılarını tanıyın. Bu site, hayvanlar alemi hakkında bilgi edinmek isteyen herkes için hazırlanmıştır.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Kategoriler</h4>
+        <ul class="footer-links">
+          <li><a href="memeliler.html">🦁 Memeliler</a></li>
+          <li><a href="kuslar.html">🦅 Kuşlar</a></li>
+          <li><a href="surungen.html">🐊 Sürüngen</a></li>
+          <li><a href="baliklar.html">🦈 Balıklar</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Diğer</h4>
+        <ul class="footer-links">
+          <li><a href="amfibiler.html">🐸 Amfibiler</a></li>
+          <li><a href="bocekler.html">🦋 Böcekler</a></li>
+          <li><a href="omurgasizlar.html">🐙 Omurgasızlar</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Hayvanlar Dünyası &copy; 2026 - Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

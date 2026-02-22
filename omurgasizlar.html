@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Omurgasızlar - Hayvanlar Dünyası</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGASYON -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">🌍 Hayvanlar <span>Dünyası</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="memeliler.html">Memeliler</a></li>
+        <li><a href="kuslar.html">Kuşlar</a></li>
+        <li><a href="surungen.html">Sürüngen</a></li>
+        <li><a href="baliklar.html">Balıklar</a></li>
+        <li><a href="amfibiler.html">Amfibiler</a></li>
+        <li><a href="bocekler.html">Böcekler</a></li>
+        <li><a href="omurgasizlar.html" class="active">Omurgasızlar</a></li>
+      </ul>
+      <div class="nav-search">
+        <span class="nav-search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Hayvan ara..." autocomplete="off">
+      </div>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="search-results" id="searchResults"></div>
+
+  <!-- SAYFA HERO -->
+  <section class="page-hero">
+    <span class="page-hero-emoji">🐙</span>
+    <h1>Omurgasızlar</h1>
+    <p>Omurgasızlar, omurga kemiği bulunmayan hayvanlar olup tüm hayvan türlerinin yaklaşık %97'sini oluşturur. Denizanasından ahtapota, mercandan denizyıldızına kadar inanılmaz bir çeşitlilik gösteren bu canlılar, okyanusların derinliklerinden mercan resiflerine kadar her ortamda hayat bulur. Basit yapılarının aksine, son derece karmaşık davranışlar ve şaşırtıcı biyolojik yetenekler sergilerler.</p>
+  </section>
+
+  <!-- ==========================================
+       KAFADANBACAKLILAR
+       ========================================== -->
+  <section class="subcategory">
+    <h2 class="subcategory-title"><span>🐙</span> Kafadanbacaklılar</h2>
+    <div class="animal-cards">
+
+      <!-- AHTAPOT -->
+      <div class="animal-card fade-in" data-animal='{
+        "isim": "Ahtapot",
+        "emoji": "🐙",
+        "latin": "Octopus vulgaris",
+        "habitat": "Tüm denizler - Akdeniz, Atlantik, Pasifik",
+        "beslenme": "Etçil - Yengeçler, midyeler, küçük balıklar",
+        "boyut": "3-5 kg, kol açıklığı 1-1.5 m",
+        "yasam": "1-2 yıl",
+        "aciklama": "Ahtapot, denizlerin en zeki omurgasız canlısıdır. 8 kolu, 3 kalbi ve mavi kanı ile benzersiz bir anatomiye sahiptir. Her bir kolu bağımsız hareket edebilir ve yüzlerce emicisi ile objeleri kavrayabilir. Renk ve doku değiştirme yeteneği sayesinde saniyeler içinde çevresiyle bütünleşebilir.",
+        "ilgincBilgiler": ["3 kalbe sahiptir: 2 si solungaçlara, 1 i vücuda kan pompalar; yüzerken ana kalbi durur.", "Mavi kanı vardır çünkü kanda oksijen taşımak için demir yerine bakır bazlı hemosyanin kullanır.", "Kavanoz kapağını açabilir, labirentleri çözebilir ve aletleri kullanabilir; omurgasızların en zekisidir.", "Kısa ömrü boyunca eşleşme sonrası erkekler ölür, dişiler yumurtaları koruduktan sonra yaşama veda eder."]
+      }'>
+        <div class="card-emoji">🐙</div>
+        <h3 class="card-title">Ahtapot</h3>
+        <p class="card-latin">Octopus vulgaris</p>
+        <p class="card-desc">8 kol, 3 kalp, mavi kan ve renk değiştirme yeteneğine sahip denizlerin en zeki omurgasızı.</p>
+        <span class="card-tag">3-5 kg</span>
+        <span class="card-tag">3 Kalp</span>
+        <span class="card-tag">Çok Zeki</span>
+      </div>
+
+      <!-- MÜREKKEP BALIĞI -->
+      <div class="animal-card fade-in" data-animal='{
+        "isim": "Mürekkep Balığı",
+        "emoji": "🦑",
+        "latin": "Sepia officinalis",
+        "habitat": "Akdeniz ve Doğu Atlantik",
+        "beslenme": "Etçil - Küçük balıklar, kabuklular, karides",
+        "boyut": "2-4 kg, 30-45 cm gövde uzunluğu",
+        "yasam": "1-2 yıl",
+        "aciklama": "Mürekkep balığı, denizlerin kamuflaj ustasıdır. Derisindeki milyonlarca renk hücresini (kromatofor) bağımsız kontrol ederek saniyeler içinde renk, desen ve hatta doku değiştirebilir. Tehlike anında koyu renkli bir mürekkep bulutu fışkırtarak avcıların kafasını karıştırır ve kaçış fırsatı yakalar.",
+        "ilgincBilgiler": ["Derisinde santimetre kare başına 200 e kadar kromatofor (renk hücresi) bulunur ve bunları anında kontrol eder.", "Fışkırttığı mürekkep bulutu sadece görsel değil, aynı zamanda avcıların koku duyusunu da bozar.", "Vücut oranına göre omurgasızlar arasında en büyük beyinlerden birine sahiptir.", "W şeklindeki gözbebekleri sayesinde ön ve arkasını aynı anda görebilir; renk körü olmasına rağmen muhteşem kamuflaj yapar."]
+      }'>
+        <div class="card-emoji">🦑</div>
+        <h3 class="card-title">Mürekkep Balığı</h3>
+        <p class="card-latin">Sepia officinalis</p>
+        <p class="card-desc">Kamuflaj ustası, mürekkep fışkırtır. Milyonlarca renk hücresiyle saniyede desen değiştirir.</p>
+        <span class="card-tag">2-4 kg</span>
+        <span class="card-tag">Kamuflaj Ustası</span>
+        <span class="card-tag">Mürekkep</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       DENİZANALARI
+       ========================================== -->
+  <section class="subcategory">
+    <h2 class="subcategory-title"><span>🪼</span> Denizanaları</h2>
+    <div class="animal-cards">
+
+      <!-- DENİZANASI -->
+      <div class="animal-card fade-in" data-animal='{
+        "isim": "Denizanası",
+        "emoji": "🪼",
+        "latin": "Aurelia aurita",
+        "habitat": "Tüm denizler - özellikle ılıman ve tropikal sular",
+        "beslenme": "Etçil - Plankton, küçük balıklar, karides larvaları",
+        "boyut": "25-40 cm şemsiye çapı",
+        "yasam": "6-12 ay",
+        "aciklama": "Denizanası, gezegenimizin en eski canlı gruplarındandır ve 500 milyon yıldan fazla süredir denizlerde yaşam sürmektedir. Vücut yapılarının yüzde 95 i sudan oluşur ve beyinleri, kalpleri ya da kanları yoktur. Basit sinir ağları sayesinde akım ve ışığa tepki vererek okyanuslarda sürüklenirler.",
+        "ilgincBilgiler": ["Vücutlarının %95 i sudan oluşur; beyinleri, kalpleri ve kanları yoktur.", "500 milyon yıldan fazla süredir dünyadalar; dinozorlardan çok daha eskidirler.", "Bazı türleri biyolüminesans ile karanlıkta ışık üretebilir.", "Turritopsis dohrnii türü biyolojik olarak ölümsüzdür; yaşlandığında tekrar genç formuna dönebilir."]
+      }'>
+        <div class="card-emoji">🪼</div>
+        <h3 class="card-title">Denizanası</h3>
+        <p class="card-latin">Aurelia aurita</p>
+        <p class="card-desc">%95 su, beyni yok, kalbi yok. 500 milyon yıldır denizlerde yaşıyor.</p>
+        <span class="card-tag">25-40 cm</span>
+        <span class="card-tag">%95 Su</span>
+        <span class="card-tag">500 Milyon Yıl</span>
+      </div>
+
+      <!-- KUTU DENİZANASI -->
+      <div class="animal-card fade-in" data-animal='{
+        "isim": "Kutu Denizanası",
+        "emoji": "🪼",
+        "latin": "Chironex fleckeri",
+        "habitat": "Avustralya kuzeyi - Hint-Pasifik kıyıları",
+        "beslenme": "Etçil - Küçük balıklar, karides",
+        "boyut": "20-30 cm şemsiye, 3 m ye kadar dokunaçlar",
+        "yasam": "Yaklaşık 1 yıl",
+        "aciklama": "Kutu denizanası, dünyanın en zehirli deniz canlısı olarak kabul edilir. Her bir dokungacında milyarlarca zehir hücresi (nematosist) taşıyan bu canlı, temasla birlikte kalp durmasına neden olabilecek kadar güçlü bir zehir enjekte eder. Diğer denizanalarından farklı olarak 24 göz ile aktif olarak yüzer ve avlanır.",
+        "ilgincBilgiler": ["Dünyanın en zehirli deniz canlısıdır; zehri dakikalar içinde bir insanın kalbini durdurabilir.", "24 göze sahiptir ve bunlardan 4 ü gerçek görme yeteneğine sahip karmaşık gözlerdir.", "Her dokungacında 5.000 e kadar zehir hücresi (nematosist) bulunur ve temas anında ateşlanır.", "Deniz kaplumbağaları, kutu denizanasının zehrine karşı bağışık olup onların en büyük doğal avcısıdır."]
+      }'>
+        <div class="card-emoji">🪼</div>
+        <h3 class="card-title">Kutu Denizanası</h3>
+        <p class="card-latin">Chironex fleckeri</p>
+        <p class="card-desc">Dünyanın en zehirli deniz canlısı. 24 göze sahip öldürücü avcısı.</p>
+        <span class="card-tag">3 m Dokunaçlar</span>
+        <span class="card-tag">En Zehirli</span>
+        <span class="card-tag">24 Göz</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       DENİZYILDIZLARI VE MERCANLAR
+       ========================================== -->
+  <section class="subcategory">
+    <h2 class="subcategory-title"><span>⭐</span> Denizyıldızları ve Mercanlar</h2>
+    <div class="animal-cards">
+
+      <!-- MERCAN -->
+      <div class="animal-card fade-in" data-animal='{
+        "isim": "Mercan",
+        "emoji": "🪸",
+        "latin": "Corallium rubrum",
+        "habitat": "Tropikal ve subtropikal denizler - resif bölgeler",
+        "beslenme": "Hepçil - Plankton, algler (zooksantel simbiyozu)",
+        "boyut": "Koloni halinde: birkaç cm den metrelerce genişliğe kadar",
+        "yasam": "Koloni olarak yüzlerce yıl, bireysel polip 2-15 yıl",
+        "aciklama": "Mercanlar, tropikal denizlerin mimar canlılarıdır. Küçük polip yapıları koloni halinde yaşayarak devasa mercan resifleri oluşturur. Okyanusların yağmur ormanı olarak bilinen mercan resifleri, deniz yaşamının yüzde 25 ine ev sahipliği yapar. Algler ile simbiyotik ilişki kurarak fotosentezden enerji elde ederler.",
+        "ilgincBilgiler": ["Dünyadaki deniz türlerinin %25 i mercan resiflerinde yaşarken, resifler okyanus tabanının sadece %1 ini kaplar.", "Büyük Set Resifi uzaydan görülebilen tek canlı yapıdır ve 2.300 km uzunluğundadır.", "İklim değişikliği nedeniyle deniz sıcaklıklarının artması mercan ağarmasına neden olmakta ve resifleri tehdit etmektedir.", "Mercan iskeletleri kalsiyum karbonattan oluşur ve binlerce yıl boyunca birikerek ada ve kıyıları şekillendirir."]
+      }'>
+        <div class="card-emoji">🪸</div>
+        <h3 class="card-title">Mercan</h3>
+        <p class="card-latin">Corallium rubrum</p>
+        <p class="card-desc">Okyanusların yağmur ormanı. Koloni halinde resif oluşturarak deniz yaşamının %25'ine ev sahipliği yapar.</p>
+        <span class="card-tag">Koloni Halinde</span>
+        <span class="card-tag">Resif Yapıcı</span>
+        <span class="card-tag">Simbiyoz</span>
+      </div>
+
+      <!-- DENİZYILDIZI -->
+      <div class="animal-card fade-in" data-animal='{
+        "isim": "Denizyıldızı",
+        "emoji": "⭐",
+        "latin": "Asterias rubens",
+        "habitat": "Tüm denizler - kayalık kıyılar ve deniz tabanı",
+        "beslenme": "Etçil - Midye, istiridye, deniz kestanesi",
+        "boyut": "10-30 cm çap",
+        "yasam": "5-10 yıl",
+        "aciklama": "Denizyıldızı, denizlerin en ilginç canlılarından biridir. Genellikle 5 kolu olan bu canlı, kopan kolunu yeniden büyütebilme yeteneğine sahiptir. Avlanma yöntemi benzersizdir: midesini ağzından dışarı çıkartarak avının kabuğunun içine soklar ve sindirimi vücut dışında gerçekleştirir.",
+        "ilgincBilgiler": ["Kopan bir kol, uygun koşullarda tamamen yeni bir denizyıldızı oluşturabilir.", "Midesini ağzından dışarı çıkararak avını vücut dışında sindirir; kabuklu avların içine midesini soklar.", "Her kolunun ucunda basit bir göz bulunur ve ışık-karanlık ayırt edebilir.", "Beyni yoktur ancak her kolundaki sinir sistemi bağımsız hareket etmesini sağlar; kan yerine deniz suyu dolaşır."]
+      }'>
+        <div class="card-emoji">⭐</div>
+        <h3 class="card-title">Denizyıldızı</h3>
+        <p class="card-latin">Asterias rubens</p>
+        <p class="card-desc">5 kollu, kopan kol yeniden büyür. Midesini dışarı çıkararak avını sindirir.</p>
+        <span class="card-tag">10-30 cm</span>
+        <span class="card-tag">Rejenerasyon</span>
+        <span class="card-tag">Dış Sindirim</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <button class="modal-close">&times;</button>
+      <span class="modal-emoji"></span>
+      <h2></h2>
+      <span class="modal-latin"></span>
+      <div class="modal-info-grid"></div>
+      <p class="modal-description"></p>
+      <div class="modal-fun-facts">
+        <h4>İlginç Bilgiler</h4>
+        <ul></ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>🌍 Hayvanlar Dünyası</h4>
+        <p>Gezegenimizin muhteşem canlılarını tanıyın.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Kategoriler</h4>
+        <ul class="footer-links">
+          <li><a href="memeliler.html">🦁 Memeliler</a></li>
+          <li><a href="kuslar.html">🦅 Kuşlar</a></li>
+          <li><a href="surungen.html">🐊 Sürüngen</a></li>
+          <li><a href="baliklar.html">🦈 Balıklar</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Diğer</h4>
+        <ul class="footer-links">
+          <li><a href="amfibiler.html">🐸 Amfibiler</a></li>
+          <li><a href="bocekler.html">🦋 Böcekler</a></li>
+          <li><a href="omurgasizlar.html">🐙 Omurgasızlar</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Hayvanlar Dünyası &copy; 2026 - Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

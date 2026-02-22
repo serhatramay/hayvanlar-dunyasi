@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hayvanlar Dünyası</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGASYON -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">🌍 Hayvanlar <span>Dünyası</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Ana Sayfa</a></li>
+        <li><a href="memeliler.html">Memeliler</a></li>
+        <li><a href="kuslar.html">Kuşlar</a></li>
+        <li><a href="surungen.html">Sürüngen</a></li>
+        <li><a href="baliklar.html">Balıklar</a></li>
+        <li><a href="amfibiler.html">Amfibiler</a></li>
+        <li><a href="bocekler.html">Böcekler</a></li>
+        <li><a href="omurgasizlar.html">Omurgasızlar</a></li>
+      </ul>
+      <div class="nav-search">
+        <span class="nav-search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Hayvan ara..." autocomplete="off">
+      </div>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ARAMA SONUÇLARI -->
+  <div class="search-results" id="searchResults"></div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="hero-emoji">🦁</span>
+      <h1>Hayvanlar <span>Dünyası</span></h1>
+      <p>Gezegenimizin en büyüleyici canlılarını keşfedin. Memelilerden sürüngenlere, kuşlardan böceklere kadar hayvanlar aleminin tüm güzelliklerini bir arada bulun.</p>
+      <a href="#kategoriler" class="hero-btn">Keşfetmeye Başla</a>
+    </div>
+  </section>
+
+  <!-- İSTATİSTİKLER -->
+  <section class="section">
+    <div class="stats">
+      <div class="stat-item fade-in">
+        <span class="stat-number">7</span>
+        <span class="stat-label">Ana Kategori</span>
+      </div>
+      <div class="stat-item fade-in fade-in-delay-1">
+        <span class="stat-number">50+</span>
+        <span class="stat-label">Hayvan Türü</span>
+      </div>
+      <div class="stat-item fade-in fade-in-delay-2">
+        <span class="stat-number">8.7M</span>
+        <span class="stat-label">Tahmin Edilen Tür Sayısı</span>
+      </div>
+      <div class="stat-item fade-in fade-in-delay-3">
+        <span class="stat-number">∞</span>
+        <span class="stat-label">Keşfedilecek Bilgi</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- KATEGORİLER -->
+  <section class="section" id="kategoriler">
+    <div class="section-header">
+      <h2>Kategorileri Keşfet</h2>
+      <p>Hayvanlar aleminin 7 ana kategorisinden birini seçin ve bu büyüleyici dünyaya dalın.</p>
+    </div>
+
+    <div class="category-grid">
+      <a href="memeliler.html" class="category-card fade-in">
+        <span class="card-emoji">🦁</span>
+        <h3>Memeliler</h3>
+        <p>Sıcakkanlı, yavrularını sütle besleyen canlıları keşfedin. Aslanlardan balinlara, primatlardan yarasalara.</p>
+        <span class="card-count">12+ Tür</span>
+      </a>
+
+      <a href="kuslar.html" class="category-card fade-in fade-in-delay-1">
+        <span class="card-emoji">🦅</span>
+        <h3>Kuşlar</h3>
+        <p>Gökyüzünün efendileri. Yırtıcı kuşlardan renkli papağanlara, uçamayan penguenlerden flamingolara.</p>
+        <span class="card-count">9+ Tür</span>
+      </a>
+
+      <a href="surungen.html" class="category-card fade-in fade-in-delay-2">
+        <span class="card-emoji">🐊</span>
+        <h3>Sürüngen</h3>
+        <p>Dinozorların yakın akrabaları. Timsahlar, yılanlar, kertenkeleler ve kaplumbağalar detaylı anlatımla.</p>
+        <span class="card-count">13+ Tür</span>
+      </a>
+
+      <a href="baliklar.html" class="category-card fade-in fade-in-delay-3">
+        <span class="card-emoji">🦈</span>
+        <h3>Balıklar</h3>
+        <p>Okyanusların ve tatlı suların sakinleri. Köpekbalıklarından tropikal balıklara kadar su altı dünyası.</p>
+        <span class="card-count">9+ Tür</span>
+      </a>
+
+      <a href="amfibiler.html" class="category-card fade-in fade-in-delay-4">
+        <span class="card-emoji">🐸</span>
+        <h3>Amfibiler</h3>
+        <p>Hem karada hem suda yaşayan mucize canlıları. Renkli kurbağalardan dev semenderlere.</p>
+        <span class="card-count">4+ Tür</span>
+      </a>
+
+      <a href="bocekler.html" class="category-card fade-in fade-in-delay-5">
+        <span class="card-emoji">🦋</span>
+        <h3>Böcekler</h3>
+        <p>Dünyada en çok türe sahip grup. Kelebekler, böcekler, karıncalar ve arıların şaşırtıcı dünyası.</p>
+        <span class="card-count">7+ Tür</span>
+      </a>
+
+      <a href="omurgasizlar.html" class="category-card fade-in fade-in-delay-6">
+        <span class="card-emoji">🐙</span>
+        <h3>Omurgasızlar</h3>
+        <p>Omurgası olmayan ama yetenekleri sınırsız canlıları. Ahtapotlardan denizanasına, mercanlardan denizyıldızına.</p>
+        <span class="card-count">6+ Tür</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>🌍 Hayvanlar Dünyası</h4>
+        <p>Gezegenimizin muhteşem canlılarını tanıyın. Bu site, hayvanlar alemi hakkında bilgi edinmek isteyen herkes için hazırlanmıştır.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Kategoriler</h4>
+        <ul class="footer-links">
+          <li><a href="memeliler.html">🦁 Memeliler</a></li>
+          <li><a href="kuslar.html">🦅 Kuşlar</a></li>
+          <li><a href="surungen.html">🐊 Sürüngen</a></li>
+          <li><a href="baliklar.html">🦈 Balıklar</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Diğer</h4>
+        <ul class="footer-links">
+          <li><a href="amfibiler.html">🐸 Amfibiler</a></li>
+          <li><a href="bocekler.html">🦋 Böcekler</a></li>
+          <li><a href="omurgasizlar.html">🐙 Omurgasızlar</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Hayvanlar Dünyası &copy; 2026 - Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
