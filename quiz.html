@@ -504,22 +504,36 @@
         quizProgress.style.display = 'none';
         quizProgressBar.style.width = '0%';
 
-        let html = '<div class="quiz-categories">';
-        categories.forEach(function(cat) {
-          html += '<div class="quiz-category-card" data-category="' + cat.key + '">';
+        var html = '<div class="quiz-select-panel">';
+        html += '<h3 class="quiz-select-title">🧠 Hangi kategori için quiz istiyorsunuz?</h3>';
+        html += '<div class="quiz-select-list">';
+        categories.forEach(function(cat, i) {
+          var checked = i === 0 ? ' checked' : '';
+          var selected = i === 0 ? ' selected' : '';
+          html += '<label class="quiz-select-item' + selected + '">';
+          html += '<input type="radio" name="quizCategory" value="' + cat.key + '"' + checked + '>';
           html += '<span class="cat-emoji">' + cat.emoji + '</span>';
           html += '<span class="cat-name">' + cat.name + '</span>';
           html += '<span class="cat-count">' + cat.count + ' Soru</span>';
-          html += '</div>';
+          html += '</label>';
         });
+        html += '</div>';
+        html += '<button class="quiz-start-btn" id="quizStartBtn">🚀 Quiz\'e Başla</button>';
         html += '</div>';
 
         quizContent.innerHTML = html;
 
-        quizContent.querySelectorAll('.quiz-category-card').forEach(function(card) {
-          card.addEventListener('click', function() {
-            startQuiz(this.getAttribute('data-category'));
+        var items = quizContent.querySelectorAll('.quiz-select-item');
+        items.forEach(function(item) {
+          item.addEventListener('click', function() {
+            items.forEach(function(el) { el.classList.remove('selected'); });
+            this.classList.add('selected');
           });
+        });
+
+        document.getElementById('quizStartBtn').addEventListener('click', function() {
+          var selected = quizContent.querySelector('input[name="quizCategory"]:checked');
+          if (selected) startQuiz(selected.value);
         });
       }
 
