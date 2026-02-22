@@ -46,7 +46,7 @@
   <section class="page-hero hero-quiz">
     <span class="hero-emoji">🧠</span>
     <h1>Bilgi Yarışması</h1>
-    <p>Hayvanlar dünyası hakkındaki bilginizi test edin! 10 soruluk bu eğlenceli quiz ile ne kadar bilgi sahibi olduğunuzu keşfedin. Her doğru cevap 10 puan değerindedir.</p>
+    <p>Hayvanlar dünyası hakkındaki bilginizi test edin! Kategori seçerek ilgi alanınıza göre soruları cevaplayın. Her doğru cevap 10 puan değerindedir.</p>
   </section>
 
   <main class="section">
@@ -120,87 +120,462 @@
   <script src="script.js"></script>
   <script>
     (function() {
-      const quizQuestions = [
-        {
-          question: "Dünyanın en hızlı hayvanı hangisidir?",
-          options: ["Çita", "Şahin", "Marlin Balığı", "Kanguru"],
-          correct: 1,
-          explanation: "Şahin (Peregrine Falcon) dalış sırasında saatte 389 km hıza ulaşarak dünyanın en hızlı hayvanıdır. Çita karada en hızlıdır ancak genel sıralamada şahin birinciliği alır."
-        },
-        {
-          question: "Hangi hayvanın kalbi bir araba büyüklüğündedir?",
-          options: ["Fil", "Mavi Balina", "Züafa", "Gergedan"],
-          correct: 1,
-          explanation: "Mavi balinanın kalbi yaklaşık bir Volkswagen Beetle araba büyüklüğündedir ve yaklaşık 180 kg ağırlığındadır."
-        },
-        {
-          question: "Bir ahtapotun kaç kalbi vardır?",
-          options: ["1", "2", "3", "4"],
-          correct: 2,
-          explanation: "Ahtapotların 3 kalbi vardır. Biri ana kalptir ve kanı vücuda pompalar; diğer ikisi solungaç kalbidir ve kanı solungaçlara pompalar."
-        },
-        {
-          question: "Kangal köpeğinin ısırma gücü kaç PSI'dır?",
-          options: ["523 PSI", "643 PSI", "743 PSI", "843 PSI"],
-          correct: 2,
-          explanation: "Kangal köpeği 743 PSI ısırma gücüyle dünyanın en güçlü ısırma kuvvetine sahip köpek ırklarından biridir."
-        },
-        {
-          question: "Hangi hayvan günde sadece 30 dakika uyur?",
-          options: ["At", "İnek", "Zürafa", "Tavşan"],
-          correct: 2,
-          explanation: "Zürafalar günde sadece yaklaşık 30 dakika uyurlar - genellikle ayakta ve kısa aralıklarla. Bu, memeliler arasındaki en kısa uyku süresidır."
-        },
-        {
-          question: "Dünyanın en büyük kertenkele türü hangisidir?",
-          options: ["İguana", "Nil Varanı", "Komodo Ejderi", "Bukalemun"],
-          correct: 2,
-          explanation: "Komodo ejderi 3 metreye kadar uzunluğa ve 70 kg ağırlığa ulaşabilen dünyanın en büyük kertenkele türüdür."
-        },
-        {
-          question: "Van kedisi hangi özelliğiyle dünyaca ünlüdür?",
-          options: ["Uzun kuyruğu", "Heterokromi (farklı renk gözler)", "Küçük boyutu", "Tüysüzlüğü"],
-          correct: 1,
-          explanation: "Van kedisi heterokromi (bir gözü mavi, diğeri kehribar) özelliğiyle dünyaca ünlüdür. Ayrıca suyu seven nadir kedi ırklarından biridir."
-        },
-        {
-          question: "Denizanasının vücudunun yüzde kaçı sudur?",
-          options: ["%80", "%85", "%90", "%95"],
-          correct: 3,
-          explanation: "Denizanalarının vücudunun %95'i sudan oluşur. Bu nedenle karaya çıktıklarında hızla kuruyup neredeyse görünmez hale gelirler."
-        },
-        {
-          question: "Hayvanlar aleminde en çok türe sahip grup hangisidir?",
-          options: ["Memeliler", "Kuşlar", "Balıklar", "Böcekler"],
-          correct: 3,
-          explanation: "Böcekler, bilinen yaklaşık 1 milyon türle hayvanlar aleminin en kalabalık grubudur. Tüm hayvan türlerinin yaklaşık %80'ini oluştururlar."
-        },
-        {
-          question: "Kelaynak kuşu Türkiye'de hangi ilçede koruma altındadır?",
-          options: ["Foça", "Birecik", "Kaş", "Dalyan"],
-          correct: 1,
-          explanation: "Kelaynak kuşu, Şanlıurfa'nın Birecik ilçesinde özel Kelaynak Üretme İstasyonu'nda koruma altındadır. Her yıl Kelaynak Festivali düzenlenir."
-        }
+      // ==========================================
+      // SORU HAVUZU - KATEGORİ BAZLI
+      // ==========================================
+      const allQuestions = {
+        memeliler: [
+          {
+            question: "Dünyanın en hızlı kara hayvanı hangisidir?",
+            options: ["Kurt", "Çita", "Antiloop", "At"],
+            correct: 1,
+            explanation: "Çita saatte 120 km hıza ulaşarak dünyanın en hızlı kara hayvanıdır. Ancak bu hızı sadece kısa mesafelerde sürdürebilir."
+          },
+          {
+            question: "Hangi hayvan günde sadece 30 dakika uyur?",
+            options: ["At", "İnek", "Zürafa", "Tavşan"],
+            correct: 2,
+            explanation: "Zürafalar günde sadece yaklaşık 30 dakika uyurlar - genellikle ayakta ve kısa aralıklarla. Bu, memeliler arasındaki en kısa uyku süresidir."
+          },
+          {
+            question: "Bir filin günlük su tüketimi yaklaşık ne kadardır?",
+            options: ["50 litre", "100 litre", "200 litre", "400 litre"],
+            correct: 2,
+            explanation: "Bir fil günde yaklaşık 200 litre su içebilir. Hortumlarıyla bir seferde 10 litreye kadar su çekebilirler."
+          },
+          {
+            question: "Kangal köpeğinin ısırma gücü kaç PSI'dır?",
+            options: ["523 PSI", "643 PSI", "743 PSI", "843 PSI"],
+            correct: 2,
+            explanation: "Kangal köpeği 743 PSI ısırma gücüyle dünyanın en güçlü ısırma kuvvetine sahip köpek ırklarından biridir."
+          },
+          {
+            question: "Mavi balinanın kalbi yaklaşık ne büyüklüğündedir?",
+            options: ["Futbol topu", "Küçük bir araba", "Masa tenisi masası", "Buzdolabı"],
+            correct: 1,
+            explanation: "Mavi balinanın kalbi yaklaşık bir Volkswagen Beetle araba büyüklüğündedir ve yaklaşık 180 kg ağırlığındadır."
+          },
+          {
+            question: "Yunuslar uyurken beyinlerinin ne kadarını kapatır?",
+            options: ["Tamamını", "Yarısını", "Dörtte birini", "Hiç kapatmaz"],
+            correct: 1,
+            explanation: "Yunuslar uyurken beyinlerinin sadece yarısını kapatır. Diğer yarısı nefes almak için uyanık kalır çünkü bilinçli solunum yaparlar."
+          },
+          {
+            question: "Hangi memeli havada en uzun süre kalabilir?",
+            options: ["Sincap", "Uçan tilki (yarasa)", "Şeker kayması", "Uçan sincap"],
+            correct: 1,
+            explanation: "Yarasalar (uçan tilki dahil) gerçek uçuş yeteneğine sahip tek memelilerdir. Saatlerce havada kalabilirler."
+          }
+        ],
+        kuslar: [
+          {
+            question: "Dünyanın en hızlı kuşu hangisidir?",
+            options: ["Kartal", "Şahin", "Kırlangıç", "Albatros"],
+            correct: 1,
+            explanation: "Şahin (Peregrine Falcon) dalış sırasında saatte 389 km hıza ulaşarak dünyanın en hızlı hayvanıdır."
+          },
+          {
+            question: "Hangi kuş geriye doğru uçabilir?",
+            options: ["Serçe", "Sinekkuşu", "Guguk kuşu", "Papağan"],
+            correct: 1,
+            explanation: "Sinekkuşu (kolibri) kanatlarını 8 şeklinde çırparak geriye, yana ve havada sabit durarak uçabilen tek kuş türüdür."
+          },
+          {
+            question: "Deve kuşu yumurtası yaklaşık kaç tavuk yumurtasına eşittir?",
+            options: ["10", "15", "24", "30"],
+            correct: 2,
+            explanation: "Bir deve kuşu yumurtası yaklaşık 24 tavuk yumurtasına eşittir ve yaklaşık 1.4 kg ağırlığındadır."
+          },
+          {
+            question: "Hangi kuş taklit yeteneğiyle en ünlüdür?",
+            options: ["Muhabbet kuşu", "Papağan", "Karga", "Saksağan"],
+            correct: 1,
+            explanation: "Papağanlar (özellikle Afrika gri papağanı) insan sesini ve çevre seslerini en iyi taklit eden kuşlardır. 800'den fazla kelime öğrenebilirler."
+          },
+          {
+            question: "Albatros kanat açıklığı ne kadardır?",
+            options: ["2 metre", "2.5 metre", "3 metre", "3.5 metre"],
+            correct: 3,
+            explanation: "Gezgin albatros 3.5 metreye kadar kanat açıklığıyla yaşayan kuşlar arasında en geniş kanat açıklığına sahiptir."
+          },
+          {
+            question: "Penguen hangi kıtada yaşamaz?",
+            options: ["Antarktika", "Güney Amerika", "Kuzey Kutbu", "Afrika"],
+            correct: 2,
+            explanation: "Penguenler sadece güney yarımkürede yaşar. Kuzey Kutbu'nda doğal olarak penguen bulunmaz."
+          },
+          {
+            question: "Baykuşlar başlarını kaç derece döndürebilir?",
+            options: ["180 derece", "220 derece", "270 derece", "360 derece"],
+            correct: 2,
+            explanation: "Baykuşlar başlarını 270 dereceye kadar döndürebilir. Bu, boyunlarındaki 14 omur sayesinde mümkündür (insanlarda 7 omur vardır)."
+          }
+        ],
+        surungen: [
+          {
+            question: "Dünyanın en büyük kertenkele türü hangisidir?",
+            options: ["İguana", "Nil Varanı", "Komodo Ejderi", "Bukalemun"],
+            correct: 2,
+            explanation: "Komodo ejderi 3 metreye kadar uzunluğa ve 70 kg ağırlığa ulaşabilen dünyanın en büyük kertenkele türüdür."
+          },
+          {
+            question: "Bukalemunlar renklerini neden değiştirir?",
+            options: ["Sadece kamuflaj için", "Sıcaklık ve iletişim için", "Sadece avlanmak için", "Sadece korktuğunda"],
+            correct: 1,
+            explanation: "Bukalemunlar renklerini ağırlıklı olarak sıcaklık düzenleme ve diğer bukalemunlarla iletişim için değiştirir. Kamuflaj ikincil bir işlevdir."
+          },
+          {
+            question: "Timsahlar ne kadar süredir Dünya'da yaşıyor?",
+            options: ["50 milyon yıl", "100 milyon yıl", "200 milyon yıl", "300 milyon yıl"],
+            correct: 2,
+            explanation: "Timsahlar yaklaşık 200 milyon yıldır Dünya'da yaşamaktadır. Dinozorlarla aynı dönemde var olmuş ve onlardan sonra da hayatta kalmışlardır."
+          },
+          {
+            question: "Hangi kaplumbağa türü en uzun yaşar?",
+            options: ["Deniz kaplumbağası", "Galápagos dev kaplumbağası", "Çöl kaplumbağası", "Nil kaplumbağası"],
+            correct: 1,
+            explanation: "Galápagos dev kaplumbağası 175 yıldan fazla yaşayabilen en uzun ömürlü kaplumbağa türüdür."
+          },
+          {
+            question: "Yılanlar dillerini neden sürekli çıkarıp çeker?",
+            options: ["Nefes almak için", "Koku almak için", "Tad almak için", "Gözdağı vermek için"],
+            correct: 1,
+            explanation: "Yılanlar çatal dilleriyle havadaki koku moleküllerini toplar ve ağız tavanındaki Jacobson organına taşır. Bu şekilde çevrelerini 'koklarlar'."
+          },
+          {
+            question: "Tuzlu su timsahının ısırma gücü kaç PSI'dır?",
+            options: ["1.500 PSI", "2.500 PSI", "3.700 PSI", "4.500 PSI"],
+            correct: 2,
+            explanation: "Tuzlu su timsahı 3.700 PSI ısırma gücüyle hayvanlar aleminin en güçlü ısırmasına sahiptir."
+          },
+          {
+            question: "Gecko'lar (geko kertenkeleler) duvarlara nasıl tırmanır?",
+            options: ["Vantuz ile", "Yapışkan salgı ile", "Van der Waals kuvveti ile", "Pençeleriyle"],
+            correct: 2,
+            explanation: "Gekoların ayak tabanlarındaki milyonlarca mikroskobik kılcık (setae) Van der Waals kuvveti oluşturarak düz yüzeylere yapışmalarını sağlar."
+          }
+        ],
+        baliklar: [
+          {
+            question: "Dünyanın en büyük balığı hangisidir?",
+            options: ["Mavi balina", "Balina köpekbalığı", "Beyaz köpekbalığı", "Dev manta"],
+            correct: 1,
+            explanation: "Balina köpekbalığı 12 metreye kadar uzayabilen dünyanın en büyük balığıdır. (Not: Mavi balina bir memeli olduğu için balık sayılmaz.)"
+          },
+          {
+            question: "Palyaço balığı hangi canlıyla ortak yaşar?",
+            options: ["Mercan", "Denizanası", "Deniz anemon", "Yengeç"],
+            correct: 2,
+            explanation: "Palyaço balığı (Nemo) deniz anemonlarıyla karşılıklı fayda sağlayan bir ilişki (mutualizm) içinde yaşar. Anemonun zehirli dokungaçları balığı korur."
+          },
+          {
+            question: "Hangi balık elektrik üretebilir?",
+            options: ["Kılıç balığı", "Elektrikli yılan balığı", "Ton balığı", "Hamsi"],
+            correct: 1,
+            explanation: "Elektrikli yılan balığı 860 volta kadar elektrik üretebilir. Bu güç avını bayıltmak ve kendini savunmak için kullanılır."
+          },
+          {
+            question: "Köpekbalıklarının iskeleti neden oluşur?",
+            options: ["Kemik", "Kıkırdak", "Kitin", "Keratin"],
+            correct: 1,
+            explanation: "Köpekbalıklarının iskeleti tamamen kıkırdaktan oluşur. Bu onları daha hafif ve esnek yapar, kemikli balıklara göre daha verimli yüzmelerini sağlar."
+          },
+          {
+            question: "Derin deniz balığı 'fener balığı' ışığını nasıl üretir?",
+            options: ["Elektrik ile", "Biyolüminesans bakteriler ile", "Fosfor biriktirerek", "Güneş enerjisi depolayarak"],
+            correct: 1,
+            explanation: "Fener balığı başındaki çubukta yaşayan biyolüminesans bakteriler sayesinde ışık üretir. Bu ışık karanlık derin denizde avları cezbetmek için kullanılır."
+          },
+          {
+            question: "Yüzme hızı en yüksek balık hangisidir?",
+            options: ["Ton balığı", "Kılıç balığı", "Yelken balığı", "Barrakuda"],
+            correct: 2,
+            explanation: "Yelken balığı (sailfish) saatte 110 km hıza ulaşabilen dünyanın en hızlı balığıdır."
+          },
+          {
+            question: "Denizatı hakkında hangisi doğrudur?",
+            options: ["Dişi hamile kalır", "Erkek hamile kalır", "Yumurtlama yapar", "Tomurcuklanma ile çoğalır"],
+            correct: 1,
+            explanation: "Denizatlarında erkek hamile kalır. Dişi yumurtalarını erkeğin karnındaki özel keseye bırakır ve erkek yavruları taşıyıp doğurur."
+          }
+        ],
+        amfibiler: [
+          {
+            question: "Amfibiler neden hem suda hem karada yaşar?",
+            options: ["Akciğerleri ve solungaçları var", "Derileri ile nefes alırlar", "İkisi de doğru", "Hiçbiri doğru değil"],
+            correct: 2,
+            explanation: "Amfibiler hem akciğerleri hem de (larva döneminde) solungaçları olabilir, ayrıca nemli derileri aracılığıyla da gaz alışverişi yapabilirler."
+          },
+          {
+            question: "Dünyanın en zehirli kurbağası hangisidir?",
+            options: ["Ağaç kurbağası", "Altın zehir dart kurbağası", "Kırmızı göz kurbağası", "Boğa kurbağası"],
+            correct: 1,
+            explanation: "Altın zehir dart kurbağası (Phyllobates terribilis) vücudundaki batrachotoxin ile 10 yetişkin insanı öldürecek kadar zehir taşır."
+          },
+          {
+            question: "Semenderler hangi özel yeteneğe sahiptir?",
+            options: ["Uçma", "Uzuv yenileme (rejenerasyon)", "Renk değiştirme", "Elektrik üretme"],
+            correct: 1,
+            explanation: "Semenderler (özellikle aksolotl) kopan bacak, kuyruk, hatta kalp ve beyin dokularını yeniden büyütebilir."
+          },
+          {
+            question: "Kurbağalar suyu nasıl içer?",
+            options: ["Ağızlarıyla", "Derileri aracılığıyla", "Burunlarıyla", "İçmezler"],
+            correct: 1,
+            explanation: "Kurbağalar ağızlarıyla su içmez. Suyu karın bölgelerindeki özel emici deri yaması aracılığıyla vücutlarına alırlar."
+          },
+          {
+            question: "Aksolotl hangi ülkenin endemik türüdür?",
+            options: ["Brezilya", "Meksika", "Kolombiya", "Peru"],
+            correct: 1,
+            explanation: "Aksolotl Meksika'nın Xochimilco gölüne endemiktir. Yetişkin olmasına rağmen larva özelliklerini koruyan (neoteni) nadir bir amfibidir."
+          }
+        ],
+        bocekler: [
+          {
+            question: "Bir karınca kendi ağırlığının kaç katını taşıyabilir?",
+            options: ["5 katı", "10 katı", "25 katı", "50 katı"],
+            correct: 3,
+            explanation: "Karıncalar kendi vücut ağırlıklarının 50 katına kadar yük taşıyabilir. Bu, küçük boyutlarına göre muazzam bir güçtür."
+          },
+          {
+            question: "Hayvanlar aleminde en çok türe sahip grup hangisidir?",
+            options: ["Memeliler", "Kuşlar", "Balıklar", "Böcekler"],
+            correct: 3,
+            explanation: "Böcekler, bilinen yaklaşık 1 milyon türle hayvanlar aleminin en kalabalık grubudur. Tüm hayvan türlerinin yaklaşık %80'ini oluştururlar."
+          },
+          {
+            question: "Monarh kelebeği göçte kaç km yol kat eder?",
+            options: ["500 km", "1.500 km", "3.000 km", "5.000 km"],
+            correct: 3,
+            explanation: "Monarh kelebekleri Kuzey Amerika'dan Meksika'ya yaklaşık 5.000 km göç eder. Bu, böcek dünyasının en uzun göçüdür."
+          },
+          {
+            question: "Ateş böceği ışığını nasıl üretir?",
+            options: ["Sürtünme ile", "Kimyasal reaksiyon (lusiferin) ile", "Elektrik ile", "Fosfor biriktirerek"],
+            correct: 1,
+            explanation: "Ateş böcekleri karınlarındaki lusiferin maddesinin lusiferaz enzimi ile oksidasyonu sonucu ışık üretir. Bu, neredeyse hiç ısı kaybı olmadan gerçekleşir."
+          },
+          {
+            question: "Arılar balı nasıl üretir?",
+            options: ["Çiçek tozundan", "Nektarı midelerde enzimlerle işleyerek", "Yaprak özünden", "Su ve polenle karıştırarak"],
+            correct: 1,
+            explanation: "Arılar çiçeklerden topladığı nektarı bal midelerinde enzimlerle parçalar, kovana taşır ve su oranını %20'nin altına düşürerek bala dönüştürür."
+          }
+        ],
+        omurgasizlar: [
+          {
+            question: "Bir ahtapotun kaç kalbi vardır?",
+            options: ["1", "2", "3", "4"],
+            correct: 2,
+            explanation: "Ahtapotların 3 kalbi vardır. Biri ana kalptir ve kanı vücuda pompalar; diğer ikisi solungaç kalbidir ve kanı solungaçlara pompalar."
+          },
+          {
+            question: "Denizanasının vücudunun yüzde kaçı sudur?",
+            options: ["%80", "%85", "%90", "%95"],
+            correct: 3,
+            explanation: "Denizanalarının vücudunun %95'i sudan oluşur. Bu nedenle karaya çıktıklarında hızla kuruyup neredeyse görünmez hale gelirler."
+          },
+          {
+            question: "Hangi omurgasız hayvan aletleri kullanabilir?",
+            options: ["Deniz yıldızı", "Ahtapot", "Istakoz", "Solucan"],
+            correct: 1,
+            explanation: "Ahtapotlar hindistan cevizi kabuklarını sığınak olarak taşır, kavanoz kapaklarını açar ve alet kullanımı gösteren en zeki omurgasızlardandır."
+          },
+          {
+            question: "Dev mürekkep balığının göz çapı ne kadardır?",
+            options: ["10 cm", "20 cm", "30 cm", "40 cm"],
+            correct: 2,
+            explanation: "Dev mürekkep balığının gözleri yaklaşık 30 cm çapında olup hayvanlar aleminin en büyük gözlerine sahiptir - bir yemek tabağı büyüklüğünde!"
+          },
+          {
+            question: "Mercanlar hayvan mıdır yoksa bitki mi?",
+            options: ["Bitki", "Hayvan", "Mantar", "Ne bitki ne hayvan"],
+            correct: 1,
+            explanation: "Mercanlar hayvandır! Knidliler (Cnidaria) şubesine ait omurgasız canlılardır. İçlerinde yaşayan algler sayesinde bitkiye benzerler."
+          }
+        ],
+        tehlike: [
+          {
+            question: "Dünyada en çok tehlike altındaki memeli grubu hangisidir?",
+            options: ["Büyük kediler", "Primatlar", "Deniz memelileri", "Yarasalar"],
+            correct: 1,
+            explanation: "Primatların yaklaşık %60'ı nesil tükenme tehlikesiyle karşı karşıyadır. Habitat kaybı ve yasadışı avlanma en büyük tehditlerdir."
+          },
+          {
+            question: "Hangi hayvan boynuzları için yasadışı olarak en çok avlanır?",
+            options: ["Fil", "Gergedan", "Geyik", "Antilop"],
+            correct: 1,
+            explanation: "Gergedanlar boynuzları için yoğun kaçak avcılığa maruz kalır. Gergedan boynuzu yasadışı piyasada altından daha değerli olabilir."
+          },
+          {
+            question: "Kelaynak kuşu Türkiye'de hangi ilçede koruma altındadır?",
+            options: ["Foça", "Birecik", "Kaş", "Dalyan"],
+            correct: 1,
+            explanation: "Kelaynak kuşu, Şanlıurfa'nın Birecik ilçesinde özel Kelaynak Üretme İstasyonu'nda koruma altındadır."
+          },
+          {
+            question: "Akdeniz foku (Monachus monachus) dünyada yaklaşık kaç birey kalmıştır?",
+            options: ["100-200", "300-500", "700-800", "1500-2000"],
+            correct: 2,
+            explanation: "Akdeniz foku dünyanın en tehlike altındaki fok türüdür. Dünyada yaklaşık 700-800 birey kaldığı tahmin edilmektedir."
+          },
+          {
+            question: "IUCN Kırmızı Liste'de 'Kritik Tehlike' ne anlama gelir?",
+            options: ["Tehlike yok", "Hassas durum", "Yüksek risk", "Nesli tükenme eşiğinde"],
+            correct: 3,
+            explanation: "'Kritik Tehlike (Critically Endangered)' IUCN'in en ciddi kategorisidir. Doğada nesli tükenme riski son derece yüksek olan türleri kapsar."
+          }
+        ],
+        turkiye: [
+          {
+            question: "Van kedisi hangi özelliğiyle dünyaca ünlüdür?",
+            options: ["Uzun kuyruğu", "Heterokromi (farklı renk gözler)", "Küçük boyutu", "Tüysüzlüğü"],
+            correct: 1,
+            explanation: "Van kedisi heterokromi (bir gözü mavi, diğeri kehribar) özelliğiyle dünyaca ünlüdür. Ayrıca suyu seven nadir kedi ırklarından biridir."
+          },
+          {
+            question: "Türkiye'de Caretta caretta deniz kaplumbağaları en çok nerede yumurtlar?",
+            options: ["Antalya", "İztuzu Plajı (Dalyan)", "Çeşme", "Bodrum"],
+            correct: 1,
+            explanation: "İztuzu Plajı (Dalyan), Türkiye'nin en önemli Caretta caretta üreme alanlarından biridir ve koruma altındadır."
+          },
+          {
+            question: "Anadolu parsı (leopar) Türkiye'de hangi bölgede görülmüştür?",
+            options: ["Karadeniz", "Ege", "Güneydoğu Anadolu", "Marmara"],
+            correct: 2,
+            explanation: "Anadolu parsı son olarak Güneydoğu Anadolu bölgesinde görülmüştür. Türkiye'de nesli tükenme tehlikesiyle karşı karşıyadır."
+          },
+          {
+            question: "Kangal köpeği hangi ilin simgesidir?",
+            options: ["Kayseri", "Erzurum", "Sivas", "Konya"],
+            correct: 2,
+            explanation: "Kangal köpeği Sivas'ın Kangal ilçesinden adını alır ve Sivas ilinin simgesidir. 2024 yılında Türkiye'nin milli hayvanı ilan edilmiştir."
+          },
+          {
+            question: "Türkiye'nin milli kuşu hangisidir?",
+            options: ["Kartal", "Saka kuşu", "Kelaynak", "Turna"],
+            correct: 0,
+            explanation: "Türkiye resmi olarak belirlenmiş bir milli kuşa sahip olmasa da kartal, Türk kültüründe en önemli simgesel kuştur ve bayraklarda, armalarda kullanılır."
+          },
+          {
+            question: "Tuz Gölü hangi canlı popülasyonuyla ünlüdür?",
+            options: ["Pelikan", "Flamingo", "Turna", "Leylek"],
+            correct: 1,
+            explanation: "Tuz Gölü, Türkiye'deki en büyük flamingo üreme kolonisine ev sahipliği yapar. Her yıl binlerce flamingo burada ürer."
+          },
+          {
+            question: "Kaçkar Dağları'nda hangi yaban hayvanı yaşar?",
+            options: ["Vaşak", "Kurt", "Boz ayı", "Hepsi"],
+            correct: 3,
+            explanation: "Kaçkar Dağları zengin biyoçeşitliliğiyle vaşak, kurt, boz ayı ve daha birçok yaban hayvanına ev sahipliği yapar."
+          }
+        ]
+      };
+
+      const categories = [
+        { key: 'karisik', name: 'Karışık (Tümü)', emoji: '🎲', count: 10 },
+        { key: 'memeliler', name: 'Memeliler', emoji: '🦁', count: 7 },
+        { key: 'kuslar', name: 'Kuşlar', emoji: '🦅', count: 7 },
+        { key: 'surungen', name: 'Sürüngenler', emoji: '🐊', count: 7 },
+        { key: 'baliklar', name: 'Balıklar', emoji: '🦈', count: 7 },
+        { key: 'amfibiler', name: 'Amfibiler', emoji: '🐸', count: 5 },
+        { key: 'bocekler', name: 'Böcekler', emoji: '🦋', count: 5 },
+        { key: 'omurgasizlar', name: 'Omurgasızlar', emoji: '🐙', count: 5 },
+        { key: 'tehlike', name: 'Tehlike Altında', emoji: '⚠️', count: 5 },
+        { key: 'turkiye', name: 'Türkiye Hayvanları', emoji: '🇹🇷', count: 7 }
       ];
 
+      let quizQuestions = [];
       let currentQuestion = 0;
       let score = 0;
       let answered = false;
+      let currentCategoryName = '';
 
       const quizContent = document.getElementById('quizContent');
       const quizProgressBar = document.getElementById('quizProgressBar');
+      const quizProgress = document.querySelector('.quiz-progress');
 
+      // ==========================================
+      // KATEGORİ SEÇİM EKRANI
+      // ==========================================
+      function showCategorySelect() {
+        quizProgress.style.display = 'none';
+        quizProgressBar.style.width = '0%';
+
+        let html = '<div class="quiz-categories">';
+        categories.forEach(function(cat) {
+          html += '<div class="quiz-category-card" data-category="' + cat.key + '">';
+          html += '<span class="cat-emoji">' + cat.emoji + '</span>';
+          html += '<span class="cat-name">' + cat.name + '</span>';
+          html += '<span class="cat-count">' + cat.count + ' Soru</span>';
+          html += '</div>';
+        });
+        html += '</div>';
+
+        quizContent.innerHTML = html;
+
+        quizContent.querySelectorAll('.quiz-category-card').forEach(function(card) {
+          card.addEventListener('click', function() {
+            startQuiz(this.getAttribute('data-category'));
+          });
+        });
+      }
+
+      // ==========================================
+      // QUİZ BAŞLATMA
+      // ==========================================
+      function startQuiz(categoryKey) {
+        currentQuestion = 0;
+        score = 0;
+        answered = false;
+
+        if (categoryKey === 'karisik') {
+          currentCategoryName = 'Karışık';
+          var allPool = [];
+          Object.keys(allQuestions).forEach(function(key) {
+            allPool = allPool.concat(allQuestions[key]);
+          });
+          // Fisher-Yates shuffle
+          for (var i = allPool.length - 1; i > 0; i--) {
+            var j = Math.floor(Math.random() * (i + 1));
+            var temp = allPool[i];
+            allPool[i] = allPool[j];
+            allPool[j] = temp;
+          }
+          quizQuestions = allPool.slice(0, 10);
+        } else {
+          var cat = categories.find(function(c) { return c.key === categoryKey; });
+          currentCategoryName = cat ? cat.name : categoryKey;
+          quizQuestions = allQuestions[categoryKey].slice();
+          // Shuffle within category
+          for (var i = quizQuestions.length - 1; i > 0; i--) {
+            var j = Math.floor(Math.random() * (i + 1));
+            var temp = quizQuestions[i];
+            quizQuestions[i] = quizQuestions[j];
+            quizQuestions[j] = temp;
+          }
+        }
+
+        quizProgress.style.display = 'block';
+        showQuestion();
+      }
+
+      // ==========================================
+      // SORU GÖSTERME
+      // ==========================================
       function updateProgress() {
-        const progress = ((currentQuestion) / quizQuestions.length) * 100;
+        var progress = ((currentQuestion) / quizQuestions.length) * 100;
         quizProgressBar.style.width = progress + '%';
       }
 
       function showQuestion() {
         answered = false;
         updateProgress();
-        const q = quizQuestions[currentQuestion];
-        let html = '<div class="quiz-question">';
-        html += '<div class="quiz-question-number">Soru ' + (currentQuestion + 1) + ' / ' + quizQuestions.length + '</div>';
+        var q = quizQuestions[currentQuestion];
+        var html = '<div class="quiz-question">';
+        html += '<div class="quiz-question-number">' + currentCategoryName + ' — Soru ' + (currentQuestion + 1) + ' / ' + quizQuestions.length + '</div>';
         html += '<h3 class="quiz-question-text">' + q.question + '</h3>';
         html += '<div class="quiz-options">';
         q.options.forEach(function(option, index) {
@@ -212,14 +587,14 @@
         html += '</div>';
         quizContent.innerHTML = html;
 
-        const optionButtons = quizContent.querySelectorAll('.quiz-option');
+        var optionButtons = quizContent.querySelectorAll('.quiz-option');
         optionButtons.forEach(function(btn) {
           btn.addEventListener('click', function() {
             if (answered) return;
             answered = true;
-            const selectedIndex = parseInt(this.getAttribute('data-index'));
-            const correct = q.correct;
-            const feedbackEl = document.getElementById('quizFeedback');
+            var selectedIndex = parseInt(this.getAttribute('data-index'));
+            var correct = q.correct;
+            var feedbackEl = document.getElementById('quizFeedback');
 
             optionButtons.forEach(function(b, i) {
               if (i === correct) {
@@ -239,13 +614,13 @@
             }
             feedbackEl.style.display = 'block';
 
-            const scoreEl = quizContent.querySelector('.quiz-score');
+            var scoreEl = quizContent.querySelector('.quiz-score');
             if (scoreEl) {
               scoreEl.textContent = 'Puan: ' + score + ' / ' + (quizQuestions.length * 10);
             }
 
             setTimeout(function() {
-              let nextHtml = '';
+              var nextHtml = '';
               if (currentQuestion < quizQuestions.length - 1) {
                 nextHtml = '<button class="quiz-next-btn" id="nextBtn">Sonraki Soru ➡️</button>';
               } else {
@@ -265,10 +640,13 @@
         });
       }
 
+      // ==========================================
+      // SONUÇ EKRANI
+      // ==========================================
       function showResults() {
         quizProgressBar.style.width = '100%';
-        const percentage = (score / (quizQuestions.length * 10)) * 100;
-        let emoji, message;
+        var percentage = (score / (quizQuestions.length * 10)) * 100;
+        var emoji, message;
 
         if (percentage === 100) {
           emoji = '🏆';
@@ -287,17 +665,19 @@
           message = 'Hayvanlar dünyasında öğrenecek çok şey var! Tekrar deneyin!';
         }
 
-        let html = '<div class="quiz-results">';
+        var html = '<div class="quiz-results">';
         html += '<span class="results-emoji">' + emoji + '</span>';
         html += '<h2>Yarışma Tamamlandı!</h2>';
         html += '<div class="results-score">' + score + ' / ' + (quizQuestions.length * 10) + '</div>';
-        html += '<div class="results-percentage">%' + percentage + ' Başarı</div>';
+        html += '<div class="results-percentage">%' + Math.round(percentage) + ' Başarı</div>';
         html += '<p class="results-message">' + message + '</p>';
         html += '<div class="results-summary">';
         html += '<p>✅ Doğru: ' + (score / 10) + ' soru</p>';
         html += '<p>❌ Yanlış: ' + (quizQuestions.length - (score / 10)) + ' soru</p>';
         html += '</div>';
         html += '<button class="quiz-restart-btn" id="restartBtn">Tekrar Dene 🔄</button>';
+        html += ' ';
+        html += '<button class="quiz-back-btn" id="backBtn">Başka Kategori Seç 📂</button>';
         html += '</div>';
 
         quizContent.innerHTML = html;
@@ -307,10 +687,14 @@
           score = 0;
           showQuestion();
         });
+
+        document.getElementById('backBtn').addEventListener('click', function() {
+          showCategorySelect();
+        });
       }
 
-      // Quiz'i başlat
-      showQuestion();
+      // Kategori seçim ekranıyla başla
+      showCategorySelect();
     })();
   </script>
 </body>
