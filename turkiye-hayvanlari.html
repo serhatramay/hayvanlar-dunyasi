@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Türkiye Hayvanları - Hayvanlar Dünyası</title>
+  <meta name="description" content="Türkiye'nin zengin biyoçeşitliliği - Anadolu parsından Van kedisine, kelaynaktan Akdeniz fokuna. Türkiye'ye özgü ve Türkiye'de yaşayan hayvanları keşfedin.">
+  <meta property="og:title" content="Türkiye Hayvanları - Hayvanlar Dünyası">
+  <meta property="og:description" content="Anadolu'nun eşsiz faunasını keşfedin. Türkiye'ye özgü türler ve koruma altındaki hayvanlar hakkında detaylı bilgi.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGASYON -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">🌍 Hayvanlar <span>Dünyası</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="memeliler.html">Memeliler</a></li>
+        <li><a href="kuslar.html">Kuşlar</a></li>
+        <li><a href="surungen.html">Sürüngen</a></li>
+        <li><a href="baliklar.html">Balıklar</a></li>
+        <li><a href="amfibiler.html">Amfibiler</a></li>
+        <li><a href="bocekler.html">Böcekler</a></li>
+        <li><a href="omurgasizlar.html">Omurgasızlar</a></li>
+        <li><a href="tehlike-altinda.html">Tehlike Altında</a></li>
+        <li><a href="turkiye-hayvanlari.html" class="active">Türkiye</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="hakkinda.html">Hakkında</a></li>
+      </ul>
+      <div class="nav-search">
+        <span class="nav-search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Hayvan ara..." autocomplete="off">
+      </div>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="search-results" id="searchResults"></div>
+
+  <!-- SAYFA HERO -->
+  <section class="page-hero hero-turkiye">
+    <span class="hero-emoji">🇹🇷</span>
+    <h1>Türkiye Hayvanları</h1>
+    <p>Türkiye, Avrupa ve Asya'nın kesişim noktasında yer alan eşsiz coğrafyasıyla zengin bir biyoçeşitliliğe sahiptir. Anadolu'nun dağlarından Ege kıyılarına, Karadeniz ormanlarından Güneydoğu ovalarına kadar binlerce türe ev sahipliği yapmaktadır.</p>
+  </section>
+
+  <main class="section">
+
+    <!-- ==========================================
+         MEMELİLER
+         ========================================== -->
+    <div class="subcategory" id="turkiye-memeliler">
+      <div class="subcategory-header">
+        <span class="sub-emoji">🐾</span>
+        <h2>Memeliler</h2>
+      </div>
+
+      <div class="animal-grid">
+
+        <!-- ANADOLU PARSI -->
+        <div class="animal-card" data-animal='{"isim":"Anadolu Parsı","emoji":"🐆","latin":"Panthera pardus tulliana","habitat":"Güneydoğu Anadolu, Ege ve Akdeniz bölgeleri","beslenme":"Etçil","boyut":"1.0 - 1.5 metre","agirlik":"40 - 70 kg","yasam":"12 - 17 yıl","aciklama":"Anadolu parsı, Anadolu ya özgü leopar alt türüdür. Bir zamanlar Türkiye nin geniş alanlarında yaşayan bu muhteşem yırtıcı, habitat kaybı ve avlanma nedeniyle neredeyse tamamen yok olmuştur. Son yıllarda güneydoğu Türkiye de foto kapanlarla varlığı tespit edilmiştir.","ilgincBilgiler":["Türkiye ye özgü leopar alt türüdür ve nesli kritik tehlike altındadır.","Son yıllarda Güneydoğu Anadolu da foto kapanlarla varlığı yeniden tespit edilmiştir.","Bir zamanlar Ege ve Akdeniz bölgelerinde de yaygındı.","Gececi bir avcıdır ve avlarını ağaçlara taşır."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐆</span>
+            <div>
+              <h3>Anadolu Parsı</h3>
+              <span class="latin-name">Panthera pardus tulliana</span>
+            </div>
+          </div>
+          <p>Anadolu'ya özgü leopar alt türü. Nesli kritik tehlike altında olan Türkiye'nin en nadir büyük yırtıcısı.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Güneydoğu Anadolu</span>
+            <span class="tag diet">Etçil</span>
+            <span class="tag">Endemik Alt Tür</span>
+          </div>
+        </div>
+
+        <!-- VAN KEDİSİ -->
+        <div class="animal-card" data-animal='{"isim":"Van Kedisi","emoji":"🐱","latin":"Felis catus","habitat":"Van Gölü çevresi, Doğu Anadolu","beslenme":"Etçil","boyut":"35 - 40 cm (omuz)","agirlik":"3 - 8.5 kg","yasam":"12 - 17 yıl","aciklama":"Van kedisi, Türkiye nin Van ili çevresine özgü, dünyaca ünlü bir kedi ırkıdır. Bembeyaz ipeksi kürkü ve çoğunlukla bir gözü mavi, diğeri kehribar olan heterokromik gözleriyle bilinir. Kediler arasında nadir görülen suya olan sevgisiyle ünlüdür ve Van Gölü nde yüzdüğü bilinmektedir.","ilgincBilgiler":["Heterokromi (farklı renk gözler) en bilinen özelliğidir - bir gözü mavi, diğeri kehribar.","Suyu seven nadir kedi ırklarından biridir ve yüzme konusunda yeteneklidir.","Van Gölü çevresine özgüdür ve Türkiye nin milli hazinesi kabul edilir.","Van Kedisi Araştırma Merkezi nde koruma ve üretme çalışmaları yürütülmektedir."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐱</span>
+            <div>
+              <h3>Van Kedisi</h3>
+              <span class="latin-name">Felis catus</span>
+            </div>
+          </div>
+          <p>Türkiye'nin milli hazinesi. Heterokromik gözleri ve suya olan sevgisiyle dünyaca ünlü kedi ırkı.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Van</span>
+            <span class="tag diet">Etçil</span>
+            <span class="tag">Heterokromi</span>
+          </div>
+        </div>
+
+        <!-- KANGAL KÖPEĞİ -->
+        <div class="animal-card" data-animal='{"isim":"Kangal Köpeği","emoji":"🐕","latin":"Canis lupus familiaris","habitat":"Sivas ili, İç Anadolu","beslenme":"Hepçil","boyut":"70 - 85 cm (omuz)","agirlik":"40 - 65 kg","yasam":"12 - 15 yıl","aciklama":"Kangal köpeği, Sivas ın Kangal ilçesine adını veren, Türkiye nin en ünlü köpek ırkıdır. Dünyanın en güçlü ısırma kuvvetine sahip köpek ırklarından biri olan Kangal, 743 PSI ısırma gücüyle bilinir. Sürü koruma köpeği olarak yüzyıllardır çobanların en güvenilir yardımcısıdır.","ilgincBilgiler":["743 PSI ısırma gücüyle dünyanın en güçlü ısırma kuvvetine sahip köpek ırklarından biridir.","Sivas ın Kangal ilçesine özgüdür ve Türkiye nin milli köpek ırkı kabul edilir.","Kurt ve ayı gibi büyük yırtıcılara karşı sürüleri tek başına koruyabilir.","Çelik gri kürkü ve siyah maskesi ile tanınır."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐕</span>
+            <div>
+              <h3>Kangal Köpeği</h3>
+              <span class="latin-name">Canis lupus familiaris</span>
+            </div>
+          </div>
+          <p>Sivas'ın gururu, Türkiye'nin milli köpek ırkı. 743 PSI ısırma gücüyle dünyanın en güçlü koruma köpeği.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Sivas</span>
+            <span class="tag diet">Hepçil</span>
+            <span class="tag">743 PSI</span>
+          </div>
+        </div>
+
+        <!-- KARAKULAK -->
+        <div class="animal-card" data-animal='{"isim":"Karakulak","emoji":"🐱","latin":"Caracal caracal","habitat":"İç Anadolu, Güneydoğu Anadolu, Ege","beslenme":"Etçil","boyut":"60 - 92 cm","agirlik":"8 - 19 kg","yasam":"12 - 16 yıl","aciklama":"Karakulak, adını siyah kulaklarından alan orta boyutlu bir yabani kedi türüdür. Türkiye de İç Anadolu, Ege ve Güneydoğu Anadolu bölgelerinde yaşamaktadır. İnanılmaz sıçrama yeteneğiyle havadaki kuşları bile yakalayabilen karakulak, gizli yaşam tarzıyla ünlüdür.","ilgincBilgiler":["Adı Türkçe kara kulak tan gelir ve tüm dünyada bu isimle bilinir.","3 metreden fazla yüksekliğe sıçrayarak uçan kuşları havada yakalayabilir.","Türkiye nin en gizemli yaban kedilerinden biridir.","Kulak uçlarındaki siyah püsküller duyma yeteneğini artırmaya yarar."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐱</span>
+            <div>
+              <h3>Karakulak</h3>
+              <span class="latin-name">Caracal caracal</span>
+            </div>
+          </div>
+          <p>Adını Türkçe'den alan yaban kedisi. 3 metreden fazla sıçrayarak kuşları havada yakalayan çevik avcı.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Anadolu</span>
+            <span class="tag diet">Etçil</span>
+            <span class="tag">3m Sıçrama</span>
+          </div>
+        </div>
+
+        <!-- TOROS ÇAKALI -->
+        <div class="animal-card" data-animal='{"isim":"Toros Çakalı","emoji":"🐺","latin":"Canis aureus","habitat":"Akdeniz ve Ege bölgeleri, Toros Dağları","beslenme":"Hepçil","boyut":"60 - 75 cm","agirlik":"7 - 15 kg","yasam":"8 - 12 yıl","aciklama":"Toros çakalı, Türkiye nin Akdeniz ve Ege bölgelerinde yaygın olarak bulunan bir çakal alt popülasyonudur. Gece aktif olan bu hayvanlar, hem etçil hem otçul beslenme alışkanlıklarıyla uyum sağlama ustasıdır. Toros Dağları nın makilik alanlarında ve orman kenarlarında yaşarlar.","ilgincBilgiler":["Türkiye de en yaygın yırtıcı memelilerden biridir.","Hem et hem bitki yiyerek çok çeşitli ortamlara uyum sağlayabilir.","Gece uluma sesleri kırsal bölgelerde sıkça duyulur.","Çiftler genellikle ömür boyu birlikte kalır."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐺</span>
+            <div>
+              <h3>Toros Çakalı</h3>
+              <span class="latin-name">Canis aureus</span>
+            </div>
+          </div>
+          <p>Toros Dağları'nın uyum ustası. Gece aktif, hem et hem bitki tüketen esnek avcı.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Toros Dağları</span>
+            <span class="tag diet">Hepçil</span>
+            <span class="tag">Gece Aktif</span>
+          </div>
+        </div>
+
+        <!-- ANADOLU YABAN KOYUNU -->
+        <div class="animal-card" data-animal='{"isim":"Anadolu Yaban Koyunu","emoji":"🐑","latin":"Ovis gmelinii anatolica","habitat":"İç Anadolu step bölgeleri, Konya, Ankara","beslenme":"Otçul","boyut":"110 - 135 cm","agirlik":"40 - 75 kg","yasam":"10 - 13 yıl","aciklama":"Anadolu yaban koyunu, Türkiye ye özgü bir yaban koyunu alt türüdür. İç Anadolu nun step ve dağlık bölgelerinde yaşayan bu tür, özellikle Konya Bozdağ bölgesinde koruma altındadır. Erkeklerin görkemli kıvrık boynuzları en belirgin özelliklerdir.","ilgincBilgiler":["Türkiye ye özgü (endemik) bir yaban koyunu alt türüdür.","Erkeklerin boynuzları 80 cm ye kadar uzayabilir.","Konya Bozdağ Yaban Hayatı Geliştirme Sahası nda koruma altındadır.","Evcil koyunun atalarından biri olduğu düşünülmektedir."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐑</span>
+            <div>
+              <h3>Anadolu Yaban Koyunu</h3>
+              <span class="latin-name">Ovis gmelinii anatolica</span>
+            </div>
+          </div>
+          <p>Anadolu'ya özgü endemik yaban koyunu. İç Anadolu steplerinde yaşayan, görkemli boynuzlu tür.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">İç Anadolu</span>
+            <span class="tag diet">Otçul</span>
+            <span class="tag">Endemik</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ==========================================
+         KUŞLAR
+         ========================================== -->
+    <div class="subcategory" id="turkiye-kuslar">
+      <div class="subcategory-header">
+        <span class="sub-emoji">🐦</span>
+        <h2>Kuşlar</h2>
+      </div>
+
+      <div class="animal-grid">
+
+        <!-- KELAYNAK -->
+        <div class="animal-card" data-animal='{"isim":"Kelaynak","emoji":"🐦","latin":"Geronticus eremita","habitat":"Birecik (Şanlıurfa), Türkiye","beslenme":"Hepçil (böcek, kertenkele, bitki)","boyut":"70 - 80 cm","agirlik":"1.0 - 1.3 kg","yasam":"20 - 25 yıl","aciklama":"Kelaynak, Türkiye nin Birecik ilçesinde özel koruma programıyla korunan, dünyada nesli tehlike altındaki nadir bir kuş türüdür. Tüysüz kırmızı başı ve uzun kıvrık gagasıyla tanınan kelaynak, Birecik halkı tarafından yüzyıllardır kutsal sayılmaktadır. Her yıl Birecik e göç eden kelaynaklar için festival düzenlenir.","ilgincBilgiler":["Birecik te Kelaynak Üretme İstasyonu nda koruma altında üretilmektedir.","Her yıl Şubat ayında Birecik e göçleriyle birlikte Kelaynak Festivali düzenlenir.","Birecik halkı tarafından yüzyıllardır kutsal ve uğurlu bir kuş olarak kabul edilir.","Tüysüz kırmızı başı ve metalik parıltılı siyah tüyleriyle kolayca tanınır."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐦</span>
+            <div>
+              <h3>Kelaynak</h3>
+              <span class="latin-name">Geronticus eremita</span>
+            </div>
+          </div>
+          <p>Birecik'in kutsal kuşu. Özel koruma programıyla korunan, her yıl festival düzenlenen nadir tür.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Birecik</span>
+            <span class="tag diet">Hepçil</span>
+            <span class="tag">Koruma Altında</span>
+          </div>
+        </div>
+
+        <!-- AKDENİZ FOKU -->
+        <div class="animal-card" data-animal='{"isim":"Akdeniz Foku","emoji":"🦭","latin":"Monachus monachus","habitat":"Foça, Kaş, Bodrum kıyıları","beslenme":"Etçil (balık, ahtapot, kabuklu)","boyut":"2.3 - 2.8 metre","agirlik":"250 - 400 kg","yasam":"20 - 30 yıl","aciklama":"Akdeniz foku, Türkiye kıyılarının en değerli deniz memelisidir. Özellikle İzmir Foça ve Antalya Kaş bölgelerinde yaşayan bu nadir tür, Türkiye nin koruma çalışmalarının simgesi haline gelmiştir. Foça nın simgesi olan Akdeniz foku, ilçeye adını da vermiştir.","ilgincBilgiler":["Foça nın simgesidir ve ilçe, fokların yaşam alanı olarak özel çevre koruma bölgesi ilan edilmiştir.","Türkiye kıyılarında yaklaşık 100 bireyin yaşadığı tahmin edilmektedir.","Deniz mağaralarında yavrular ve dinlenir.","SAD-AFAG gibi sivil toplum kuruluşları koruma çalışmaları yürütmektedir."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦭</span>
+            <div>
+              <h3>Akdeniz Foku</h3>
+              <span class="latin-name">Monachus monachus</span>
+            </div>
+          </div>
+          <p>Foça'nın simgesi, Türkiye kıyılarının en değerli deniz memelisi. Özel koruma bölgelerinde yaşar.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Foça/Kaş</span>
+            <span class="tag diet">Etçil</span>
+            <span class="tag">Koruma Altında</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ==========================================
+         AMFİBİ VE SÜRÜNGENLER
+         ========================================== -->
+    <div class="subcategory" id="turkiye-amfibi-surungen">
+      <div class="subcategory-header">
+        <span class="sub-emoji">🐸</span>
+        <h2>Amfibi ve Sürüngenler</h2>
+      </div>
+
+      <div class="animal-grid">
+
+        <!-- SIĞLA AĞAÇ KURBAĞASI -->
+        <div class="animal-card" data-animal='{"isim":"Sığla Ağaç Kurbağası","emoji":"🐸","latin":"Hyla heinzsteinitzi","habitat":"Güneybatı Türkiye, Muğla (Sığla ormanları)","beslenme":"Etçil (böcek, örümcek)","boyut":"3 - 5 cm","agirlik":"3 - 8 gram","yasam":"5 - 8 yıl","aciklama":"Sığla ağaç kurbağası, Türkiye ye özgü (endemik) nadir bir amfibi türüdür. Yalnızca Güneybatı Türkiye nin sığla (günlük) ormanlarında yaşayan bu küçük kurbağa, son derece sınırlı bir yaşam alanına sahiptir. Yeşil rengi ve yapışkan parmak uçlarıyla ağaçlarda yaşamaya uyum sağlamıştır.","ilgincBilgiler":["Türkiye ye özgü (endemik) bir türdür - başka hiçbir yerde bulunmaz.","Yalnızca Muğla çevresindeki sığla ormanlarında yaşar.","3-5 cm boyuyla Türkiye nin en küçük kurbağa türlerinden biridir.","Yapışkan parmak uçları sayesinde ağaç gövdelerinde ve yapraklarda kolayca tırmanır."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐸</span>
+            <div>
+              <h3>Sığla Ağaç Kurbağası</h3>
+              <span class="latin-name">Hyla heinzsteinitzi</span>
+            </div>
+          </div>
+          <p>Türkiye'ye özgü endemik amfibi. Yalnızca Muğla'nın sığla ormanlarında yaşayan nadir tür.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Muğla</span>
+            <span class="tag diet">Etçil</span>
+            <span class="tag">Endemik</span>
+          </div>
+        </div>
+
+        <!-- TOROS KERTENKELESİ -->
+        <div class="animal-card" data-animal='{"isim":"Toros Kertenkelesi","emoji":"🦎","latin":"Darevskia rudis","habitat":"Toros Dağları, Kuzeydoğu Anadolu","beslenme":"Etçil (böcek, örümcek, küçük omurgasızlar)","boyut":"15 - 22 cm","agirlik":"5 - 15 gram","yasam":"5 - 8 yıl","aciklama":"Toros kertenkelesi, Türkiye nin dağlık bölgelerinde yaşayan bir kertenkele türüdür. Toros Dağları ve Kuzeydoğu Anadolu nun kayalık yamaçlarında yaşayan bu tür, yüksek rakımlı soğuk ortamlara uyum sağlamıştır. Kahverengi-gri renkleriyle kayalara mükemmel kamuflaj yapar.","ilgincBilgiler":["3.000 metreye kadar yüksekliklerde yaşayabilen dayanıklı bir türdür.","Kayalık yamaçlarda yaşar ve kayalara mükemmel kamuflaj yapar.","Soğukkanlı olmasına rağmen yüksek rakımlı soğuk ortamlara uyum sağlamıştır.","Tehlike anında kuyruğunu bırakarak kaçabilir ve kuyruk zamanla yeniden uzar."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦎</span>
+            <div>
+              <h3>Toros Kertenkelesi</h3>
+              <span class="latin-name">Darevskia rudis</span>
+            </div>
+          </div>
+          <p>Toros Dağları'nın dayanıklı sürüngeni. 3.000 metreye kadar yüksekliklerde yaşayabilen kayalık türü.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Toros Dağları</span>
+            <span class="tag diet">Etçil</span>
+            <span class="tag">Yüksek Rakım</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <button class="modal-close">&times;</button>
+      <span class="modal-emoji"></span>
+      <h2></h2>
+      <span class="modal-latin"></span>
+      <div class="modal-info-grid"></div>
+      <p class="modal-description"></p>
+      <div class="modal-fun-facts">
+        <h4>İlginç Bilgiler</h4>
+        <ul></ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>🌍 Hayvanlar Dünyası</h4>
+        <p>Gezegenimizin muhteşem canlılarını tanıyın. Bu site, hayvanlar alemi hakkında bilgi edinmek isteyen herkes için hazırlanmıştır.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Kategoriler</h4>
+        <ul class="footer-links">
+          <li><a href="memeliler.html">🦁 Memeliler</a></li>
+          <li><a href="kuslar.html">🦅 Kuşlar</a></li>
+          <li><a href="surungen.html">🐊 Sürüngen</a></li>
+          <li><a href="baliklar.html">🦈 Balıklar</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Diğer</h4>
+        <ul class="footer-links">
+          <li><a href="amfibiler.html">🐸 Amfibiler</a></li>
+          <li><a href="bocekler.html">🦋 Böcekler</a></li>
+          <li><a href="omurgasizlar.html">🐙 Omurgasızlar</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Keşfet</h4>
+        <ul class="footer-links">
+          <li><a href="tehlike-altinda.html">Tehlike Altındaki Türler</a></li>
+          <li><a href="turkiye-hayvanlari.html">Türkiye Hayvanları</a></li>
+          <li><a href="quiz.html">Bilgi Yarışması</a></li>
+          <li><a href="hakkinda.html">Hakkında</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Hayvanlar Dünyası &copy; 2026 - Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

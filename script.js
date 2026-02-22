@@ -76,6 +76,35 @@ const hayvanlar = [
   { isim: 'Mercan', emoji: '🪸', kategori: 'Omurgasızlar', sayfa: 'omurgasizlar.html', latin: 'Corallium rubrum' },
   { isim: 'Denizyıldızı', emoji: '⭐', kategori: 'Omurgasızlar', sayfa: 'omurgasizlar.html', latin: 'Asterias rubens' },
   { isim: 'Deniz Kestanesi', emoji: '🟤', kategori: 'Omurgasızlar', sayfa: 'omurgasizlar.html', latin: 'Paracentrotus lividus' },
+
+  // Amfibiler (yeni)
+  { isim: 'Kara Kurbağası', emoji: '🐸', kategori: 'Amfibiler', sayfa: 'amfibiler.html', latin: 'Bufo bufo' },
+  { isim: 'Aksolotl', emoji: '🦎', kategori: 'Amfibiler', sayfa: 'amfibiler.html', latin: 'Ambystoma mexicanum' },
+  { isim: 'Körkurbağa', emoji: '🐍', kategori: 'Amfibiler', sayfa: 'amfibiler.html', latin: 'Caecilia' },
+  { isim: 'Olm', emoji: '🦎', kategori: 'Amfibiler', sayfa: 'amfibiler.html', latin: 'Proteus anguinus' },
+  { isim: 'Kaburga Semenderi', emoji: '🦎', kategori: 'Amfibiler', sayfa: 'amfibiler.html', latin: 'Pleurodeles waltl' },
+
+  // Tehlike Altında
+  { isim: 'Amur Leoparı', emoji: '🐆', kategori: 'Tehlike Altında', sayfa: 'tehlike-altinda.html', latin: 'Panthera pardus orientalis' },
+  { isim: 'Vaquita', emoji: '🐬', kategori: 'Tehlike Altında', sayfa: 'tehlike-altinda.html', latin: 'Phocoena sinus' },
+  { isim: 'Kuzey Beyaz Gergedanı', emoji: '🦏', kategori: 'Tehlike Altında', sayfa: 'tehlike-altinda.html', latin: 'Ceratotherium simum cottoni' },
+  { isim: 'Javan Gergedanı', emoji: '🦏', kategori: 'Tehlike Altında', sayfa: 'tehlike-altinda.html', latin: 'Rhinoceros sondaicus' },
+  { isim: 'Sumatra Orangutanı', emoji: '🦧', kategori: 'Tehlike Altında', sayfa: 'tehlike-altinda.html', latin: 'Pongo abelii' },
+  { isim: 'Dağ Gorili', emoji: '🦍', kategori: 'Tehlike Altında', sayfa: 'tehlike-altinda.html', latin: 'Gorilla beringei beringei' },
+  { isim: 'Kakapo', emoji: '🦜', kategori: 'Tehlike Altında', sayfa: 'tehlike-altinda.html', latin: 'Strigops habroptilus' },
+  { isim: 'Kelaynak', emoji: '🐦', kategori: 'Tehlike Altında', sayfa: 'tehlike-altinda.html', latin: 'Geronticus eremita' },
+  { isim: 'Akdeniz Foku', emoji: '🦭', kategori: 'Tehlike Altında', sayfa: 'tehlike-altinda.html', latin: 'Monachus monachus' },
+  { isim: 'Kırmızı Panda', emoji: '🐾', kategori: 'Tehlike Altında', sayfa: 'tehlike-altinda.html', latin: 'Ailurus fulgens' },
+
+  // Türkiye Hayvanları
+  { isim: 'Anadolu Parsı', emoji: '🐆', kategori: 'Türkiye', sayfa: 'turkiye-hayvanlari.html', latin: 'Panthera pardus tulliana' },
+  { isim: 'Van Kedisi', emoji: '🐱', kategori: 'Türkiye', sayfa: 'turkiye-hayvanlari.html', latin: 'Felis catus' },
+  { isim: 'Kangal Köpeği', emoji: '🐕', kategori: 'Türkiye', sayfa: 'turkiye-hayvanlari.html', latin: 'Canis lupus familiaris' },
+  { isim: 'Karakulak', emoji: '🐱', kategori: 'Türkiye', sayfa: 'turkiye-hayvanlari.html', latin: 'Caracal caracal' },
+  { isim: 'Toros Çakalı', emoji: '🐺', kategori: 'Türkiye', sayfa: 'turkiye-hayvanlari.html', latin: 'Canis aureus' },
+  { isim: 'Anadolu Yaban Koyunu', emoji: '🐑', kategori: 'Türkiye', sayfa: 'turkiye-hayvanlari.html', latin: 'Ovis gmelinii anatolica' },
+  { isim: 'Sığla Ağaç Kurbağası', emoji: '🐸', kategori: 'Türkiye', sayfa: 'turkiye-hayvanlari.html', latin: 'Hyla heinzsteinitzi' },
+  { isim: 'Toros Kertenkelesi', emoji: '🦎', kategori: 'Türkiye', sayfa: 'turkiye-hayvanlari.html', latin: 'Darevskia rudis' },
 ];
 
 // ==========================================

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tehlike Altındaki Türler - Hayvanlar Dünyası</title>
+  <meta name="description" content="Tehlike altındaki hayvan türleri - Kritik tehlikede, tehlike altında ve hassas türler hakkında detaylı bilgiler. Nesli tükenmekte olan canlıları tanıyın.">
+  <meta property="og:title" content="Tehlike Altındaki Türler - Hayvanlar Dünyası">
+  <meta property="og:description" content="Kritik tehlikedeki türlerden hassas türlere kadar, nesli tükenmekte olan hayvanları keşfedin ve koruma çalışmalarını öğrenin.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGASYON -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">🌍 Hayvanlar <span>Dünyası</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="memeliler.html">Memeliler</a></li>
+        <li><a href="kuslar.html">Kuşlar</a></li>
+        <li><a href="surungen.html">Sürüngen</a></li>
+        <li><a href="baliklar.html">Balıklar</a></li>
+        <li><a href="amfibiler.html">Amfibiler</a></li>
+        <li><a href="bocekler.html">Böcekler</a></li>
+        <li><a href="omurgasizlar.html">Omurgasızlar</a></li>
+        <li><a href="tehlike-altinda.html" class="active">Tehlike Altında</a></li>
+        <li><a href="turkiye-hayvanlari.html">Türkiye</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="hakkinda.html">Hakkında</a></li>
+      </ul>
+      <div class="nav-search">
+        <span class="nav-search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Hayvan ara..." autocomplete="off">
+      </div>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="search-results" id="searchResults"></div>
+
+  <!-- SAYFA HERO -->
+  <section class="page-hero hero-tehlike">
+    <span class="hero-emoji">⚠️</span>
+    <h1>Tehlike Altındaki Türler</h1>
+    <p>Gezegenimizde nesli tükenmekte olan türler her geçen gün artıyor. Habitat kaybı, iklim değişikliği, kaçak avlanma ve kirlilik gibi nedenlerle binlerce tür yok olma tehlikesiyle karşı karşıya. Bu sayfada IUCN Kırmızı Liste kategorilerine göre tehlike altındaki türleri tanıyın.</p>
+  </section>
+
+  <main class="section">
+
+    <!-- ==========================================
+         KRİTİK TEHLİKEDE
+         ========================================== -->
+    <div class="subcategory" id="kritik-tehlikede">
+      <div class="subcategory-header">
+        <span class="sub-emoji">🔴</span>
+        <h2>Kritik Tehlikede</h2>
+      </div>
+
+      <div class="animal-grid">
+
+        <!-- AMUR LEOPARI -->
+        <div class="animal-card" data-animal='{"isim":"Amur Leoparı","emoji":"🐆","latin":"Panthera pardus orientalis","habitat":"Rusya Uzak Doğusu ve Kuzeydoğu Çin","beslenme":"Etçil","boyut":"1.0 - 1.4 metre","agirlik":"25 - 48 kg","yasam":"10 - 15 yıl","aciklama":"Amur leoparı, dünyanın en nadir büyük kedisidir. Rusya Uzak Doğusu ve Kuzeydoğu Çin sınırında yaşayan bu leopar alt türü, soğuk iklime uyum sağlamış kalın kürkü ve geniş pençeleriyle dikkat çeker. Doğada yalnızca yaklaşık 100 birey kaldığı tahmin edilmektedir.","ilgincBilgiler":["Doğada yalnızca yaklaşık 100 birey kaldığı tahmin edilmektedir.","Soğuk iklime uyum sağlamış kalın ve uzun kürkü vardır.","Saatte 60 km hıza ulaşabilir ve 6 metreye kadar sıçrayabilir.","Avlarını ağaçlara taşıyarak diğer yırtıcılardan korurlar."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐆</span>
+            <div>
+              <h3>Amur Leoparı</h3>
+              <span class="latin-name">Panthera pardus orientalis</span>
+            </div>
+          </div>
+          <p>Dünyanın en nadir büyük kedisi. Doğada yalnızca ~100 birey kalmıştır. Soğuk iklime uyum sağlamış benzersiz alt tür.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Rusya/Çin</span>
+            <span class="tag diet">Etçil</span>
+            <span class="tag danger-badge">~100 Birey</span>
+          </div>
+        </div>
+
+        <!-- VAQUITA -->
+        <div class="animal-card" data-animal='{"isim":"Vaquita","emoji":"🐬","latin":"Phocoena sinus","habitat":"Kaliforniya Körfezi (Meksika)","beslenme":"Etçil (balık, kalamar, kabuklu)","boyut":"1.2 - 1.5 metre","agirlik":"30 - 55 kg","yasam":"20 yıl","aciklama":"Vaquita, dünyanın en küçük ve en tehlike altındaki deniz memelisidir. Yalnızca Meksika nın Kaliforniya Körfezi nin kuzey ucunda yaşayan bu utangaç yunus türü, yasadışı ağ avcılığı nedeniyle neslinin tükenmesinin eşiğindedir. 10 dan az bireyin kaldığı tahmin edilmektedir.","ilgincBilgiler":["Dünyanın en küçük yunus türüdür.","10 dan az bireyin kaldığı tahmin edilmektedir.","1958 yılında bilim dünyası tarafından keşfedilmiştir.","Yasadışı totoaba balığı avcılığında kullanılan ağlara takılarak ölmektedirler."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐬</span>
+            <div>
+              <h3>Vaquita</h3>
+              <span class="latin-name">Phocoena sinus</span>
+            </div>
+          </div>
+          <p>Dünyanın en küçük ve en tehlike altındaki yunus türü. Kaliforniya Körfezi'nde 10'dan az birey kalmıştır.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Kaliforniya Körfezi</span>
+            <span class="tag diet">Etçil</span>
+            <span class="tag danger-badge">&lt;10 Birey</span>
+          </div>
+        </div>
+
+        <!-- KUZEY BEYAZ GERGEDANI -->
+        <div class="animal-card" data-animal='{"isim":"Kuzey Beyaz Gergedanı","emoji":"🦏","latin":"Ceratotherium simum cottoni","habitat":"Doğu ve Orta Afrika","beslenme":"Otçul","boyut":"3.4 - 4.0 metre","agirlik":"1700 - 2300 kg","yasam":"40 - 50 yıl","aciklama":"Kuzey beyaz gergedanı, fiilen nesli tükenmiş bir alt türdür. Dünyada yalnızca 2 dişi birey kalmıştır ve her ikisi de Kenya daki Ol Pejeta Koruma Alanı nda 24 saat silahlı koruma altında yaşamaktadır. Bilim insanları yapay üreme teknikleriyle türü kurtarmaya çalışmaktadır.","ilgincBilgiler":["Dünyada yalnızca 2 dişi birey kalmıştır - Najin ve Fatu.","Kenya daki Ol Pejeta Koruma Alanı nda 24 saat silahlı muhafızlar tarafından korunuyorlar.","Son erkek birey Sudan, 2018 yılında hayatını kaybetmiştir.","Bilim insanları IVF ve kök hücre teknolojisiyle türü kurtarmaya çalışmaktadır."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦏</span>
+            <div>
+              <h3>Kuzey Beyaz Gergedanı</h3>
+              <span class="latin-name">Ceratotherium simum cottoni</span>
+            </div>
+          </div>
+          <p>Fiilen nesli tükenmiş bir alt tür. Dünyada yalnızca 2 dişi birey kalmıştır, 24 saat silahlı koruma altındadır.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Kenya</span>
+            <span class="tag diet">Otçul</span>
+            <span class="tag danger-badge">2 Birey</span>
+          </div>
+        </div>
+
+        <!-- JAVAN GERGEDANI -->
+        <div class="animal-card" data-animal='{"isim":"Javan Gergedanı","emoji":"🦏","latin":"Rhinoceros sondaicus","habitat":"Endonezya (Ujung Kulon Ulusal Parkı)","beslenme":"Otçul","boyut":"2.0 - 4.0 metre","agirlik":"900 - 2300 kg","yasam":"30 - 45 yıl","aciklama":"Javan gergedanı, dünyanın en nadir büyük memelilerinden biridir. Yalnızca Endonezya nın Java adasındaki Ujung Kulon Ulusal Parkı nda yaşayan bu tür, tek boynuzlu gergedanların en az bilinendir. Doğada yaklaşık 75 birey kaldığı tahmin edilmektedir.","ilgincBilgiler":["Doğada yaklaşık 75 birey kaldığı tahmin edilmektedir.","Yalnızca Endonezya nın Java adasında, tek bir ulusal parkta yaşamaktadır.","Zırh benzeri deri kıvrımlarıyla tanınırlar.","Son derece utangaç ve gizli yaşadıkları için fotoğraflanmaları çok zordur."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦏</span>
+            <div>
+              <h3>Javan Gergedanı</h3>
+              <span class="latin-name">Rhinoceros sondaicus</span>
+            </div>
+          </div>
+          <p>Dünyanın en nadir büyük memelilerinden biri. Yalnızca Java adasında ~75 birey kalmıştır.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Endonezya</span>
+            <span class="tag diet">Otçul</span>
+            <span class="tag danger-badge">~75 Birey</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ==========================================
+         TEHLİKE ALTINDA
+         ========================================== -->
+    <div class="subcategory" id="tehlike-altinda">
+      <div class="subcategory-header">
+        <span class="sub-emoji">🟠</span>
+        <h2>Tehlike Altında</h2>
+      </div>
+
+      <div class="animal-grid">
+
+        <!-- SUMATRA ORANGUTANI -->
+        <div class="animal-card" data-animal='{"isim":"Sumatra Orangutanı","emoji":"🦧","latin":"Pongo abelii","habitat":"Sumatra Adası (Endonezya)","beslenme":"Hepçil (meyve, yaprak, böcek)","boyut":"1.2 - 1.5 metre","agirlik":"30 - 90 kg","yasam":"30 - 40 yıl","aciklama":"Sumatra orangutanı, yalnızca Endonezya nın Sumatra adasının kuzeyinde yaşayan kritik derecede tehlike altındaki bir primat türüdür. Orman tahribatı ve yasadışı hayvan ticareti en büyük tehditleridir. Yaklaşık 14.000 bireyin kaldığı tahmin edilmektedir.","ilgincBilgiler":["Doğada yaklaşık 14.000 birey kaldığı tahmin edilmektedir.","Borneo orangutanına göre daha sosyal ve daha ince yüzlüdürler.","Alet kullanarak böcek avlar ve meyve toplarlar.","Anneler yavrularına 8-9 yıl boyunca bakarak memeliler arasında en uzun çocuk bakım süresine sahiptirler."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦧</span>
+            <div>
+              <h3>Sumatra Orangutanı</h3>
+              <span class="latin-name">Pongo abelii</span>
+            </div>
+          </div>
+          <p>Sumatra adasına özgü primat türü. Orman tahribatı nedeniyle yaklaşık 14.000 birey kalmıştır.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Sumatra</span>
+            <span class="tag diet">Hepçil</span>
+            <span class="tag danger-badge">~14.000 Birey</span>
+          </div>
+        </div>
+
+        <!-- DAĞ GORİLİ -->
+        <div class="animal-card" data-animal='{"isim":"Dağ Gorili","emoji":"🦍","latin":"Gorilla beringei beringei","habitat":"Doğu Afrika dağ ormanları (Ruanda, Uganda, Kongo)","beslenme":"Otçul (yaprak, gövde, meyve)","boyut":"1.4 - 1.8 metre","agirlik":"120 - 220 kg","yasam":"35 - 40 yıl","aciklama":"Dağ gorili, yalnızca Doğu Afrika nın dağ ormanlarında yaşayan nadir bir primat alt türüdür. 2.000-4.000 metre yükseklikte yaşayan bu goriller, soğuk iklime dayanmak için diğer gorillerden daha kalın ve uzun kürkle kaplıdır. Yaklaşık 1.000 birey kaldığı tahmin edilmektedir.","ilgincBilgiler":["Doğada yaklaşık 1.000 birey kaldığı tahmin edilmektedir.","2.000-4.000 metre yükseklikte yaşarlar - en yüksekte yaşayan primatlardır.","Soğuk iklime dayanmak için diğer gorillerden daha kalın kürkle kaplıdırlar.","Dian Fossey nin araştırmaları sayesinde koruma altına alınmışlardır."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦍</span>
+            <div>
+              <h3>Dağ Gorili</h3>
+              <span class="latin-name">Gorilla beringei beringei</span>
+            </div>
+          </div>
+          <p>Doğu Afrika'nın dağ ormanlarında yaşayan nadir primat. Yaklaşık 1.000 birey kalmıştır.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Doğu Afrika</span>
+            <span class="tag diet">Otçul</span>
+            <span class="tag danger-badge">~1.000 Birey</span>
+          </div>
+        </div>
+
+        <!-- KAKAPO -->
+        <div class="animal-card" data-animal='{"isim":"Kakapo","emoji":"🦜","latin":"Strigops habroptilus","habitat":"Yeni Zelanda","beslenme":"Otçul (tohum, meyve, çiçek, eğreltiotu)","boyut":"58 - 64 cm","agirlik":"2 - 4 kg","yasam":"40 - 80 yıl","aciklama":"Kakapo, dünyanın uçamayan tek papağan türüdür ve aynı zamanda en ağır papağandır. Yeni Zelanda ya özgü bu gece kuşu, yırtıcılardan yoksun bir ortamda evrimleştiği için uçma yeteneğini kaybetmiştir. Yaklaşık 250 birey kalmıştır ve her biri isimle takip edilmektedir.","ilgincBilgiler":["Dünyanın uçamayan tek papağan türüdür.","Yaklaşık 250 birey kalmıştır ve her birinin ismi vardır.","80 yıldan fazla yaşayabilen, en uzun ömürlü kuş türlerinden biridir.","Erkekler eş bulmak için göğüslerini şişirerek boom sesi çıkarırlar ve bu ses 5 km uzaktan duyulabilir."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦜</span>
+            <div>
+              <h3>Kakapo</h3>
+              <span class="latin-name">Strigops habroptilus</span>
+            </div>
+          </div>
+          <p>Dünyanın uçamayan tek ve en ağır papağanı. Yeni Zelanda'da yalnızca ~250 birey kalmıştır.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Yeni Zelanda</span>
+            <span class="tag diet">Otçul</span>
+            <span class="tag danger-badge">~250 Birey</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ==========================================
+         HASSAS
+         ========================================== -->
+    <div class="subcategory" id="hassas">
+      <div class="subcategory-header">
+        <span class="sub-emoji">🟡</span>
+        <h2>Hassas</h2>
+      </div>
+
+      <div class="animal-grid">
+
+        <!-- KELAYNAK -->
+        <div class="animal-card" data-animal='{"isim":"Kelaynak","emoji":"🐦","latin":"Geronticus eremita","habitat":"Türkiye (Birecik), Fas","beslenme":"Hepçil (böcek, kertenkele, bitki)","boyut":"70 - 80 cm","agirlik":"1.0 - 1.3 kg","yasam":"20 - 25 yıl","aciklama":"Kelaynak, dünyada en çok Türkiye nin Birecik ilçesiyle özdeşleşen nesli tehlike altındaki bir kuş türüdür. Tüysüz kırmızı başı ve uzun kıvrık gagasıyla dikkat çeken bu kuş, antik Mısır da kutsal sayılırdı. Dünyada yaklaşık 700 birey kaldığı tahmin edilmektedir.","ilgincBilgiler":["Dünyada yaklaşık 700 birey kaldığı tahmin edilmektedir.","Türkiye nin Birecik ilçesinde özel koruma programıyla korunmaktadır.","Antik Mısır da kutsal bir kuş olarak saygı görürdü.","Tüysüz kırmızı başı ve uzun kıvrık gagasıyla kolayca tanınır."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐦</span>
+            <div>
+              <h3>Kelaynak</h3>
+              <span class="latin-name">Geronticus eremita</span>
+            </div>
+          </div>
+          <p>Birecik'in simgesi, antik Mısır'ın kutsal kuşu. Dünyada yalnızca ~700 birey kalmıştır.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Türkiye/Fas</span>
+            <span class="tag diet">Hepçil</span>
+            <span class="tag danger-badge">~700 Birey</span>
+          </div>
+        </div>
+
+        <!-- AKDENİZ FOKU -->
+        <div class="animal-card" data-animal='{"isim":"Akdeniz Foku","emoji":"🦭","latin":"Monachus monachus","habitat":"Akdeniz ve Doğu Atlantik kıyıları","beslenme":"Etçil (balık, ahtapot, kabuklu)","boyut":"2.3 - 2.8 metre","agirlik":"250 - 400 kg","yasam":"20 - 30 yıl","aciklama":"Akdeniz foku (Akdeniz keşişi foku), dünyanın en nadir fok türlerinden biridir. Akdeniz ve Karadeniz kıyılarında yaşayan bu tür, özellikle Türkiye kıyılarında koruma altındadır. 700 den az bireyin kaldığı tahmin edilmektedir ve Türkiye önemli bir yaşam alanıdır.","ilgincBilgiler":["Dünyanın en tehlike altındaki fok türlerinden biridir - 700 den az birey kalmıştır.","Türkiye kıyıları, özellikle Foça ve Kaş bölgeleri önemli yaşam alanlarıdır.","Deniz mağaralarında yavrularlar ve dinlenirler.","Antik Yunan mitolojisinde bile bahsedilen, tarihte bilinen en eski fok türlerinden biridir."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦭</span>
+            <div>
+              <h3>Akdeniz Foku</h3>
+              <span class="latin-name">Monachus monachus</span>
+            </div>
+          </div>
+          <p>Akdeniz'in en nadir fok türü. Türkiye kıyıları dahil 700'den az birey kalmıştır.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Akdeniz</span>
+            <span class="tag diet">Etçil</span>
+            <span class="tag danger-badge">&lt;700 Birey</span>
+          </div>
+        </div>
+
+        <!-- KIRMIZI PANDA -->
+        <div class="animal-card" data-animal='{"isim":"Kırmızı Panda","emoji":"🐾","latin":"Ailurus fulgens","habitat":"Himalayalar ve Güneybatı Çin","beslenme":"Otçul (bambu, meyve, yumurta)","boyut":"50 - 64 cm","agirlik":"3 - 6 kg","yasam":"8 - 12 yıl","aciklama":"Kırmızı panda, kızıl-kahverengi kürkü ve halkalı kuyruğuyla dikkat çeken sevimli bir memeldir. Himalayaların ılıman ormanlarında yaşayan bu tür, büyük pandayla akraba değildir. Aslında kendine özgü bir familyaya aittir. 10.000 den az bireyin kaldığı tahmin edilmektedir.","ilgincBilgiler":["Büyük pandayla akraba değildir - kendine özgü bir familyaya (Ailuridae) aittir.","10.000 den az bireyin kaldığı tahmin edilmektedir.","Başparmak benzeri bir kemik çıkıntısıyla bambu dallarını kavrayabilirler.","Firefox web tarayıcısının maskotu aslında kırmızı pandadır."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐾</span>
+            <div>
+              <h3>Kırmızı Panda</h3>
+              <span class="latin-name">Ailurus fulgens</span>
+            </div>
+          </div>
+          <p>Himalayaların sevimli bambu yiyicisi. Büyük pandayla akraba olmayan, 10.000'den az birey kalmış tür.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Himalayalar</span>
+            <span class="tag diet">Otçul</span>
+            <span class="tag danger-badge">&lt;10.000 Birey</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <button class="modal-close">&times;</button>
+      <span class="modal-emoji"></span>
+      <h2></h2>
+      <span class="modal-latin"></span>
+      <div class="modal-info-grid"></div>
+      <p class="modal-description"></p>
+      <div class="modal-fun-facts">
+        <h4>İlginç Bilgiler</h4>
+        <ul></ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>🌍 Hayvanlar Dünyası</h4>
+        <p>Gezegenimizin muhteşem canlılarını tanıyın. Bu site, hayvanlar alemi hakkında bilgi edinmek isteyen herkes için hazırlanmıştır.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Kategoriler</h4>
+        <ul class="footer-links">
+          <li><a href="memeliler.html">🦁 Memeliler</a></li>
+          <li><a href="kuslar.html">🦅 Kuşlar</a></li>
+          <li><a href="surungen.html">🐊 Sürüngen</a></li>
+          <li><a href="baliklar.html">🦈 Balıklar</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Diğer</h4>
+        <ul class="footer-links">
+          <li><a href="amfibiler.html">🐸 Amfibiler</a></li>
+          <li><a href="bocekler.html">🦋 Böcekler</a></li>
+          <li><a href="omurgasizlar.html">🐙 Omurgasızlar</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Keşfet</h4>
+        <ul class="footer-links">
+          <li><a href="tehlike-altinda.html">Tehlike Altındaki Türler</a></li>
+          <li><a href="turkiye-hayvanlari.html">Türkiye Hayvanları</a></li>
+          <li><a href="quiz.html">Bilgi Yarışması</a></li>
+          <li><a href="hakkinda.html">Hakkında</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Hayvanlar Dünyası &copy; 2026 - Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

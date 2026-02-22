@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bilgi Yarışması - Hayvanlar Dünyası</title>
+  <meta name="description" content="Hayvanlar dünyası bilgi yarışması - 10 soruluk eğlenceli quiz ile hayvanlar hakkındaki bilginizi test edin.">
+  <meta property="og:title" content="Bilgi Yarışması - Hayvanlar Dünyası">
+  <meta property="og:description" content="Hayvanlar hakkındaki bilginizi test edin! 10 soruluk eğlenceli bilgi yarışmasıyla kendinizi deneyin.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGASYON -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">🌍 Hayvanlar <span>Dünyası</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="memeliler.html">Memeliler</a></li>
+        <li><a href="kuslar.html">Kuşlar</a></li>
+        <li><a href="surungen.html">Sürüngen</a></li>
+        <li><a href="baliklar.html">Balıklar</a></li>
+        <li><a href="amfibiler.html">Amfibiler</a></li>
+        <li><a href="bocekler.html">Böcekler</a></li>
+        <li><a href="omurgasizlar.html">Omurgasızlar</a></li>
+        <li><a href="tehlike-altinda.html">Tehlike Altında</a></li>
+        <li><a href="turkiye-hayvanlari.html">Türkiye</a></li>
+        <li><a href="quiz.html" class="active">Quiz</a></li>
+        <li><a href="hakkinda.html">Hakkında</a></li>
+      </ul>
+      <div class="nav-search">
+        <span class="nav-search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Hayvan ara..." autocomplete="off">
+      </div>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="search-results" id="searchResults"></div>
+
+  <!-- SAYFA HERO -->
+  <section class="page-hero hero-quiz">
+    <span class="hero-emoji">🧠</span>
+    <h1>Bilgi Yarışması</h1>
+    <p>Hayvanlar dünyası hakkındaki bilginizi test edin! 10 soruluk bu eğlenceli quiz ile ne kadar bilgi sahibi olduğunuzu keşfedin. Her doğru cevap 10 puan değerindedir.</p>
+  </section>
+
+  <main class="section">
+
+    <div class="quiz-container" id="quizContainer">
+      <div class="quiz-progress">
+        <div class="quiz-progress-bar" id="quizProgressBar"></div>
+      </div>
+      <div class="quiz-content" id="quizContent">
+        <!-- Quiz içeriği JavaScript tarafından yüklenir -->
+      </div>
+    </div>
+
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <button class="modal-close">&times;</button>
+      <span class="modal-emoji"></span>
+      <h2></h2>
+      <span class="modal-latin"></span>
+      <div class="modal-info-grid"></div>
+      <p class="modal-description"></p>
+      <div class="modal-fun-facts">
+        <h4>İlginç Bilgiler</h4>
+        <ul></ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>🌍 Hayvanlar Dünyası</h4>
+        <p>Gezegenimizin muhteşem canlılarını tanıyın. Bu site, hayvanlar alemi hakkında bilgi edinmek isteyen herkes için hazırlanmıştır.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Kategoriler</h4>
+        <ul class="footer-links">
+          <li><a href="memeliler.html">🦁 Memeliler</a></li>
+          <li><a href="kuslar.html">🦅 Kuşlar</a></li>
+          <li><a href="surungen.html">🐊 Sürüngen</a></li>
+          <li><a href="baliklar.html">🦈 Balıklar</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Diğer</h4>
+        <ul class="footer-links">
+          <li><a href="amfibiler.html">🐸 Amfibiler</a></li>
+          <li><a href="bocekler.html">🦋 Böcekler</a></li>
+          <li><a href="omurgasizlar.html">🐙 Omurgasızlar</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Keşfet</h4>
+        <ul class="footer-links">
+          <li><a href="tehlike-altinda.html">Tehlike Altındaki Türler</a></li>
+          <li><a href="turkiye-hayvanlari.html">Türkiye Hayvanları</a></li>
+          <li><a href="quiz.html">Bilgi Yarışması</a></li>
+          <li><a href="hakkinda.html">Hakkında</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Hayvanlar Dünyası &copy; 2026 - Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    (function() {
+      const quizQuestions = [
+        {
+          question: "Dünyanın en hızlı hayvanı hangisidir?",
+          options: ["Çita", "Şahin", "Marlin Balığı", "Kanguru"],
+          correct: 1,
+          explanation: "Şahin (Peregrine Falcon) dalış sırasında saatte 389 km hıza ulaşarak dünyanın en hızlı hayvanıdır. Çita karada en hızlıdır ancak genel sıralamada şahin birinciliği alır."
+        },
+        {
+          question: "Hangi hayvanın kalbi bir araba büyüklüğündedir?",
+          options: ["Fil", "Mavi Balina", "Züafa", "Gergedan"],
+          correct: 1,
+          explanation: "Mavi balinanın kalbi yaklaşık bir Volkswagen Beetle araba büyüklüğündedir ve yaklaşık 180 kg ağırlığındadır."
+        },
+        {
+          question: "Bir ahtapotun kaç kalbi vardır?",
+          options: ["1", "2", "3", "4"],
+          correct: 2,
+          explanation: "Ahtapotların 3 kalbi vardır. Biri ana kalptir ve kanı vücuda pompalar; diğer ikisi solungaç kalbidir ve kanı solungaçlara pompalar."
+        },
+        {
+          question: "Kangal köpeğinin ısırma gücü kaç PSI'dır?",
+          options: ["523 PSI", "643 PSI", "743 PSI", "843 PSI"],
+          correct: 2,
+          explanation: "Kangal köpeği 743 PSI ısırma gücüyle dünyanın en güçlü ısırma kuvvetine sahip köpek ırklarından biridir."
+        },
+        {
+          question: "Hangi hayvan günde sadece 30 dakika uyur?",
+          options: ["At", "İnek", "Zürafa", "Tavşan"],
+          correct: 2,
+          explanation: "Zürafalar günde sadece yaklaşık 30 dakika uyurlar - genellikle ayakta ve kısa aralıklarla. Bu, memeliler arasındaki en kısa uyku süresidır."
+        },
+        {
+          question: "Dünyanın en büyük kertenkele türü hangisidir?",
+          options: ["İguana", "Nil Varanı", "Komodo Ejderi", "Bukalemun"],
+          correct: 2,
+          explanation: "Komodo ejderi 3 metreye kadar uzunluğa ve 70 kg ağırlığa ulaşabilen dünyanın en büyük kertenkele türüdür."
+        },
+        {
+          question: "Van kedisi hangi özelliğiyle dünyaca ünlüdür?",
+          options: ["Uzun kuyruğu", "Heterokromi (farklı renk gözler)", "Küçük boyutu", "Tüysüzlüğü"],
+          correct: 1,
+          explanation: "Van kedisi heterokromi (bir gözü mavi, diğeri kehribar) özelliğiyle dünyaca ünlüdür. Ayrıca suyu seven nadir kedi ırklarından biridir."
+        },
+        {
+          question: "Denizanasının vücudunun yüzde kaçı sudur?",
+          options: ["%80", "%85", "%90", "%95"],
+          correct: 3,
+          explanation: "Denizanalarının vücudunun %95'i sudan oluşur. Bu nedenle karaya çıktıklarında hızla kuruyup neredeyse görünmez hale gelirler."
+        },
+        {
+          question: "Hayvanlar aleminde en çok türe sahip grup hangisidir?",
+          options: ["Memeliler", "Kuşlar", "Balıklar", "Böcekler"],
+          correct: 3,
+          explanation: "Böcekler, bilinen yaklaşık 1 milyon türle hayvanlar aleminin en kalabalık grubudur. Tüm hayvan türlerinin yaklaşık %80'ini oluştururlar."
+        },
+        {
+          question: "Kelaynak kuşu Türkiye'de hangi ilçede koruma altındadır?",
+          options: ["Foça", "Birecik", "Kaş", "Dalyan"],
+          correct: 1,
+          explanation: "Kelaynak kuşu, Şanlıurfa'nın Birecik ilçesinde özel Kelaynak Üretme İstasyonu'nda koruma altındadır. Her yıl Kelaynak Festivali düzenlenir."
+        }
+      ];
+
+      let currentQuestion = 0;
+      let score = 0;
+      let answered = false;
+
+      const quizContent = document.getElementById('quizContent');
+      const quizProgressBar = document.getElementById('quizProgressBar');
+
+      function updateProgress() {
+        const progress = ((currentQuestion) / quizQuestions.length) * 100;
+        quizProgressBar.style.width = progress + '%';
+      }
+
+      function showQuestion() {
+        answered = false;
+        updateProgress();
+        const q = quizQuestions[currentQuestion];
+        let html = '<div class="quiz-question">';
+        html += '<div class="quiz-question-number">Soru ' + (currentQuestion + 1) + ' / ' + quizQuestions.length + '</div>';
+        html += '<h3 class="quiz-question-text">' + q.question + '</h3>';
+        html += '<div class="quiz-options">';
+        q.options.forEach(function(option, index) {
+          html += '<button class="quiz-option" data-index="' + index + '">' + option + '</button>';
+        });
+        html += '</div>';
+        html += '<div class="quiz-feedback" id="quizFeedback"></div>';
+        html += '<div class="quiz-score">Puan: ' + score + ' / ' + (quizQuestions.length * 10) + '</div>';
+        html += '</div>';
+        quizContent.innerHTML = html;
+
+        const optionButtons = quizContent.querySelectorAll('.quiz-option');
+        optionButtons.forEach(function(btn) {
+          btn.addEventListener('click', function() {
+            if (answered) return;
+            answered = true;
+            const selectedIndex = parseInt(this.getAttribute('data-index'));
+            const correct = q.correct;
+            const feedbackEl = document.getElementById('quizFeedback');
+
+            optionButtons.forEach(function(b, i) {
+              if (i === correct) {
+                b.classList.add('correct');
+              }
+              if (i === selectedIndex && selectedIndex !== correct) {
+                b.classList.add('wrong');
+              }
+              b.style.pointerEvents = 'none';
+            });
+
+            if (selectedIndex === correct) {
+              score += 10;
+              feedbackEl.innerHTML = '<span class="feedback-correct">✅ Doğru! +10 Puan</span><p>' + q.explanation + '</p>';
+            } else {
+              feedbackEl.innerHTML = '<span class="feedback-wrong">❌ Yanlış!</span><p>' + q.explanation + '</p>';
+            }
+            feedbackEl.style.display = 'block';
+
+            const scoreEl = quizContent.querySelector('.quiz-score');
+            if (scoreEl) {
+              scoreEl.textContent = 'Puan: ' + score + ' / ' + (quizQuestions.length * 10);
+            }
+
+            setTimeout(function() {
+              let nextHtml = '';
+              if (currentQuestion < quizQuestions.length - 1) {
+                nextHtml = '<button class="quiz-next-btn" id="nextBtn">Sonraki Soru ➡️</button>';
+              } else {
+                nextHtml = '<button class="quiz-next-btn" id="nextBtn">Sonuçları Gör 🏆</button>';
+              }
+              feedbackEl.innerHTML += nextHtml;
+              document.getElementById('nextBtn').addEventListener('click', function() {
+                currentQuestion++;
+                if (currentQuestion < quizQuestions.length) {
+                  showQuestion();
+                } else {
+                  showResults();
+                }
+              });
+            }, 500);
+          });
+        });
+      }
+
+      function showResults() {
+        quizProgressBar.style.width = '100%';
+        const percentage = (score / (quizQuestions.length * 10)) * 100;
+        let emoji, message;
+
+        if (percentage === 100) {
+          emoji = '🏆';
+          message = 'Mükemmel! Hayvanlar dünyası uzmanısınız!';
+        } else if (percentage >= 70) {
+          emoji = '🌟';
+          message = 'Harika! Hayvanlar hakkında çok bilgilisiniz!';
+        } else if (percentage >= 50) {
+          emoji = '👍';
+          message = 'İyi! Biraz daha çalışarak uzman olabilirsiniz!';
+        } else if (percentage >= 30) {
+          emoji = '📚';
+          message = 'Fena değil! Hayvanlar dünyasını keşfetmeye devam edin!';
+        } else {
+          emoji = '🔄';
+          message = 'Hayvanlar dünyasında öğrenecek çok şey var! Tekrar deneyin!';
+        }
+
+        let html = '<div class="quiz-results">';
+        html += '<span class="results-emoji">' + emoji + '</span>';
+        html += '<h2>Yarışma Tamamlandı!</h2>';
+        html += '<div class="results-score">' + score + ' / ' + (quizQuestions.length * 10) + '</div>';
+        html += '<div class="results-percentage">%' + percentage + ' Başarı</div>';
+        html += '<p class="results-message">' + message + '</p>';
+        html += '<div class="results-summary">';
+        html += '<p>✅ Doğru: ' + (score / 10) + ' soru</p>';
+        html += '<p>❌ Yanlış: ' + (quizQuestions.length - (score / 10)) + ' soru</p>';
+        html += '</div>';
+        html += '<button class="quiz-restart-btn" id="restartBtn">Tekrar Dene 🔄</button>';
+        html += '</div>';
+
+        quizContent.innerHTML = html;
+
+        document.getElementById('restartBtn').addEventListener('click', function() {
+          currentQuestion = 0;
+          score = 0;
+          showQuestion();
+        });
+      }
+
+      // Quiz'i başlat
+      showQuestion();
+    })();
+  </script>
+</body>
+</html>

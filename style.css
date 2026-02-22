@@ -1028,3 +1028,442 @@ img {
     grid-template-columns: 1fr;
   }
 }
+
+/* ==========================================
+   SAYFA GRADIENT ARKA PLANLARI
+   ========================================== */
+.page-hero.hero-memeliler {
+  background: linear-gradient(135deg, #1a1a2e 0%, #2d1b00 50%, #1a1a2e 100%);
+}
+.page-hero.hero-kuslar {
+  background: linear-gradient(135deg, #1a1a2e 0%, #0c2340 50%, #1a1a2e 100%);
+}
+.page-hero.hero-surungen {
+  background: linear-gradient(135deg, #1a1a2e 0%, #1b3a1b 50%, #2d2200 100%);
+}
+.page-hero.hero-baliklar {
+  background: linear-gradient(135deg, #1a1a2e 0%, #0a1628 50%, #0d2137 100%);
+}
+.page-hero.hero-amfibiler {
+  background: linear-gradient(135deg, #1a1a2e 0%, #0d2b2b 50%, #1a2e1a 100%);
+}
+.page-hero.hero-bocekler {
+  background: linear-gradient(135deg, #1a1a2e 0%, #2d1a3e 50%, #3e1a2e 100%);
+}
+.page-hero.hero-omurgasizlar {
+  background: linear-gradient(135deg, #1a1a2e 0%, #0a1a3e 50%, #1a0a2e 100%);
+}
+.page-hero.hero-tehlike {
+  background: linear-gradient(135deg, #1a1a2e 0%, #3e1a0a 50%, #2e1a0a 100%);
+}
+.page-hero.hero-turkiye {
+  background: linear-gradient(135deg, #2e0a0a 0%, #1a1a2e 50%, #0a2e0a 100%);
+}
+.page-hero.hero-quiz {
+  background: linear-gradient(135deg, #1a1a2e 0%, #2e2d0a 50%, #0a2e1a 100%);
+}
+.page-hero.hero-hakkinda {
+  background: linear-gradient(135deg, #1a1a2e 0%, #0a1a2e 50%, #1a2e3e 100%);
+}
+
+/* ==========================================
+   PATTERN B DESTEK SINIFLARI
+   ========================================== */
+.subcategory-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid rgba(46, 204, 113, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.subcategory-title span {
+  font-size: 1.8rem;
+}
+
+.animal-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 3rem;
+}
+
+.animal-card .card-emoji {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.animal-card .card-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.animal-card .card-latin {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.animal-card .card-desc {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+}
+
+.card-tag {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  background: rgba(46, 204, 113, 0.1);
+  color: var(--accent);
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-right: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.page-hero-emoji {
+  font-size: 4rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+section.subcategory {
+  padding: 2rem 2rem 0;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ==========================================
+   TEHLIKE ETİKETLERİ
+   ========================================== */
+.danger-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.danger-badge.kritik {
+  background: rgba(231, 76, 60, 0.2);
+  color: #e74c3c;
+  border: 1px solid rgba(231, 76, 60, 0.3);
+}
+
+.danger-badge.tehlike {
+  background: rgba(243, 156, 18, 0.2);
+  color: #f39c12;
+  border: 1px solid rgba(243, 156, 18, 0.3);
+}
+
+.danger-badge.hassas {
+  background: rgba(52, 152, 219, 0.2);
+  color: #3498db;
+  border: 1px solid rgba(52, 152, 219, 0.3);
+}
+
+/* ==========================================
+   QUIZ STILLERI
+   ========================================== */
+.quiz-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.quiz-progress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding: 1rem 1.5rem;
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.quiz-progress-bar {
+  flex: 1;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+.quiz-progress-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.quiz-score {
+  font-weight: 700;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.quiz-question-card {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  margin-bottom: 1.5rem;
+}
+
+.quiz-question-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.quiz-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.quiz-option {
+  padding: 1rem 1.25rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all var(--transition);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  text-align: left;
+  font-family: var(--font);
+}
+
+.quiz-option:hover:not(.disabled) {
+  background: rgba(46, 204, 113, 0.1);
+  border-color: var(--accent);
+}
+
+.quiz-option.correct {
+  background: rgba(46, 204, 113, 0.2);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.quiz-option.wrong {
+  background: rgba(231, 76, 60, 0.2);
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+.quiz-option.disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.quiz-feedback {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: none;
+}
+
+.quiz-feedback.show {
+  display: block;
+}
+
+.quiz-feedback.correct {
+  background: rgba(46, 204, 113, 0.1);
+  color: var(--accent);
+  border-left: 3px solid var(--accent);
+}
+
+.quiz-feedback.wrong {
+  background: rgba(231, 76, 60, 0.1);
+  color: var(--danger);
+  border-left: 3px solid var(--danger);
+}
+
+.quiz-next-btn {
+  display: none;
+  margin-top: 1.5rem;
+  padding: 0.75rem 2rem;
+  background: var(--accent);
+  color: var(--bg-primary);
+  border: none;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all var(--transition);
+  font-family: var(--font);
+}
+
+.quiz-next-btn:hover {
+  background: var(--accent-dark);
+  transform: translateY(-2px);
+}
+
+.quiz-next-btn.show {
+  display: inline-block;
+}
+
+.quiz-result {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.quiz-result .result-emoji {
+  font-size: 4rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.quiz-result h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.quiz-result .result-score {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--accent);
+  display: block;
+  margin: 1rem 0;
+}
+
+.quiz-result p {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.quiz-restart-btn {
+  padding: 1rem 2.5rem;
+  background: var(--accent);
+  color: var(--bg-primary);
+  border: none;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all var(--transition);
+  font-family: var(--font);
+}
+
+.quiz-restart-btn:hover {
+  background: var(--accent-dark);
+  transform: translateY(-2px);
+}
+
+/* ==========================================
+   İLETİŞİM FORMU STİLLERİ
+   ========================================== */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  padding: 0.85rem 1rem;
+  background: var(--bg-card);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  font-family: var(--font);
+  transition: all var(--transition);
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-glow);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-submit {
+  padding: 1rem 2rem;
+  background: var(--accent);
+  color: var(--bg-primary);
+  border: none;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all var(--transition);
+  font-family: var(--font);
+  align-self: flex-start;
+}
+
+.form-submit:hover {
+  background: var(--accent-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px var(--accent-glow);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.about-card {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  text-align: center;
+}
+
+.about-card .about-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.about-card h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.about-card p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
