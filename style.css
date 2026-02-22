@@ -96,6 +96,7 @@ img {
   gap: 0.5rem;
   white-space: nowrap;
   flex-shrink: 0;
+  min-width: max-content;
 }
 
 .nav-logo span {
@@ -106,6 +107,8 @@ img {
   display: flex;
   list-style: none;
   gap: 0.25rem;
+  flex-shrink: 1;
+  overflow: hidden;
 }
 
 .nav-links a {
