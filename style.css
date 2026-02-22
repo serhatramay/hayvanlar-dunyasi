@@ -254,22 +254,14 @@ img {
   padding: 6rem 2rem 4rem;
   position: relative;
   overflow: hidden;
+  background: url('https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1920&q=80&auto=format') center/cover no-repeat;
 }
 
 .hero::before {
   content: '';
   position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(ellipse at center, rgba(46, 204, 113, 0.05) 0%, transparent 60%);
-  animation: heroGlow 8s ease-in-out infinite alternate;
-}
-
-@keyframes heroGlow {
-  0% { transform: translate(0, 0); }
-  100% { transform: translate(5%, 5%); }
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(10, 10, 10, 0.65) 0%, rgba(10, 10, 10, 0.8) 100%);
 }
 
 .hero-content {
