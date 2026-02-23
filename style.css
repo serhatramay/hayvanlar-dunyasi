@@ -1986,6 +1986,10 @@ section.subcategory {
   background: rgba(52, 152, 219, 0.15);
   color: #3498db;
 }
+.blog-card-category.genel {
+  background: rgba(46, 204, 113, 0.15);
+  color: #2ecc71;
+}
 
 .blog-card-read {
   color: var(--accent);
