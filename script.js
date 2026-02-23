@@ -278,6 +278,28 @@ document.addEventListener('DOMContentLoaded', () => {
   // MODAL SİSTEMİ
   // ==========================================
   setupModals();
+
+  // ==========================================
+  // BLOG FİLTRE
+  // ==========================================
+  const blogFilterBtns = document.querySelectorAll('.blog-filter-btn');
+  if (blogFilterBtns.length > 0) {
+    blogFilterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        blogFilterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.getAttribute('data-filter');
+        const cards = document.querySelectorAll('.blog-card');
+        cards.forEach(card => {
+          if (filter === 'all' || card.getAttribute('data-category') === filter) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  }
 });
 
 // ==========================================
@@ -359,6 +381,18 @@ function openModal(data) {
     ul.innerHTML = data.ilgincBilgiler.map(b => `<li>${b}</li>`).join('');
   } else {
     funFacts.style.display = 'none';
+  }
+
+  // Makale linki
+  const articleLinkContainer = modal.querySelector('.modal-article-link-container');
+  if (articleLinkContainer) {
+    if (data.makale) {
+      articleLinkContainer.innerHTML = `<a href="${data.makale}" class="modal-article-link">Detaylı Makaleyi Oku →</a>`;
+      articleLinkContainer.style.display = 'block';
+    } else {
+      articleLinkContainer.innerHTML = '';
+      articleLinkContainer.style.display = 'none';
+    }
   }
 
   modalOverlay.classList.add('active');

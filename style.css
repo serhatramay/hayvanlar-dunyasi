@@ -1855,3 +1855,480 @@ section.subcategory {
     grid-template-columns: 1fr;
   }
 }
+
+/* ==========================================
+   BLOG LİSTELEME SAYFASI
+   ========================================== */
+.page-hero.hero-blog {
+  background: linear-gradient(135deg, #1a1a2e 0%, #1a2e2e 50%, #2e1a2e 100%);
+}
+
+.blog-filter {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.blog-filter-btn {
+  padding: 0.5rem 1.25rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition);
+  font-family: var(--font);
+}
+
+.blog-filter-btn:hover {
+  background: rgba(46, 204, 113, 0.1);
+  border-color: var(--accent);
+  color: var(--text-primary);
+}
+
+.blog-filter-btn.active {
+  background: var(--accent);
+  color: var(--bg-primary);
+  border-color: var(--accent);
+  font-weight: 600;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.blog-card {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all var(--transition);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-card:hover {
+  background: var(--bg-card-hover);
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.blog-card-header {
+  padding: 2rem 1.5rem 1rem;
+  text-align: center;
+}
+
+.blog-card-emoji {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.blog-card-header h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.blog-card-header .blog-card-latin {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.blog-card-body {
+  padding: 0 1.5rem 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-card-body p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  flex: 1;
+}
+
+.blog-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem 1.5rem;
+}
+
+.blog-card-category {
+  display: inline-block;
+  padding: 0.2rem 0.65rem;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.blog-card-category.kritik {
+  background: rgba(231, 76, 60, 0.15);
+  color: #e74c3c;
+}
+
+.blog-card-category.tehlike {
+  background: rgba(243, 156, 18, 0.15);
+  color: #f39c12;
+}
+
+.blog-card-category.hassas {
+  background: rgba(52, 152, 219, 0.15);
+  color: #3498db;
+}
+
+.blog-card-read {
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all var(--transition);
+}
+
+.blog-card-read:hover {
+  color: var(--accent-dark);
+}
+
+/* ==========================================
+   MAKALE SAYFASI
+   ========================================== */
+.article-hero {
+  padding: 8rem 2rem 3rem;
+  text-align: center;
+  position: relative;
+  background: linear-gradient(135deg, #1a1a2e 0%, #3e1a0a 50%, #2e1a0a 100%);
+}
+
+.article-hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(to top, var(--bg-primary), transparent);
+}
+
+.article-hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.article-hero .hero-emoji {
+  font-size: 5rem;
+}
+
+.article-hero h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.article-hero-latin {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.article-hero-badge {
+  display: inline-block;
+  padding: 0.35rem 1rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.article-hero-badge.kritik {
+  background: rgba(231, 76, 60, 0.2);
+  color: #e74c3c;
+  border: 1px solid rgba(231, 76, 60, 0.3);
+}
+
+.article-hero-badge.tehlike {
+  background: rgba(243, 156, 18, 0.2);
+  color: #f39c12;
+  border: 1px solid rgba(243, 156, 18, 0.3);
+}
+
+.article-hero-badge.hassas {
+  background: rgba(52, 152, 219, 0.2);
+  color: #3498db;
+  border: 1px solid rgba(52, 152, 219, 0.3);
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  padding: 1rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.breadcrumb a {
+  color: var(--text-secondary);
+  transition: color var(--transition);
+}
+
+.breadcrumb a:hover {
+  color: var(--accent);
+}
+
+.breadcrumb span {
+  margin: 0 0.5rem;
+  opacity: 0.5;
+}
+
+/* Article Content - 2 column layout */
+.article-content {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 2.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem 2rem 4rem;
+}
+
+/* Article Body */
+.article-body h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid rgba(46, 204, 113, 0.2);
+}
+
+.article-body h2:first-child {
+  margin-top: 0;
+}
+
+.article-body p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.article-section {
+  margin-bottom: 1.5rem;
+}
+
+/* Fun Facts (expanded) */
+.article-fun-facts {
+  background: rgba(46, 204, 113, 0.05);
+  border-left: 3px solid var(--accent);
+  padding: 1.5rem;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  margin-top: 1rem;
+}
+
+.article-fun-facts h3 {
+  color: var(--accent);
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.article-fun-facts ul {
+  list-style: none;
+  padding: 0;
+}
+
+.article-fun-facts li {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  padding: 0.4rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.article-fun-facts li::before {
+  content: '💡';
+  position: absolute;
+  left: 0;
+  font-size: 0.8rem;
+}
+
+/* Sidebar - Quick Facts */
+.article-sidebar {
+  position: sticky;
+  top: 90px;
+  align-self: start;
+}
+
+.article-quick-facts {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.article-quick-facts h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.quick-fact-item {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.quick-fact-item:last-child {
+  border-bottom: none;
+}
+
+.quick-fact-label {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.2rem;
+}
+
+.quick-fact-value {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+/* Related Articles */
+.related-articles {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem 4rem;
+}
+
+.related-articles h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid rgba(46, 204, 113, 0.2);
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.related-card {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all var(--transition);
+  color: var(--text-primary);
+  display: block;
+}
+
+.related-card:hover {
+  background: var(--bg-card-hover);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+  color: var(--text-primary);
+}
+
+.related-card .related-emoji {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.related-card h4 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.related-card .related-latin {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+/* Modal Article Link */
+.modal-article-link-container {
+  margin-top: 1.25rem;
+  text-align: center;
+}
+
+.modal-article-link {
+  display: inline-block;
+  padding: 0.75rem 1.75rem;
+  background: var(--accent);
+  color: var(--bg-primary);
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: all var(--transition);
+}
+
+.modal-article-link:hover {
+  background: var(--accent-dark);
+  color: var(--bg-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px var(--accent-glow);
+}
+
+/* ==========================================
+   BLOG / MAKALE RESPONSIVE
+   ========================================== */
+@media (max-width: 900px) {
+  .article-content {
+    grid-template-columns: 1fr;
+  }
+
+  .article-sidebar {
+    position: static;
+    order: -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .article-hero h1 {
+    font-size: 2rem;
+  }
+
+  .article-hero .hero-emoji {
+    font-size: 3.5rem;
+  }
+
+  .article-content {
+    padding: 1rem 1.25rem 3rem;
+  }
+
+  .related-articles {
+    padding: 0 1.25rem 3rem;
+  }
+
+  .breadcrumb {
+    padding: 1rem 1.25rem;
+  }
+
+  .related-grid {
+    grid-template-columns: 1fr;
+  }
+}
