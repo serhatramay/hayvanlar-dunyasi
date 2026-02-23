@@ -1741,3 +1741,117 @@ section.subcategory {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* ==========================================
+   ÖZEL KOLEKSİYONLAR
+   ========================================== */
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 1.5rem;
+}
+
+.collection-card {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all var(--transition);
+  cursor: pointer;
+  color: var(--text-primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.collection-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--accent);
+  transform: scaleY(0);
+  transition: transform var(--transition);
+}
+
+.collection-card:hover {
+  background: var(--bg-card-hover);
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  color: var(--text-primary);
+}
+
+.collection-card:hover::before {
+  transform: scaleY(1);
+}
+
+.collection-icon {
+  font-size: 2.8rem;
+  flex-shrink: 0;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(46, 204, 113, 0.08);
+  border-radius: var(--radius-sm);
+}
+
+.collection-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.collection-info h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.collection-info p {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+.collection-info .collection-badge {
+  display: inline-block;
+  padding: 0.2rem 0.65rem;
+  background: rgba(46, 204, 113, 0.1);
+  color: var(--accent);
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* Koleksiyon hero gradient sınıfları */
+.page-hero.hero-hizli {
+  background: linear-gradient(135deg, #1a1a2e 0%, #2e2d0a 50%, #1a1a2e 100%);
+}
+.page-hero.hero-yavas {
+  background: linear-gradient(135deg, #1a1a2e 0%, #1b3a2b 50%, #1a1a2e 100%);
+}
+.page-hero.hero-uzun-yasam {
+  background: linear-gradient(135deg, #1a1a2e 0%, #1a2e3e 50%, #1a1a2e 100%);
+}
+.page-hero.hero-zehirli {
+  background: linear-gradient(135deg, #1a1a2e 0%, #3e1a1a 50%, #2e1a2e 100%);
+}
+.page-hero.hero-buz-devri {
+  background: linear-gradient(135deg, #1a1a2e 0%, #0a2e3e 50%, #1a2e3e 100%);
+}
+.page-hero.hero-amazon {
+  background: linear-gradient(135deg, #1a1a2e 0%, #0a2e0a 50%, #1a2e1a 100%);
+}
+
+/* Koleksiyon kartları responsive */
+@media (max-width: 768px) {
+  .collection-grid {
+    grid-template-columns: 1fr;
+  }
+}

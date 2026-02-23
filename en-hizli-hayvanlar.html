@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dünyanın En Hızlı Hayvanları - Hayvanlar Dünyası</title>
+  <meta name="description" content="Dünyanın en hızlı hayvanları - Karada, havada ve suda en yüksek hızlara ulaşan türler hakkında detaylı bilgiler.">
+  <meta property="og:title" content="Dünyanın En Hızlı Hayvanları - Hayvanlar Dünyası">
+  <meta property="og:description" content="Karada, havada ve suda en hızlı hayvanları keşfedin. Çitadan gökdoğana, yelken balığından kılıçbalığına hız rekortmenlerini tanıyın.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGASYON -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">🌍 Hayvanlar <span>Dünyası</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="memeliler.html">Memeliler</a></li>
+        <li><a href="kuslar.html">Kuşlar</a></li>
+        <li><a href="surungen.html">Sürüngen</a></li>
+        <li><a href="baliklar.html">Balıklar</a></li>
+        <li><a href="amfibiler.html">Amfibiler</a></li>
+        <li><a href="bocekler.html">Böcekler</a></li>
+        <li><a href="omurgasizlar.html">Omurgasızlar</a></li>
+        <li><a href="tehlike-altinda.html">Tehlike Altında</a></li>
+        <li><a href="turkiye-hayvanlari.html">Türkiye</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="hakkinda.html">Hakkında</a></li>
+      </ul>
+      <div class="nav-search">
+        <span class="nav-search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Hayvan ara..." autocomplete="off">
+      </div>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="search-results" id="searchResults"></div>
+
+  <!-- SAYFA HERO -->
+  <section class="page-hero hero-hizli">
+    <span class="hero-emoji">⚡</span>
+    <h1>Dünyanın En Hızlı Hayvanları</h1>
+    <p>Doğa, inanılmaz hız yeteneklerine sahip canlılarla doludur. Karada saatte 120 km hıza ulaşan çitadan, dalışta 389 km/h ile ses hızına yaklaşan gökdoğana kadar, hayvanlar aleminin en hızlı üyelerini keşfedin. Bu sayfada karada, havada ve suda hız rekorları kıran türleri tanıyın.</p>
+  </section>
+
+  <main class="section">
+
+    <!-- ==========================================
+         KARADA
+         ========================================== -->
+    <div class="subcategory" id="karada">
+      <div class="subcategory-header">
+        <span class="sub-emoji">🏃</span>
+        <h2>Karada</h2>
+      </div>
+
+      <div class="animal-grid">
+
+        <!-- ÇİTA -->
+        <div class="animal-card" data-animal='{"isim":"Çita","emoji":"🐆","latin":"Acinonyx jubatus","habitat":"Afrika savanları","beslenme":"Etçil","boyut":"1.1 - 1.5 metre","agirlik":"21 - 72 kg","yasam":"10 - 12 yıl","hiz":"120 km/h","aciklama":"Çita, dünyanın karada en hızlı hayvanıdır ve 3 saniyede 0 dan 100 km/h hıza ulaşabilir. Afrika savanlarında yaşayan bu zarif avcı, ince ve aerodinamik vücudu, uzun bacakları ve esnek omurgasıyla mükemmel bir koşucuya evrimleşmiştir. Pençelerini tamamen geri çekemeyen tek kedi türü olan çita, bu özelliği sayesinde koşarken ekstra tutunma sağlar. Ancak yüksek hızlara yalnızca kısa mesafelerde ulaşabilir ve avını yakalayamazsa hızla yorulur.","ilgincBilgiler":["3 saniyede 0 dan 100 km/h hıza ulaşabilir - birçok spor arabadan daha hızlıdır.","Pençelerini tamamen geri çekemeyen tek kedi türüdür, bu sayede koşarken ekstra tutunma sağlar.","Her adımda vücudu tamamen havada kalır ve bir adımı 7-8 metreyi bulabilir.","Yüksek hızda koşarken vücut ısısı 40°C nin üzerine çıkar ve 60 saniyeden fazla koşamazlar."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐆</span>
+            <div>
+              <h3>Çita</h3>
+              <span class="latin-name">Acinonyx jubatus</span>
+            </div>
+          </div>
+          <p>Dünyanın karada en hızlı hayvanı. 3 saniyede 100 km/h hıza ulaşabilen bu muhteşem avcı, Afrika savanlarının tartışmasız hız şampiyonudur.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Afrika savanları</span>
+            <span class="tag diet">Etçil</span>
+            <span class="tag">⚡ 120 km/h</span>
+          </div>
+        </div>
+
+        <!-- CEYLAN -->
+        <div class="animal-card" data-animal='{"isim":"Ceylan","emoji":"🦌","latin":"Antilocapra americana","habitat":"Kuzey Amerika","beslenme":"Otçul","boyut":"1.3 - 1.5 metre","agirlik":"36 - 60 kg","yasam":"10 - 15 yıl","hiz":"98 km/h","aciklama":"Amerika ceylânı (pronghorn), Kuzey Amerika nın en hızlı kara hayvanıdır ve uzun mesafeli koşuda çitayı bile geride bırakır. Geniş akciğerleri, büyük kalbi ve oksijen taşıma kapasitesi yüksek kanı sayesinde saatte 98 km hızla kilometrelerce koşabilir. Bu olağanüstü dayanıklılık, nesli tükenmiş Kuzey Amerika çitasından kaçmak için evrimleştiği düşünülmektedir. Görüş alanı neredeyse 360 derece olup yırtıcıları çok uzak mesafeden fark edebilir.","ilgincBilgiler":["Uzun mesafede çitadan daha hızlıdır - saatte 98 km hızla kilometrelerce koşabilir.","Neredeyse 360 derece görüş alanına sahiptir ve yırtıcıları 6 km uzaktan fark edebilir.","Nesli tükenmiş Kuzey Amerika çitasından kaçmak için bu hıza evrimleştiği düşünülmektedir.","Kıl yapısı içi boş olduğundan mükemmel yalıtım sağlar ve kışın -50°C ye kadar dayanabilir."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦌</span>
+            <div>
+              <h3>Ceylan</h3>
+              <span class="latin-name">Antilocapra americana</span>
+            </div>
+          </div>
+          <p>Kuzey Amerika nın en hızlı kara hayvanı. Uzun mesafeli koşuda çitayı bile geride bırakan bu olağanüstü koşucu, saatte 98 km hıza ulaşabilir.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Kuzey Amerika</span>
+            <span class="tag diet">Otçul</span>
+            <span class="tag">⚡ 98 km/h</span>
+          </div>
+        </div>
+
+        <!-- SPRINGBOK -->
+        <div class="animal-card" data-animal='{"isim":"Springbok","emoji":"🦌","latin":"Antidorcas marsupialis","habitat":"Güney Afrika","beslenme":"Otçul","boyut":"0.7 - 0.9 metre","agirlik":"27 - 42 kg","yasam":"7 - 9 yıl","hiz":"88 km/h","aciklama":"Springbok, Güney Afrika nın sembol hayvanı olan ve inanılmaz çevikliğiyle bilinen bir antilop türüdür. Saatte 88 km hıza ulaşabilen bu zarif hayvan, aynı zamanda pronking adı verilen benzersiz sıçrama hareketiyle ünlüdür. Tehlike anında havaya 2 metre yüksekliğe sıçrayarak sırt kıllarını kabartır ve bu hareketle yırtıcılara güçlü olduğunu gösterir. Güney Afrika nın ulusal rugby takımının da adını ve sembolünü bu hayvandan almıştır.","ilgincBilgiler":["Güney Afrika nın ulusal hayvanıdır ve rugby takımı Springboks adını bu hayvandan alır.","Pronking adı verilen benzersiz sıçrama hareketiyle 2 metre yüksekliğe zıplayabilir.","Hem otlarla hem de çalılarla beslenebilir ve su içmeden uzun süre hayatta kalabilir.","Yüz binlik sürüler halinde göç eden nadir türlerden biridir."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦌</span>
+            <div>
+              <h3>Springbok</h3>
+              <span class="latin-name">Antidorcas marsupialis</span>
+            </div>
+          </div>
+          <p>Güney Afrika nın sembol hayvanı ve en hızlı antiloplarından biri. Saatte 88 km hıza ulaşabilen ve pronking sıçramasıyla ünlü zarif bir tür.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Güney Afrika</span>
+            <span class="tag diet">Otçul</span>
+            <span class="tag">⚡ 88 km/h</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ==========================================
+         HAVADA
+         ========================================== -->
+    <div class="subcategory" id="havada">
+      <div class="subcategory-header">
+        <span class="sub-emoji">🦅</span>
+        <h2>Havada</h2>
+      </div>
+
+      <div class="animal-grid">
+
+        <!-- GÖKDOĞAN (ŞAHİN) -->
+        <div class="animal-card" data-animal='{"isim":"Gökdoğan (Şahin)","emoji":"🦅","latin":"Falco peregrinus","habitat":"Tüm kıtalar","beslenme":"Etçil","boyut":"34 - 58 cm","agirlik":"0.3 - 1.5 kg","yasam":"15 - 20 yıl","hiz":"389 km/h (dalış)","aciklama":"Gökdoğan, dünyanın en hızlı hayvanıdır. Avına doğru dalış yaparken saatte 389 km hıza ulaşarak yerçekiminin gücünü olağanüstü bir şekilde kullanır. Antarktika hariç tüm kıtalarda yaşayan bu yırtıcı kuş, şehir merkezlerinden dağ zirvelerine kadar her ortama uyum sağlamıştır. Üçüncü göz kapağı ve burun deliklerindeki özel yapılar sayesinde yüksek hızda nefes alabilir ve gözlerini koruyabilir. Tarih boyunca avcılıkta (doğancılık) kullanılan en değerli kuşlardan biri olmuştur.","ilgincBilgiler":["Dalışta saatte 389 km hıza ulaşarak dünyanın en hızlı hayvanıdır.","Burun deliklerinde konik çıkıntılar vardır, bu sayede yüksek hızda hava akışını düzenleyerek nefes alabilir.","Gözleri insan gözünden 8 kat daha keskin görebilir ve avını 3 km uzaktan tespit edebilir.","DDT böcek ilacı nedeniyle 1960 larda nesli tükenme noktasına gelmişti ancak koruma çalışmalarıyla başarıyla kurtarılmıştır."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦅</span>
+            <div>
+              <h3>Gökdoğan (Şahin)</h3>
+              <span class="latin-name">Falco peregrinus</span>
+            </div>
+          </div>
+          <p>Dünyanın en hızlı hayvanı. Dalışta saatte 389 km hıza ulaşan bu olağanüstü yırtıcı kuş, Antarktika hariç tüm kıtalarda yaşamaktadır.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Tüm kıtalar</span>
+            <span class="tag diet">Etçil</span>
+            <span class="tag">⚡ 389 km/h (dalış)</span>
+          </div>
+        </div>
+
+        <!-- ALTIN KARTAL -->
+        <div class="animal-card" data-animal='{"isim":"Altın Kartal","emoji":"🦅","latin":"Aquila chrysaetos","habitat":"Kuzey yarımküre","beslenme":"Etçil","boyut":"66 - 102 cm","agirlik":"3 - 6.3 kg","yasam":"30+ yıl","hiz":"320 km/h (dalış)","aciklama":"Altın kartal, kuzey yarımkürenin en güçlü ve en büyük yırtıcı kuşlarından biridir. Dalışta saatte 320 km hıza ulaşabilen bu heybetli kuş, tavşandan dağ keçisi yavrularına kadar geniş bir av yelpazesine sahiptir. Kanat açıklığı 2 metreyi aşan altın kartal, pençelerindeki kavrama gücü bir insan elinin 10 katına ulaşır. Birçok kültürde güç ve özgürlüğün simgesi olarak kabul edilen bu kuş, Orta Asya göçebelerinin geleneksel avcılığında hâlâ kullanılmaktadır.","ilgincBilgiler":["Dalışta saatte 320 km hıza ulaşabilir ve pençe kavrama gücü insan elinin 10 katıdır.","Kanat açıklığı 2.3 metreye ulaşabilir ve 30 yıldan fazla yaşayabilir.","Kazakistan ve Moğolistan da geleneksel kartal avcılığında hâlâ kullanılmaktadır.","Aynı yuvayı nesiller boyu kullanırlar ve yuvalar zamanla 2 metre genişliğe ulaşabilir."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦅</span>
+            <div>
+              <h3>Altın Kartal</h3>
+              <span class="latin-name">Aquila chrysaetos</span>
+            </div>
+          </div>
+          <p>Kuzey yarımkürenin en güçlü yırtıcı kuşlarından biri. Dalışta 320 km/h hıza ulaşan bu heybetli kuş, güç ve özgürlüğün simgesidir.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Kuzey yarımküre</span>
+            <span class="tag diet">Etçil</span>
+            <span class="tag">⚡ 320 km/h (dalış)</span>
+          </div>
+        </div>
+
+        <!-- İĞNE KUYRUKLU SAĞAN -->
+        <div class="animal-card" data-animal='{"isim":"İğne Kuyruklu Sağan","emoji":"🐦","latin":"Hirundapus caudacutus","habitat":"Asya/Avustralya","beslenme":"Böcekçil","boyut":"20 cm","agirlik":"0.1 - 0.15 kg","yasam":"5 - 7 yıl","hiz":"170 km/h (yatay uçuş)","aciklama":"İğne kuyruklu sağan, yatay uçuşta dünyanın en hızlı kuşu olarak kabul edilir. Dalış yapmadan, kendi kas gücüyle saatte 170 km hıza ulaşabilen bu küçük kuş, uzun orak biçimli kanatlarıyla olağanüstü bir aerodinamik yapıya sahiptir. Asya da üreyen ve Avustralya ya göç eden bu tür, hayatının büyük bölümünü havada geçirir. Uçarken böcek avlar, su içer ve hatta uyuyabilir; yere neredeyse hiç inmez.","ilgincBilgiler":["Yatay uçuşta saatte 170 km ile dünyanın en hızlı kuşudur - dalış hariç.","Hayatının büyük bölümünü havada geçirir; uçarken yer, içer ve hatta uyuyabilir.","Kuyruk tüylerinin uçları iğne gibi sivridir, bu yüzden bu ismi almıştır.","Asya dan Avustralya ya her yıl binlerce kilometre göç eder."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐦</span>
+            <div>
+              <h3>İğne Kuyruklu Sağan</h3>
+              <span class="latin-name">Hirundapus caudacutus</span>
+            </div>
+          </div>
+          <p>Yatay uçuşta dünyanın en hızlı kuşu. Dalış yapmadan saatte 170 km hıza ulaşabilen bu küçük kuş, hayatının büyük bölümünü havada geçirir.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Asya/Avustralya</span>
+            <span class="tag diet">Böcekçil</span>
+            <span class="tag">⚡ 170 km/h (yatay uçuş)</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ==========================================
+         SUDA
+         ========================================== -->
+    <div class="subcategory" id="suda">
+      <div class="subcategory-header">
+        <span class="sub-emoji">🌊</span>
+        <h2>Suda</h2>
+      </div>
+
+      <div class="animal-grid">
+
+        <!-- YELKEN BALIĞI -->
+        <div class="animal-card" data-animal='{"isim":"Yelken Balığı","emoji":"🐟","latin":"Istiophorus platypterus","habitat":"Tropik okyanuslar","beslenme":"Etçil","boyut":"2.4 - 3.0 metre","agirlik":"25 - 100 kg","yasam":"4 - 5 yıl","hiz":"110 km/h","aciklama":"Yelken balığı, okyanusların en hızlı yüzücüsüdür ve saatte 110 km hıza ulaşabilir. Adını sırtındaki devasa yelken benzeri yüzgecinden alan bu balık, tropik ve ılıman okyanuslarda yaşar. Avlanırken sırt yüzgecini katlayarak mükemmel bir hidrodinamik form oluşturur ve inanılmaz patlamalar halinde hızlanır. Grup halinde avlanarak sardalya sürülerini sıkıştırır ve uzun kılıç benzeri gagasıyla avlarını sersemleterek yakalar.","ilgincBilgiler":["Saatte 110 km ile okyanusların en hızlı balığıdır.","Sırt yüzgeci vücut uzunluğundan daha büyük olabilir ve yelken gibi açılıp kapanabilir.","Grup halinde koordineli avlanarak sardalya sürülerini top şeklinde sıkıştırırlar.","Renk değiştirebilir - avlanırken parlak mavi ve mor tonlarına bürünürler."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐟</span>
+            <div>
+              <h3>Yelken Balığı</h3>
+              <span class="latin-name">Istiophorus platypterus</span>
+            </div>
+          </div>
+          <p>Okyanusların en hızlı yüzücüsü. Saatte 110 km hıza ulaşabilen bu muhteşem balık, devasa yelken benzeri sırt yüzgeciyle kolayca tanınır.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Tropik okyanuslar</span>
+            <span class="tag diet">Etçil</span>
+            <span class="tag">⚡ 110 km/h</span>
+          </div>
+        </div>
+
+        <!-- KILIÇBALIĞI -->
+        <div class="animal-card" data-animal='{"isim":"Kılıçbalığı","emoji":"🐟","latin":"Xiphias gladius","habitat":"Tüm okyanuslar","beslenme":"Etçil","boyut":"3 - 4.5 metre","agirlik":"100 - 650 kg","yasam":"9 - 15 yıl","hiz":"97 km/h","aciklama":"Kılıçbalığı, okyanusların en güçlü ve en hızlı yüzücülerinden biri olup saatte 97 km hıza ulaşabilir. Uzun ve yassı kılıç benzeri üst çenesiyle kolayca tanınan bu dev balık, dünya okyanuslarının tropik ve ılıman sularında yaşar. Beyninin arkasında özel bir ısıtma organı bulunur ve bu sayede gözlerini ve beynini sıcak tutarak soğuk derin sularda bile mükemmel görebilir. Yalnız yaşayan bir avcı olan kılıçbalığı, kılıcını avlarını yaralamak ve sersemleterek yakalamak için kullanır.","ilgincBilgiler":["Kılıç benzeri üst çenesi vücut uzunluğunun üçte birine kadar ulaşabilir.","Beyninin arkasındaki özel organ sayesinde gözlerini ve beynini ısıtarak soğuk derin sularda avlanabilir.","800 metreden daha derin sulara dalabilir.","Yetişkin kılıçbalıklarının pulları ve dişleri yoktur - büyüdükçe tamamen kaybolur."]}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐟</span>
+            <div>
+              <h3>Kılıçbalığı</h3>
+              <span class="latin-name">Xiphias gladius</span>
+            </div>
+          </div>
+          <p>Okyanusların güçlü ve hızlı devi. Saatte 97 km hıza ulaşabilen kılıçbalığı, kılıç benzeri üst çenesiyle okyanusların en tanınır avcılarından biridir.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Tüm okyanuslar</span>
+            <span class="tag diet">Etçil</span>
+            <span class="tag">⚡ 97 km/h</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <button class="modal-close">&times;</button>
+      <span class="modal-emoji"></span>
+      <h2></h2>
+      <span class="modal-latin"></span>
+      <div class="modal-info-grid"></div>
+      <p class="modal-description"></p>
+      <div class="modal-fun-facts">
+        <h4>İlginç Bilgiler</h4>
+        <ul></ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>🌍 Hayvanlar Dünyası</h4>
+        <p>Gezegenimizin muhteşem canlılarını tanıyın. Bu site, hayvanlar alemi hakkında bilgi edinmek isteyen herkes için hazırlanmıştır.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Kategoriler</h4>
+        <ul class="footer-links">
+          <li><a href="memeliler.html">🦁 Memeliler</a></li>
+          <li><a href="kuslar.html">🦅 Kuşlar</a></li>
+          <li><a href="surungen.html">🐊 Sürüngen</a></li>
+          <li><a href="baliklar.html">🦈 Balıklar</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Diğer</h4>
+        <ul class="footer-links">
+          <li><a href="amfibiler.html">🐸 Amfibiler</a></li>
+          <li><a href="bocekler.html">🦋 Böcekler</a></li>
+          <li><a href="omurgasizlar.html">🐙 Omurgasızlar</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Keşfet</h4>
+        <ul class="footer-links">
+          <li><a href="tehlike-altinda.html">Tehlike Altındaki Türler</a></li>
+          <li><a href="turkiye-hayvanlari.html">Türkiye Hayvanları</a></li>
+          <li><a href="quiz.html">Bilgi Yarışması</a></li>
+          <li><a href="hakkinda.html">Hakkında</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Hayvanlar Dünyası &copy; 2026 - Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

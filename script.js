@@ -105,6 +105,66 @@ const hayvanlar = [
   { isim: 'Anadolu Yaban Koyunu', emoji: '🐑', kategori: 'Türkiye', sayfa: 'turkiye-hayvanlari.html', latin: 'Ovis gmelinii anatolica' },
   { isim: 'Sığla Ağaç Kurbağası', emoji: '🐸', kategori: 'Türkiye', sayfa: 'turkiye-hayvanlari.html', latin: 'Hyla heinzsteinitzi' },
   { isim: 'Toros Kertenkelesi', emoji: '🦎', kategori: 'Türkiye', sayfa: 'turkiye-hayvanlari.html', latin: 'Darevskia rudis' },
+
+  // En Hızlı Hayvanlar
+  { isim: 'Çita', emoji: '🐆', kategori: 'En Hızlı', sayfa: 'en-hizli-hayvanlar.html', latin: 'Acinonyx jubatus' },
+  { isim: 'Ceylan', emoji: '🦌', kategori: 'En Hızlı', sayfa: 'en-hizli-hayvanlar.html', latin: 'Antilocapra americana' },
+  { isim: 'Springbok', emoji: '🦌', kategori: 'En Hızlı', sayfa: 'en-hizli-hayvanlar.html', latin: 'Antidorcas marsupialis' },
+  { isim: 'Gökdoğan', emoji: '🦅', kategori: 'En Hızlı', sayfa: 'en-hizli-hayvanlar.html', latin: 'Falco peregrinus' },
+  { isim: 'Altın Kartal', emoji: '🦅', kategori: 'En Hızlı', sayfa: 'en-hizli-hayvanlar.html', latin: 'Aquila chrysaetos' },
+  { isim: 'İğne Kuyruklu Sağan', emoji: '🐦', kategori: 'En Hızlı', sayfa: 'en-hizli-hayvanlar.html', latin: 'Hirundapus caudacutus' },
+  { isim: 'Yelken Balığı', emoji: '🐟', kategori: 'En Hızlı', sayfa: 'en-hizli-hayvanlar.html', latin: 'Istiophorus platypterus' },
+  { isim: 'Kılıçbalığı', emoji: '🐟', kategori: 'En Hızlı', sayfa: 'en-hizli-hayvanlar.html', latin: 'Xiphias gladius' },
+
+  // En Yavaş Hayvanlar
+  { isim: 'Tembel Hayvan', emoji: '🦥', kategori: 'En Yavaş', sayfa: 'en-yavas-hayvanlar.html', latin: 'Bradypus variegatus' },
+  { isim: 'Koala', emoji: '🐨', kategori: 'En Yavaş', sayfa: 'en-yavas-hayvanlar.html', latin: 'Phascolarctos cinereus' },
+  { isim: 'Dev Kaplumbağa', emoji: '🐢', kategori: 'En Yavaş', sayfa: 'en-yavas-hayvanlar.html', latin: 'Aldabrachelys gigantea' },
+  { isim: 'Salyangoz', emoji: '🐌', kategori: 'En Yavaş', sayfa: 'en-yavas-hayvanlar.html', latin: 'Cornu aspersum' },
+  { isim: 'Denizatı', emoji: '🐴', kategori: 'En Yavaş', sayfa: 'en-yavas-hayvanlar.html', latin: 'Hippocampus' },
+  { isim: 'Deniz Yıldızı', emoji: '⭐', kategori: 'En Yavaş', sayfa: 'en-yavas-hayvanlar.html', latin: 'Asterias rubens' },
+  { isim: 'Yavaş Lori', emoji: '🐒', kategori: 'En Yavaş', sayfa: 'en-yavas-hayvanlar.html', latin: 'Nycticebus' },
+  { isim: 'Deniz İneği', emoji: '🐋', kategori: 'En Yavaş', sayfa: 'en-yavas-hayvanlar.html', latin: 'Trichechus' },
+
+  // En Uzun Yaşayanlar
+  { isim: 'Grönland Köpekbalığı', emoji: '🦈', kategori: 'En Uzun Yaşayan', sayfa: 'en-uzun-yasayanlar.html', latin: 'Somniosus microcephalus' },
+  { isim: 'Okyanus Midyesi', emoji: '🐚', kategori: 'En Uzun Yaşayan', sayfa: 'en-uzun-yasayanlar.html', latin: 'Arctica islandica' },
+  { isim: 'Ölümsüz Denizanası', emoji: '🪼', kategori: 'En Uzun Yaşayan', sayfa: 'en-uzun-yasayanlar.html', latin: 'Turritopsis dohrnii' },
+  { isim: 'Grönland Balinası', emoji: '🐋', kategori: 'En Uzun Yaşayan', sayfa: 'en-uzun-yasayanlar.html', latin: 'Balaena mysticetus' },
+  { isim: 'Dev Kaplumbağa', emoji: '🐢', kategori: 'En Uzun Yaşayan', sayfa: 'en-uzun-yasayanlar.html', latin: 'Aldabrachelys gigantea' },
+  { isim: 'Kırmızı Deniz Kestanesi', emoji: '🟤', kategori: 'En Uzun Yaşayan', sayfa: 'en-uzun-yasayanlar.html', latin: 'Strongylocentrotus franciscanus' },
+  { isim: 'Tuatara', emoji: '🦎', kategori: 'En Uzun Yaşayan', sayfa: 'en-uzun-yasayanlar.html', latin: 'Sphenodon punctatus' },
+  { isim: 'Macaw Papağanı', emoji: '🦜', kategori: 'En Uzun Yaşayan', sayfa: 'en-uzun-yasayanlar.html', latin: 'Ara macao' },
+
+  // En Zehirli Hayvanlar
+  { isim: 'Zehirli Ok Kurbağası', emoji: '🐸', kategori: 'En Zehirli', sayfa: 'en-zehirli-hayvanlar.html', latin: 'Phyllobates terribilis' },
+  { isim: 'İç Taipan', emoji: '🐍', kategori: 'En Zehirli', sayfa: 'en-zehirli-hayvanlar.html', latin: 'Oxyuranus microlepidotus' },
+  { isim: 'Kara Mamba', emoji: '🐍', kategori: 'En Zehirli', sayfa: 'en-zehirli-hayvanlar.html', latin: 'Dendroaspis polylepis' },
+  { isim: 'Kral Kobra', emoji: '🐍', kategori: 'En Zehirli', sayfa: 'en-zehirli-hayvanlar.html', latin: 'Ophiophagus hannah' },
+  { isim: 'Kutu Denizanası', emoji: '🪼', kategori: 'En Zehirli', sayfa: 'en-zehirli-hayvanlar.html', latin: 'Chironex fleckeri' },
+  { isim: 'Mavi Halkalı Ahtapot', emoji: '🐙', kategori: 'En Zehirli', sayfa: 'en-zehirli-hayvanlar.html', latin: 'Hapalochlaena' },
+  { isim: 'Taşbalığı', emoji: '🐟', kategori: 'En Zehirli', sayfa: 'en-zehirli-hayvanlar.html', latin: 'Synanceia verrucosa' },
+  { isim: 'Konik Salyangoz', emoji: '🐚', kategori: 'En Zehirli', sayfa: 'en-zehirli-hayvanlar.html', latin: 'Conus geographus' },
+
+  // Buz Devri Hayvanları
+  { isim: 'Yünlü Mamut', emoji: '🦣', kategori: 'Buz Devri', sayfa: 'buz-devri-hayvanlari.html', latin: 'Mammuthus primigenius' },
+  { isim: 'Kılıçdiş Kaplan', emoji: '🐅', kategori: 'Buz Devri', sayfa: 'buz-devri-hayvanlari.html', latin: 'Smilodon fatalis' },
+  { isim: 'Yünlü Gergedan', emoji: '🦏', kategori: 'Buz Devri', sayfa: 'buz-devri-hayvanlari.html', latin: 'Coelodonta antiquitatis' },
+  { isim: 'Dev Tembel Hayvan', emoji: '🦥', kategori: 'Buz Devri', sayfa: 'buz-devri-hayvanlari.html', latin: 'Megatherium americanum' },
+  { isim: 'Megaloceros', emoji: '🦌', kategori: 'Buz Devri', sayfa: 'buz-devri-hayvanlari.html', latin: 'Megaloceros giganteus' },
+  { isim: 'Mastodon', emoji: '🦣', kategori: 'Buz Devri', sayfa: 'buz-devri-hayvanlari.html', latin: 'Mammut americanum' },
+  { isim: 'Glyptodon', emoji: '🐢', kategori: 'Buz Devri', sayfa: 'buz-devri-hayvanlari.html', latin: 'Glyptodon clavipes' },
+  { isim: 'Dire Kurt', emoji: '🐺', kategori: 'Buz Devri', sayfa: 'buz-devri-hayvanlari.html', latin: 'Aenocyon dirus' },
+
+  // Amazon Hayvanları
+  { isim: 'Jaguar', emoji: '🐆', kategori: 'Amazon', sayfa: 'amazon-hayvanlari.html', latin: 'Panthera onca' },
+  { isim: 'Pembe Nehir Yunusu', emoji: '🐬', kategori: 'Amazon', sayfa: 'amazon-hayvanlari.html', latin: 'Inia geoffrensis' },
+  { isim: 'Yeşil Anakonda', emoji: '🐍', kategori: 'Amazon', sayfa: 'amazon-hayvanlari.html', latin: 'Eunectes murinus' },
+  { isim: 'Zehirli Ok Kurbağası', emoji: '🐸', kategori: 'Amazon', sayfa: 'amazon-hayvanlari.html', latin: 'Dendrobates tinctorius' },
+  { isim: 'Tukan', emoji: '🐦', kategori: 'Amazon', sayfa: 'amazon-hayvanlari.html', latin: 'Ramphastos toco' },
+  { isim: 'Piranha', emoji: '🐟', kategori: 'Amazon', sayfa: 'amazon-hayvanlari.html', latin: 'Pygocentrus nattereri' },
+  { isim: 'Harpy Kartalı', emoji: '🦅', kategori: 'Amazon', sayfa: 'amazon-hayvanlari.html', latin: 'Harpia harpyja' },
+  { isim: 'Yaprak Kesen Karınca', emoji: '🐜', kategori: 'Amazon', sayfa: 'amazon-hayvanlari.html', latin: 'Atta cephalotes' },
 ];
 
 // ==========================================

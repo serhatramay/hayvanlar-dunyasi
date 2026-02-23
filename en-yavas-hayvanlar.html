@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>En Yavaş Hayvanlar - Hayvanlar Dünyası</title>
+  <meta name="description" content="Dünyanın en yavaş hayvanları - Tembel hayvan, koala, dev kaplumbağa, salyangoz ve daha fazlası. Yavaşlığın evrimsel avantajlarını keşfedin.">
+  <meta property="og:title" content="En Yavaş Hayvanlar - Hayvanlar Dünyası">
+  <meta property="og:description" content="Doğanın en yavaş canlılarını tanıyın. Saatte 0.001 km hızdan 5 km hıza kadar, yavaşlığı yaşam stratejisine dönüştüren türler.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGASYON -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">🌍 Hayvanlar <span>Dünyası</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="memeliler.html">Memeliler</a></li>
+        <li><a href="kuslar.html">Kuşlar</a></li>
+        <li><a href="surungen.html">Sürüngen</a></li>
+        <li><a href="baliklar.html">Balıklar</a></li>
+        <li><a href="amfibiler.html">Amfibiler</a></li>
+        <li><a href="bocekler.html">Böcekler</a></li>
+        <li><a href="omurgasizlar.html">Omurgasızlar</a></li>
+        <li><a href="tehlike-altinda.html">Tehlike Altında</a></li>
+        <li><a href="turkiye-hayvanlari.html">Türkiye</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="hakkinda.html">Hakkında</a></li>
+      </ul>
+      <div class="nav-search">
+        <span class="nav-search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Hayvan ara..." autocomplete="off">
+      </div>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="search-results" id="searchResults"></div>
+
+  <!-- SAYFA HERO -->
+  <section class="page-hero hero-yavas">
+    <span class="hero-emoji">🐌</span>
+    <h1>En Yavaş Hayvanlar</h1>
+    <p>Doğada hız her zaman avantaj değildir. Bazı canlılar milyonlarca yıllık evrim sürecinde yavaşlığı bir yaşam stratejisine dönüştürmüştür. Enerji tasarrufu, kamuflaj ve dayanıklılık gibi avantajlar sayesinde bu türler gezegenimizde başarıyla varlıklarını sürdürmektedir. Saatte 0.001 kilometreden 5 kilometreye kadar uzanan hız skalasında, doğanın en sabırlı canlılarını keşfedin.</p>
+  </section>
+
+  <main class="section">
+
+    <div class="animal-grid">
+
+      <!-- TEMBEL HAYVAN -->
+      <div class="animal-card" data-animal='{"isim":"Tembel Hayvan","emoji":"🦥","latin":"Bradypus variegatus","habitat":"Orta ve Güney Amerika yağmur ormanları","beslenme":"Otçul","boyut":"45-75 cm","agirlik":"3.5-5 kg","yasam":"20-30 yıl","aciklama":"Tembel hayvan, Orta ve Güney Amerika yağmur ormanlarında ağaçların tepelerinde yaşayan ve dünyanın en yavaş memelisi olarak bilinen bir türdür. Saatte yalnızca 0.24 km hızla hareket edebilen bu canlılar, günün 15-20 saatini uyuyarak geçirir. Metabolizmaları son derece yavaştır ve yedikleri yaprakları sindirmek haftalar sürebilir. Tüyleri üzerinde yosun büyür ve bu sayede ağaçlar arasında mükemmel bir kamuflaj elde ederler.","ilgincBilgiler":["Saatte yalnızca 0.24 km hızla hareket ederek dünyanın en yavaş memelisi unvanını taşır.","Günde 15-20 saat uyurlar ve kalan zamanda da çok az hareket ederler.","Tüyleri üzerinde yosun, mantar ve böcekler yaşar; bu küçük ekosistem onlara kamuflaj sağlar.","Haftada yalnızca bir kez ağaçtan inerek tuvalet ihtiyaçlarını giderirler.","Mükemmel yüzücülerdir ve suda karadakinden üç kat daha hızlı hareket edebilirler."]}'>
+        <div class="animal-card-header">
+          <span class="animal-emoji">🦥</span>
+          <div>
+            <h3>Tembel Hayvan</h3>
+            <span class="latin-name">Bradypus variegatus</span>
+          </div>
+        </div>
+        <p>Dünyanın en yavaş memelisi. Saatte 0.24 km hızla hareket eder ve günün büyük bölümünü ağaç tepelerinde uyuyarak geçirir.</p>
+        <div class="animal-tags">
+          <span class="tag habitat">Orta/Güney Amerika</span>
+          <span class="tag diet">Otçul</span>
+        </div>
+      </div>
+
+      <!-- KOALA -->
+      <div class="animal-card" data-animal='{"isim":"Koala","emoji":"🐨","latin":"Phascolarctos cinereus","habitat":"Avustralya","beslenme":"Otçul (okaliptüs)","boyut":"60-85 cm","agirlik":"4-15 kg","yasam":"13-18 yıl","aciklama":"Koala, Avustralya ya özgü bir keseli memeli olup neredeyse tüm yaşamını okaliptüs ağaçlarında geçirir. Günde 22 saate kadar uyuyabilen koalalar, son derece düşük enerjili bir yaşam sürer. Bunun temel nedeni, besin kaynakları olan okaliptüs yapraklarının çok az kalori içermesi ve sindirimin uzun sürmesidir. Yavaş hareketleri ve sürekli uyumaları, enerji tasarrufu stratejilerinin bir parçasıdır.","ilgincBilgiler":["Günde 22 saate kadar uyuyabilirler; bu onları en çok uyuyan memelilerden biri yapar.","Yalnızca okaliptüs yapraklarıyla beslenirler ve 700 den fazla okaliptüs türünden sadece 50 kadarını tercih ederler.","Okaliptüs yaprakları çoğu hayvan için zehirlidir ancak koalaların özel bir sindirim sistemi bu toksinleri etkisiz hale getirir.","Parmak izleri insanlarınkine o kadar benzerdir ki kriminoloji uzmanları bile ayırt etmekte zorlanabilir.","Yavrular, annelerinin sindirilmiş okaliptüs lapasını yiyerek bağırsak florasını geliştirir."]}'>
+        <div class="animal-card-header">
+          <span class="animal-emoji">🐨</span>
+          <div>
+            <h3>Koala</h3>
+            <span class="latin-name">Phascolarctos cinereus</span>
+          </div>
+        </div>
+        <p>Avustralya'nın ikonik keseli memelisi. Günde 22 saate kadar uyuyarak enerji tasarrufu yapar ve son derece yavaş hareket eder.</p>
+        <div class="animal-tags">
+          <span class="tag habitat">Avustralya</span>
+          <span class="tag diet">Otçul</span>
+        </div>
+      </div>
+
+      <!-- DEV KAPLUMBAĞA -->
+      <div class="animal-card" data-animal='{"isim":"Dev Kaplumbağa","emoji":"🐢","latin":"Aldabrachelys gigantea","habitat":"Seyşeller ve Galapagos Adaları","beslenme":"Otçul","boyut":"90-120 cm","agirlik":"250-300 kg","yasam":"100-200+ yıl","aciklama":"Dev kaplumbağa, dünyanın en büyük kara kaplumbağalarından biri olup Seyşeller ve Galapagos Adaları nda yaşar. Saatte yaklaşık 0.3 km hızla hareket eden bu devasa sürüngenler, 200 yılı aşkın bir ömür sürebilir. Yavaş metabolizmaları ve stressiz yaşam tarzları, uzun ömürlerinin sırrı olarak kabul edilir. Ağır kabukları nedeniyle hızlı hareket edemezler ancak doğada yetişkin bireylerin neredeyse hiç doğal düşmanı yoktur.","ilgincBilgiler":["200 yılı aşkın yaşayabilen, dünyanın en uzun ömürlü kara hayvanlarından biridir.","Saatte yalnızca 0.3 km hız yapabilirler.","Bilinen en yaşlı kaplumbağa, 190 yaşında ölen Harriet adlı bireydir; bazı kaynaklara göre Jonathan isimli kaplumbağa 190 yaşını aşmıştır.","Su olmadan aylarca hayatta kalabilirler.","Galapagos dev kaplumbağaları, Darwin in evrim teorisini geliştirmesinde önemli rol oynamıştır."]}'>
+        <div class="animal-card-header">
+          <span class="animal-emoji">🐢</span>
+          <div>
+            <h3>Dev Kaplumbağa</h3>
+            <span class="latin-name">Aldabrachelys gigantea</span>
+          </div>
+        </div>
+        <p>200 yılı aşkın yaşayabilen doğanın devleri. Saatte 0.3 km hızla hareket eder, yavaş metabolizmaları uzun ömürlerinin anahtarıdır.</p>
+        <div class="animal-tags">
+          <span class="tag habitat">Seyşeller/Galapagos</span>
+          <span class="tag diet">Otçul</span>
+        </div>
+      </div>
+
+      <!-- SALYANGOZ -->
+      <div class="animal-card" data-animal='{"isim":"Salyangoz","emoji":"🐌","latin":"Cornu aspersum","habitat":"Dünya geneli","beslenme":"Otçul","boyut":"2-5 cm","agirlik":"7-15 g","yasam":"2-5 yıl","aciklama":"Bahçe salyangozları, dünyanın en yavaş canlılarından biri olup saatte yalnızca 0.05 km hızla hareket eder. Tek bir kas ayağı üzerinde salgıladıkları mukus tabakası sayesinde kayarak ilerlerler. Bu mukus, onların keskin yüzeylerde bile zarar görmeden hareket etmesini sağlar. Dünya genelinde nemli ortamlarda yaşayan salyangozlar, kuraklık dönemlerinde kabuklarına çekilerek aylarca uyku haline (estivasyon) geçebilir.","ilgincBilgiler":["Saatte yalnızca 0.05 km hızla hareket ederek en yavaş canlılardan biridir.","Vücutlarından salgıladıkları mukus sayesinde jilet üzerinde bile zarar görmeden yürüyebilirler.","Bir salyangozun yaklaşık 20.000 dişi vardır ve bunlar dil benzeri bir organ olan radula üzerinde sıralanır.","Hem erkek hem dişi üreme organlarına sahip hermafrodit canlılardır.","Kuraklık dönemlerinde kabuklarına çekilerek aylarca uykuya geçebilirler."]}'>
+        <div class="animal-card-header">
+          <span class="animal-emoji">🐌</span>
+          <div>
+            <h3>Salyangoz</h3>
+            <span class="latin-name">Cornu aspersum</span>
+          </div>
+        </div>
+        <p>Doğanın sabırlı gezgini. Saatte 0.05 km hızla mukus tabakası üzerinde kayarak ilerler, keskin yüzeylerde bile zarar görmez.</p>
+        <div class="animal-tags">
+          <span class="tag habitat">Dünya Geneli</span>
+          <span class="tag diet">Otçul</span>
+        </div>
+      </div>
+
+      <!-- DENİZATI -->
+      <div class="animal-card" data-animal='{"isim":"Denizatı","emoji":"🐴","latin":"Hippocampus","habitat":"Sığ tropik sular","beslenme":"Etçil (plankton)","boyut":"1.5-35 cm","agirlik":"0.5-200 g","yasam":"1-5 yıl","aciklama":"Denizatı, benzersiz dik vücut yapısıyla okyanuslardaki en yavaş yüzücüdür. Saatte yalnızca 0.0015 km hızla hareket eden cüce denizatı türü, dünyanın en yavaş balığı olarak kayıtlara geçmiştir. Sığ tropik sularda deniz çayırları ve mercan resifleri arasında yaşarlar. Küçük sırt yüzgeçlerini saniyede 35 kez çırparak ilerlerler ancak güçlü akıntılara karşı koyamazlar ve kuyrukları ile deniz bitkilerine tutunarak sabit kalırlar.","ilgincBilgiler":["Saatte 0.0015 km ile dünyanın en yavaş balığı olarak bilinir.","Hayvanlar aleminde erkeklerin hamile kaldığı nadir türlerden biridir; erkek denizatı karnındaki kesede yavruları taşır.","Bağımsız hareket edebilen gözleri sayesinde aynı anda farklı yönlere bakabilirler.","Midelerinin olmaması nedeniyle sürekli yemek yemek zorundadırlar.","Kuyrukları ile su bitkilerine tutunarak akıntıda sabit kalırlar."]}'>
+        <div class="animal-card-header">
+          <span class="animal-emoji">🐴</span>
+          <div>
+            <h3>Denizatı</h3>
+            <span class="latin-name">Hippocampus</span>
+          </div>
+        </div>
+        <p>Okyanusların en yavaş yüzücüsü. Saatte 0.0015 km hızla hareket eder, erkekleri hamile kalabilen nadir türlerdendir.</p>
+        <div class="animal-tags">
+          <span class="tag habitat">Tropik Sular</span>
+          <span class="tag diet">Etçil</span>
+        </div>
+      </div>
+
+      <!-- DENİZ YILDIZI -->
+      <div class="animal-card" data-animal='{"isim":"Deniz Yıldızı","emoji":"⭐","latin":"Asterias rubens","habitat":"Tüm okyanuslar","beslenme":"Etçil","boyut":"12-24 cm","agirlik":"100-200 g","yasam":"5-35 yıl","aciklama":"Deniz yıldızı, okyanus tabanında son derece yavaş hareket eden omurgasız bir deniz canlısıdır. Saatte yaklaşık 0.03 km hızla ilerleyen bu canlılar, kollarının alt yüzeyinde bulunan yüzlerce tüp ayak sayesinde hareket eder. Beş kollu simetrik yapılarıyla tanınan deniz yıldızları, aslında etkili avcılardır. Midelerini vücutlarının dışına çıkararak avlarını sindirebilirler ve kopan kollarını yeniden oluşturma yeteneğine sahiptirler.","ilgincBilgiler":["Saatte yaklaşık 0.03 km hızla hareket ederler.","Kopan kollarını tamamen yeniden oluşturabilirler; hatta bazı türlerde kopan bir kol yepyeni bir birey oluşturabilir.","Midelerini vücutlarının dışına çıkararak avlarını sindirebilirler.","Beyinleri ve kanları yoktur; sinir sistemi kollarına dağılmıştır ve damarlarında kan yerine deniz suyu dolaşır.","Gözleri kollarının ucunda bulunur ve ışık-karanlık ayrımı yapabilirler."]}'>
+        <div class="animal-card-header">
+          <span class="animal-emoji">⭐</span>
+          <div>
+            <h3>Deniz Yıldızı</h3>
+            <span class="latin-name">Asterias rubens</span>
+          </div>
+        </div>
+        <p>Okyanus tabanının yavaş avcısı. Saatte 0.03 km hızla ilerler, kopan kollarını yeniden oluşturabilir ve midesini dışarı çıkararak avlanır.</p>
+        <div class="animal-tags">
+          <span class="tag habitat">Tüm Okyanuslar</span>
+          <span class="tag diet">Etçil</span>
+        </div>
+      </div>
+
+      <!-- YAVAŞ LORİ -->
+      <div class="animal-card" data-animal='{"isim":"Yavaş Lori","emoji":"🐒","latin":"Nycticebus","habitat":"Güneydoğu Asya","beslenme":"Hepçil","boyut":"18-38 cm","agirlik":"0.3-2 kg","yasam":"15-20 yıl","aciklama":"Yavaş lori, Güneydoğu Asya ormanlarında yaşayan gece aktif bir primat türüdür. Adını son derece yavaş ve dikkatli hareketlerinden alır; saatte yaklaşık 2 km hızla hareket eder. Bu yavaş hareket tarzı aslında bir avlanma ve savunma stratejisidir. Sessiz ve ağır hareketleri sayesinde avlarına fark edilmeden yaklaşabilirler. Primatlar arasında zehirli olan nadir türlerden biridir; dirsek bezlerinden salgıladıkları toksin ısırıklarını zehirli hale getirir.","ilgincBilgiler":["Saatte yaklaşık 2 km hızla hareket eder ve adını bu yavaşlıktan alır.","Primatlar arasında zehirli olan çok nadir türlerden biridir; dirsek bezlerinden salgıladıkları toksinle ısırıkları zehirli olur.","İri gözleri gece görüşü için özelleşmiştir ve karanlıkta mükemmel görebilirler.","Dalları kavramak için güçlü ellere sahiptirler ve saatlerce hareketsiz asılı kalabilirler.","Yasadışı evcil hayvan ticareti en büyük tehditlerinden biridir ve birçok alt türü nesli tükenme tehlikesi altındadır."]}'>
+        <div class="animal-card-header">
+          <span class="animal-emoji">🐒</span>
+          <div>
+            <h3>Yavaş Lori</h3>
+            <span class="latin-name">Nycticebus</span>
+          </div>
+        </div>
+        <p>Güneydoğu Asya'nın zehirli primatı. Saatte 2 km hızla sessizce hareket eder, yavaşlığını avlanma stratejisine dönüştürmüştür.</p>
+        <div class="animal-tags">
+          <span class="tag habitat">Güneydoğu Asya</span>
+          <span class="tag diet">Hepçil</span>
+        </div>
+      </div>
+
+      <!-- DENİZ İNEĞİ (LAMANTİN) -->
+      <div class="animal-card" data-animal='{"isim":"Deniz İneği (Lamantin)","emoji":"🐋","latin":"Trichechus","habitat":"Tropik kıyılar","beslenme":"Otçul (su bitkileri)","boyut":"2.8-4.0 m","agirlik":"400-590 kg","yasam":"40-60 yıl","aciklama":"Deniz ineği olarak da bilinen lamantin, tropik kıyı sularında ve nehir ağızlarında yaşayan büyük ve uysal bir deniz memelisidir. Saatte yaklaşık 5 km hızla yüzen lamantinler, zamanlarının çoğunu su bitkilerini otlayarak geçirir. Günde vücut ağırlıklarının yüzde onunu yiyebilen bu devasa canlılar, sığ sulardaki bitki örtüsünü kontrol ederek ekosistemde önemli bir rol üstlenir. Tarihte denizciler tarafından deniz kızlarıyla karıştırıldıkları rivayet edilir.","ilgincBilgiler":["Saatte yaklaşık 5 km hızla yüzerler ancak kısa mesafelerde 30 km hıza ulaşabilirler.","Günde vücut ağırlıklarının yüzde onuna kadar su bitkisi tüketirler.","Fillerin en yakın yaşayan akrabalarından biri oldukları düşünülmektedir.","Tarihte denizcilerin deniz kızı efsanelerinin kaynağı olduğuna inanılır.","Dişleri sürekli olarak yenilenir; arka taraftan yeni dişler çıkarken öndekiler düşer."]}'>
+        <div class="animal-card-header">
+          <span class="animal-emoji">🐋</span>
+          <div>
+            <h3>Deniz İneği (Lamantin)</h3>
+            <span class="latin-name">Trichechus</span>
+          </div>
+        </div>
+        <p>Tropik kıyıların uysal devi. Saatte 5 km hızla yüzer, günde vücut ağırlığının onda birini su bitkisi olarak tüketir.</p>
+        <div class="animal-tags">
+          <span class="tag habitat">Tropik Kıyılar</span>
+          <span class="tag diet">Otçul</span>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <button class="modal-close">&times;</button>
+      <span class="modal-emoji"></span>
+      <h2></h2>
+      <span class="modal-latin"></span>
+      <div class="modal-info-grid"></div>
+      <p class="modal-description"></p>
+      <div class="modal-fun-facts">
+        <h4>İlginç Bilgiler</h4>
+        <ul></ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>🌍 Hayvanlar Dünyası</h4>
+        <p>Gezegenimizin muhteşem canlılarını tanıyın. Bu site, hayvanlar alemi hakkında bilgi edinmek isteyen herkes için hazırlanmıştır.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Kategoriler</h4>
+        <ul class="footer-links">
+          <li><a href="memeliler.html">🦁 Memeliler</a></li>
+          <li><a href="kuslar.html">🦅 Kuşlar</a></li>
+          <li><a href="surungen.html">🐊 Sürüngen</a></li>
+          <li><a href="baliklar.html">🦈 Balıklar</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Diğer</h4>
+        <ul class="footer-links">
+          <li><a href="amfibiler.html">🐸 Amfibiler</a></li>
+          <li><a href="bocekler.html">🦋 Böcekler</a></li>
+          <li><a href="omurgasizlar.html">🐙 Omurgasızlar</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Keşfet</h4>
+        <ul class="footer-links">
+          <li><a href="tehlike-altinda.html">Tehlike Altındaki Türler</a></li>
+          <li><a href="turkiye-hayvanlari.html">Türkiye Hayvanları</a></li>
+          <li><a href="quiz.html">Bilgi Yarışması</a></li>
+          <li><a href="hakkinda.html">Hakkında</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Hayvanlar Dünyası &copy; 2026 - Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

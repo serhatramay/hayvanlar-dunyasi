@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>En Uzun Yaşayan Hayvanlar - Hayvanlar Dünyası</title>
+  <meta name="description" content="En uzun yaşayan hayvanlar - Yüzlerce yıl yaşayan türlerden biyolojik olarak ölümsüz canlılara kadar, doğanın en dayanıklı hayvanlarını keşfedin.">
+  <meta property="og:title" content="En Uzun Yaşayan Hayvanlar - Hayvanlar Dünyası">
+  <meta property="og:description" content="Grönland köpekbalığından ölümsüz denizanasına, doğanın en uzun yaşayan canlılarını tanıyın.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGASYON -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">🌍 Hayvanlar <span>Dünyası</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="memeliler.html">Memeliler</a></li>
+        <li><a href="kuslar.html">Kuşlar</a></li>
+        <li><a href="surungen.html">Sürüngen</a></li>
+        <li><a href="baliklar.html">Balıklar</a></li>
+        <li><a href="amfibiler.html">Amfibiler</a></li>
+        <li><a href="bocekler.html">Böcekler</a></li>
+        <li><a href="omurgasizlar.html">Omurgasızlar</a></li>
+        <li><a href="tehlike-altinda.html">Tehlike Altında</a></li>
+        <li><a href="turkiye-hayvanlari.html">Türkiye</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="hakkinda.html">Hakkında</a></li>
+      </ul>
+      <div class="nav-search">
+        <span class="nav-search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Hayvan ara..." autocomplete="off">
+      </div>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="search-results" id="searchResults"></div>
+
+  <!-- SAYFA HERO -->
+  <section class="page-hero hero-uzun-yasam">
+    <span class="hero-emoji">🕰️</span>
+    <h1>En Uzun Yaşayan Hayvanlar</h1>
+    <p>Doğa, bazı canlılara inanılmaz uzun ömürler bahşetmiştir. Yüzlerce yıl yaşayan köpekbalıklarından biyolojik olarak ölümsüz denizanalarına kadar, gezegenimizin en dayanıklı ve uzun ömürlü hayvanlarını keşfedin. Bu türler, yaşlanma ve ölümsüzlük konusundaki bilimsel araştırmalara da ilham vermektedir.</p>
+  </section>
+
+  <main class="section">
+
+    <div class="animal-grid">
+
+      <!-- GRÖNLAND KÖPEKBALlĞI -->
+      <div class="animal-card" data-animal='{"isim":"Grönland Köpekbalığı","emoji":"🦈","latin":"Somniosus microcephalus","habitat":"Kuzey Atlantik ve Arktik Okyanus","beslenme":"Etçil","boyut":"2.4 - 7.3 metre","agirlik":"400 - 1400 kg","yasam":"300 - 500 yıl","aciklama":"Grönland köpekbalığı, bilinen en uzun yaşayan omurgalı hayvandır. Arktik ve Kuzey Atlantik in buzlu sularında yaşayan bu devasa köpekbalığı, 300 ila 500 yıl arasında yaşayabilir. Çok yavaş büyüyen bu tür, cinsel olgunluğa ancak 150 yaşında ulaşır. Soğuk sulardaki düşük metabolizma hızı, uzun ömürlerinin sırrı olarak kabul edilmektedir.","ilgincBilgiler":["Bilinen en uzun yaşayan omurgalı hayvandır - bazı bireylerin 500 yaşın üzerinde olabileceği düşünülmektedir.","Cinsel olgunluğa ancak 150 yaşında ulaşırlar.","Göz lenslerindeki karbon-14 analizi ile yaşları belirlenebilmektedir.","Etleri yüksek oranda trimetilamin oksit (TMAO) içerdiğinden taze olarak zehirlidir."]}'>
+        <div class="animal-card-header">
+          <span class="animal-emoji">🦈</span>
+          <div>
+            <h3>Grönland Köpekbalığı</h3>
+            <span class="latin-name">Somniosus microcephalus</span>
+          </div>
+        </div>
+        <p>Bilinen en uzun yaşayan omurgalı hayvan. Arktik sularında 300-500 yıl yaşayabilen, cinsel olgunluğa 150 yaşında ulaşan dev köpekbalığı.</p>
+        <div class="animal-tags">
+          <span class="tag habitat">Kuzey Atlantik/Arktik</span>
+          <span class="tag diet">Etçil</span>
+          <span class="tag">300-500 yıl</span>
+        </div>
+      </div>
+
+      <!-- OKYANUS MİDYESİ -->
+      <div class="animal-card" data-animal='{"isim":"Okyanus Midyesi","emoji":"🐚","latin":"Arctica islandica","habitat":"Kuzey Atlantik Okyanusu","beslenme":"Süzücü beslenen","boyut":"5 - 13 cm","agirlik":"50 - 200 g","yasam":"500+ yıl","aciklama":"Okyanus midyesi, dünyanın en uzun yaşayan hayvanlarından biridir. Kuzey Atlantik in soğuk sularında yaşayan bu çift kabuklu yumuşakça, yüzyıllar boyunca hayatta kalabilir. Ming adlı birey, 2006 yılında İzlanda kıyılarında keşfedildiğinde 507 yaşında olduğu tespit edilmiştir. Kabuk halkaları sayılarak yaşları hassas bir şekilde belirlenebilmektedir.","ilgincBilgiler":["Ming adlı birey 507 yaşında bulunmuştur ve kayıtlara geçen en yaşlı bireysel hayvandır.","Kabuk halkaları, tıpkı ağaç halkaları gibi sayılarak yaşları belirlenebilir.","Maalesef Ming, yaşı belirlenirken araştırmacılar tarafından kazara öldürülmüştür.","Kabuk halkalarındaki kimyasal bileşim, geçmiş yüzyılların okyanus koşullarını araştırmak için kullanılmaktadır."]}'>
+        <div class="animal-card-header">
+          <span class="animal-emoji">🐚</span>
+          <div>
+            <h3>Okyanus Midyesi</h3>
+            <span class="latin-name">Arctica islandica</span>
+          </div>
+        </div>
+        <p>500 yıldan fazla yaşayabilen çift kabuklu yumuşakça. Ming adlı birey 507 yaşında bulunarak rekor kırmıştır.</p>
+        <div class="animal-tags">
+          <span class="tag habitat">Kuzey Atlantik</span>
+          <span class="tag diet">Süzücü beslenen</span>
+          <span class="tag">500+ yıl</span>
+        </div>
+      </div>
+
+      <!-- ÖLÜMSÜZ DENİZANASI -->
+      <div class="animal-card" data-animal='{"isim":"Ölümsüz Denizanası","emoji":"🪼","latin":"Turritopsis dohrnii","habitat":"Akdeniz ve Japonya denizleri","beslenme":"Etçil (plankton)","boyut":"4.5 mm","agirlik":"1 gramdan az","yasam":"Biyolojik olarak ölümsüz","aciklama":"Ölümsüz denizanası, biyolojik olarak ölümsüz kabul edilen tek hayvan türüdür. Akdeniz ve Japonya denizlerinde bulunan bu minik denizanası, olgunlaştıktan sonra hücrelerini yeniden programlayarak polip aşamasına geri dönebilir. Bu süreç transdifferansiasyon olarak adlandırılır ve teorik olarak sonsuz kez tekrarlanabilir. Bu benzersiz yetenek, yaşlanma ve kanser araştırmalarında büyük ilgi görmektedir.","ilgincBilgiler":["Biyolojik olarak ölümsüz kabul edilen tek hayvan türüdür.","Olgunlaştıktan sonra hücrelerini yeniden programlayarak yaşam döngüsünü baştan başlatabilir.","Bu süreç transdifferansiasyon olarak bilinir ve teorik olarak sonsuz kez tekrarlanabilir.","Yalnızca 4.5 mm boyutunda olmasına rağmen bilim dünyasının en çok ilgisini çeken türlerden biridir."]}'>
+        <div class="animal-card-header">
+          <span class="animal-emoji">🪼</span>
+          <div>
+            <h3>Ölümsüz Denizanası</h3>
+            <span class="latin-name">Turritopsis dohrnii</span>
+          </div>
+        </div>
+        <p>Biyolojik olarak ölümsüz kabul edilen tek hayvan. Hücrelerini yeniden programlayarak yaşam döngüsünü sonsuz kez tekrarlayabilir.</p>
+        <div class="animal-tags">
+          <span class="tag habitat">Akdeniz/Japonya</span>
+          <span class="tag diet">Etçil (plankton)</span>
+          <span class="tag">Ölümsüz</span>
+        </div>
+      </div>
+
+      <!-- GRÖNLAND BALİNASI -->
+      <div class="animal-card" data-animal='{"isim":"Grönland Balinası","emoji":"🐋","latin":"Balaena mysticetus","habitat":"Arktik Okyanus","beslenme":"Süzücü (krill, plankton)","boyut":"14 - 18 metre","agirlik":"75.000 - 100.000 kg","yasam":"200+ yıl","aciklama":"Grönland balinası, en uzun yaşayan memeli hayvan olarak bilinmektedir. Arktik Okyanus un buzlu sularında yaşayan bu devasa balina, 200 yıldan fazla yaşayabilir. Bazı bireylerin vücutlarında 19. yüzyıldan kalma zıpkın uçları bulunmuştur ki bu da inanılmaz uzun ömürlerinin kanıtıdır. 1 metreyi aşabilen balin plakalarıyla Arktik in en güçlü süzücülerinden biridir.","ilgincBilgiler":["En uzun yaşayan memeli hayvandır - 200 yıldan fazla yaşayabilir.","Bazı bireylerin vücutlarında 1800 lerden kalma zıpkın uçları bulunmuştur.","Kafatasları, 60 cm kalınlığındaki buzu kırabilecek kadar güçlüdür.","Balin plakaları 5 metreye kadar uzayabilir ve plankton süzmek için kullanılır."]}'>
+        <div class="animal-card-header">
+          <span class="animal-emoji">🐋</span>
+          <div>
+            <h3>Grönland Balinası</h3>
+            <span class="latin-name">Balaena mysticetus</span>
+          </div>
+        </div>
+        <p>En uzun yaşayan memeli hayvan. Arktik sularında 200 yıldan fazla yaşayabilen bu devlerin vücutlarında 19. yüzyıldan kalma zıpkın uçları bulunmuştur.</p>
+        <div class="animal-tags">
+          <span class="tag habitat">Arktik Okyanus</span>
+          <span class="tag diet">Süzücü</span>
+          <span class="tag">200+ yıl</span>
+        </div>
+      </div>
+
+      <!-- DEV KAPLUMBAĞA -->
+      <div class="animal-card" data-animal='{"isim":"Dev Kaplumbağa","emoji":"🐢","latin":"Aldabrachelys gigantea","habitat":"Seyşeller ve Galapagos Adaları","beslenme":"Otçul","boyut":"90 - 120 cm","agirlik":"250 - 300 kg","yasam":"150 - 200+ yıl","aciklama":"Dev kaplumbağalar, karada yaşayan en uzun ömürlü hayvanlardan biridir. Seyşeller ve Galapagos adalarında yaşayan bu devasa sürüngenler, 150 ila 200 yıldan fazla yaşayabilir. Jonathan adlı Seyşeller dev kaplumbağası, 190 yaşının üzerinde olmasıyla dünyanın yaşayan en yaşlı kara hayvanı unvanını taşımaktadır. Yavaş metabolizmaları ve stressiz ada yaşamları, uzun ömürlerinin anahtarıdır.","ilgincBilgiler":["Jonathan adlı birey 190 yaşının üzerindedir ve dünyanın yaşayan en yaşlı kara hayvanıdır.","Jonathan, 1832 civarında doğduğu tahmin edilmekte olup fotoğraf makinesinden bile yaşlıdır.","Yavaş metabolizmaları ve ada yaşamındaki düşük stres, uzun ömürlerinin sırrıdır.","Galapagos dev kaplumbağaları, Darwin in evrim teorisini geliştirmesinde kilit rol oynamıştır."]}'>
+        <div class="animal-card-header">
+          <span class="animal-emoji">🐢</span>
+          <div>
+            <h3>Dev Kaplumbağa</h3>
+            <span class="latin-name">Aldabrachelys gigantea</span>
+          </div>
+        </div>
+        <p>Karada yaşayan en uzun ömürlü hayvanlardan biri. Jonathan adlı birey 190 yaşının üzerinde olmasıyla dünyanın en yaşlı kara hayvanıdır.</p>
+        <div class="animal-tags">
+          <span class="tag habitat">Seyşeller/Galapagos</span>
+          <span class="tag diet">Otçul</span>
+          <span class="tag">150-200+ yıl</span>
+        </div>
+      </div>
+
+      <!-- KIRMIZI DENİZ KESTANESİ -->
+      <div class="animal-card" data-animal='{"isim":"Kırmızı Deniz Kestanesi","emoji":"🟤","latin":"Strongylocentrotus franciscanus","habitat":"Pasifik Okyanusu","beslenme":"Otçul (yosun)","boyut":"7 - 19 cm","agirlik":"100 - 400 g","yasam":"200+ yıl","aciklama":"Kırmızı deniz kestanesi, Pasifik Okyanusu nun sığ kayalık bölgelerinde yaşayan ve 200 yıldan fazla yaşayabilen bir omurgasız hayvandır. Uzun dikenlerle kaplı küresel gövdesiyle tanınan bu tür, yaşlandıkça büyümeye devam eder ve yaşlanma belirtisi göstermez. 100 yaşındaki bir birey, 10 yaşındaki kadar sağlıklı ve üreme kapasitesine sahip olabilir.","ilgincBilgiler":["200 yıldan fazla yaşayabilirler ve yaşlandıkça bile büyümeye devam ederler.","Yaşlanma belirtisi göstermezler - 100 yaşındaki birey 10 yaşındaki kadar üreme kapasitesine sahiptir.","Ağız yapıları Aristo nun Feneri olarak adlandırılır ve 5 dişten oluşur.","Deniz yosunlarını kontrol altında tutarak deniz ekosistemlerinin dengesini sağlarlar."]}'>
+        <div class="animal-card-header">
+          <span class="animal-emoji">🟤</span>
+          <div>
+            <h3>Kırmızı Deniz Kestanesi</h3>
+            <span class="latin-name">Strongylocentrotus franciscanus</span>
+          </div>
+        </div>
+        <p>200 yıldan fazla yaşayabilen ve yaşlanma belirtisi göstermeyen deniz canlısı. Yaşlı bireyler gençler kadar sağlıklıdır.</p>
+        <div class="animal-tags">
+          <span class="tag habitat">Pasifik Okyanusu</span>
+          <span class="tag diet">Otçul (yosun)</span>
+          <span class="tag">200+ yıl</span>
+        </div>
+      </div>
+
+      <!-- TUATARA -->
+      <div class="animal-card" data-animal='{"isim":"Tuatara","emoji":"🦎","latin":"Sphenodon punctatus","habitat":"Yeni Zelanda","beslenme":"Etçil (böcek)","boyut":"61 cm","agirlik":"0.5 - 1.3 kg","yasam":"100 - 200+ yıl","aciklama":"Tuatara, Yeni Zelanda ya özgü ve yaklaşık 200 milyon yıl önce yaşamış sürüngenlerin son temsilcisi olan yaşayan bir fosildir. Kertenkelelere benzemesine rağmen tamamen farklı bir takıma (Rhynchocephalia) aittir. 100 ila 200 yıl arasında yaşayabilen tuataralar, üçüncü bir göze (parietal göz) sahip olan nadir hayvanlardan biridir. Yavaş metabolizmaları sayesinde inanılmaz uzun ömürler sürerler.","ilgincBilgiler":["200 milyon yıl öncesinden kalan sürüngen grubunun son temsilcisidir - yaşayan bir fosil olarak kabul edilir.","Başlarının üstünde, ışığa duyarlı üçüncü bir göz (parietal göz) bulunur.","Kertenkele gibi görünmelerine rağmen tamamen farklı bir sürüngen takımına aittirler.","Henry adlı tuatara, 111 yaşında ilk kez baba olmuştur."]}'>
+        <div class="animal-card-header">
+          <span class="animal-emoji">🦎</span>
+          <div>
+            <h3>Tuatara</h3>
+            <span class="latin-name">Sphenodon punctatus</span>
+          </div>
+        </div>
+        <p>200 milyon yıllık sürüngen grubunun son temsilcisi, yaşayan bir fosil. 100-200 yıl yaşayabilen ve üçüncü bir göze sahip eşsiz tür.</p>
+        <div class="animal-tags">
+          <span class="tag habitat">Yeni Zelanda</span>
+          <span class="tag diet">Etçil (böcek)</span>
+          <span class="tag">100-200+ yıl</span>
+        </div>
+      </div>
+
+      <!-- MACAW PAPAĞANI -->
+      <div class="animal-card" data-animal='{"isim":"Macaw Papağanı","emoji":"🦜","latin":"Ara macao","habitat":"Orta ve Güney Amerika","beslenme":"Hepçil","boyut":"81 - 96 cm","agirlik":"0.9 - 1.5 kg","yasam":"60 - 80 yıl","aciklama":"Macaw papağanı, parlak kırmızı, sarı ve mavi tüyleriyle tropik ormanların en göz alıcı kuşlarından biridir. Orta ve Güney Amerika nın yağmur ormanlarında yaşayan bu büyük papağanlar, kuşlar arasında en uzun yaşayan türlerden biri olarak 60 ila 80 yıl arası ömür sürerler. Son derece zeki olan macawlar, insan konuşmasını taklit edebilir ve alet kullanabilirler.","ilgincBilgiler":["Kuşlar arasında en uzun yaşayan türlerden biridir - bakım altında 80 yılı aşabilirler.","Son derece zekidirler ve yaklaşık 100 kelimeyi öğrenip kullanabilirler.","Gagaları, sert Brezilya cevizini bile kırabilecek güçtedir.","Eşleriyle ömür boyu birlikte kalırlar ve birlikte uçarken kanatları neredeyse birbirine değer."]}'>
+        <div class="animal-card-header">
+          <span class="animal-emoji">🦜</span>
+          <div>
+            <h3>Macaw Papağanı</h3>
+            <span class="latin-name">Ara macao</span>
+          </div>
+        </div>
+        <p>Tropik ormanların parlak renkli devleri. Kuşlar arasında en uzun yaşayan türlerden biri olup 60-80 yıl ömür sürerler.</p>
+        <div class="animal-tags">
+          <span class="tag habitat">Orta/Güney Amerika</span>
+          <span class="tag diet">Hepçil</span>
+          <span class="tag">60-80 yıl</span>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <button class="modal-close">&times;</button>
+      <span class="modal-emoji"></span>
+      <h2></h2>
+      <span class="modal-latin"></span>
+      <div class="modal-info-grid"></div>
+      <p class="modal-description"></p>
+      <div class="modal-fun-facts">
+        <h4>İlginç Bilgiler</h4>
+        <ul></ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>🌍 Hayvanlar Dünyası</h4>
+        <p>Gezegenimizin muhteşem canlılarını tanıyın. Bu site, hayvanlar alemi hakkında bilgi edinmek isteyen herkes için hazırlanmıştır.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Kategoriler</h4>
+        <ul class="footer-links">
+          <li><a href="memeliler.html">🦁 Memeliler</a></li>
+          <li><a href="kuslar.html">🦅 Kuşlar</a></li>
+          <li><a href="surungen.html">🐊 Sürüngen</a></li>
+          <li><a href="baliklar.html">🦈 Balıklar</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Diğer</h4>
+        <ul class="footer-links">
+          <li><a href="amfibiler.html">🐸 Amfibiler</a></li>
+          <li><a href="bocekler.html">🦋 Böcekler</a></li>
+          <li><a href="omurgasizlar.html">🐙 Omurgasızlar</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Keşfet</h4>
+        <ul class="footer-links">
+          <li><a href="tehlike-altinda.html">Tehlike Altındaki Türler</a></li>
+          <li><a href="turkiye-hayvanlari.html">Türkiye Hayvanları</a></li>
+          <li><a href="quiz.html">Bilgi Yarışması</a></li>
+          <li><a href="hakkinda.html">Hakkında</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Hayvanlar Dünyası &copy; 2026 - Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

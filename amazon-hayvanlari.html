@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon Yağmur Ormanı Hayvanları - Hayvanlar Dünyası</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">🌍 Hayvanlar <span>Dünyası</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="memeliler.html">Memeliler</a></li>
+        <li><a href="kuslar.html">Kuşlar</a></li>
+        <li><a href="surungen.html">Sürüngen</a></li>
+        <li><a href="baliklar.html">Balıklar</a></li>
+        <li><a href="amfibiler.html">Amfibiler</a></li>
+        <li><a href="bocekler.html">Böcekler</a></li>
+        <li><a href="omurgasizlar.html">Omurgasızlar</a></li>
+        <li><a href="tehlike-altinda.html">Tehlike Altında</a></li>
+        <li><a href="turkiye-hayvanlari.html">Türkiye</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="hakkinda.html">Hakkında</a></li>
+      </ul>
+      <div class="nav-search">
+        <span class="nav-search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Hayvan ara..." autocomplete="off">
+      </div>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="search-results" id="searchResults"></div>
+
+  <section class="page-hero hero-amazon">
+    <div class="hero-content">
+      <span class="hero-emoji">🌿</span>
+      <h1>Amazon Yağmur Ormanı Hayvanları</h1>
+      <p>Dünya üzerindeki tüm canlı türlerinin yaklaşık yüzde onunu barındıran Amazon yağmur ormanı, gezegenimizin en zengin biyoçeşitlilik alanıdır. Milyonlarca yıllık evrim sürecinde şekillenen bu devasa ekosistem, sayısız benzersiz türe ev sahipliği yapmaktadır.</p>
+    </div>
+  </section>
+
+  <main class="container">
+
+    <div class="animal-grid">
+
+      <div class="animal-card" data-animal='{"isim":"Jaguar","emoji":"🐆","latin":"Panthera onca","habitat":"Amazon havzası","beslenme":"Etçil","boyut":"1.1-1.8 m","agirlik":"56-96 kg","yasam":"12-15 yıl","aciklama":"Amazon yağmur ormanının en güçlü ve en büyük yırtıcısı olan jaguar, mükemmel bir avcı olarak ekosistemin dengesini korur. Güçlü çene yapısı sayesinde kaplumbağa kabuklarını bile kırabilir ve geniş avlanma alanlarında tek başına dolaşır.","ilgincBilgiler":["Jaguar, kedi türleri arasında suyu en çok seven türdür ve nehirlerde yüzerek avlanabilir.","Çene kuvveti tüm büyük kediler arasında en yüksek olanıdır; timsah kafatasını bile kırabilecek güce sahiptir.","Siyah jaguarlar aslında melanistik bireylerdir ve yakından bakıldığında benekleri görülebilir.","Her jaguarın benek deseni tıpkı insan parmak izi gibi benzersizdir."]}'>
+        <div class="animal-card-header">
+          <span class="animal-emoji">🐆</span>
+          <div>
+            <h3>Jaguar</h3>
+            <span class="latin-name">Panthera onca</span>
+          </div>
+        </div>
+        <p>Amazon'un en güçlü yırtıcısı olan jaguar, ormanın derinliklerinde hüküm süren muhteşem bir avcıdır.</p>
+        <div class="animal-tags">
+          <span class="tag habitat">Amazon havzası</span>
+          <span class="tag diet">Etçil</span>
+        </div>
+      </div>
+
+      <div class="animal-card" data-animal='{"isim":"Pembe Nehir Yunusu","emoji":"🐬","latin":"Inia geoffrensis","habitat":"Amazon nehri","beslenme":"Etçil (balık)","boyut":"1.5-2.5 m","agirlik":"90-200 kg","yasam":"12-18 yıl","aciklama":"Amazon nehrinin bulanık sularında yaşayan pembe nehir yunusu, tatlı su yunuslarının en büyük türüdür. Ekolokatör sistemini kullanarak bulanık sularda kolaylıkla avlanır ve oldukça esnek boyun yapısı sayesinde su altındaki ağaç kökleri arasında rahatlıkla hareket eder.","ilgincBilgiler":["Pembe renkleri yaşlandıkça daha belirgin hale gelir; genç bireyler gri renktedir.","Boyun omurları kaynaşmamıştır, bu sayede başlarını 90 derece çevirebilirler.","Yerel Amazon efsanelerine göre bu yunuslar geceleri yakışıklı erkeklere dönüşerek köy şenliklerine katılır.","Ekolokatör sistemleri o kadar gelişmiştir ki tamamen karanlık ve bulanık sularda bile avlarını kolayca bulabilirler."]}'>
+        <div class="animal-card-header">
+          <span class="animal-emoji">🐬</span>
+          <div>
+            <h3>Pembe Nehir Yunusu</h3>
+            <span class="latin-name">Inia geoffrensis</span>
+          </div>
+        </div>
+        <p>Tatlı suda yaşayan en büyük yunus türü olup Amazon nehrinin bulanık sularında zarif hareketleriyle dikkat çeker.</p>
+        <div class="animal-tags">
+          <span class="tag habitat">Amazon nehri</span>
+          <span class="tag diet">Etçil (balık)</span>
+        </div>
+      </div>
+
+      <div class="animal-card" data-animal='{"isim":"Yeşil Anakonda","emoji":"🐍","latin":"Eunectes murinus","habitat":"Amazon bataklıkları","beslenme":"Etçil","boyut":"4-6 m (9 m&apos;e kadar)","agirlik":"30-70 kg (227 kg&apos;a kadar)","yasam":"10-30 yıl","aciklama":"Dünyanın en ağır yılanı olan yeşil anakonda, Amazon bataklıklarının ve nehir kıyılarının tartışmasız hakimidir. Avını boğarak öldüren bu devasa yılan, geyik, timsah yavrusu ve hatta jaguarları bile avlayabilecek güce sahiptir.","ilgincBilgiler":["Dişi anakondalar erkeklerden beş kat daha büyük olabilir; bu durum hayvanlar alemindeki en belirgin cinsiyet farklılıklarından biridir.","Gözleri ve burun delikleri başlarının üst kısmında yer alır, böylece suyun altında gizlenirken nefes alıp çevrelerini gözetleyebilirler.","Çenelerini son derece geniş açabilirler çünkü alt çene kemikleri esnek bağlarla birbirine bağlıdır.","Büyük bir avı sindirmeleri haftalar hatta aylar sürebilir ve bu süre zarfında hiç yemek yemeden yaşayabilirler."]}'>
+        <div class="animal-card-header">
+          <span class="animal-emoji">🐍</span>
+          <div>
+            <h3>Yeşil Anakonda</h3>
+            <span class="latin-name">Eunectes murinus</span>
+          </div>
+        </div>
+        <p>Dünyanın en ağır yılanı olarak bilinen yeşil anakonda, Amazon bataklıklarının korkutucu ve saygı uyandıran sakinidir.</p>
+        <div class="animal-tags">
+          <span class="tag habitat">Amazon bataklıkları</span>
+          <span class="tag diet">Etçil</span>
+        </div>
+      </div>
+
+      <div class="animal-card" data-animal='{"isim":"Zehirli Ok Kurbağası","emoji":"🐸","latin":"Dendrobates tinctorius","habitat":"Amazon orman tabanı","beslenme":"Böcekçil","boyut":"2-5 cm","agirlik":"1-3 g","yasam":"3-15 yıl","aciklama":"Amazon orman tabanının en renkli sakinlerinden biri olan zehirli ok kurbağası, küçük boyutuna rağmen son derece güçlü bir zehre sahiptir. Parlak renkleri potansiyel avcılara zehirli olduğunu bildiren doğal bir uyarı işareti görevi görür.","ilgincBilgiler":["Yerli kabileler bu kurbağaların zehirini ok uçlarına sürerek avlanmıştır, bu yüzden ok kurbağası adını almışlardır.","Zehirlerini doğrudan üretmezler; besin olarak tükettikleri karıncalar ve böceklerden elde ederler. Esaret altında yetiştirilenler zehirsizdir.","Bazı türlerinin derisi tek bir dokunuşla on yetişkin insanı öldürecek kadar güçlü toksin içerir.","Erkek bireyler yavruları sırtlarında taşıyarak orman tabanındaki küçük su birikintilerine ulaştırır."]}'>
+        <div class="animal-card-header">
+          <span class="animal-emoji">🐸</span>
+          <div>
+            <h3>Zehirli Ok Kurbağası</h3>
+            <span class="latin-name">Dendrobates tinctorius</span>
+          </div>
+        </div>
+        <p>Parlak renkleri zehirli olduğunu uyarır; Amazon orman tabanının küçük ama ölümcül canlısıdır.</p>
+        <div class="animal-tags">
+          <span class="tag habitat">Amazon orman tabanı</span>
+          <span class="tag diet">Böcekçil</span>
+        </div>
+      </div>
+
+      <div class="animal-card" data-animal='{"isim":"Tukan","emoji":"🐦","latin":"Ramphastos toco","habitat":"Amazon üst örtüsü","beslenme":"Hepçil (meyve, böcek)","boyut":"55-65 cm","agirlik":"500-860 g","yasam":"15-20 yıl","aciklama":"Amazon yağmur ormanının üst katmanlarında yaşayan tukan, devasa ve renkli gagasıyla tanınan ikonik bir kuştur. Gagası vücut uzunluğunun yaklaşık üçte birini oluşturmasına rağmen içi bal peteği yapısında olduğundan son derece hafiftir.","ilgincBilgiler":["Devasa gagaları vücut ısısını düzenlemek için birer radyatör gibi çalışır; sıcak havada kan akışını artırarak serinlerler.","Ağaç kovuklarında gruplar halinde uyurlar ve gagalarını sırtlarına dayayarak küçük alanlara sığabilirler.","Gagalarının iç yapısı bal peteği gibi boşluklu bir kemik dokusundan oluşur, bu nedenle görünüşünün aksine oldukça hafiftir.","Yumurtadan çıkan yavrular tamamen tüysüz ve kör doğar; gagaları birkaç ay içinde tam boyutuna ulaşır."]}'>
+        <div class="animal-card-header">
+          <span class="animal-emoji">🐦</span>
+          <div>
+            <h3>Tukan</h3>
+            <span class="latin-name">Ramphastos toco</span>
+          </div>
+        </div>
+        <p>Gaga uzunluğu vücut uzunluğunun üçte birine ulaşan tukan, Amazon ormanlarının en tanınmış kuşlarından biridir.</p>
+        <div class="animal-tags">
+          <span class="tag habitat">Amazon üst örtüsü</span>
+          <span class="tag diet">Hepçil (meyve, böcek)</span>
+        </div>
+      </div>
+
+      <div class="animal-card" data-animal='{"isim":"Piranha","emoji":"🐟","latin":"Pygocentrus nattereri","habitat":"Amazon nehirleri","beslenme":"Etçil","boyut":"15-35 cm","agirlik":"0.5-3.5 kg","yasam":"10-25 yıl","aciklama":"Amazon nehirlerinin en korkulan balıklarından biri olan piranha, güçlü çene kasları ve jilet gibi keskin dişleriyle tanınır. Sürüler halinde avlanan bu balıklar, ekosistemin önemli temizlikçileri olarak da görev yaparlar.","ilgincBilgiler":["Piranhalar genellikle filmlerde gösterildiği kadar saldırgan değildir; çoğunlukla ölü veya yaralı hayvanlarla beslenirler.","Isırma kuvvetleri vücut boyutlarına oranla hayvanlar alemindeki en yüksek değerler arasındadır.","Kurak mevsimde su seviyeleri düştüğünde sürüler halinde avlanma davranışları artar çünkü besin kaynakları azalır.","Amazon yerlileri piranha dişlerini alet ve silah yapımında kesici araç olarak kullanmıştır."]}'>
+        <div class="animal-card-header">
+          <span class="animal-emoji">🐟</span>
+          <div>
+            <h3>Piranha</h3>
+            <span class="latin-name">Pygocentrus nattereri</span>
+          </div>
+        </div>
+        <p>Güçlü çeneleriyle tanınan piranha, Amazon nehirlerinin hem korkulan hem de saygı duyulan balığıdır.</p>
+        <div class="animal-tags">
+          <span class="tag habitat">Amazon nehirleri</span>
+          <span class="tag diet">Etçil</span>
+        </div>
+      </div>
+
+      <div class="animal-card" data-animal='{"isim":"Harpy Kartalı","emoji":"🦅","latin":"Harpia harpyja","habitat":"Amazon üst örtüsü","beslenme":"Etçil (maymun, tembel hayvan)","boyut":"86-107 cm","agirlik":"4-9 kg","yasam":"25-35 yıl","aciklama":"Dünyanın en güçlü kartallarından biri olan harpy kartalı, Amazon ormanlarının üst katmanlarında hüküm sürer. Devasa pençeleriyle maymunları ve tembel hayvanları ağaç dallarından kaparak avlayan bu yırtıcı kuş, ormanın tepesindeki besin zincirinin zirvesindedir.","ilgincBilgiler":["Pençeleri bir boz ayınınkiyle aynı büyüklüktedir ve avını yakalarken 50 kg üzerinde kavrama kuvveti uygulayabilir.","Kanat açıklığı 2 metreyi geçmesine rağmen ormanlık alanda son derece çevik bir şekilde uçabilirler.","Bir çift harpy kartalı her iki yılda yalnızca bir yavru büyütür ve yavru bakımı yaklaşık iki yıl sürer.","Başlarındaki tüy taçları ses toplama anteni gibi işlev görerek orman örtüsü altındaki avlarını daha iyi duymalarını sağlar."]}'>
+        <div class="animal-card-header">
+          <span class="animal-emoji">🦅</span>
+          <div>
+            <h3>Harpy Kartalı</h3>
+            <span class="latin-name">Harpia harpyja</span>
+          </div>
+        </div>
+        <p>Dünyanın en güçlü kartallarından biri olarak Amazon ormanlarının üst örtüsünde avlanan etkileyici bir yırtıcıdır.</p>
+        <div class="animal-tags">
+          <span class="tag habitat">Amazon üst örtüsü</span>
+          <span class="tag diet">Etçil (maymun, tembel hayvan)</span>
+        </div>
+      </div>
+
+      <div class="animal-card" data-animal='{"isim":"Yaprak Kesen Karınca","emoji":"🐜","latin":"Atta cephalotes","habitat":"Amazon orman tabanı","beslenme":"Mantar yetiştirici","boyut":"1-15 mm","agirlik":"1 g altı","yasam":"Kraliçe 15-20 yıl, işçi 1-2 yıl","aciklama":"Amazon orman tabanının en çalışkan sakinleri olan yaprak kesen karıncalar, kestikleri yaprakları yuvalarına taşıyarak üzerinde mantar yetiştiren olağanüstü böceklerdir. Milyonlarca bireyden oluşan kolonileri, insanlığın tarım devriminden çok önce tarım yapmaya başlamış nadir canlılardandır.","ilgincBilgiler":["Kendi vücut ağırlıklarının 50 katı yükü taşıyabilirler; bu, bir insanın yaklaşık 4 ton ağırlık taşımasına eşdeğerdir.","Yaklaşık 50 milyon yıldır mantar tarımı yapmaktadırlar ve bu onları insanlardan çok daha deneyimli çiftçiler yapar.","Bir kolonide 8 milyona kadar birey bulunabilir ve yuvaları yer altında futbol sahası büyüklüğüne ulaşabilir.","Yaprakları doğrudan yemezler; kesilmiş yaprakları çiğneyerek üzerinde özel bir mantar türü yetiştirirler ve bu mantarla beslenirler."]}'>
+        <div class="animal-card-header">
+          <span class="animal-emoji">🐜</span>
+          <div>
+            <h3>Yaprak Kesen Karınca</h3>
+            <span class="latin-name">Atta cephalotes</span>
+          </div>
+        </div>
+        <p>Tarım yapan nadir canlılardan biri olan yaprak kesen karınca, Amazon orman tabanının en organize sakinlerindendir.</p>
+        <div class="animal-tags">
+          <span class="tag habitat">Amazon orman tabanı</span>
+          <span class="tag diet">Mantar yetiştirici</span>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <div class="modal-overlay" id="animalModal">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>🌍 Hayvanlar Dünyası</h4>
+        <p>Gezegenimizin muhteşem canlılarını tanıyın. Bu site, hayvanlar alemi hakkında bilgi edinmek isteyen herkes için hazırlanmıştır.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Kategoriler</h4>
+        <ul class="footer-links">
+          <li><a href="memeliler.html">🦁 Memeliler</a></li>
+          <li><a href="kuslar.html">🦅 Kuşlar</a></li>
+          <li><a href="surungen.html">🐊 Sürüngen</a></li>
+          <li><a href="baliklar.html">🦈 Balıklar</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Diğer</h4>
+        <ul class="footer-links">
+          <li><a href="amfibiler.html">🐸 Amfibiler</a></li>
+          <li><a href="bocekler.html">🦋 Böcekler</a></li>
+          <li><a href="omurgasizlar.html">🐙 Omurgasızlar</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Keşfet</h4>
+        <ul class="footer-links">
+          <li><a href="tehlike-altinda.html">Tehlike Altındaki Türler</a></li>
+          <li><a href="turkiye-hayvanlari.html">Türkiye Hayvanları</a></li>
+          <li><a href="quiz.html">Bilgi Yarışması</a></li>
+          <li><a href="hakkinda.html">Hakkında</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Hayvanlar Dünyası &copy; 2026 - Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
