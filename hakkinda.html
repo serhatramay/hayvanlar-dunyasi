@@ -90,7 +90,7 @@
       <h2>İletişim</h2>
       <p>Sorularınız, önerileriniz veya geri bildirimleriniz için bizimle iletişime geçebilirsiniz.</p>
 
-      <form class="contact-form" id="contactForm">
+      <form class="contact-form" id="contactForm" action="https://formspree.io/f/mjgejbpy" method="POST">
         <div class="form-group">
           <label for="contactName">Adınız Soyadınız</label>
           <input type="text" id="contactName" name="name" placeholder="Adınızı giriniz..." required>
@@ -118,7 +118,8 @@
           <textarea id="contactMessage" name="message" rows="6" placeholder="Mesajınızı buraya yazınız..." required></textarea>
         </div>
 
-        <button type="submit" class="contact-submit-btn">Gönder</button>
+        <button type="submit" class="contact-submit-btn" id="contactSubmitBtn">Gönder</button>
+        <div class="contact-status" id="contactStatus"></div>
       </form>
     </div>
 

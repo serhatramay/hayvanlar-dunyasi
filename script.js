@@ -280,6 +280,44 @@ document.addEventListener('DOMContentLoaded', () => {
   setupModals();
 
   // ==========================================
+  // İLETİŞİM FORMU (Formspree)
+  // ==========================================
+  const contactForm = document.getElementById('contactForm');
+  if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = document.getElementById('contactSubmitBtn');
+      const status = document.getElementById('contactStatus');
+      btn.disabled = true;
+      btn.textContent = 'Gönderiliyor...';
+      status.textContent = '';
+      status.className = 'contact-status';
+
+      try {
+        const res = await fetch(contactForm.action, {
+          method: 'POST',
+          body: new FormData(contactForm),
+          headers: { 'Accept': 'application/json' }
+        });
+        if (res.ok) {
+          status.textContent = 'Mesajınız başarıyla gönderildi! Teşekkürler.';
+          status.classList.add('success');
+          contactForm.reset();
+        } else {
+          status.textContent = 'Bir hata oluştu. Lütfen tekrar deneyin.';
+          status.classList.add('error');
+        }
+      } catch {
+        status.textContent = 'Bağlantı hatası. İnternet bağlantınızı kontrol edin.';
+        status.classList.add('error');
+      }
+
+      btn.disabled = false;
+      btn.textContent = 'Gönder';
+    });
+  }
+
+  // ==========================================
   // BLOG FİLTRE
   // ==========================================
   const blogFilterBtns = document.querySelectorAll('.blog-filter-btn');

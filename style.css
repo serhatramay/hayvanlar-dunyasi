@@ -1450,6 +1450,34 @@ section.subcategory {
   box-shadow: 0 4px 15px var(--accent-glow);
 }
 
+.contact-submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.contact-status {
+  margin-top: 1rem;
+  border-radius: 12px;
+  font-weight: 600;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.contact-status.success {
+  padding: 1rem;
+  background: rgba(16, 185, 129, 0.15);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.contact-status.error {
+  padding: 1rem;
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
 /* ==========================================
    QUIZ INLINE JS SINIFLARI
    ========================================== */
