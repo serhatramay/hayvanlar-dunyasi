@@ -1904,7 +1904,7 @@ section.subcategory {
    BLOG LİSTELEME SAYFASI
    ========================================== */
 .page-hero.hero-blog {
-  background: url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=1920&q=80&auto=format') center/cover no-repeat;
+  background: url('assets/blog-hero.svg') center/cover no-repeat;
   position: relative;
 }
 
