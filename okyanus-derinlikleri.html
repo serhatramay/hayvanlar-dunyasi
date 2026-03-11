@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Okyanus Derinlikleri - Hayvanlar Dünyası</title>
+  <meta name="description" content="Okyanus derinlikleri - Derin deniz canlılarından mercan resiflerine, açık okyanus devlerinden gizemli dip sakinlerine kadar deniz yaşamını keşfedin.">
+  <meta property="og:title" content="Okyanus Derinlikleri - Hayvanlar Dünyası">
+  <meta property="og:description" content="Okyanusların karanlık derinliklerinden renkli mercan resiflerine kadar deniz yaşamının büyüleyici dünyasını keşfedin. Fener balığından mavi balinaya, denizatından dev mürekkep balığına kadar okyanus canlılarını tanıyın.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGASYON -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">🌍 Hayvanlar <span>Dünyası</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="memeliler.html">Memeliler</a></li>
+        <li><a href="kuslar.html">Kuşlar</a></li>
+        <li><a href="surungen.html">Sürüngen</a></li>
+        <li><a href="baliklar.html">Balıklar</a></li>
+        <li><a href="amfibiler.html">Amfibiler</a></li>
+        <li><a href="bocekler.html">Böcekler</a></li>
+        <li><a href="omurgasizlar.html">Omurgasızlar</a></li>
+        <li><a href="tehlike-altinda.html">Tehlike Altında</a></li>
+        <li><a href="turkiye-hayvanlari.html">Türkiye</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="hakkinda.html">Hakkında</a></li>
+      </ul>
+      <div class="nav-search">
+        <span class="nav-search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Hayvan ara..." autocomplete="off">
+      </div>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="search-results" id="searchResults"></div>
+
+  <!-- SAYFA HERO -->
+  <section class="page-hero hero-okyanus">
+    <span class="hero-emoji">🌊</span>
+    <h1>Okyanus Derinlikleri</h1>
+    <p>Dünya yüzeyinin %70'inden fazlasını kaplayan okyanuslar, gezegenimizin en keşfedilmemiş alanlarıdır. Güneş ışığının ulaşamadığı karanlık derinliklerden renkli mercan resiflerine, devasa açık okyanus canlılarından gizemli dip sakinlerine kadar denizlerin büyüleyici dünyasını keşfedin. Okyanusların yalnızca %5'i keşfedilmiş olup geri kalanı hâlâ gizemini korumaktadır.</p>
+  </section>
+
+  <main class="section">
+
+    <!-- ==========================================
+         DERİN DENİZ CANLILARI
+         ========================================== -->
+    <div class="subcategory" id="derin-deniz">
+      <div class="subcategory-header">
+        <span class="sub-emoji">🔦</span>
+        <h2>Derin Deniz Canlıları</h2>
+      </div>
+
+      <div class="animal-grid">
+
+        <!-- FENER BALIĞI -->
+        <div class="animal-card" data-animal='{"isim":"Fener Balığı","emoji":"🐟","latin":"Lophiiformes","habitat":"Derin okyanus, 200-2000 metre","beslenme":"Etçil","boyut":"20 cm - 1 metre","agirlik":"0.5 - 50 kg","yasam":"20 - 25 yıl","aciklama":"Fener balığı, derin denizlerin en ikonik ve ürkütücü canlılarından biridir. Başındaki biyolüminesans ışık organı sayesinde zifiri karanlıkta avlarını kendine çeker. Dişiler erkeklerden çok daha büyüktür ve bazı türlerde erkekler dişiye yapışarak parazitik bir yaşam sürer.","ilgincBilgiler":["Başlarındaki biyolüminesans ışık organıyla karanlıkta avlarını kendilerine çekerler.","Erkekler dişilere yapışarak zamanla vücutlarıyla birleşir - doğanın en ilginç üreme stratejilerinden biridir.","Devasa ağızları ve esnek mideleri sayesinde kendilerinden büyük avları yutabilirler.","Derin denizlerde 2000 metreye kadar derinliklerde yaşayabilirler."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐟</span>
+            <div>
+              <h3>Fener Balığı</h3>
+              <span class="latin-name">Lophiiformes</span>
+            </div>
+          </div>
+          <p>Derin denizlerin ışıklı avcısı. Biyolüminesans organıyla zifiri karanlıkta avlarını kendine çeken ürkütücü ve büyüleyici bir derin deniz sakini.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Derin okyanus</span>
+            <span class="tag diet">Etçil</span>
+          </div>
+        </div>
+
+        <!-- DEV MÜREKKEPBALlĞI -->
+        <div class="animal-card" data-animal='{"isim":"Dev Mürekkep Balığı","emoji":"🦑","latin":"Architeuthis dux","habitat":"Derin okyanus, 300-1000 metre","beslenme":"Etçil","boyut":"10 - 13 metre","agirlik":"150 - 275 kg","yasam":"3 - 5 yıl","aciklama":"Dev mürekkep balığı, okyanus derinliklerinin en efsanevi canlısıdır ve yüzyıllar boyunca denizcilerin kabusu olan Kraken efsanesinin ilham kaynağı olmuştur. Hayvanlar aleminin en büyük gözlerine sahiptir; gözleri bir yemek tabağı büyüklüğündedir. Doğal ortamında ilk kez 2004 yılında fotoğraflanmıştır.","ilgincBilgiler":["Hayvanlar aleminin en büyük gözlerine sahiptir - gözleri 27 cm çapında, bir yemek tabağı büyüklüğündedir.","Kraken deniz canavarı efsanesinin ilham kaynağı olduğu düşünülmektedir.","Doğal ortamında ilk kez 2004 yılında Japon bilim insanları tarafından fotoğraflanmıştır.","İspermeçet balinalarıyla savaşırlar - balinaların derisinde kalamar vantuz izleri bulunmuştur."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦑</span>
+            <div>
+              <h3>Dev Mürekkep Balığı</h3>
+              <span class="latin-name">Architeuthis dux</span>
+            </div>
+          </div>
+          <p>Kraken efsanesinin ilham kaynağı. Tabak büyüklüğünde gözlere sahip bu gizemli dev, okyanusların en derin bölgelerinde yaşar.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Derin okyanus</span>
+            <span class="tag diet">Etçil</span>
+          </div>
+        </div>
+
+        <!-- VAMPİR KALAMAR -->
+        <div class="animal-card" data-animal='{"isim":"Vampir Kalamar","emoji":"🦑","latin":"Vampyroteuthis infernalis","habitat":"Derin okyanus, 600-1200 metre","beslenme":"Detritüs","boyut":"15 - 30 cm","agirlik":"0.5 - 1 kg","yasam":"8 - 10 yıl","aciklama":"Vampir kalamar, Latince adı cehennemin vampir kalamarı anlamına gelen, derin denizlerin en gizemli canlılarından biridir. Adına ve görünüşüne rağmen tamamen zararsızdır ve batan organik parçacıklarla beslenir. Ne tam bir kalamar ne de tam bir ahtapottur; kendine özgü bir takıma aittir.","ilgincBilgiler":["Latince adı cehennemin vampir kalamarı anlamına gelir ama tamamen zararsızdır.","Ne kalamar ne de ahtapot olarak sınıflandırılır - kendi benzersiz takımında tek türdür.","Kollarını ters çevirerek pelerin gibi sarabilir - bu yüzden vampir adını almıştır.","Oksijenin çok az olduğu derin sularda yaşayabilir - diğer canlıların çoğunun yaşayamadığı ortamlar."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦑</span>
+            <div>
+              <h3>Vampir Kalamar</h3>
+              <span class="latin-name">Vampyroteuthis infernalis</span>
+            </div>
+          </div>
+          <p>Cehennemin vampir kalamarı. Kollarını pelerin gibi saran bu gizemli canlı, ne kalamar ne de ahtapot olarak sınıflandırılan benzersiz bir türdür.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Derin okyanus</span>
+            <span class="tag diet">Detritüs</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ==========================================
+         AÇIK OKYANUS
+         ========================================== -->
+    <div class="subcategory" id="acik-okyanus">
+      <div class="subcategory-header">
+        <span class="sub-emoji">🐋</span>
+        <h2>Açık Okyanus</h2>
+      </div>
+
+      <div class="animal-grid">
+
+        <!-- MAVİ BALİNA -->
+        <div class="animal-card" data-animal='{"isim":"Mavi Balina","emoji":"🐋","latin":"Balaenoptera musculus","habitat":"Tüm okyanuslar","beslenme":"Süzücü","boyut":"24 - 30 metre","agirlik":"100 - 200 ton","yasam":"80 - 90 yıl","aciklama":"Mavi balina, gezegenimizde yaşamış en büyük canlıdır - dinozorlardan bile büyüktür. 30 metreye varan uzunluğu ve 200 tona ulaşan ağırlığıyla okyanusların tartışmasız devleridir. Bu devasa boyutlarına rağmen neredeyse tamamen krill adlı küçük karidesmsi canlılarla beslenirler.","ilgincBilgiler":["Dünyada yaşamış en büyük canlıdır - dinozorlardan bile büyüktür.","Kalbi bir Volkswagen Beetle otomobil büyüklüğündedir ve dakikada sadece 8-10 kez atar.","Dili bir fil ağırlığındadır ve günde 4 ton krill yiyebilir.","Sesleri 800 km uzaktan duyulabilir - hayvanlar aleminin en gürültülü canlısıdır."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐋</span>
+            <div>
+              <h3>Mavi Balina</h3>
+              <span class="latin-name">Balaenoptera musculus</span>
+            </div>
+          </div>
+          <p>Dünyada yaşamış en büyük canlı. 200 tona ulaşan ağırlığıyla mavi balina, dinozorlardan bile büyük olan okyanusların tartışmasız devidir.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Tüm okyanuslar</span>
+            <span class="tag diet">Süzücü</span>
+          </div>
+        </div>
+
+        <!-- BÜYÜK BEYAZ KÖPEKBALlĞI -->
+        <div class="animal-card" data-animal='{"isim":"Büyük Beyaz Köpekbalığı","emoji":"🦈","latin":"Carcharodon carcharias","habitat":"Ilıman ve tropik okyanuslar","beslenme":"Etçil","boyut":"4 - 6 metre","agirlik":"680 - 1100 kg","yasam":"40 - 70 yıl","aciklama":"Büyük beyaz köpekbalığı, okyanusların en tanınmış ve en korkulan yırtıcısıdır. Torpido şeklindeki vücudu ve güçlü kuyruğuyla saatte 56 km hıza ulaşabilir. 300 den fazla testere gibi keskin dişe sahiptir ve avını algılamak için elektromanyetik alanları tespit edebilir.","ilgincBilgiler":["Avının kalbinin elektrik sinyallerini algılayabilecek kadar hassas elektro-reseptörlere sahiptir.","300 den fazla testere gibi keskin dişe sahiptir ve dökülen dişleri sürekli yenilenir.","Avlanırken su yüzeyinden 3 metreye kadar sıçrayabilir.","40 milyon yılı aşkın evrimsel geçmişe sahiptir ve neredeyse hiç değişmemiştir."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦈</span>
+            <div>
+              <h3>Büyük Beyaz Köpekbalığı</h3>
+              <span class="latin-name">Carcharodon carcharias</span>
+            </div>
+          </div>
+          <p>Okyanusların efsanevi yırtıcısı. 300'den fazla keskin dişe sahip büyük beyaz köpekbalığı, denizlerin en korkulan ve saygı duyulan avcısıdır.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Ilıman ve tropik okyanuslar</span>
+            <span class="tag diet">Etçil</span>
+          </div>
+        </div>
+
+        <!-- DENİZ KAPLUMBAĞASI -->
+        <div class="animal-card" data-animal='{"isim":"Deniz Kaplumbağası","emoji":"🐢","latin":"Chelonia mydas","habitat":"Tropik ve ılıman okyanuslar","beslenme":"Hepçil","boyut":"80 - 150 cm","agirlik":"70 - 200 kg","yasam":"60 - 80 yıl","aciklama":"Yeşil deniz kaplumbağası, okyanusların en zarif gezginlerinden biridir. 200 milyon yıldan fazladır dünyada yaşayan bu kadim canlılar, doğdukları kumsala yumurtlamak için binlerce kilometre yüzerler. Dünya nın manyetik alanını algılayarak yön buldukları düşünülmektedir.","ilgincBilgiler":["Doğdukları kumsala yumurtlamak için binlerce kilometre yüzerek geri dönerler.","Dünya nın manyetik alanını algılayarak yön buldukları düşünülmektedir.","Yavruların cinsiyeti kuluçka sırasındaki kum sıcaklığına göre belirlenir.","200 milyon yıldan fazladır dünyada yaşayan kadim canlılardır - dinozorlardan bile eskidir."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐢</span>
+            <div>
+              <h3>Deniz Kaplumbağası</h3>
+              <span class="latin-name">Chelonia mydas</span>
+            </div>
+          </div>
+          <p>Okyanusların kadim gezgini. 200 milyon yıllık evrimsel geçmişe sahip deniz kaplumbağası, doğduğu kumsala geri dönme yeteneğiyle büyüler.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Tropik ve ılıman okyanuslar</span>
+            <span class="tag diet">Hepçil</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ==========================================
+         MERCAN RESİFLERİ
+         ========================================== -->
+    <div class="subcategory" id="mercan-resifleri">
+      <div class="subcategory-header">
+        <span class="sub-emoji">🐠</span>
+        <h2>Mercan Resifleri</h2>
+      </div>
+
+      <div class="animal-grid">
+
+        <!-- PALYAÇO BALIĞI -->
+        <div class="animal-card" data-animal='{"isim":"Palyaço Balığı","emoji":"🐠","latin":"Amphiprioninae","habitat":"Hint-Pasifik mercan resifleri","beslenme":"Hepçil","boyut":"7 - 11 cm","agirlik":"10 - 50 g","yasam":"6 - 10 yıl","aciklama":"Palyaço balığı, mercan resiflerinin en renkli ve en sevimli sakinlerinden biridir. Denizanasıyla simbiyotik bir ilişki içinde yaşar; anemonun zehirli dokunaçları arasında barınarak yırtıcılardan korunur. Karşılığında anemonu temizler ve yiyecek artıklarıyla besler.","ilgincBilgiler":["Denizanasının zehirli dokunaçlarına karşı bağışıklığa sahiptir ve aralarında yaşar.","Tüm bireyler erkek olarak doğar; gruptaki dominant dişi ölürse en büyük erkek dişiye dönüşür.","Finding Nemo filminin başrol karakteri bir palyaço balığıdır.","Yaşadıkları anemonu asla terk etmezler ve onu agresif biçimde savunurlar."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐠</span>
+            <div>
+              <h3>Palyaço Balığı</h3>
+              <span class="latin-name">Amphiprioninae</span>
+            </div>
+          </div>
+          <p>Mercan resiflerinin renkli ve sevimli sakini. Denizanasıyla simbiyotik ilişki içinde yaşayan palyaço balığı, Finding Nemo ile tüm dünyada tanınmıştır.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Hint-Pasifik mercan resifleri</span>
+            <span class="tag diet">Hepçil</span>
+          </div>
+        </div>
+
+        <!-- DENİZATI -->
+        <div class="animal-card" data-animal='{"isim":"Denizatı","emoji":"🐴","latin":"Hippocampus","habitat":"Sığ tropikal ve ılıman sular","beslenme":"Etçil","boyut":"1.5 - 35 cm","agirlik":"1 - 200 g","yasam":"1 - 5 yıl","aciklama":"Denizatı, okyanusların en benzersiz ve en büyüleyici canlılarından biridir. Dik yüzen tek balık türü olan denizatı, hayvanlar aleminde erkeklerin hamile kaldığı nadir türlerden biridir. Kuyruklarıyla mercan ve deniz bitkilerine tutunarak akıntılara karşı sabit kalırlar.","ilgincBilgiler":["Hayvanlar aleminde erkeklerin hamile kaldığı nadir türlerden biridir - erkekler karnındaki kesede yavruları taşır.","Dik yüzen tek balık türüdür ve son derece yavaş yüzücülerdir.","Gözlerini birbirinden bağımsız hareket ettirebilirler - bir göz ileriye bakarken diğeri geriye bakabilir.","Mideleri yoktur, bu yüzden sürekli yemek yemek zorundadırlar - günde 3000 kadar küçük karides tüketirler."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐴</span>
+            <div>
+              <h3>Denizatı</h3>
+              <span class="latin-name">Hippocampus</span>
+            </div>
+          </div>
+          <p>Okyanusların en benzersiz canlısı. Erkeklerin hamile kaldığı tek tür olan denizatı, dik yüzme biçimiyle balıklar arasında eşsizdir.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Sığ tropikal ve ılıman sular</span>
+            <span class="tag diet">Etçil</span>
+          </div>
+        </div>
+
+        <!-- DENİZYILDIZI -->
+        <div class="animal-card" data-animal='{"isim":"Denizyıldızı","emoji":"⭐","latin":"Asteroidea","habitat":"Tüm okyanuslar","beslenme":"Etçil","boyut":"12 - 25 cm","agirlik":"50 - 200 g","yasam":"10 - 35 yıl","aciklama":"Denizyıldızı, mercan resiflerinin ve okyanus tabanlarının renkli sakinleridir. Beş kollu yıldız şekilleriyle tanınan bu canlılar, kopan kollarını yeniden büyütebilme yeteneğine sahiptir. Mideleri ağızlarından dışarı çıkararak avlarını vücut dışında sindirirler.","ilgincBilgiler":["Kopan kollarını yeniden büyütebilirler - hatta bazı türlerde tek bir koldan yeni bir birey oluşabilir.","Midelerini ağızlarından dışarı çıkararak avlarını vücut dışında sindirirler.","Beyinleri ve kanları yoktur - sinir sistemi kollarına dağılmıştır ve kan yerine deniz suyu kullanırlar.","Binlerce küçük tüp ayak ile hareket ederler ve kayalara tutunurlar."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">⭐</span>
+            <div>
+              <h3>Denizyıldızı</h3>
+              <span class="latin-name">Asteroidea</span>
+            </div>
+          </div>
+          <p>Okyanus tabanının renkli yıldızları. Kopan kollarını yeniden büyütebilen denizyıldızı, midesini dışarı çıkararak beslenen olağanüstü bir canlıdır.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Tüm okyanuslar</span>
+            <span class="tag diet">Etçil</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <button class="modal-close">&times;</button>
+      <span class="modal-emoji"></span>
+      <h2></h2>
+      <span class="modal-latin"></span>
+      <div class="modal-info-grid"></div>
+      <p class="modal-description"></p>
+      <div class="modal-fun-facts">
+        <h4>İlginç Bilgiler</h4>
+        <ul></ul>
+      </div>
+      <div class="modal-article-link-container"></div>
+    </div>
+  </div>
+
+  <!-- İLGİLİ İÇERİKLER -->
+  <section class="ilgili-icerikler">
+    <h2>İlgili İçerikler</h2>
+    <div class="related-grid">
+      <a href="baliklar.html" class="related-card">
+        <span class="related-emoji">🦈</span>
+        <h4>Balıklar</h4>
+        <p>Okyanusların tüm balık türlerini keşfedin</p>
+        <span class="related-card-link">Keşfet →</span>
+      </a>
+      <a href="omurgasizlar.html" class="related-card">
+        <span class="related-emoji">🐙</span>
+        <h4>Omurgasızlar</h4>
+        <p>Ahtapot ve denizanası gibi omurgasızları tanıyın</p>
+        <span class="related-card-link">Keşfet →</span>
+      </a>
+      <a href="en-buyuk-hayvanlar.html" class="related-card">
+        <span class="related-emoji">🐋</span>
+        <h4>En Büyük Hayvanlar</h4>
+        <p>Mavi balina gibi okyanusların devlerini keşfedin</p>
+        <span class="related-card-link">Keşfet →</span>
+      </a>
+      <a href="en-zehirli-hayvanlar.html" class="related-card">
+        <span class="related-emoji">☠️</span>
+        <h4>En Zehirli Hayvanlar</h4>
+        <p>Derin denizlerin zehirli canlılarını tanıyın</p>
+        <span class="related-card-link">Keşfet →</span>
+      </a>
+      <a href="en-kucuk-hayvanlar.html" class="related-card">
+        <span class="related-emoji">🔬</span>
+        <h4>En Küçük Hayvanlar</h4>
+        <p>Denizatı gibi küçük okyanus sakinlerini keşfedin</p>
+        <span class="related-card-link">Keşfet →</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>🌍 Hayvanlar Dünyası</h4>
+        <p>Gezegenimizin muhteşem canlılarını tanıyın. Bu site, hayvanlar alemi hakkında bilgi edinmek isteyen herkes için hazırlanmıştır.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Kategoriler</h4>
+        <ul class="footer-links">
+          <li><a href="memeliler.html">🦁 Memeliler</a></li>
+          <li><a href="kuslar.html">🦅 Kuşlar</a></li>
+          <li><a href="surungen.html">🐊 Sürüngen</a></li>
+          <li><a href="baliklar.html">🦈 Balıklar</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Diğer</h4>
+        <ul class="footer-links">
+          <li><a href="amfibiler.html">🐸 Amfibiler</a></li>
+          <li><a href="bocekler.html">🦋 Böcekler</a></li>
+          <li><a href="omurgasizlar.html">🐙 Omurgasızlar</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Keşfet</h4>
+        <ul class="footer-links">
+          <li><a href="tehlike-altinda.html">Tehlike Altındaki Türler</a></li>
+          <li><a href="turkiye-hayvanlari.html">Türkiye Hayvanları</a></li>
+          <li><a href="quiz.html">Bilgi Yarışması</a></li>
+          <li><a href="blog.html">📝 Blog</a></li>
+          <li><a href="hakkinda.html">Hakkında</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Özel Koleksiyonlar</h4>
+        <ul class="footer-links">
+          <li><a href="en-hizli-hayvanlar.html">⚡ En Hızlı Hayvanlar</a></li>
+          <li><a href="en-yavas-hayvanlar.html">🐌 En Yavaş Hayvanlar</a></li>
+          <li><a href="en-uzun-yasayanlar.html">🕰️ En Uzun Yaşayanlar</a></li>
+          <li><a href="en-zehirli-hayvanlar.html">☠️ En Zehirli Hayvanlar</a></li>
+          <li><a href="buz-devri-hayvanlari.html">🧊 Buz Devri Hayvanları</a></li>
+          <li><a href="amazon-hayvanlari.html">🌿 Amazon Hayvanları</a></li>
+          <li><a href="kutup-hayvanlari.html">❄️ Kutup Hayvanları</a></li>
+          <li><a href="afrika-hayvanlari.html">🌍 Afrika Hayvanları</a></li>
+          <li><a href="okyanus-derinlikleri.html">🌊 Okyanus Derinlikleri</a></li>
+          <li><a href="hayvan-gocleri.html">🦅 Hayvan Göçleri</a></li>
+          <li><a href="hayvan-kamufaji.html">🦎 Hayvan Kamuflajı</a></li>
+          <li><a href="en-zeki-hayvanlar.html">🧠 En Zeki Hayvanlar</a></li>
+          <li><a href="gece-avcilari.html">🌙 Gece Avcıları</a></li>
+          <li><a href="en-buyuk-hayvanlar.html">🐘 En Büyük Hayvanlar</a></li>
+          <li><a href="en-kucuk-hayvanlar.html">🐁 En Küçük Hayvanlar</a></li>
+          <li><a href="nesli-tukenen-hayvanlar.html">💀 Nesli Tükenen Hayvanlar</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Hayvanlar Dünyası &copy; 2026 - Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
