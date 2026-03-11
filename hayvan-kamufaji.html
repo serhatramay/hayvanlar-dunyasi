@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hayvan Kamuflajı - Hayvanlar Dünyası</title>
+  <meta name="description" content="Hayvan kamuflajı - Renk değiştirenlerden taklit ustalarına, doğal gizlenme uzmanlarına kadar hayvanlar aleminin en inanılmaz kamuflaj yeteneklerini keşfedin.">
+  <meta property="og:title" content="Hayvan Kamuflajı - Hayvanlar Dünyası">
+  <meta property="og:description" content="Doğanın en büyüleyici savunma mekanizmalarından biri olan kamuflajı keşfedin. Bukalemundan ahtapota, yaprak böceğinden kar tavşanına kadar gizlenme ustalarını tanıyın.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGASYON -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">🌍 Hayvanlar <span>Dünyası</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="memeliler.html">Memeliler</a></li>
+        <li><a href="kuslar.html">Kuşlar</a></li>
+        <li><a href="surungen.html">Sürüngen</a></li>
+        <li><a href="baliklar.html">Balıklar</a></li>
+        <li><a href="amfibiler.html">Amfibiler</a></li>
+        <li><a href="bocekler.html">Böcekler</a></li>
+        <li><a href="omurgasizlar.html">Omurgasızlar</a></li>
+        <li><a href="tehlike-altinda.html">Tehlike Altında</a></li>
+        <li><a href="turkiye-hayvanlari.html">Türkiye</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="hakkinda.html">Hakkında</a></li>
+      </ul>
+      <div class="nav-search">
+        <span class="nav-search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Hayvan ara..." autocomplete="off">
+      </div>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="search-results" id="searchResults"></div>
+
+  <!-- SAYFA HERO -->
+  <section class="page-hero hero-kamuflaj">
+    <span class="hero-emoji">🦎</span>
+    <h1>Hayvan Kamuflajı</h1>
+    <p>Kamuflaj ve taklit, hayvanlar aleminin en büyüleyici hayatta kalma stratejilerinden biridir. Saniyeler içinde renk değiştiren bukalemunlardan, yaprak gibi görünen böceklere, karla bütünleşen tavşanlardan, başka türleri taklit eden ahtapotlara kadar doğanın gizlenme ustalarını keşfedin. Milyonlarca yıllık evrimin şekillendirdiği bu olağanüstü yetenekler, canlıların hayatta kalma mücadelesinin en yaratıcı örnekleridir.</p>
+  </section>
+
+  <main class="section">
+
+    <!-- ==========================================
+         RENK DEĞİŞTİRENLER
+         ========================================== -->
+    <div class="subcategory" id="renk-degistirenler">
+      <div class="subcategory-header">
+        <span class="sub-emoji">🎨</span>
+        <h2>Renk Değiştirenler</h2>
+      </div>
+
+      <div class="animal-grid">
+
+        <!-- BUKALEMUN -->
+        <div class="animal-card" data-animal='{"isim":"Bukalemun","emoji":"🦎","latin":"Chamaeleonidae","habitat":"Afrika, Madagaskar, Güney Avrupa","beslenme":"Böcekçil","boyut":"3 - 68 cm","agirlik":"10 - 200 g","yasam":"3 - 10 yıl","aciklama":"Bukalemun, doğanın en ünlü renk değiştirme ustasıdır. Derisindeki özel pigment hücreleri olan kromatoforlar sayesinde saniyeler içinde renk değiştirebilir. Ancak renk değişimi yalnızca kamuflaj için değil, aynı zamanda iletişim, sıcaklık düzenleme ve ruh hali ifadesi için de kullanılır.","ilgincBilgiler":["Renk değişimi sadece kamuflaj için değil, iletişim ve sıcaklık düzenleme için de kullanılır.","Gözleri birbirinden bağımsız 360 derece dönebilir - aynı anda iki farklı yöne bakabilir.","Dili vücut uzunluğunun iki katı kadar uzayabilir ve avını 0.07 saniyede yakalar.","Parmakları özel yapıdadır; dalları kavramak için iki gruba ayrılmış yapışkan ayaklara sahiptir."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦎</span>
+            <div>
+              <h3>Bukalemun</h3>
+              <span class="latin-name">Chamaeleonidae</span>
+            </div>
+          </div>
+          <p>Doğanın en ünlü renk değiştirme ustası. Saniyeler içinde renk değiştiren bukalemun, bağımsız hareket eden gözleri ve roket hızındaki diliyle de dikkat çeker.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Afrika, Madagaskar</span>
+            <span class="tag diet">Böcekçil</span>
+          </div>
+        </div>
+
+        <!-- AHTAPOT -->
+        <div class="animal-card" data-animal='{"isim":"Ahtapot","emoji":"🐙","latin":"Octopoda","habitat":"Tüm okyanuslar","beslenme":"Etçil","boyut":"30 cm - 5 metre","agirlik":"1 - 50 kg","yasam":"1 - 5 yıl","aciklama":"Ahtapot, hayvanlar aleminin en gelişmiş kamuflaj yeteneğine sahip canlısıdır. Sadece rengini değil, aynı zamanda derisinin dokusunu ve şeklini de değiştirebilir. Bir mercan kayasını, kum zeminini veya deniz bitkisini saniyeler içinde taklit edebilen ahtapot, bu yeteneği hem avlanmak hem de yırtıcılardan kaçmak için kullanır.","ilgincBilgiler":["Sadece rengini değil, derisinin dokusunu ve şeklini de değiştirerek mükemmel kamuflaj yapar.","Üç kalbi, dokuz beyni ve mavi renkte kanı vardır.","Kavanoz kapağı açma ve labirentten çıkma gibi karmaşık problemleri çözebilir.","Vücutlarında kemik olmadığı için gözlerinden küçük herhangi bir delikten geçebilirler."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐙</span>
+            <div>
+              <h3>Ahtapot</h3>
+              <span class="latin-name">Octopoda</span>
+            </div>
+          </div>
+          <p>Denizlerin kamuflaj dehası. Renk, doku ve şeklini saniyeler içinde değiştirebilen ahtapot, hayvanlar aleminin en gelişmiş kamuflaj yeteneğine sahiptir.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Tüm okyanuslar</span>
+            <span class="tag diet">Etçil</span>
+          </div>
+        </div>
+
+        <!-- MÜREKKEPBALlĞI -->
+        <div class="animal-card" data-animal='{"isim":"Mürekkep Balığı","emoji":"🦑","latin":"Sepiida","habitat":"Sığ tropikal ve ılıman denizler","beslenme":"Etçil","boyut":"15 - 50 cm","agirlik":"0.5 - 10 kg","yasam":"1 - 2 yıl","aciklama":"Mürekkep balığı, denizlerin en sofistike renk değiştirme sistemine sahip canlısıdır. Derisinde milyonlarca kromatofor hücre bulunur ve bunları birbirinden bağımsız kontrol ederek hipnotize edici dalga desenleri oluşturabilir. Bu yeteneği hem kamuflaj hem de avlarını sersemletmek için kullanır.","ilgincBilgiler":["Derisinde milyonlarca kromatofor hücre bulunur ve hipnotize edici dalga desenleri oluşturabilir.","Renk körü olmalarına rağmen mükemmel renk kamuflajı yaparlar - bu bilim için hâlâ bir gizemdir.","Avlarını sersemletmek için derisinde yanıp sönen ışık gösterileri yapar.","Beyinleri omurgasızlar arasında vücut oranına göre en büyüklerden biridir."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦑</span>
+            <div>
+              <h3>Mürekkep Balığı</h3>
+              <span class="latin-name">Sepiida</span>
+            </div>
+          </div>
+          <p>Denizlerin hipnotize edici kamuflaj ustası. Derisinde ışık gösterileri yaratan mürekkep balığı, renk körü olmasına rağmen mükemmel kamuflaj yapar.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Sığ tropikal ve ılıman denizler</span>
+            <span class="tag diet">Etçil</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ==========================================
+         TAKLİT USTALARI
+         ========================================== -->
+    <div class="subcategory" id="taklit-ustalari">
+      <div class="subcategory-header">
+        <span class="sub-emoji">🎭</span>
+        <h2>Taklit Ustaları</h2>
+      </div>
+
+      <div class="animal-grid">
+
+        <!-- YAPRAK BÖCEĞİ -->
+        <div class="animal-card" data-animal='{"isim":"Yaprak Böceği","emoji":"🍃","latin":"Phylliidae","habitat":"Güneydoğu Asya tropikal ormanları","beslenme":"Otçul","boyut":"5 - 10 cm","agirlik":"2 - 5 g","yasam":"6 - 12 ay","aciklama":"Yaprak böceği, doğanın en mükemmel taklit sanatçılarından biridir. Vücudu, bacakları ve kanatları gerçek bir yaprağın şeklini, rengini ve hatta damar desenlerini birebir taklit eder. Rüzgârda sallanarak yaprak hareketini bile taklit eden bu böcek, yırtıcıların gözünden neredeyse tamamen kaybolur.","ilgincBilgiler":["Vücutları gerçek yaprakların damar desenlerini, çürük noktalarını ve kenarlarını birebir taklit eder.","Rüzgârda sallanan yaprak hareketini taklit ederek kamuflajını güçlendirirler.","Dişiler kanatlarını kullanamaz; erkekler ise uçabilir.","Yumurtaları bile bitki tohumlarına benzer şekilde evrimleşmiştir."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🍃</span>
+            <div>
+              <h3>Yaprak Böceği</h3>
+              <span class="latin-name">Phylliidae</span>
+            </div>
+          </div>
+          <p>Doğanın en mükemmel taklit sanatçısı. Gerçek bir yapraktan ayırt edilmesi neredeyse imkânsız olan yaprak böceği, evrimsel uyumun harikası bir örneğidir.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Güneydoğu Asya</span>
+            <span class="tag diet">Otçul</span>
+          </div>
+        </div>
+
+        <!-- ÇİÇEK ÖRÜMCEĞİ -->
+        <div class="animal-card" data-animal='{"isim":"Çiçek Örümceği","emoji":"🕷️","latin":"Thomisidae","habitat":"Bahçeler, çayırlar, ormanlar (dünya geneli)","beslenme":"Etçil","boyut":"3 - 12 mm","agirlik":"0.1 - 1 g","yasam":"1 - 2 yıl","aciklama":"Çiçek örümceği, çiçeklerin üzerinde pusu kurarak avlanan küçük ama etkili bir avcıdır. Vücut rengini üzerinde durduğu çiçeğin rengine uyacak şekilde değiştirebilir. Sarı, beyaz veya pembe tonlarına bürünerek çiçeğin bir parçası gibi görünür ve üzerine konan böcekleri yakalar.","ilgincBilgiler":["Üzerinde durduğu çiçeğin rengine uyum sağlamak için vücut rengini değiştirebilir.","Ağ örmez; çiçeklerin üzerinde pusu kurarak avlarını bekler.","Kendisinden çok daha büyük arı ve kelebekleri bile yakalayabilir.","Bazı türleri ultraviyole ışık yansıtarak böcekleri çiçek zannettirerek kendine çeker."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🕷️</span>
+            <div>
+              <h3>Çiçek Örümceği</h3>
+              <span class="latin-name">Thomisidae</span>
+            </div>
+          </div>
+          <p>Çiçeklerin gizli avcısı. Üzerinde durduğu çiçeğin rengine bürünen çiçek örümceği, ağ örmeden pusu kurarak avlanan ustaca bir kamuflaj örneğidir.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Dünya geneli</span>
+            <span class="tag diet">Etçil</span>
+          </div>
+        </div>
+
+        <!-- MİMİK AHTAPOT -->
+        <div class="animal-card" data-animal='{"isim":"Mimik Ahtapot","emoji":"🐙","latin":"Thaumoctopus mimicus","habitat":"Hint-Pasifik sığ suları","beslenme":"Etçil","boyut":"40 - 60 cm","agirlik":"0.5 - 2 kg","yasam":"2 - 3 yıl","aciklama":"Mimik ahtapot, hayvanlar aleminin en yetenekli taklitçisidir. Sadece renk ve doku değiştirmekle kalmaz, aynı zamanda 15 den fazla farklı deniz canlısının şeklini ve hareketlerini taklit edebilir. Yılan balığı, aslan balığı, denizanası ve yassı balık gibi türleri taklit ederek yırtıcılarından korunur.","ilgincBilgiler":["15 den fazla farklı deniz canlısını şekil ve hareketle taklit edebilir.","Hangi yırtıcıyla karşılaştığına bağlı olarak farklı taklit stratejileri kullanır.","1998 yılında keşfedilmiştir ve bilim dünyasını hayrete düşürmüştür.","Kollarını kullanarak yılan balığı, aslan balığı ve denizanası gibi canlıları birebir taklit eder."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐙</span>
+            <div>
+              <h3>Mimik Ahtapot</h3>
+              <span class="latin-name">Thaumoctopus mimicus</span>
+            </div>
+          </div>
+          <p>Hayvanlar aleminin en yetenekli taklitçisi. 15'den fazla deniz canlısını taklit edebilen mimik ahtapot, 1998'de keşfedilen olağanüstü bir türdür.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Hint-Pasifik sığ suları</span>
+            <span class="tag diet">Etçil</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ==========================================
+         DOĞAL GİZLENME
+         ========================================== -->
+    <div class="subcategory" id="dogal-gizlenme">
+      <div class="subcategory-header">
+        <span class="sub-emoji">🌿</span>
+        <h2>Doğal Gizlenme</h2>
+      </div>
+
+      <div class="animal-grid">
+
+        <!-- KAR TAVŞANI -->
+        <div class="animal-card" data-animal='{"isim":"Kar Tavşanı","emoji":"🐇","latin":"Lepus timidus","habitat":"Kuzey Avrupa, Sibirya, Arktik","beslenme":"Otçul","boyut":"45 - 65 cm","agirlik":"2 - 5.5 kg","yasam":"4 - 8 yıl","aciklama":"Kar tavşanı, mevsimsel kamuflajın en güzel örneklerinden biridir. Kışın tamamen beyaz olan kürkü, ilkbaharda kahverengi-gri renge döner. Bu renk değişimi, hem karlı kış ortamında hem de karın eridiği yaz aylarında mükemmel gizlenme sağlar.","ilgincBilgiler":["Kışın beyaz, yazın kahverengi-gri olacak şekilde yılda iki kez kürk değiştirir.","Renk değişimi gün uzunluğundaki değişime bağlı olarak hormonal olarak tetiklenir.","Saatte 60 km hıza ulaşabilir ve kar üzerinde batmadan koşabilir.","İklim değişikliği nedeniyle kar erken eridiğinde beyaz kürkü dezavantaja dönüşmektedir."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐇</span>
+            <div>
+              <h3>Kar Tavşanı</h3>
+              <span class="latin-name">Lepus timidus</span>
+            </div>
+          </div>
+          <p>Mevsimsel kamuflajın şampiyonu. Kışın bembeyaz, yazın kahverengi olan kar tavşanı, doğanın mevsime uyum sağlayan en zarif gizlenme uzmanlarından biridir.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Kuzey Avrupa, Sibirya</span>
+            <span class="tag diet">Otçul</span>
+          </div>
+        </div>
+
+        <!-- BAYKUŞ -->
+        <div class="animal-card" data-animal='{"isim":"Baykuş","emoji":"🦉","latin":"Strigiformes","habitat":"Tüm kıtalar (Antarktika hariç)","beslenme":"Etçil","boyut":"15 - 70 cm","agirlik":"50 g - 4 kg","yasam":"5 - 25 yıl","aciklama":"Baykuşlar, doğanın en etkili gizlenme uzmanlarından biridir. Ağaç kabuğu rengindeki tüyleri sayesinde gündüz ağaç dallarında görünmez hale gelirler. Tüylerinin deseni ağaç kabuğunun dokusunu birebir taklit eder ve yırtıcı kuşlardan korunmalarını sağlar.","ilgincBilgiler":["Tüyleri ağaç kabuğunun rengini ve dokusunu birebir taklit eder - gündüz neredeyse görünmez olurlar.","Sessiz uçuş için tüylerinin kenarları özel tarak benzeri yapıya sahiptir.","Başlarını 270 derece çevirebilirler - bu boyun esnekliği olağanüstüdür.","Gece görüşleri insanın 100 katı kadar güçlüdür ve zifiri karanlıkta avlanabilirler."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦉</span>
+            <div>
+              <h3>Baykuş</h3>
+              <span class="latin-name">Strigiformes</span>
+            </div>
+          </div>
+          <p>Ormanların görünmez avcısı. Ağaç kabuğuna mükemmel uyum sağlayan tüyleriyle baykuş, gündüz vakti neredeyse tamamen görünmez hale gelen sessiz bir kamuflaj ustasıdır.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Tüm kıtalar</span>
+            <span class="tag diet">Etçil</span>
+          </div>
+        </div>
+
+        <!-- YAPRAK KURBAĞASI -->
+        <div class="animal-card" data-animal='{"isim":"Yaprak Kurbağası","emoji":"🐸","latin":"Megophrys nasuta","habitat":"Güneydoğu Asya yağmur ormanları","beslenme":"Böcekçil","boyut":"8 - 12 cm","agirlik":"15 - 50 g","yasam":"5 - 8 yıl","aciklama":"Yaprak kurbağası, orman tabanındaki kuru yapraklara benzemek için evrimleşmiş olağanüstü bir kamuflaj uzmanıdır. Vücudu, yaprak damar desenlerini ve çürük noktalarını taklit eden benzersiz bir yapıya sahiptir. Burnundaki ve gözlerinin üstündeki sivri çıkıntılar yaprak sapını andırır.","ilgincBilgiler":["Vücudu kuru yaprakların rengini, damar desenlerini ve hatta çürük noktalarını taklit eder.","Burnundaki ve gözlerinin üstündeki sivri çıkıntılar yaprak sapını andırarak kamuflajı mükemmelleştirir.","Tamamen hareketsiz kalarak saatlerce kuru yapraklar arasında gizlenebilir.","Tehlike anında yaprak gibi kıvrılarak ve hareketsiz kalarak yırtıcıları kandırır."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐸</span>
+            <div>
+              <h3>Yaprak Kurbağası</h3>
+              <span class="latin-name">Megophrys nasuta</span>
+            </div>
+          </div>
+          <p>Orman tabanının görünmez sakini. Kuru yapraklara birebir benzeyen yaprak kurbağası, doğanın en etkileyici gizlenme örneklerinden birini sunar.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Güneydoğu Asya</span>
+            <span class="tag diet">Böcekçil</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <button class="modal-close">&times;</button>
+      <span class="modal-emoji"></span>
+      <h2></h2>
+      <span class="modal-latin"></span>
+      <div class="modal-info-grid"></div>
+      <p class="modal-description"></p>
+      <div class="modal-fun-facts">
+        <h4>İlginç Bilgiler</h4>
+        <ul></ul>
+      </div>
+      <div class="modal-article-link-container"></div>
+    </div>
+  </div>
+
+  <!-- İLGİLİ İÇERİKLER -->
+  <section class="ilgili-icerikler">
+    <h2>İlgili İçerikler</h2>
+    <div class="related-grid">
+      <a href="surungen.html" class="related-card">
+        <span class="related-emoji">🐊</span>
+        <h4>Sürüngenler</h4>
+        <p>Bukalemun gibi kamuflaj ustası sürüngenleri keşfedin</p>
+        <span class="related-card-link">Keşfet →</span>
+      </a>
+      <a href="bocekler.html" class="related-card">
+        <span class="related-emoji">🦋</span>
+        <h4>Böcekler</h4>
+        <p>Yaprak böceği gibi taklit ustası böcekleri tanıyın</p>
+        <span class="related-card-link">Keşfet →</span>
+      </a>
+      <a href="omurgasizlar.html" class="related-card">
+        <span class="related-emoji">🐙</span>
+        <h4>Omurgasızlar</h4>
+        <p>Ahtapot ve mürekkep balığı gibi renk değiştirenleri keşfedin</p>
+        <span class="related-card-link">Keşfet →</span>
+      </a>
+      <a href="amfibiler.html" class="related-card">
+        <span class="related-emoji">🐸</span>
+        <h4>Amfibiler</h4>
+        <p>Yaprak kurbağası gibi gizlenme ustalarını tanıyın</p>
+        <span class="related-card-link">Keşfet →</span>
+      </a>
+      <a href="amazon-hayvanlari.html" class="related-card">
+        <span class="related-emoji">🌿</span>
+        <h4>Amazon Hayvanları</h4>
+        <p>Yağmur ormanlarının kamuflaj uzmanlarını keşfedin</p>
+        <span class="related-card-link">Keşfet →</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>🌍 Hayvanlar Dünyası</h4>
+        <p>Gezegenimizin muhteşem canlılarını tanıyın. Bu site, hayvanlar alemi hakkında bilgi edinmek isteyen herkes için hazırlanmıştır.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Kategoriler</h4>
+        <ul class="footer-links">
+          <li><a href="memeliler.html">🦁 Memeliler</a></li>
+          <li><a href="kuslar.html">🦅 Kuşlar</a></li>
+          <li><a href="surungen.html">🐊 Sürüngen</a></li>
+          <li><a href="baliklar.html">🦈 Balıklar</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Diğer</h4>
+        <ul class="footer-links">
+          <li><a href="amfibiler.html">🐸 Amfibiler</a></li>
+          <li><a href="bocekler.html">🦋 Böcekler</a></li>
+          <li><a href="omurgasizlar.html">🐙 Omurgasızlar</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Keşfet</h4>
+        <ul class="footer-links">
+          <li><a href="tehlike-altinda.html">Tehlike Altındaki Türler</a></li>
+          <li><a href="turkiye-hayvanlari.html">Türkiye Hayvanları</a></li>
+          <li><a href="quiz.html">Bilgi Yarışması</a></li>
+          <li><a href="blog.html">📝 Blog</a></li>
+          <li><a href="hakkinda.html">Hakkında</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Özel Koleksiyonlar</h4>
+        <ul class="footer-links">
+          <li><a href="en-hizli-hayvanlar.html">⚡ En Hızlı Hayvanlar</a></li>
+          <li><a href="en-yavas-hayvanlar.html">🐌 En Yavaş Hayvanlar</a></li>
+          <li><a href="en-uzun-yasayanlar.html">🕰️ En Uzun Yaşayanlar</a></li>
+          <li><a href="en-zehirli-hayvanlar.html">☠️ En Zehirli Hayvanlar</a></li>
+          <li><a href="buz-devri-hayvanlari.html">🧊 Buz Devri Hayvanları</a></li>
+          <li><a href="amazon-hayvanlari.html">🌿 Amazon Hayvanları</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Hayvanlar Dünyası &copy; 2026 - Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
