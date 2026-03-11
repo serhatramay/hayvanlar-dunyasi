@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gece Avcıları - Hayvanlar Dünyası</title>
+  <meta name="description" content="Gece avcıları - Karanlıkta avlanan, gelişmiş gece görüşü ve özel duyularla donatılmış olağanüstü hayvanları keşfedin.">
+  <meta property="og:title" content="Gece Avcıları - Hayvanlar Dünyası">
+  <meta property="og:description" content="Gecenin efendileri: Karanlıkta avlanan aslanlar, baykuşlar, yarasalar ve daha fazlası. Gece adaptasyonlarını keşfedin.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGASYON -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">🌍 Hayvanlar <span>Dünyası</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="memeliler.html">Memeliler</a></li>
+        <li><a href="kuslar.html">Kuşlar</a></li>
+        <li><a href="surungen.html">Sürüngen</a></li>
+        <li><a href="baliklar.html">Balıklar</a></li>
+        <li><a href="amfibiler.html">Amfibiler</a></li>
+        <li><a href="bocekler.html">Böcekler</a></li>
+        <li><a href="omurgasizlar.html">Omurgasızlar</a></li>
+        <li><a href="tehlike-altinda.html">Tehlike Altında</a></li>
+        <li><a href="turkiye-hayvanlari.html">Türkiye</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="hakkinda.html">Hakkında</a></li>
+      </ul>
+      <div class="nav-search">
+        <span class="nav-search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Hayvan ara..." autocomplete="off">
+      </div>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="search-results" id="searchResults"></div>
+
+  <!-- SAYFA HERO -->
+  <section class="page-hero hero-gece">
+    <span class="hero-emoji">🌙</span>
+    <h1>Gece Avcıları</h1>
+    <p>Güneş battığında doğa sessizleşmez, aksine bambaşka bir dünya uyanır. Karanlığa mükemmel uyum sağlamış gece avcıları, gelişmiş gece görüşleri, keskin duyuları ve özel avlanma teknikleriyle gecenin efendileridir. Aslanların gece baskınlarından baykuşların sessiz uçuşlarına, yarasaların ekolokasyonundan akreplerin ultraviyole parıltısına kadar gecenin en etkileyici avcılarını keşfedin.</p>
+  </section>
+
+  <main class="section">
+
+    <!-- ==========================================
+         GECE MEMELİLERİ
+         ========================================== -->
+    <div class="subcategory" id="gece-memelileri">
+      <div class="subcategory-header">
+        <span class="sub-emoji">🦁</span>
+        <h2>Gece Memelileri</h2>
+      </div>
+
+      <div class="animal-grid">
+
+        <!-- ASLAN -->
+        <div class="animal-card" data-animal='{"isim":"Aslan","emoji":"🦁","latin":"Panthera leo","habitat":"Afrika savanları","beslenme":"Etçil","boyut":"1.7 - 2.5 metre","agirlik":"120 - 250 kg","yasam":"10 - 14 yıl","aciklama":"Aslan, Afrika savanlarının tartışmasız kralı ve en güçlü gece avcılarından biridir. Avlanmalarının büyük çoğunluğunu gece gerçekleştiren aslanlar, karanlıkta insanlardan 6 kat daha iyi görebilirler. Dişi aslanlar koordineli grup stratejileriyle avlanır ve bu gece baskınları başarı oranını önemli ölçüde artırır.","ilgincBilgiler":["Avlanmalarının yaklaşık %70 ini gece gerçekleştirirler.","Karanlıkta insanlardan 6 kat daha iyi görebilirler, bu sayede gece avlanmada büyük avantaj elde ederler.","Bir aslanın kükremesi 8 km uzaktan duyulabilir ve bölge savunmasında kullanılır.","Günde 20 saate kadar uyuyabilirler ve genellikle geceleri en aktif olurlar."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦁</span>
+            <div>
+              <h3>Aslan</h3>
+              <span class="latin-name">Panthera leo</span>
+            </div>
+          </div>
+          <p>Savanların kralı ve gecenin en güçlü avcısı. Avlanmalarının büyük çoğunluğunu gece yapan aslanlar, karanlıkta mükemmel görebilirler.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Afrika savanları</span>
+            <span class="tag diet">Etçil</span>
+            <span class="tag">🌙 Gece Avcısı</span>
+          </div>
+        </div>
+
+        <!-- LEOPAR -->
+        <div class="animal-card" data-animal='{"isim":"Leopar","emoji":"🐆","latin":"Panthera pardus","habitat":"Afrika ve Asya","beslenme":"Etçil","boyut":"1.0 - 1.9 metre","agirlik":"30 - 90 kg","yasam":"12 - 17 yıl","aciklama":"Leopar, kediler ailesinin en başarılı gece avcısıdır. Mükemmel kamuflajı, olağanüstü gece görüşü ve sessiz hareket yeteneğiyle karanlıkta neredeyse görünmez olan leopar, avını ağaca taşıyarak diğer yırtıcılardan korur. Dünyanın en geniş yayılım alanına sahip büyük kedi türüdür.","ilgincBilgiler":["Kendi ağırlığının iki katı avı ağaca taşıyabilirler.","Gece görüşleri insanlardan 7 kat daha iyidir.","Dünyanın en geniş yayılım alanına sahip büyük kedi türüdür - Afrika dan Asya ya kadar yaşarlar.","Her leoparın benekleri parmak izi gibi benzersizdir ve bireysel tanımlama için kullanılır."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐆</span>
+            <div>
+              <h3>Leopar</h3>
+              <span class="latin-name">Panthera pardus</span>
+            </div>
+          </div>
+          <p>Gecenin gölge avcısı. Mükemmel kamuflajı ve olağanüstü gece görüşüyle karanlıkta neredeyse görünmez olan, avını ağaca taşıyan güçlü bir avcı.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Afrika ve Asya</span>
+            <span class="tag diet">Etçil</span>
+            <span class="tag">🌙 Gece Avcısı</span>
+          </div>
+        </div>
+
+        <!-- YARASA -->
+        <div class="animal-card" data-animal='{"isim":"Yarasa","emoji":"🦇","latin":"Chiroptera","habitat":"Tüm kıtalar (Antarktika hariç)","beslenme":"Böcekçil / Meyvecil","boyut":"3 - 40 cm","agirlik":"2 g - 1.6 kg","yasam":"5 - 30 yıl","aciklama":"Yarasalar, uçabilen tek memeli grubu olup gecenin en uzmanlaşmış avcılarıdır. Ekolokasyon kullanarak tam karanlıkta avlanabilen yarasalar, bir gecede kendi ağırlıklarının yarısı kadar böcek yiyebilirler. Dünya üzerinde 1400 den fazla yarasa türü bulunmaktadır.","ilgincBilgiler":["Uçabilen tek memeli grubudur ve 1400 den fazla türü vardır.","Ekolokasyon kullanarak tam karanlıkta avlanabilirler - saniyede 200 ses dalgası yayabilirler.","Bir gecede kendi ağırlıklarının yarısı kadar böcek yiyebilirler - zararlı böcek kontrolünde kritik rol oynarlar.","Bazı türler 30 yıldan fazla yaşayabilir, bu da boyutlarına göre olağanüstü uzun bir ömürdür."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦇</span>
+            <div>
+              <h3>Yarasa</h3>
+              <span class="latin-name">Chiroptera</span>
+            </div>
+          </div>
+          <p>Gecenin uçan avcısı ve uçabilen tek memeli. Ekolokasyon kullanarak tam karanlıkta avlanan, böcek kontrolünde kritik rol oynayan olağanüstü canlılar.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Tüm kıtalar</span>
+            <span class="tag diet">Böcekçil / Meyvecil</span>
+            <span class="tag">🌙 Gece Avcısı</span>
+          </div>
+        </div>
+
+        <!-- KURT -->
+        <div class="animal-card" data-animal='{"isim":"Kurt","emoji":"🐺","latin":"Canis lupus","habitat":"Kuzey yarımküre","beslenme":"Etçil","boyut":"1.0 - 1.6 metre","agirlik":"25 - 80 kg","yasam":"6 - 13 yıl","aciklama":"Kurt, kuzey yarımkürenin en başarılı gece avcılarından biri olan sosyal bir yırtıcıdır. Sürü halinde koordineli avlanan kurtlar, özellikle alacakaranlık ve gece saatlerinde aktiftirler. Keskin gece görüşleri, üstün koku alma duyuları ve dayanıklılık koşuculuğuyla avlarını saatlerce takip edebilirler.","ilgincBilgiler":["Uluma sesleri 16 km uzaktan duyulabilir ve sürü iletişiminde kullanılır.","Koku alma duyuları insanlardan 100 kat daha güçlüdür ve avlarını kilometrelerce uzaktan tespit edebilirler.","Avlarını saatlerce takip edebilirler - dayanıklılık koşuculuğunda ustadırlar.","Sürü içinde karmaşık bir hiyerarşi vardır ve her bireyin sürüdeki rolü belirlidir."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐺</span>
+            <div>
+              <h3>Kurt</h3>
+              <span class="latin-name">Canis lupus</span>
+            </div>
+          </div>
+          <p>Gecenin sürü avcısı. Koordineli grup stratejileriyle avlanan, ulumaları kilometrelerce uzaktan duyulabilen güçlü ve dayanıklı bir yırtıcı.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Kuzey yarımküre</span>
+            <span class="tag diet">Etçil</span>
+            <span class="tag">🌙 Gece Avcısı</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ==========================================
+         GECE KUŞLARI
+         ========================================== -->
+    <div class="subcategory" id="gece-kuslari">
+      <div class="subcategory-header">
+        <span class="sub-emoji">🦉</span>
+        <h2>Gece Kuşları</h2>
+      </div>
+
+      <div class="animal-grid">
+
+        <!-- PUHU KUŞU -->
+        <div class="animal-card" data-animal='{"isim":"Puhu Kuşu","emoji":"🦉","latin":"Bubo bubo","habitat":"Avrupa, Asya, Kuzey Afrika","beslenme":"Etçil","boyut":"58 - 75 cm","agirlik":"1.5 - 4.2 kg","yasam":"20 - 60 yıl","aciklama":"Puhu kuşu, dünyanın en büyük baykuş türlerinden biridir ve gecenin en etkileyici avcılarından biri olarak kabul edilir. Kanat açıklığı 2 metreye ulaşan bu heybetli kuş, tavşandan tilkiye kadar geniş bir av yelpazesine sahiptir. Mükemmel gece görüşü ve olağanüstü işitme duyusuyla karanlıkta avını büyük bir hassasiyetle yakalar.","ilgincBilgiler":["Kanat açıklığı 2 metreye ulaşabilir ve dünyanın en büyük baykuş türlerinden biridir.","Başını 270 derece döndürebilir, bu sayede gözlerini oynatmadan geniş bir alanı tarayabilir.","Tüylerinin özel yapısı sayesinde neredeyse hiç ses çıkarmadan uçabilirler.","60 yıla kadar yaşayabilen en uzun ömürlü baykuş türlerinden biridir."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦉</span>
+            <div>
+              <h3>Puhu Kuşu</h3>
+              <span class="latin-name">Bubo bubo</span>
+            </div>
+          </div>
+          <p>Gecenin heybetli efendisi. Dünyanın en büyük baykuş türlerinden biri olan puhu kuşu, sessiz uçuşu ve keskin duyularıyla karanlığın ustasıdır.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Avrupa, Asya</span>
+            <span class="tag diet">Etçil</span>
+            <span class="tag">🌙 Gece Avcısı</span>
+          </div>
+        </div>
+
+        <!-- PEÇELİ BAYKUŞ -->
+        <div class="animal-card" data-animal='{"isim":"Peçeli Baykuş","emoji":"🦉","latin":"Tyto alba","habitat":"Tüm kıtalar (Antarktika hariç)","beslenme":"Etçil","boyut":"33 - 39 cm","agirlik":"0.2 - 0.7 kg","yasam":"4 - 15 yıl","aciklama":"Peçeli baykuş, yüz diskinin kalp şeklindeki benzersiz yapısıyla dünyanın en tanınır baykuş türüdür. Tam karanlıkta yalnızca ses kullanarak avlanabilen bu olağanüstü gece avcısı, kuşlar arasında en gelişmiş işitme duyusuna sahiptir. Yüz diski bir radar anteni gibi çalışarak sesleri kulaklara yönlendirir.","ilgincBilgiler":["Tam karanlıkta yalnızca sese dayalı olarak avlanabilen tek kuş türlerinden biridir.","Kalp şeklindeki yüz diski bir radar anteni gibi çalışarak sesleri kulaklara yönlendirir.","Bir yılda yaklaşık 1000 fare avlayarak çiftçiler için doğal zararlı kontrolü sağlar.","Kulakları asimetrik yerleşimlidir - biri diğerinden daha yüksektedir, bu sayede sesin geldiği yönü üç boyutlu olarak belirleyebilirler."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦉</span>
+            <div>
+              <h3>Peçeli Baykuş</h3>
+              <span class="latin-name">Tyto alba</span>
+            </div>
+          </div>
+          <p>Gecenin sessiz avcısı. Kalp şeklindeki yüz diskiyle sesleri toplayarak tam karanlıkta avlanan, çiftçilerin en değerli doğal müttefiki.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Tüm kıtalar</span>
+            <span class="tag diet">Etçil</span>
+            <span class="tag">🌙 Gece Avcısı</span>
+          </div>
+        </div>
+
+        <!-- ÇOBANALDATAN -->
+        <div class="animal-card" data-animal='{"isim":"Çobanaldatan","emoji":"🐦","latin":"Caprimulgus europaeus","habitat":"Avrupa, Asya, Afrika","beslenme":"Böcekçil","boyut":"24 - 28 cm","agirlik":"0.05 - 0.1 kg","yasam":"4 - 12 yıl","aciklama":"Çobanaldatan, gece aktif olan ve uçarak böcek avlayan gizemli bir kuş türüdür. Gündüz vakti dallar üzerinde mükemmel kamuflajıyla gizlenen bu kuş, geceleri geniş ağzını açarak havadaki böcekleri yakalar. Adını eski çobanların bu kuşun keçilerin sütünü emdiğine dair batıl inancından almıştır.","ilgincBilgiler":["Adını keçilerin sütünü emdiğine dair eski bir batıl inançtan almıştır, ancak bu doğru değildir.","Geniş ağzıyla havadaki böcekleri uçarken yakalar - ağız açıklığı başının genişliğine eşittir.","Gündüz kamuflajı o kadar mükemmeldir ki dal üzerinde uyurken neredeyse görünmez olur.","Afrika ya göç ederken Sahra Çölü nü tek seferde geçebilirler."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐦</span>
+            <div>
+              <h3>Çobanaldatan</h3>
+              <span class="latin-name">Caprimulgus europaeus</span>
+            </div>
+          </div>
+          <p>Gecenin gizemli böcek avcısı. Gündüz mükemmel kamuflajıyla gizlenen, geceleri geniş ağzıyla havadaki böcekleri yakalayan ilginç bir kuş.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Avrupa, Asya, Afrika</span>
+            <span class="tag diet">Böcekçil</span>
+            <span class="tag">🌙 Gece Avcısı</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ==========================================
+         GECE SÜRÜNGENLERİ VE BÖCEKLERİ
+         ========================================== -->
+    <div class="subcategory" id="gece-surungenleri-bocekleri">
+      <div class="subcategory-header">
+        <span class="sub-emoji">🦎</span>
+        <h2>Gece Sürüngenleri ve Böcekleri</h2>
+      </div>
+
+      <div class="animal-grid">
+
+        <!-- GEKO -->
+        <div class="animal-card" data-animal='{"isim":"Geko","emoji":"🦎","latin":"Gekkonidae","habitat":"Tropik ve ılıman bölgeler","beslenme":"Böcekçil","boyut":"2 - 35 cm","agirlik":"1 - 300 g","yasam":"5 - 20 yıl","aciklama":"Gekolar, gece aktif sürüngenlerin en başarılı gruplarından biridir. Dikey yüzeylerde ve hatta tavanlarda yürüyebilme yetenekleriyle ünlü olan gekolar, gece görüşleri insanlardan 350 kat daha hassastır. Ayaklarındaki milyonlarca mikroskobik tüycük sayesinde van der Waals kuvvetlerini kullanarak her yüzeye tutunabilirler.","ilgincBilgiler":["Gece görüşleri insanlardan 350 kat daha hassastır ve ay ışığında bile renkleri ayırt edebilirler.","Ayaklarındaki milyonlarca mikroskobik tüycük sayesinde cam dahil her yüzeye tutunabilirler.","Tehlike anında kuyruklarını bırakabilir ve birkaç hafta içinde yeni kuyruk üretebilirler.","Göz kapakları yoktur, gözlerini temizlemek için dillerini kullanırlar."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦎</span>
+            <div>
+              <h3>Geko</h3>
+              <span class="latin-name">Gekkonidae</span>
+            </div>
+          </div>
+          <p>Gecenin tırmanan avcısı. Tavanlarda bile yürüyebilen ve insanlardan 350 kat daha iyi gece görüşüne sahip olan küçük ama yetenekli sürüngenler.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Tropik bölgeler</span>
+            <span class="tag diet">Böcekçil</span>
+            <span class="tag">🌙 Gece Avcısı</span>
+          </div>
+        </div>
+
+        <!-- ATEŞ BÖCEĞİ -->
+        <div class="animal-card" data-animal='{"isim":"Ateş Böceği","emoji":"🪲","latin":"Lampyridae","habitat":"Ilıman ve tropik bölgeler","beslenme":"Etçil / Otçul","boyut":"0.5 - 2.5 cm","agirlik":"0.01 - 0.05 g","yasam":"2 ay - 2 yıl","aciklama":"Ateş böcekleri, biyolüminesans yetenekleriyle gecenin en büyüleyici böcekleridir. Karınlarındaki özel organlarda lusiferin ve lusiferaz enziminin reaksiyonuyla ışık üreten bu böcekler, ışık sinyallerini eş bulmak ve iletişim kurmak için kullanırlar. Bu ışık üretimi %98 verimlilikle gerçekleşir ve neredeyse hiç ısı üretmez.","ilgincBilgiler":["Işık üretimleri %98 verimlilikle gerçekleşir - bir ampulün verimliliğinin çok üzerindedir.","Her türün kendine özgü bir yanıp sönme deseni vardır ve eşlerini bu desenle bulurlar.","Bazı dişi ateş böcekleri başka türlerin ışık desenini taklit ederek erkekleri cezbedip avlar.","Larvaları da ışık üretir ve bu yüzden parıldayan solucan olarak adlandırılırlar."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🪲</span>
+            <div>
+              <h3>Ateş Böceği</h3>
+              <span class="latin-name">Lampyridae</span>
+            </div>
+          </div>
+          <p>Gecenin ışıklı dansçısı. Kendi ışığını üreten ve bu ışıkla iletişim kuran büyüleyici böcekler, geceleri doğayı aydınlatır.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Ilıman ve tropik bölgeler</span>
+            <span class="tag diet">Etçil / Otçul</span>
+            <span class="tag">🌙 Gece Canlısı</span>
+          </div>
+        </div>
+
+        <!-- AKREP -->
+        <div class="animal-card" data-animal='{"isim":"Akrep","emoji":"🦂","latin":"Scorpiones","habitat":"Çöller, tropik ve ılıman bölgeler","beslenme":"Etçil","boyut":"2 - 20 cm","agirlik":"1 - 60 g","yasam":"3 - 8 yıl","aciklama":"Akrepler, 400 milyon yıldan fazla süredir Dünya da yaşayan en eski kara avcılarından biridir. Gece aktif olan akrepler, ultraviyole ışık altında parlayan benzersiz dış iskeletleriyle bilinirler. Vücut yüzeylerindeki özel duyusal kıllar sayesinde en küçük titreşimleri bile algılayarak karanlıkta avlarını hassas bir şekilde tespit ederler.","ilgincBilgiler":["Ultraviyole ışık altında parlak yeşil-mavi renkte parlarlar ve bunun sebebi hâlâ tam olarak çözülememiştir.","400 milyon yıldan fazla süredir Dünya da yaşayan en eski kara hayvanlarından biridir.","Bir yıl boyunca hiçbir şey yemeden hayatta kalabilirler - metabolizmaları inanılmaz derecede yavaştır.","Vücut yüzeylerindeki duyusal kıllar sayesinde birkaç santimetre uzaktaki böceklerin titreşimlerini algılayabilirler."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦂</span>
+            <div>
+              <h3>Akrep</h3>
+              <span class="latin-name">Scorpiones</span>
+            </div>
+          </div>
+          <p>Gecenin kadim avcısı. 400 milyon yıllık evrimsel geçmişe sahip, ultraviyole ışıkta parlayan ve titreşimlerle avlanan eski bir yırtıcı.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Çöller, tropik bölgeler</span>
+            <span class="tag diet">Etçil</span>
+            <span class="tag">🌙 Gece Avcısı</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <button class="modal-close">&times;</button>
+      <span class="modal-emoji"></span>
+      <h2></h2>
+      <span class="modal-latin"></span>
+      <div class="modal-info-grid"></div>
+      <p class="modal-description"></p>
+      <div class="modal-fun-facts">
+        <h4>İlginç Bilgiler</h4>
+        <ul></ul>
+      </div>
+      <div class="modal-article-link-container"></div>
+    </div>
+  </div>
+
+  <!-- İLGİLİ İÇERİKLER -->
+  <section class="ilgili-icerikler">
+    <h2>İlgili İçerikler</h2>
+    <div class="related-grid">
+      <a href="memeliler.html" class="related-card">
+        <span class="related-emoji">🦁</span>
+        <h4>Memeliler</h4>
+        <p>Aslan ve leopar gibi gece avcısı memelileri tanıyın</p>
+        <span class="related-card-link">Keşfet →</span>
+      </a>
+      <a href="kuslar.html" class="related-card">
+        <span class="related-emoji">🦅</span>
+        <h4>Kuşlar</h4>
+        <p>Baykuşlar ve diğer gece kuşlarını keşfedin</p>
+        <span class="related-card-link">Keşfet →</span>
+      </a>
+      <a href="surungen.html" class="related-card">
+        <span class="related-emoji">🐊</span>
+        <h4>Sürüngenler</h4>
+        <p>Gekolar ve diğer gece sürüngenlerini tanıyın</p>
+        <span class="related-card-link">Keşfet →</span>
+      </a>
+      <a href="bocekler.html" class="related-card">
+        <span class="related-emoji">🦋</span>
+        <h4>Böcekler</h4>
+        <p>Ateş böcekleri ve gece böceklerini keşfedin</p>
+        <span class="related-card-link">Keşfet →</span>
+      </a>
+      <a href="hayvan-kamufaji.html" class="related-card">
+        <span class="related-emoji">🎭</span>
+        <h4>Hayvan Kamuflajı</h4>
+        <p>Doğanın en iyi gizlenme uzmanlarını tanıyın</p>
+        <span class="related-card-link">Keşfet →</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>🌍 Hayvanlar Dünyası</h4>
+        <p>Gezegenimizin muhteşem canlılarını tanıyın. Bu site, hayvanlar alemi hakkında bilgi edinmek isteyen herkes için hazırlanmıştır.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Kategoriler</h4>
+        <ul class="footer-links">
+          <li><a href="memeliler.html">🦁 Memeliler</a></li>
+          <li><a href="kuslar.html">🦅 Kuşlar</a></li>
+          <li><a href="surungen.html">🐊 Sürüngen</a></li>
+          <li><a href="baliklar.html">🦈 Balıklar</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Diğer</h4>
+        <ul class="footer-links">
+          <li><a href="amfibiler.html">🐸 Amfibiler</a></li>
+          <li><a href="bocekler.html">🦋 Böcekler</a></li>
+          <li><a href="omurgasizlar.html">🐙 Omurgasızlar</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Keşfet</h4>
+        <ul class="footer-links">
+          <li><a href="tehlike-altinda.html">Tehlike Altındaki Türler</a></li>
+          <li><a href="turkiye-hayvanlari.html">Türkiye Hayvanları</a></li>
+          <li><a href="quiz.html">Bilgi Yarışması</a></li>
+          <li><a href="blog.html">📝 Blog</a></li>
+          <li><a href="hakkinda.html">Hakkında</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Özel Koleksiyonlar</h4>
+        <ul class="footer-links">
+          <li><a href="en-hizli-hayvanlar.html">⚡ En Hızlı Hayvanlar</a></li>
+          <li><a href="en-yavas-hayvanlar.html">🐌 En Yavaş Hayvanlar</a></li>
+          <li><a href="en-uzun-yasayanlar.html">🕰️ En Uzun Yaşayanlar</a></li>
+          <li><a href="en-zehirli-hayvanlar.html">☠️ En Zehirli Hayvanlar</a></li>
+          <li><a href="buz-devri-hayvanlari.html">🧊 Buz Devri Hayvanları</a></li>
+          <li><a href="amazon-hayvanlari.html">🌿 Amazon Hayvanları</a></li>
+          <li><a href="kutup-hayvanlari.html">❄️ Kutup Hayvanları</a></li>
+          <li><a href="afrika-hayvanlari.html">🌍 Afrika Hayvanları</a></li>
+          <li><a href="okyanus-derinlikleri.html">🌊 Okyanus Derinlikleri</a></li>
+          <li><a href="hayvan-gocleri.html">🦅 Hayvan Göçleri</a></li>
+          <li><a href="hayvan-kamufaji.html">🦎 Hayvan Kamuflajı</a></li>
+          <li><a href="en-zeki-hayvanlar.html">🧠 En Zeki Hayvanlar</a></li>
+          <li><a href="gece-avcilari.html">🌙 Gece Avcıları</a></li>
+          <li><a href="en-buyuk-hayvanlar.html">🐘 En Büyük Hayvanlar</a></li>
+          <li><a href="en-kucuk-hayvanlar.html">🐁 En Küçük Hayvanlar</a></li>
+          <li><a href="nesli-tukenen-hayvanlar.html">💀 Nesli Tükenen Hayvanlar</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Hayvanlar Dünyası &copy; 2026 - Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
