@@ -1892,6 +1892,36 @@ section.subcategory {
 .page-hero.hero-amazon {
   background: linear-gradient(135deg, #1a1a2e 0%, #0a2e0a 50%, #1a2e1a 100%);
 }
+.page-hero.hero-kutup {
+  background: linear-gradient(135deg, #1a1a2e 0%, #0a1e3e 50%, #1a2e3e 100%);
+}
+.page-hero.hero-afrika {
+  background: linear-gradient(135deg, #1a1a2e 0%, #3e2e0a 50%, #2e1a0a 100%);
+}
+.page-hero.hero-okyanus {
+  background: linear-gradient(135deg, #1a1a2e 0%, #0a1a3e 50%, #0a2e3e 100%);
+}
+.page-hero.hero-goc {
+  background: linear-gradient(135deg, #1a1a2e 0%, #1a2e2e 50%, #0a2e1a 100%);
+}
+.page-hero.hero-kamuflaj {
+  background: linear-gradient(135deg, #1a1a2e 0%, #1a2e1a 50%, #2e2e0a 100%);
+}
+.page-hero.hero-zeki {
+  background: linear-gradient(135deg, #1a1a2e 0%, #2e1a3e 50%, #1a1a3e 100%);
+}
+.page-hero.hero-gece {
+  background: linear-gradient(135deg, #1a1a2e 0%, #0a0a2e 50%, #1a0a2e 100%);
+}
+.page-hero.hero-buyuk {
+  background: linear-gradient(135deg, #1a1a2e 0%, #2e2e0a 50%, #3e1a0a 100%);
+}
+.page-hero.hero-kucuk {
+  background: linear-gradient(135deg, #1a1a2e 0%, #1a3e2e 50%, #0a2e2e 100%);
+}
+.page-hero.hero-nesli-tukenen {
+  background: linear-gradient(135deg, #1a1a2e 0%, #3e0a0a 50%, #2e1a1a 100%);
+}
 
 /* Koleksiyon kartları responsive */
 @media (max-width: 768px) {
@@ -2272,11 +2302,37 @@ section.subcategory {
   font-size: 0.95rem;
 }
 
-/* Related Articles */
-.related-articles {
+/* Related Articles & İlgili İçerikler */
+.related-articles,
+.ilgili-icerikler {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 4rem 4rem;
+}
+
+.ilgili-icerikler {
+  padding: 3rem 2rem 4rem;
+  max-width: 1400px;
+}
+
+.ilgili-icerikler h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid rgba(46, 204, 113, 0.2);
+}
+
+.ilgili-icerikler .related-card h4 {
+  margin-bottom: 0.5rem;
+}
+
+.ilgili-icerikler .related-card p {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
 }
 
 .related-articles h2 {
