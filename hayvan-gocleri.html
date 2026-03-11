@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hayvan Göçleri - Hayvanlar Dünyası</title>
+  <meta name="description" content="Hayvan göçleri - Karada, havada ve denizde binlerce kilometre yol kat eden hayvanların inanılmaz göç yolculuklarını keşfedin.">
+  <meta property="og:title" content="Hayvan Göçleri - Hayvanlar Dünyası">
+  <meta property="og:description" content="Her yıl milyarlarca hayvan hayatta kalmak için kıtalar arası yolculuklara çıkar. Gnu sürülerinden kral kelebeklerine, gri balinalardan somon balıklarına kadar doğanın en epik göç hikayelerini keşfedin.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGASYON -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">🌍 Hayvanlar <span>Dünyası</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="memeliler.html">Memeliler</a></li>
+        <li><a href="kuslar.html">Kuşlar</a></li>
+        <li><a href="surungen.html">Sürüngen</a></li>
+        <li><a href="baliklar.html">Balıklar</a></li>
+        <li><a href="amfibiler.html">Amfibiler</a></li>
+        <li><a href="bocekler.html">Böcekler</a></li>
+        <li><a href="omurgasizlar.html">Omurgasızlar</a></li>
+        <li><a href="tehlike-altinda.html">Tehlike Altında</a></li>
+        <li><a href="turkiye-hayvanlari.html">Türkiye</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="hakkinda.html">Hakkında</a></li>
+      </ul>
+      <div class="nav-search">
+        <span class="nav-search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Hayvan ara..." autocomplete="off">
+      </div>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="search-results" id="searchResults"></div>
+
+  <!-- SAYFA HERO -->
+  <section class="page-hero hero-goc">
+    <span class="hero-emoji">🦅</span>
+    <h1>Hayvan Göçleri</h1>
+    <p>Her yıl milyarlarca hayvan hayatta kalmak, üremek ve besin bulmak için inanılmaz yolculuklara çıkar. Kıtalar arası uçuşlardan okyanus geçişlerine, devasa sürü göçlerinden bireysel kahramanlık hikayelerine kadar doğanın en epik göç olaylarını keşfedin. Bu yolculuklar, hayvanların navigasyon yeteneklerinin ve dayanıklılıklarının olağanüstü kanıtlarıdır.</p>
+  </section>
+
+  <main class="section">
+
+    <!-- ==========================================
+         KARA GÖÇLERİ
+         ========================================== -->
+    <div class="subcategory" id="kara-gocleri">
+      <div class="subcategory-header">
+        <span class="sub-emoji">🦓</span>
+        <h2>Kara Göçleri</h2>
+      </div>
+
+      <div class="animal-grid">
+
+        <!-- GNU -->
+        <div class="animal-card" data-animal='{"isim":"Gnu (Wildebeest)","emoji":"🐃","latin":"Connochaetes taurinus","habitat":"Doğu Afrika savanaları","beslenme":"Otçul","boyut":"1.7 - 2.4 metre","agirlik":"120 - 270 kg","yasam":"20 yıl","aciklama":"Afrika gnu göçü, gezegenimizin en büyük kara göçüdür. Her yıl 1.5 milyondan fazla gnu, yüz binlerce zebra ve ceylanla birlikte Serengeti den Masai Mara ya döngüsel bir göç yapar. Timsahlarla dolu nehirleri geçmek, bu göçün en tehlikeli ve en dramatik anıdır.","ilgincBilgiler":["1.5 milyondan fazla gnu her yıl 3000 km lik döngüsel bir göç yapar.","Timsahlarla dolu Mara Nehri ni geçmek göçün en tehlikeli anıdır - binlercesi boğulur veya avlanır.","Yavru gnular doğduktan sadece birkaç dakika sonra ayağa kalkar ve koşabilir.","Göç sırasında günde 250.000 kadar yavru dünyaya gelir."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐃</span>
+            <div>
+              <h3>Gnu (Wildebeest)</h3>
+              <span class="latin-name">Connochaetes taurinus</span>
+            </div>
+          </div>
+          <p>Dünyanın en büyük kara göçü. 1.5 milyon gnunun Serengeti'den Masai Mara'ya uzanan dramatik yolculuğu, doğanın en büyüleyici olaylarından biridir.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Doğu Afrika savanaları</span>
+            <span class="tag diet">Otçul</span>
+          </div>
+        </div>
+
+        <!-- KARİBU -->
+        <div class="animal-card" data-animal='{"isim":"Karibu","emoji":"🦌","latin":"Rangifer tarandus","habitat":"Arktik Kanada ve Alaska","beslenme":"Otçul","boyut":"1.6 - 2.1 metre","agirlik":"80 - 180 kg","yasam":"12 - 15 yıl","aciklama":"Karibu göçü, kuzey yarımkürenin en büyük kara göçüdür. Yüz binlerce karibu, kışı geçirdikleri ormanlık alanlardan yazlık otlak alanlarına her yıl 5000 km ye kadar yol kat eder. Bu göç, yavruların doğması için güvenli bölgelere ulaşma ihtiyacıyla tetiklenir.","ilgincBilgiler":["Her yıl 5000 km ye kadar yol kat ederek en uzun kara göçlerinden birini yaparlar.","Yüz binlerce bireyden oluşan sürüler halinde göç ederler.","Geniş toynakları kar üzerinde batmadan yürümelerini sağlar.","Göç yolları nesiller boyunca aynı kalır ve kültürel olarak aktarılır."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦌</span>
+            <div>
+              <h3>Karibu</h3>
+              <span class="latin-name">Rangifer tarandus</span>
+            </div>
+          </div>
+          <p>Kuzey yarımkürenin en büyük kara göçü. Arktik tundrasında 5000 km yol kat eden karibuların göçü, dayanıklılığın simgesidir.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Arktik Kanada ve Alaska</span>
+            <span class="tag diet">Otçul</span>
+          </div>
+        </div>
+
+        <!-- ZEBRA -->
+        <div class="animal-card" data-animal='{"isim":"Zebra","emoji":"🦓","latin":"Equus quagga","habitat":"Doğu ve Güney Afrika","beslenme":"Otçul","boyut":"2 - 2.5 metre","agirlik":"175 - 385 kg","yasam":"20 - 25 yıl","aciklama":"Zebralar, gnu sürüleriyle birlikte Afrika nın büyük göçüne katılan önemli göçmenlerdir. Gnulardan farklı olarak uzun otları tercih ederler ve bu sayede aynı otlak alanını paylaşarak rekabet yerine uyum içinde göç ederler. Çizgili desenleri sürü halinde hareket ederken yırtıcıları şaşırtır.","ilgincBilgiler":["Gnularla birlikte göç ederler ve farklı ot boylarını tercih ederek rekabetten kaçınırlar.","Her zebranın çizgi deseni parmak izi gibi benzersizdir ve birbirlerini tanımalarına yardımcı olur.","Göç sırasında sürü halinde uyurken nöbetleşe nöbet tutarlar.","Doğduktan sadece 6 dakika sonra ayağa kalkabilir ve sürüye ayak uydurabilir."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦓</span>
+            <div>
+              <h3>Zebra</h3>
+              <span class="latin-name">Equus quagga</span>
+            </div>
+          </div>
+          <p>Afrika'nın büyük göçünün ortağı. Gnu sürüleriyle birlikte hareket eden zebralar, çizgili desenleriyle yırtıcıları şaşırtarak güvenli göç eder.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Doğu ve Güney Afrika</span>
+            <span class="tag diet">Otçul</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ==========================================
+         HAVA GÖÇLERİ
+         ========================================== -->
+    <div class="subcategory" id="hava-gocleri">
+      <div class="subcategory-header">
+        <span class="sub-emoji">🐦</span>
+        <h2>Hava Göçleri</h2>
+      </div>
+
+      <div class="animal-grid">
+
+        <!-- KIRLANGIC -->
+        <div class="animal-card" data-animal='{"isim":"Kırlangıç","emoji":"🐦","latin":"Hirundo rustica","habitat":"Tüm kıtalar (Antarktika hariç)","beslenme":"Böcekçil","boyut":"17 - 19 cm","agirlik":"16 - 22 g","yasam":"3 - 5 yıl","aciklama":"Kırlangıç, dünyanın en yaygın ve en tanınmış göçmen kuşlarından biridir. Her yıl Avrupa dan Afrika ya ve geri dönerek yaklaşık 12.000 km yol kat eder. Baharın müjdecisi olarak bilinen kırlangıçlar, aynı yuvaya yıllarca geri dönerler ve uçarken böcek avlayarak beslenirler.","ilgincBilgiler":["Her yıl Avrupa dan Afrika ya yaklaşık 12.000 km göç eder ve baharın müjdecisi olarak bilinir.","Aynı yuvaya yıllarca geri dönerler ve eski yuvalarını onararak kullanırlar.","Uçarken avlanırlar - böcekleri havada yakalayarak beslenirler.","Günde 300 km ye kadar uçabilirler ve ömürleri boyunca toplam 200.000 km den fazla yol kat ederler."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐦</span>
+            <div>
+              <h3>Kırlangıç</h3>
+              <span class="latin-name">Hirundo rustica</span>
+            </div>
+          </div>
+          <p>Baharın müjdecisi. Her yıl Avrupa'dan Afrika'ya 12.000 km göç eden kırlangıç, aynı yuvaya sadakatle geri dönen dünyanın en sevilen göçmen kuşudur.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Tüm kıtalar</span>
+            <span class="tag diet">Böcekçil</span>
+          </div>
+        </div>
+
+        <!-- KRAL KELEBEĞİ -->
+        <div class="animal-card" data-animal='{"isim":"Kral Kelebeği","emoji":"🦋","latin":"Danaus plexippus","habitat":"Kuzey Amerika - Meksika","beslenme":"Otçul","boyut":"8.9 - 10.2 cm (kanat açıklığı)","agirlik":"0.5 - 0.75 g","yasam":"2 - 6 hafta (göçmen nesil 8-9 ay)","aciklama":"Kral kelebek göçü, böcek dünyasının en olağanüstü yolculuğudur. Her sonbaharda milyonlarca kral kelebek Kanada ve ABD den Meksika nın dağ ormanlarına 4800 km lik bir göç yapar. Bu yolculuğu tamamlayan nesil, daha önceki nesillerin hiç görmediği bir yere gider; göç bilgisi genetik olarak aktarılır.","ilgincBilgiler":["Yarım gramdan hafif bir böcek 4800 km göç eder - vücut ağırlığına oranla en uzun göçtür.","Göç bilgisi genetik olarak aktarılır - hiçbir birey yolculuğu iki kez yapmaz.","Meksika daki kışlama alanlarında milyonlarca kelebek tek bir ağaçta toplanır.","Göçmen nesil diğer nesillerden 8-9 kat daha uzun yaşar."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦋</span>
+            <div>
+              <h3>Kral Kelebeği</h3>
+              <span class="latin-name">Danaus plexippus</span>
+            </div>
+          </div>
+          <p>Böcek dünyasının en epik yolculuğu. Yarım gramlık kelebeğin 4800 km'lik göçü, doğanın en büyük gizemlerinden biridir.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Kuzey Amerika - Meksika</span>
+            <span class="tag diet">Otçul</span>
+          </div>
+        </div>
+
+        <!-- FLAMİNGO -->
+        <div class="animal-card" data-animal='{"isim":"Flamingo","emoji":"🦩","latin":"Phoenicopterus roseus","habitat":"Afrika, Güney Avrupa, Güney Asya","beslenme":"Süzücü","boyut":"110 - 150 cm","agirlik":"2 - 4 kg","yasam":"20 - 30 yıl","aciklama":"Flamingolar, mevsimsel su seviyesi değişimlerine bağlı olarak göç eden zarif kuşlardır. Büyük sürüler halinde V formasyonunda uçarak binlerce kilometre yol kat edebilirler. Pembe renkleri yedikleri yiyeceklerdeki karotenoid pigmentlerinden gelir ve beslenme kaynaklarını takip ederek göç ederler.","ilgincBilgiler":["Pembe renkleri yedikleri alg ve karideslerdeki karotenoid pigmentlerinden gelir - doğduklarında beyazdırlar.","Tek ayak üzerinde uyurlar ve bu pozisyon aslında çift ayak üzerinde durmaktan daha az enerji harcar.","Tuzlu göllerde büyük sürüler halinde yaşarlar ve binlerce bireyden oluşan koloniler kurarlar.","Göç sırasında saatte 60 km hızla uçabilir ve gece boyunca 600 km mesafe kat edebilirler."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦩</span>
+            <div>
+              <h3>Flamingo</h3>
+              <span class="latin-name">Phoenicopterus roseus</span>
+            </div>
+          </div>
+          <p>Göçmen pembe zarafet. Binlerce bireylik sürüler halinde göç eden flamingolar, su kaynaklarını takip ederek kıtalar arası yolculuklar yapar.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Afrika, Güney Avrupa, Güney Asya</span>
+            <span class="tag diet">Süzücü</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ==========================================
+         DENİZ GÖÇLERİ
+         ========================================== -->
+    <div class="subcategory" id="deniz-gocleri">
+      <div class="subcategory-header">
+        <span class="sub-emoji">🐋</span>
+        <h2>Deniz Göçleri</h2>
+      </div>
+
+      <div class="animal-grid">
+
+        <!-- GRİ BALİNA -->
+        <div class="animal-card" data-animal='{"isim":"Gri Balina","emoji":"🐋","latin":"Eschrichtius robustus","habitat":"Kuzey Pasifik","beslenme":"Süzücü","boyut":"13 - 15 metre","agirlik":"15 - 35 ton","yasam":"55 - 70 yıl","aciklama":"Gri balina, memeliler arasında en uzun göçlerden birini gerçekleştirir. Her yıl Alaska nın besince zengin sularından Meksika nın sıcak lagünlerine kadar 20.000 km lik gidiş-dönüş yolculuğu yapar. Bu göç, yavruların sıcak ve korunaklı sularda doğması için hayati önem taşır.","ilgincBilgiler":["Her yıl 20.000 km lik gidiş-dönüş göç yapar - memeliler arasında en uzun göçlerden biridir.","Ömrü boyunca toplam 750.000 km yüzer - Ay a gidip gelmeye eşdeğerdir.","Yavruları doğduktan sonra sıcak lagünlerde güçlenene kadar anneleri hiçbir şey yemez.","Deniz tabanındaki çamuru süzerek beslenir - bu nedenle genellikle bir yanı daha aşınmış olur."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐋</span>
+            <div>
+              <h3>Gri Balina</h3>
+              <span class="latin-name">Eschrichtius robustus</span>
+            </div>
+          </div>
+          <p>Memelilerin en uzun göçü. Alaska'dan Meksika'ya 20.000 km yol kat eden gri balina, ömrü boyunca Ay'a gidip gelecek kadar mesafe yüzer.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Kuzey Pasifik</span>
+            <span class="tag diet">Süzücü</span>
+          </div>
+        </div>
+
+        <!-- SOMON -->
+        <div class="animal-card" data-animal='{"isim":"Somon","emoji":"🐟","latin":"Oncorhynchus nerka","habitat":"Kuzey Pasifik ve tatlı su nehirleri","beslenme":"Etçil","boyut":"45 - 84 cm","agirlik":"2 - 7 kg","yasam":"4 - 5 yıl","aciklama":"Somon balığı, doğanın en dramatik göç hikayelerinden birine sahiptir. Okyanusta yetişkin hale geldikten sonra, doğdukları nehire geri dönmek için yüzlerce kilometre yüzerler; şelaleleri aşar, ayılara ve kartallara rağmen yollarına devam ederler. Yumurtladıktan sonra ölürler ve bedenleri nehir ekosistemini besler.","ilgincBilgiler":["Doğdukları nehri koku ile hatırlarlar ve yüzlerce kilometre yüzerek geri dönerler.","Yumurtlamak için şelaleleri ve çağlayanları aşarlar - 3 metreye kadar zıplayabilirler.","Yumurtladıktan sonra ölürler - bedenleri nehir ekosistemini besleyerek yaşam döngüsünü tamamlar.","Göç sırasında renkleri gümüşten parlak kırmızıya döner."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐟</span>
+            <div>
+              <h3>Somon</h3>
+              <span class="latin-name">Oncorhynchus nerka</span>
+            </div>
+          </div>
+          <p>Doğduğu nehre dönen fedakâr göçmen. Şelaleleri aşarak yüzlerce kilometre yüzen somon, doğanın en dramatik göç hikayelerinden birinin kahramanıdır.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Kuzey Pasifik ve nehirler</span>
+            <span class="tag diet">Etçil</span>
+          </div>
+        </div>
+
+        <!-- DENİZ KAPLUMBAĞASI -->
+        <div class="animal-card" data-animal='{"isim":"Deniz Kaplumbağası","emoji":"🐢","latin":"Chelonia mydas","habitat":"Tropik ve ılıman okyanuslar","beslenme":"Hepçil","boyut":"80 - 150 cm","agirlik":"70 - 200 kg","yasam":"60 - 80 yıl","aciklama":"Yeşil deniz kaplumbağası, okyanusların en zarif göçmenlerinden biridir. Doğdukları kumsala yumurtlamak için binlerce kilometre yüzerler ve bu navigasyon yeteneği bilim dünyasını hayrete düşürmeye devam etmektedir. Dünya nın manyetik alanını algılayarak yön buldukları düşünülmektedir.","ilgincBilgiler":["Doğdukları kumsala yumurtlamak için binlerce kilometre yüzerek geri dönerler.","Dünya nın manyetik alanını algılayarak yön buldukları düşünülmektedir.","Yavruların cinsiyeti kuluçka sırasındaki kum sıcaklığına göre belirlenir.","200 milyon yıldan fazladır dünyada yaşayan kadim canlılardır - dinozorlardan bile eskidir."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐢</span>
+            <div>
+              <h3>Deniz Kaplumbağası</h3>
+              <span class="latin-name">Chelonia mydas</span>
+            </div>
+          </div>
+          <p>Okyanusların kadim gezgini. Doğduğu kumsala binlerce kilometre yüzerek dönen deniz kaplumbağası, manyetik alanı pusula olarak kullanan bir navigasyon dahisidir.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Tropik ve ılıman okyanuslar</span>
+            <span class="tag diet">Hepçil</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <button class="modal-close">&times;</button>
+      <span class="modal-emoji"></span>
+      <h2></h2>
+      <span class="modal-latin"></span>
+      <div class="modal-info-grid"></div>
+      <p class="modal-description"></p>
+      <div class="modal-fun-facts">
+        <h4>İlginç Bilgiler</h4>
+        <ul></ul>
+      </div>
+      <div class="modal-article-link-container"></div>
+    </div>
+  </div>
+
+  <!-- İLGİLİ İÇERİKLER -->
+  <section class="ilgili-icerikler">
+    <h2>İlgili İçerikler</h2>
+    <div class="related-grid">
+      <a href="kuslar.html" class="related-card">
+        <span class="related-emoji">🦅</span>
+        <h4>Kuşlar</h4>
+        <p>Göçmen kuş türlerini detaylıca tanıyın</p>
+        <span class="related-card-link">Keşfet →</span>
+      </a>
+      <a href="memeliler.html" class="related-card">
+        <span class="related-emoji">🦁</span>
+        <h4>Memeliler</h4>
+        <p>Göç eden memeli türlerini tanıyın</p>
+        <span class="related-card-link">Keşfet →</span>
+      </a>
+      <a href="baliklar.html" class="related-card">
+        <span class="related-emoji">🦈</span>
+        <h4>Balıklar</h4>
+        <p>Somon gibi göç eden balıkları keşfedin</p>
+        <span class="related-card-link">Keşfet →</span>
+      </a>
+      <a href="kutup-hayvanlari.html" class="related-card">
+        <span class="related-emoji">❄️</span>
+        <h4>Kutup Hayvanları</h4>
+        <p>Kutup hayvanlarının mevsimsel göçlerini keşfedin</p>
+        <span class="related-card-link">Keşfet →</span>
+      </a>
+      <a href="afrika-hayvanlari.html" class="related-card">
+        <span class="related-emoji">🌍</span>
+        <h4>Afrika Hayvanları</h4>
+        <p>Afrika'nın büyük göç olayını tanıyın</p>
+        <span class="related-card-link">Keşfet →</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>🌍 Hayvanlar Dünyası</h4>
+        <p>Gezegenimizin muhteşem canlılarını tanıyın. Bu site, hayvanlar alemi hakkında bilgi edinmek isteyen herkes için hazırlanmıştır.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Kategoriler</h4>
+        <ul class="footer-links">
+          <li><a href="memeliler.html">🦁 Memeliler</a></li>
+          <li><a href="kuslar.html">🦅 Kuşlar</a></li>
+          <li><a href="surungen.html">🐊 Sürüngen</a></li>
+          <li><a href="baliklar.html">🦈 Balıklar</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Diğer</h4>
+        <ul class="footer-links">
+          <li><a href="amfibiler.html">🐸 Amfibiler</a></li>
+          <li><a href="bocekler.html">🦋 Böcekler</a></li>
+          <li><a href="omurgasizlar.html">🐙 Omurgasızlar</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Keşfet</h4>
+        <ul class="footer-links">
+          <li><a href="tehlike-altinda.html">Tehlike Altındaki Türler</a></li>
+          <li><a href="turkiye-hayvanlari.html">Türkiye Hayvanları</a></li>
+          <li><a href="quiz.html">Bilgi Yarışması</a></li>
+          <li><a href="blog.html">📝 Blog</a></li>
+          <li><a href="hakkinda.html">Hakkında</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Özel Koleksiyonlar</h4>
+        <ul class="footer-links">
+          <li><a href="en-hizli-hayvanlar.html">⚡ En Hızlı Hayvanlar</a></li>
+          <li><a href="en-yavas-hayvanlar.html">🐌 En Yavaş Hayvanlar</a></li>
+          <li><a href="en-uzun-yasayanlar.html">🕰️ En Uzun Yaşayanlar</a></li>
+          <li><a href="en-zehirli-hayvanlar.html">☠️ En Zehirli Hayvanlar</a></li>
+          <li><a href="buz-devri-hayvanlari.html">🧊 Buz Devri Hayvanları</a></li>
+          <li><a href="amazon-hayvanlari.html">🌿 Amazon Hayvanları</a></li>
+          <li><a href="kutup-hayvanlari.html">❄️ Kutup Hayvanları</a></li>
+          <li><a href="afrika-hayvanlari.html">🌍 Afrika Hayvanları</a></li>
+          <li><a href="okyanus-derinlikleri.html">🌊 Okyanus Derinlikleri</a></li>
+          <li><a href="hayvan-gocleri.html">🦅 Hayvan Göçleri</a></li>
+          <li><a href="hayvan-kamufaji.html">🦎 Hayvan Kamuflajı</a></li>
+          <li><a href="en-zeki-hayvanlar.html">🧠 En Zeki Hayvanlar</a></li>
+          <li><a href="gece-avcilari.html">🌙 Gece Avcıları</a></li>
+          <li><a href="en-buyuk-hayvanlar.html">🐘 En Büyük Hayvanlar</a></li>
+          <li><a href="en-kucuk-hayvanlar.html">🐁 En Küçük Hayvanlar</a></li>
+          <li><a href="nesli-tukenen-hayvanlar.html">💀 Nesli Tükenen Hayvanlar</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Hayvanlar Dünyası &copy; 2026 - Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
