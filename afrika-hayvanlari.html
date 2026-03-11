@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Afrika Hayvanları - Hayvanlar Dünyası</title>
+  <meta name="description" content="Afrika hayvanları - Savanalardan yağmur ormanlarına, çöllerden nehir kıyılarına Afrika'nın muhteşem yaban hayatı hakkında detaylı bilgiler.">
+  <meta property="og:title" content="Afrika Hayvanları - Hayvanlar Dünyası">
+  <meta property="og:description" content="Afrika'nın eşsiz yaban hayatını keşfedin. Zürafadan gorile, Afrika filinden fennek tilkisine kadar kıtanın en etkileyici türlerini tanıyın.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGASYON -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">🌍 Hayvanlar <span>Dünyası</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="memeliler.html">Memeliler</a></li>
+        <li><a href="kuslar.html">Kuşlar</a></li>
+        <li><a href="surungen.html">Sürüngen</a></li>
+        <li><a href="baliklar.html">Balıklar</a></li>
+        <li><a href="amfibiler.html">Amfibiler</a></li>
+        <li><a href="bocekler.html">Böcekler</a></li>
+        <li><a href="omurgasizlar.html">Omurgasızlar</a></li>
+        <li><a href="tehlike-altinda.html">Tehlike Altında</a></li>
+        <li><a href="turkiye-hayvanlari.html">Türkiye</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="hakkinda.html">Hakkında</a></li>
+      </ul>
+      <div class="nav-search">
+        <span class="nav-search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Hayvan ara..." autocomplete="off">
+      </div>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="search-results" id="searchResults"></div>
+
+  <!-- SAYFA HERO -->
+  <section class="page-hero hero-afrika">
+    <span class="hero-emoji">🌍</span>
+    <h1>Afrika Hayvanları</h1>
+    <p>Afrika kıtası, gezegenimizin en zengin ve çeşitli yaban hayatına ev sahipliği yapar. Uçsuz bucaksız savanalardan yoğun tropikal ormanlara, kavurucu çöllerden bereketli nehir vadilerine kadar her ekosistem benzersiz canlılarla doludur. Büyük göçlerden devasa sürülere, efsanevi yırtıcılardan zarif otçullara kadar Afrika'nın muhteşem hayvan dünyasını keşfedin.</p>
+  </section>
+
+  <main class="section">
+
+    <!-- ==========================================
+         SAVANA HAYVANLARI
+         ========================================== -->
+    <div class="subcategory" id="savana">
+      <div class="subcategory-header">
+        <span class="sub-emoji">🌾</span>
+        <h2>Savana Hayvanları</h2>
+      </div>
+
+      <div class="animal-grid">
+
+        <!-- ZÜRAFa -->
+        <div class="animal-card" data-animal='{"isim":"Zürafa","emoji":"🦒","latin":"Giraffa camelopardalis","habitat":"Afrika savanaları","beslenme":"Otçul","boyut":"4.5 - 6 metre","agirlik":"800 - 1200 kg","yasam":"20 - 25 yıl","aciklama":"Zürafa, dünyanın en uzun hayvanıdır ve 6 metreye varan boyuyla savananın üzerinde yükselir. Uzun boynu sayesinde diğer otçulların ulaşamadığı akasya yapraklarıyla beslenir. 45 cm uzunluğundaki dili ile dalları kavrayarak yaprakları koparır.","ilgincBilgiler":["Boynu 7 omurdan oluşur - insanla aynı sayıda, ancak her bir omur 25 cm uzunluğundadır.","Dili 45 cm uzunluğundadır ve koyu renktir; güneş yanığından korunmak için bu adaptasyonu geliştirmiştir.","Günde sadece 30 dakika uyur ve genellikle ayakta uyuklar.","Her zürafanın deseni parmak izi gibi benzersizdir, hiçbir iki zürafa aynı desene sahip değildir."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦒</span>
+            <div>
+              <h3>Zürafa</h3>
+              <span class="latin-name">Giraffa camelopardalis</span>
+            </div>
+          </div>
+          <p>Dünyanın en uzun hayvanı. 6 metreye varan boyuyla Afrika savanalarının görkemli devi, uzun boynu ve benzersiz deseniyle kolayca tanınır.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Afrika savanaları</span>
+            <span class="tag diet">Otçul</span>
+          </div>
+        </div>
+
+        <!-- ZEBRA -->
+        <div class="animal-card" data-animal='{"isim":"Zebra","emoji":"🦓","latin":"Equus quagga","habitat":"Doğu ve Güney Afrika","beslenme":"Otçul","boyut":"2 - 2.5 metre","agirlik":"175 - 385 kg","yasam":"20 - 25 yıl","aciklama":"Zebra, siyah-beyaz çizgili kürküyle dünyanın en tanınır hayvanlarından biridir. Afrika savanalarında büyük sürüler halinde yaşayan zebralar, çizgilerinin yırtıcıları şaşırttığı ve kan emici sinekleri uzaklaştırdığı düşünülmektedir.","ilgincBilgiler":["Her zebranın çizgi deseni parmak izi gibi benzersizdir.","Çizgilerinin kan emici sinekleri uzaklaştırdığı bilimsel olarak kanıtlanmıştır.","Doğduktan sadece 6 dakika sonra ayağa kalkabilir ve 45 dakika sonra koşabilir.","Sürü halinde uyurken nöbetleşe nöbet tutarlar; en az bir zebra her zaman uyanık kalır."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦓</span>
+            <div>
+              <h3>Zebra</h3>
+              <span class="latin-name">Equus quagga</span>
+            </div>
+          </div>
+          <p>Afrika savanalarının çizgili güzeli. Benzersiz siyah-beyaz deseniyle tanınan zebra, büyük sürüler halinde göç eden sosyal bir hayvandır.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Doğu ve Güney Afrika</span>
+            <span class="tag diet">Otçul</span>
+          </div>
+        </div>
+
+        <!-- AFRİKA FİLİ -->
+        <div class="animal-card" data-animal='{"isim":"Afrika Fili","emoji":"🐘","latin":"Loxodonta africana","habitat":"Sahra altı Afrika","beslenme":"Otçul","boyut":"3 - 4 metre (omuz)","agirlik":"4000 - 7000 kg","yasam":"60 - 70 yıl","aciklama":"Afrika fili, dünyanın en büyük kara hayvanıdır ve 7 tona kadar ağırlığa ulaşabilir. Olağanüstü zekâsı, güçlü aile bağları ve muhteşem hafızasıyla bilinen filler, ekosistemlerin dengesinde kritik bir rol oynar.","ilgincBilgiler":["Hortumu 40.000 den fazla kas içerir ve tek bir fıstığı yerden alacak kadar hassas kontrol sağlar.","Ölülerinin kemiklerini ziyaret ettikleri ve yas tutma davranışı gösterdikleri gözlemlenmiştir.","Günde 150 kg bitki yiyebilir ve 16 saatini yemek yiyerek geçirir.","İnfrasound denen düşük frekanslı seslerle 10 km uzaktaki fillerle iletişim kurabilir."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐘</span>
+            <div>
+              <h3>Afrika Fili</h3>
+              <span class="latin-name">Loxodonta africana</span>
+            </div>
+          </div>
+          <p>Dünyanın en büyük kara hayvanı. 7 tona kadar ağırlığa ulaşan Afrika fili, olağanüstü zekâsı ve güçlü aile bağlarıyla bilinen görkemli bir türdür.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Sahra altı Afrika</span>
+            <span class="tag diet">Otçul</span>
+          </div>
+        </div>
+
+        <!-- GERGEDAN -->
+        <div class="animal-card" data-animal='{"isim":"Gergedan","emoji":"🦏","latin":"Ceratotherium simum","habitat":"Doğu ve Güney Afrika","beslenme":"Otçul","boyut":"3.4 - 4.2 metre","agirlik":"1800 - 2500 kg","yasam":"40 - 50 yıl","aciklama":"Afrika gergedanı, filden sonra kıtanın en büyük kara hayvanıdır. Kalın zırh benzeri derisi ve güçlü boynuzuyla tanınan gergedan, ne yazık ki boynuz kaçakçılığı nedeniyle nesli tehlike altında olan bir türdür.","ilgincBilgiler":["Boynuzu keratinden yapılmıştır - insan tırnağıyla aynı maddedir.","Görme duyusu çok zayıftır ancak koku ve işitme duyuları son derece gelişmiştir.","Saatte 50 km hıza ulaşabilir - bu devasa boyutuna rağmen oldukça hızlıdır.","Afrika da sadece yaklaşık 20.000 beyaz gergedan kalmıştır ve kuzey beyaz gergedanından yalnızca 2 dişi birey yaşamaktadır."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦏</span>
+            <div>
+              <h3>Gergedan</h3>
+              <span class="latin-name">Ceratotherium simum</span>
+            </div>
+          </div>
+          <p>Afrika'nın zırhlı devi. Güçlü boynuzu ve kalın derisiyle tanınan gergedan, savanların en heybetli ve ne yazık ki en tehdit altındaki türlerinden biridir.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Doğu ve Güney Afrika</span>
+            <span class="tag diet">Otçul</span>
+          </div>
+        </div>
+
+        <!-- CEYLAN -->
+        <div class="animal-card" data-animal='{"isim":"Ceylan","emoji":"🦌","latin":"Aepyceros melampus","habitat":"Doğu ve Güney Afrika","beslenme":"Otçul","boyut":"75 - 95 cm (omuz)","agirlik":"40 - 76 kg","yasam":"12 - 15 yıl","aciklama":"İmpala olarak da bilinen Afrika ceylanı, savanların en zarif ve çevik hayvanlarından biridir. 3 metreye varan sıçramalar yapabilen bu antilop, hem otlarla hem de yapraklarla beslenebilen esnek diyetiyle farklı mevsimlere uyum sağlar.","ilgincBilgiler":["Tek bir sıçramada 3 metre yükseğe ve 10 metre uzağa atlayabilir.","Tehlike anında tüm sürü aynı anda farklı yönlere sıçrayarak yırtıcıyı şaşırtır.","Hem otçul hem de yaprakçıl olabilir, bu esneklik hayatta kalma şansını artırır.","Erkekler çiftleşme döneminde korna benzeri sesler çıkararak dişileri çeker."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦌</span>
+            <div>
+              <h3>Ceylan</h3>
+              <span class="latin-name">Aepyceros melampus</span>
+            </div>
+          </div>
+          <p>Afrika savanlarının zarif atleti. 3 metreye varan sıçramalarıyla ceylan, savanların en çevik ve en yaygın antiloplarından biridir.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Doğu ve Güney Afrika</span>
+            <span class="tag diet">Otçul</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ==========================================
+         ORMAN HAYVANLARI
+         ========================================== -->
+    <div class="subcategory" id="orman">
+      <div class="subcategory-header">
+        <span class="sub-emoji">🌳</span>
+        <h2>Orman Hayvanları</h2>
+      </div>
+
+      <div class="animal-grid">
+
+        <!-- GORİL -->
+        <div class="animal-card" data-animal='{"isim":"Goril","emoji":"🦍","latin":"Gorilla gorilla","habitat":"Orta Afrika ormanları","beslenme":"Otçul","boyut":"1.4 - 1.8 metre","agirlik":"100 - 220 kg","yasam":"35 - 40 yıl","aciklama":"Goril, dünyanın en büyük primatıdır ve insanla DNA sının %98 ini paylaşır. Güçlü görünümüne rağmen genellikle sakin ve barışçıl bir hayvandır. Aile grupları halinde yaşar ve gümüş sırtlı olarak bilinen dominant erkek grubu korur.","ilgincBilgiler":["İnsan DNA sının %98 ini paylaşır ve aletler kullanabilir.","Gümüş sırtlı erkekler insan gücünün 10 katına sahip olabilir.","Her akşam ağaç dallarından ve yapraklardan yeni bir yatak inşa ederler.","Bireysel yüz hatlarına göre birbirlerini tanırlar ve gülme benzeri sesler çıkarırlar."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦍</span>
+            <div>
+              <h3>Goril</h3>
+              <span class="latin-name">Gorilla gorilla</span>
+            </div>
+          </div>
+          <p>Dünyanın en büyük primatı. İnsanla DNA'sının %98'ini paylaşan goril, güçlü görünümünün ardında nazik ve zeki bir canlıdır.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Orta Afrika ormanları</span>
+            <span class="tag diet">Otçul</span>
+          </div>
+        </div>
+
+        <!-- ŞEMPANZE -->
+        <div class="animal-card" data-animal='{"isim":"Şempanze","emoji":"🐒","latin":"Pan troglodytes","habitat":"Batı ve Orta Afrika","beslenme":"Hepçil","boyut":"1 - 1.7 metre","agirlik":"30 - 60 kg","yasam":"40 - 50 yıl","aciklama":"Şempanze, insanın en yakın akrabası olup DNA benzerliği %99 a ulaşır. Alet kullanma, problem çözme ve kültürel aktarım gibi karmaşık davranışlar sergileyen şempanzeler, hayvanlar aleminin en zeki üyelerindendir.","ilgincBilgiler":["İnsan DNA sının %99 unu paylaşır - en yakın genetik akrabamızdır.","Çubuklar kullanarak termit avlar, taşlarla fındık kırar ve yaprakları sünger olarak kullanır.","İşaret dili öğrenebilir ve 300 den fazla işaret kullanabilir.","Farklı topluluklar farklı alet kullanma teknikleri geliştirir - bu bir kültür aktarımı örneğidir."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐒</span>
+            <div>
+              <h3>Şempanze</h3>
+              <span class="latin-name">Pan troglodytes</span>
+            </div>
+          </div>
+          <p>İnsanın en yakın akrabası. %99 DNA benzerliğiyle şempanze, alet kullanabilen ve karmaşık sosyal ilişkiler kurabilen olağanüstü zeki bir primattır.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Batı ve Orta Afrika</span>
+            <span class="tag diet">Hepçil</span>
+          </div>
+        </div>
+
+        <!-- OKAPİ -->
+        <div class="animal-card" data-animal='{"isim":"Okapi","emoji":"🦒","latin":"Okapia johnstoni","habitat":"Kongo ormanları","beslenme":"Otçul","boyut":"1.5 - 2 metre (omuz)","agirlik":"200 - 350 kg","yasam":"20 - 30 yıl","aciklama":"Okapi, zürafanın yaşayan tek akrabası olup Kongo yağmur ormanlarına özgü nadir bir türdür. Bacaklarındaki zebra benzeri çizgiler ve koyu kadife kürkü onu ormanda mükemmel kamufle eder. 1901 yılına kadar Batılı bilim insanları tarafından bilinmiyordu.","ilgincBilgiler":["Zürafanın yaşayan tek akrabası olmasına rağmen boynu kısadır.","Dili 35 cm uzunluğundadır ve kendi kulaklarını yalayacak kadar esnektir.","1901 yılına kadar Batı dünyası tarafından keşfedilmemişti - Afrika nın hayalet hayvanı olarak bilinirdi.","Yalnız yaşamayı tercih eder ve çok çekingen olduğundan doğada gözlemlemek zordur."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦒</span>
+            <div>
+              <h3>Okapi</h3>
+              <span class="latin-name">Okapia johnstoni</span>
+            </div>
+          </div>
+          <p>Zürafanın gizemli kuzeni. Kongo ormanlarının derinliklerinde yaşayan okapi, zebra çizgili bacakları ve kadife kürküyle Afrika'nın en nadir hayvanlarından biridir.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Kongo ormanları</span>
+            <span class="tag diet">Otçul</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ==========================================
+         ÇÖL HAYVANLARI
+         ========================================== -->
+    <div class="subcategory" id="col">
+      <div class="subcategory-header">
+        <span class="sub-emoji">🏜️</span>
+        <h2>Çöl Hayvanları</h2>
+      </div>
+
+      <div class="animal-grid">
+
+        <!-- DEVE -->
+        <div class="animal-card" data-animal='{"isim":"Deve","emoji":"🐫","latin":"Camelus dromedarius","habitat":"Sahra Çölü","beslenme":"Otçul","boyut":"1.8 - 2 metre (omuz)","agirlik":"300 - 600 kg","yasam":"40 - 50 yıl","aciklama":"Deve, çöl yaşamına mükemmel uyum sağlamış olağanüstü bir hayvandır. Hörgücündeki yağ deposu sayesinde günlerce su içmeden hayatta kalabilir. Geniş ayakları kumda batmadan yürümesini, üç katlı göz kapakları ise kum fırtınalarından korunmasını sağlar.","ilgincBilgiler":["Bir seferde 200 litreye kadar su içebilir ve günlerce susuz kalabilir.","Hörgücünde su değil yağ depolanır - bu yağ enerji kaynağı olarak kullanılır.","Burun delikleri kum fırtınasında tamamen kapanabilir.","Vücut sıcaklığını gece 34°C ye düşürüp gündüz 41°C ye çıkararak terlemeyi azaltır."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐫</span>
+            <div>
+              <h3>Deve</h3>
+              <span class="latin-name">Camelus dromedarius</span>
+            </div>
+          </div>
+          <p>Çölün gemisi olarak bilinen deve, günlerce su içmeden yolculuk edebilen ve aşırı sıcağa dayanıklı olağanüstü bir hayatta kalma uzmanıdır.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Sahra Çölü</span>
+            <span class="tag diet">Otçul</span>
+          </div>
+        </div>
+
+        <!-- ÇÖL TİLKİSİ (FENNEK) -->
+        <div class="animal-card" data-animal='{"isim":"Çöl Tilkisi (Fennek)","emoji":"🦊","latin":"Vulpes zerda","habitat":"Sahra Çölü","beslenme":"Hepçil","boyut":"24 - 41 cm","agirlik":"0.7 - 1.6 kg","yasam":"10 - 14 yıl","aciklama":"Fennek tilkisi, dünyanın en küçük tilki türüdür ve orantısız büyük kulakları ile kolayca tanınır. Devasa kulakları hem mükemmel işitme sağlar hem de vücut ısısını düzenleyerek çöl sıcağında serinlemeye yardımcı olur. Gece aktif olan bu sevimli yırtıcı, kumda hızla tünel kazabilir.","ilgincBilgiler":["Kulakları vücut uzunluğunun yarısı kadar büyüktür ve ısı düzenleme organı olarak çalışır.","Taban tüyleri sıcak kumda yanmadan yürümesini sağlar.","Böceklerden meyvelere kadar hemen her şeyi yiyebilir ve su içmeden hayatta kalabilir.","Dünyanın en küçük tilki türüdür, ancak vücut oranına göre en büyük kulaklara sahiptir."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦊</span>
+            <div>
+              <h3>Çöl Tilkisi (Fennek)</h3>
+              <span class="latin-name">Vulpes zerda</span>
+            </div>
+          </div>
+          <p>Dünyanın en küçük ve en sevimli tilkisi. Dev kulakları ve kumda hızla tünel kazan yetenekleriyle fennek, Sahra Çölü'nün gece avcısıdır.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Sahra Çölü</span>
+            <span class="tag diet">Hepçil</span>
+          </div>
+        </div>
+
+        <!-- AKREP -->
+        <div class="animal-card" data-animal='{"isim":"Akrep","emoji":"🦂","latin":"Androctonus australis","habitat":"Kuzey Afrika çölleri","beslenme":"Etçil","boyut":"8 - 12 cm","agirlik":"5 - 50 g","yasam":"3 - 8 yıl","aciklama":"Afrika akrebi, çölün en eski sakinlerinden biridir ve 400 milyon yılı aşkın evrimsel geçmişe sahiptir. Kuyruğundaki zehirli iğnesi hem avlanma hem de savunma için kullanılır. Ultraviyole ışık altında parlak yeşil renkte ışıldayan dış iskeleti, bilim insanlarını hâlâ şaşırtmaktadır.","ilgincBilgiler":["400 milyon yılı aşkın evrimsel geçmişe sahiptir - dinozorlardan çok daha eskidir.","Ultraviyole ışık altında floresan yeşil renkte parlar, bunun nedeni hâlâ tam olarak bilinmemektedir.","Bir yıl boyunca hiçbir şey yemeden hayatta kalabilir.","Donmuş halde bile hayatta kalabilir; ertesi gün çözülüp normal yaşamına devam edebilir."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦂</span>
+            <div>
+              <h3>Akrep</h3>
+              <span class="latin-name">Androctonus australis</span>
+            </div>
+          </div>
+          <p>Çölün kadim savaşçısı. 400 milyon yıllık evrimsel geçmişe sahip akrep, dünyanın en eski ve en dayanıklı canlılarından biridir.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Kuzey Afrika çölleri</span>
+            <span class="tag diet">Etçil</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <button class="modal-close">&times;</button>
+      <span class="modal-emoji"></span>
+      <h2></h2>
+      <span class="modal-latin"></span>
+      <div class="modal-info-grid"></div>
+      <p class="modal-description"></p>
+      <div class="modal-fun-facts">
+        <h4>İlginç Bilgiler</h4>
+        <ul></ul>
+      </div>
+      <div class="modal-article-link-container"></div>
+    </div>
+  </div>
+
+  <!-- İLGİLİ İÇERİKLER -->
+  <section class="ilgili-icerikler">
+    <h2>İlgili İçerikler</h2>
+    <div class="related-grid">
+      <a href="memeliler.html" class="related-card">
+        <span class="related-emoji">🦁</span>
+        <h4>Memeliler</h4>
+        <p>Afrika'nın büyük memelilerini detaylıca tanıyın</p>
+        <span class="related-card-link">Keşfet →</span>
+      </a>
+      <a href="en-hizli-hayvanlar.html" class="related-card">
+        <span class="related-emoji">⚡</span>
+        <h4>En Hızlı Hayvanlar</h4>
+        <p>Çita ve ceylan gibi Afrika'nın hız şampiyonlarını keşfedin</p>
+        <span class="related-card-link">Keşfet →</span>
+      </a>
+      <a href="tehlike-altinda.html" class="related-card">
+        <span class="related-emoji">🚨</span>
+        <h4>Tehlike Altında</h4>
+        <p>Nesli tehlike altındaki Afrika hayvanlarını öğrenin</p>
+        <span class="related-card-link">Keşfet →</span>
+      </a>
+      <a href="en-buyuk-hayvanlar.html" class="related-card">
+        <span class="related-emoji">🐋</span>
+        <h4>En Büyük Hayvanlar</h4>
+        <p>Fil ve gergedan gibi devasa türleri keşfedin</p>
+        <span class="related-card-link">Keşfet →</span>
+      </a>
+      <a href="en-zeki-hayvanlar.html" class="related-card">
+        <span class="related-emoji">🧠</span>
+        <h4>En Zeki Hayvanlar</h4>
+        <p>Goril ve şempanze gibi zeki primatları tanıyın</p>
+        <span class="related-card-link">Keşfet →</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>🌍 Hayvanlar Dünyası</h4>
+        <p>Gezegenimizin muhteşem canlılarını tanıyın. Bu site, hayvanlar alemi hakkında bilgi edinmek isteyen herkes için hazırlanmıştır.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Kategoriler</h4>
+        <ul class="footer-links">
+          <li><a href="memeliler.html">🦁 Memeliler</a></li>
+          <li><a href="kuslar.html">🦅 Kuşlar</a></li>
+          <li><a href="surungen.html">🐊 Sürüngen</a></li>
+          <li><a href="baliklar.html">🦈 Balıklar</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Diğer</h4>
+        <ul class="footer-links">
+          <li><a href="amfibiler.html">🐸 Amfibiler</a></li>
+          <li><a href="bocekler.html">🦋 Böcekler</a></li>
+          <li><a href="omurgasizlar.html">🐙 Omurgasızlar</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Keşfet</h4>
+        <ul class="footer-links">
+          <li><a href="tehlike-altinda.html">Tehlike Altındaki Türler</a></li>
+          <li><a href="turkiye-hayvanlari.html">Türkiye Hayvanları</a></li>
+          <li><a href="quiz.html">Bilgi Yarışması</a></li>
+          <li><a href="blog.html">📝 Blog</a></li>
+          <li><a href="hakkinda.html">Hakkında</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Özel Koleksiyonlar</h4>
+        <ul class="footer-links">
+          <li><a href="en-hizli-hayvanlar.html">⚡ En Hızlı Hayvanlar</a></li>
+          <li><a href="en-yavas-hayvanlar.html">🐌 En Yavaş Hayvanlar</a></li>
+          <li><a href="en-uzun-yasayanlar.html">🕰️ En Uzun Yaşayanlar</a></li>
+          <li><a href="en-zehirli-hayvanlar.html">☠️ En Zehirli Hayvanlar</a></li>
+          <li><a href="buz-devri-hayvanlari.html">🧊 Buz Devri Hayvanları</a></li>
+          <li><a href="amazon-hayvanlari.html">🌿 Amazon Hayvanları</a></li>
+          <li><a href="kutup-hayvanlari.html">❄️ Kutup Hayvanları</a></li>
+          <li><a href="afrika-hayvanlari.html">🌍 Afrika Hayvanları</a></li>
+          <li><a href="okyanus-derinlikleri.html">🌊 Okyanus Derinlikleri</a></li>
+          <li><a href="hayvan-gocleri.html">🦅 Hayvan Göçleri</a></li>
+          <li><a href="hayvan-kamufaji.html">🦎 Hayvan Kamuflajı</a></li>
+          <li><a href="en-zeki-hayvanlar.html">🧠 En Zeki Hayvanlar</a></li>
+          <li><a href="gece-avcilari.html">🌙 Gece Avcıları</a></li>
+          <li><a href="en-buyuk-hayvanlar.html">🐘 En Büyük Hayvanlar</a></li>
+          <li><a href="en-kucuk-hayvanlar.html">🐁 En Küçük Hayvanlar</a></li>
+          <li><a href="nesli-tukenen-hayvanlar.html">💀 Nesli Tükenen Hayvanlar</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Hayvanlar Dünyası &copy; 2026 - Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
