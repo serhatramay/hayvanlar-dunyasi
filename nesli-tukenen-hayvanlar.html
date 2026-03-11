@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nesli Tükenen Hayvanlar - Hayvanlar Dünyası</title>
+  <meta name="description" content="Son yüzyıllarda insanın etkisiyle kaybettiğimiz türleri tanıyın. Dodo kuşundan Tazmanya kaplanına, bu kayıplardan dersler çıkaralım.">
+  <meta property="og:title" content="Nesli Tükenen Hayvanlar - Hayvanlar Dünyası">
+  <meta property="og:description" content="İnsan etkisiyle yok olan hayvan türlerini tanıyın ve bu kayıplardan dersler çıkaralım.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGASYON -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">🌍 Hayvanlar <span>Dünyası</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="memeliler.html">Memeliler</a></li>
+        <li><a href="kuslar.html">Kuşlar</a></li>
+        <li><a href="surungen.html">Sürüngen</a></li>
+        <li><a href="baliklar.html">Balıklar</a></li>
+        <li><a href="amfibiler.html">Amfibiler</a></li>
+        <li><a href="bocekler.html">Böcekler</a></li>
+        <li><a href="omurgasizlar.html">Omurgasızlar</a></li>
+        <li><a href="tehlike-altinda.html">Tehlike Altında</a></li>
+        <li><a href="turkiye-hayvanlari.html">Türkiye</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="hakkinda.html">Hakkında</a></li>
+      </ul>
+      <div class="nav-search">
+        <span class="nav-search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Hayvan ara..." autocomplete="off">
+      </div>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="search-results" id="searchResults"></div>
+
+  <!-- SAYFA HERO -->
+  <section class="page-hero hero-nesli-tukenen">
+    <span class="hero-emoji">💀</span>
+    <h1>Nesli Tükenen Hayvanlar</h1>
+    <p>Son yüzyıllarda insanın etkisiyle kaybettiğimiz türleri tanıyın. Dodo kuşundan Tazmanya kaplanına, bu kayıplardan dersler çıkaralım.</p>
+  </section>
+
+  <main class="section">
+
+    <!-- ==========================================
+         SON 200 YILDA KAYBEDİLENLER
+         ========================================== -->
+    <div class="subcategory" id="son-200-yil">
+      <div class="subcategory-header">
+        <span class="sub-emoji">🦤</span>
+        <h2>Son 200 Yılda Kaybedilenler</h2>
+      </div>
+
+      <div class="animal-grid">
+
+        <!-- DODO KUŞU -->
+        <div class="animal-card" data-animal='{"isim":"Dodo Kuşu","emoji":"🦤","latin":"Raphus cucullatus","habitat":"Mauritius adası (Hint Okyanusu)","beslenme":"Otçul (meyve, tohum, kök)","boyut":"Yaklaşık 1 metre","agirlik":"10 - 18 kg","yasam":"10 - 30 yıl (tahmini)","aciklama":"Dodo kuşu, nesli tükenmenin evrensel sembolüdür. Mauritius adasına özgü bu uçamayan kuş, 1681 yılında tamamen yok olmuştur. Adada hiçbir doğal yırtıcısı olmadığı için uçma yeteneğini kaybetmişti. Hollandalı denizcilerin adaya gelişiyle birlikte aşırı avlanma ve getirdikleri istilacı türler nedeniyle hızla yok oldu.","ilgincBilgiler":["Nesli tükenmenin evrensel sembolü haline gelmiştir.","Hiçbir doğal yırtıcısı olmadığı için insanlardan korkmuyordu - bu da avlanmasını kolaylaştırdı.","Son canlı dodo 1681 yılında görülmüştür.","Güvercin ailesinin bir üyesiydi ve en yakın yaşayan akrabası Nicobar güvercinidir."],"makale":"blog/dodo-kusu.html"}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦤</span>
+            <div>
+              <h3>Dodo Kuşu</h3>
+              <span class="latin-name">Raphus cucullatus</span>
+            </div>
+          </div>
+          <p>Nesli tükenmenin sembolü. Mauritius'a özgü, insanlardan korkmayan uçamayan kuş.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Mauritius</span>
+            <span class="tag diet">Otçul</span>
+            <span class="tag">1681'de Yok Oldu</span>
+          </div>
+        </div>
+
+        <!-- TAZMANYA KAPLANI -->
+        <div class="animal-card" data-animal='{"isim":"Tazmanya Kaplanı (Tilacin)","emoji":"🐺","latin":"Thylacinus cynocephalus","habitat":"Avustralya ve Tazmanya","beslenme":"Etçil (kanguru, kuş, küçük memeli)","boyut":"1 - 1.3 metre (kuyruk hariç)","agirlik":"20 - 30 kg","yasam":"5 - 7 yıl","aciklama":"Tazmanya kaplanı veya tilacin, modern çağda kaybedilen en büyük etçil keseliydi. Sırtındaki kaplan benzeri çizgilerle adını almıştır. Çiftçilerin koyunlarına saldırdığı gerekçesiyle sistematik olarak avlanmıştır. Son bilinen tilacin, Benjamin adlı birey, 1936 yılında Hobart Hayvanat Bahçesi nde hayatını kaybetmiştir.","ilgincBilgiler":["Son bilinen tilacin Benjamin 1936 da Hobart Hayvanat Bahçesi nde öldü.","Çenelerini 80 derece açabilirlerdi - memeliler arasında rekor.","Hem dişi hem erkekleri keseli olmasına rağmen sadece dişiler yavru taşırdı.","DNA örneklerinden türü geri getirme (de-extinction) projeleri devam etmektedir."],"makale":"blog/tazmanya-kaplani.html"}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐺</span>
+            <div>
+              <h3>Tazmanya Kaplanı (Tilacin)</h3>
+              <span class="latin-name">Thylacinus cynocephalus</span>
+            </div>
+          </div>
+          <p>Modern çağın en trajik kaybı. Çizgili sırtıyla tanınan son büyük etçil keseli.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Tazmanya</span>
+            <span class="tag diet">Etçil</span>
+            <span class="tag">1936'da Yok Oldu</span>
+          </div>
+        </div>
+
+        <!-- YOLCU GÜVERCİNİ -->
+        <div class="animal-card" data-animal='{"isim":"Yolcu Güvercini","emoji":"🕊️","latin":"Ectopistes migratorius","habitat":"Kuzey Amerika ormanları","beslenme":"Otçul (meşe palamudu, tohum, meyve)","boyut":"38 - 41 cm","agirlik":"260 - 340 g","yasam":"10 - 15 yıl","aciklama":"Yolcu güvercini, bir zamanlar Kuzey Amerika nın en kalabalık kuş türüydü. Tahminen 3-5 milyar bireyi olan bu tür, göç sırasında gökyüzünü saatlerce karartacak kadar büyük sürüler oluştururdu. Ancak aşırı avlanma ve habitat kaybı nedeniyle inanılmaz hızla yok oldu. Son birey Martha, 1914 yılında Cincinnati Hayvanat Bahçesi nde öldü.","ilgincBilgiler":["Bir zamanlar dünya üzerindeki en kalabalık kuş türüydü - tahminen 3-5 milyar birey.","Göç sürüleri gökyüzünü saatlerce karartacak kadar büyüktü.","Milyarlardan sıfıra düşüşü 50 yıldan kısa sürdü.","Son birey Martha 1914 te Cincinnati Hayvanat Bahçesi nde hayatını kaybetti."],"makale":"blog/yolcu-guvercini.html"}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🕊️</span>
+            <div>
+              <h3>Yolcu Güvercini</h3>
+              <span class="latin-name">Ectopistes migratorius</span>
+            </div>
+          </div>
+          <p>Milyarlardan sıfıra. Gökyüzünü karartacak sürülerden son bireye düşen trajik tür.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Kuzey Amerika</span>
+            <span class="tag diet">Otçul</span>
+            <span class="tag">1914'te Yok Oldu</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ==========================================
+         20. YÜZYILDA KAYBEDİLENLER
+         ========================================== -->
+    <div class="subcategory" id="20-yuzyil">
+      <div class="subcategory-header">
+        <span class="sub-emoji">🐆</span>
+        <h2>20. Yüzyılda Kaybedilenler</h2>
+      </div>
+
+      <div class="animal-grid">
+
+        <!-- BATI AFRİKA SİYAH GERGEDANI -->
+        <div class="animal-card" data-animal='{"isim":"Batı Afrika Siyah Gergedanı","emoji":"🦏","latin":"Diceros bicornis longipes","habitat":"Batı Afrika savanası (Kamerun)","beslenme":"Otçul (çalı, yaprak, dal)","boyut":"1.4 - 1.7 metre (omuz yüksekliği)","agirlik":"800 - 1400 kg","yasam":"35 - 50 yıl","aciklama":"Batı Afrika siyah gergedanı, siyah gergedanın dört alt türünden biriydi. 2011 yılında resmi olarak nesli tükenmiş ilan edilmiştir. Boynuzlarının geleneksel tıpta kullanılması için yapılan yasa dışı avlanma, bu görkemli hayvanın sonunu getirmiştir. Son kapsamlı araştırmada Kamerun da tek bir birey bile bulunamamıştır.","ilgincBilgiler":["2011 yılında IUCN tarafından resmi olarak nesli tükenmiş ilan edildi.","Boynuz kaçakçılığı nedeniyle yok oldu - gergedan boynuzu kilogramı altından pahalıydı.","Son kapsamlı araştırmada Kamerun da tek bir birey bile bulunamadı.","Siyah gergedanın diğer üç alt türü hâlâ hayatta ancak tehlike altındadır."],"makale":"blog/bati-afrika-siyah-gergedani.html"}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦏</span>
+            <div>
+              <h3>Batı Afrika Siyah Gergedanı</h3>
+              <span class="latin-name">Diceros bicornis longipes</span>
+            </div>
+          </div>
+          <p>Kaçak avlanmanın kurbanı. Boynuz ticareti nedeniyle yok edilen Afrika'nın gergedanı.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Batı Afrika</span>
+            <span class="tag diet">Otçul</span>
+            <span class="tag">2011'de Yok Oldu</span>
+          </div>
+        </div>
+
+        <!-- CASPİAN KAPLANI -->
+        <div class="animal-card" data-animal='{"isim":"Caspian Kaplanı","emoji":"🐅","latin":"Panthera tigris virgata","habitat":"Hazar Denizi çevresi, Orta Asya","beslenme":"Etçil (geyik, yaban domuzu)","boyut":"2.7 - 3 metre","agirlik":"170 - 240 kg","yasam":"10 - 15 yıl","aciklama":"Caspian kaplanı veya Hazar kaplanı, Orta Asya nın sazlık ve orman alanlarında yaşayan büyük bir kaplan alt türüydü. Sovyet döneminde sistematik avlanma kampanyaları ve habitat kaybı nedeniyle 1970 lerde yok olmuştur. Genetik çalışmalar bu kaplanın Sibirya kaplanıyla çok yakın akraba olduğunu göstermiştir.","ilgincBilgiler":["Sovyet hükümeti tarafından sistematik avlanma kampanyalarıyla yok edildi.","Son güvenilir gözlem 1970 lerde Türkiye nin doğusunda yapılmıştır.","Genetik olarak Sibirya kaplanıyla neredeyse aynıdır - ayrı bir alt tür olarak sınıflandırılması tartışmalıdır.","Habitat restorasyonu yapılarak Sibirya kaplanlarıyla yeniden canlandırma planları vardır."],"makale":"blog/caspian-kaplani.html"}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐅</span>
+            <div>
+              <h3>Caspian Kaplanı</h3>
+              <span class="latin-name">Panthera tigris virgata</span>
+            </div>
+          </div>
+          <p>Orta Asya'nın kayıp kaplanı. Sistematik avlanmayla yok edilen sazlık avcısı.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Orta Asya</span>
+            <span class="tag diet">Etçil</span>
+            <span class="tag">1970'lerde Yok Oldu</span>
+          </div>
+        </div>
+
+        <!-- PYRENEES DAĞ KEÇİSİ -->
+        <div class="animal-card" data-animal='{"isim":"Pyrenees Dağ Keçisi","emoji":"🐐","latin":"Capra pyrenaica pyrenaica","habitat":"Pyrenees dağları (İspanya-Fransa sınırı)","beslenme":"Otçul (ot, yosun, çalı)","boyut":"1 - 1.4 metre","agirlik":"50 - 80 kg","yasam":"10 - 15 yıl","aciklama":"Pyrenees dağ keçisi veya bucardo, İspanya-Fransa sınırındaki Pyrenees dağlarında yaşayan bir dağ keçisi alt türüydü. Son birey Celia adlı dişi, 2000 yılında bir ağacın altında kalarak hayatını kaybetmiştir. 2003 yılında klonlama ile geri getirilmeye çalışılmış ancak yavru sadece birkaç dakika yaşamıştır.","ilgincBilgiler":["Son birey Celia adlı dişi 2000 yılında bir ağacın altında kalarak öldü.","2003 te klonlanarak teknik olarak nesli tükenen ilk tür geri getirildi - ancak yavru sadece 7 dakika yaşadı.","Aşırı avlanma ve habitat kaybı nedeniyle yok olmuştur.","Klonlama deneyi de-extinction teknolojisinde bir dönüm noktası olarak kabul edilir."],"makale":"blog/pyrenees-dag-kecisi.html"}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐐</span>
+            <div>
+              <h3>Pyrenees Dağ Keçisi</h3>
+              <span class="latin-name">Capra pyrenaica pyrenaica</span>
+            </div>
+          </div>
+          <p>Klonlanarak geri getirilen ilk tür. Son bireyi 2000'de kaybedilen dağ keçisi.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Pyrenees</span>
+            <span class="tag diet">Otçul</span>
+            <span class="tag">2000'de Yok Oldu</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ==========================================
+         YAKIN ZAMANDA KAYBEDİLENLER
+         ========================================== -->
+    <div class="subcategory" id="yakin-zamanda">
+      <div class="subcategory-header">
+        <span class="sub-emoji">🐸</span>
+        <h2>Yakın Zamanda Kaybedilenler</h2>
+      </div>
+
+      <div class="animal-grid">
+
+        <!-- ALTIN KURBAĞA -->
+        <div class="animal-card" data-animal='{"isim":"Altın Kurbağa","emoji":"🐸","latin":"Incilius periglenes","habitat":"Kosta Rika Monteverde bulut ormanları","beslenme":"Böcekçil (küçük böcek, karınca)","boyut":"3.8 - 5 cm","agirlik":"3 - 5 g","yasam":"10 - 15 yıl (tahmini)","aciklama":"Altın kurbağa veya Monteverde altın kurbağası, Kosta Rika nın bulut ormanlarına özgü parlak turuncu renkli bir kurbağa türüydü. 1989 dan bu yana görülmemiştir ve 2004 yılında resmi olarak nesli tükenmiş ilan edilmiştir. İklim değişikliği ve chytrid mantarı salgınının birleşimi bu türü yok etmiştir.","ilgincBilgiler":["Parlak turuncu-altın rengi onu dünyanın en güzel kurbağalarından biri yapıyordu.","1989 dan bu yana hiçbir canlı birey görülmemiştir.","İklim değişikliği ve chytrid mantarı salgınının birleşimi türü yok etmiştir.","İklim değişikliğinin bir türü yok ettiği ilk belgelenmiş vakalardan biridir."],"makale":"blog/altin-kurbaga.html"}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐸</span>
+            <div>
+              <h3>Altın Kurbağa</h3>
+              <span class="latin-name">Incilius periglenes</span>
+            </div>
+          </div>
+          <p>İklim değişikliğinin ilk kurbanı. Kosta Rika'nın parlak turuncu bulut ormanı kurbağası.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Kosta Rika</span>
+            <span class="tag diet">Böcekçil</span>
+            <span class="tag">1989'da Yok Oldu</span>
+          </div>
+        </div>
+
+        <!-- BAİJİ -->
+        <div class="animal-card" data-animal='{"isim":"Baiji (Çin Nehir Yunusu)","emoji":"🐬","latin":"Lipotes vexillifer","habitat":"Çin Yangtze Nehri","beslenme":"Etçil (tatlı su balığı)","boyut":"1.4 - 2.5 metre","agirlik":"100 - 160 kg","yasam":"24 yıl (tahmini)","aciklama":"Baiji veya Çin nehir yunusu, Yangtze Nehri nde yaşayan nadir bir tatlı su yunusuydu. Çin mitolojisinde nehrin tanrıçası olarak bilinen bu zarif canlı, 2006 yılında yapılan kapsamlı araştırmada bulunamayınca işlevsel olarak nesli tükenmiş ilan edilmiştir. Nehrin sanayileşmesi, balıkçılık ağları ve gemi trafiği sonunu getirmiştir.","ilgincBilgiler":["Çin mitolojisinde Yangtze Nehri nin tanrıçası olarak bilinirdi.","2006 da yapılan 6 haftalık kapsamlı araştırmada tek bir birey bile bulunamadı.","20 milyon yıldır dünyada yaşıyordu - yaşayan fosil olarak kabul edilirdi.","İnsan faaliyetleri nedeniyle yok olan ilk yunus türüdür."],"makale":"blog/baiji.html"}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐬</span>
+            <div>
+              <h3>Baiji (Çin Nehir Yunusu)</h3>
+              <span class="latin-name">Lipotes vexillifer</span>
+            </div>
+          </div>
+          <p>Yangtze'nin kayıp tanrıçası. İnsan faaliyetleri nedeniyle yok olan ilk yunus türü.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Çin</span>
+            <span class="tag diet">Etçil</span>
+            <span class="tag">2006'da Yok Oldu</span>
+          </div>
+        </div>
+
+        <!-- PİNTA ADASI DEV KAPLUMBAĞASI -->
+        <div class="animal-card" data-animal='{"isim":"Pinta Adası Dev Kaplumbağası","emoji":"🐢","latin":"Chelonoidis abingdonii","habitat":"Galapagos Pinta Adası","beslenme":"Otçul (kaktüs, çimen, yaprak)","boyut":"Karapas 90 - 100 cm","agirlik":"80 - 90 kg","yasam":"100+ yıl","aciklama":"Pinta Adası dev kaplumbağası, Galapagos Adaları ndaki Pinta Adası na özgü bir dev kaplumbağa alt türüydü. Son birey Yalnız George olarak bilinen erkek, 2012 yılında tahminen 100 yaşında hayatını kaybetmiştir. Adaya bırakılan keçilerin bitki örtüsünü yok etmesi ve geçmişteki aşırı avlanma türün sonunu getirmiştir.","ilgincBilgiler":["Son birey Yalnız George 2012 de tahminen 100 yaşında hayatını kaybetti.","George dünyada türünün bilinen son bireyiydi - nesli tükenmenin canlı sembolüydü.","Onlarca yıl boyunca üreme programlarına alındı ancak hiçbir yavru hayatta kalamadı.","Adaya bırakılan istilacı keçiler bitki örtüsünü yok ederek türün habitatını tahrip etti."],"makale":"blog/pinta-adasi-dev-kaplumbagasi.html"}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐢</span>
+            <div>
+              <h3>Pinta Adası Dev Kaplumbağası</h3>
+              <span class="latin-name">Chelonoidis abingdonii</span>
+            </div>
+          </div>
+          <p>Yalnız George'un türü. Son bireyi 2012'de kaybedilen Galapagos'un dev kaplumbağası.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Galapagos</span>
+            <span class="tag diet">Otçul</span>
+            <span class="tag">2012'de Yok Oldu</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <button class="modal-close">&times;</button>
+      <span class="modal-emoji"></span>
+      <h2></h2>
+      <span class="modal-latin"></span>
+      <div class="modal-info-grid"></div>
+      <p class="modal-description"></p>
+      <div class="modal-fun-facts">
+        <h4>İlginç Bilgiler</h4>
+        <ul></ul>
+      </div>
+      <div class="modal-article-link-container"></div>
+    </div>
+  </div>
+
+  <!-- İLGİLİ İÇERİKLER -->
+  <section class="ilgili-icerikler">
+    <h2>İlgili İçerikler</h2>
+    <div class="related-grid">
+      <a href="tehlike-altinda.html" class="related-card">
+        <span class="related-emoji">🚨</span>
+        <h4>Tehlike Altındaki Türler</h4>
+        <p>Bugün nesli tehlike altındaki türleri tanıyın</p>
+        <span class="related-card-link">Keşfet →</span>
+      </a>
+      <a href="buz-devri-hayvanlari.html" class="related-card">
+        <span class="related-emoji">🧊</span>
+        <h4>Buz Devri Hayvanları</h4>
+        <p>Tarih öncesi dönemde kaybedilen türleri keşfedin</p>
+        <span class="related-card-link">Keşfet →</span>
+      </a>
+      <a href="memeliler.html" class="related-card">
+        <span class="related-emoji">🦁</span>
+        <h4>Memeliler</h4>
+        <p>Hâlâ hayatta olan memeli türlerini tanıyın</p>
+        <span class="related-card-link">Keşfet →</span>
+      </a>
+      <a href="kuslar.html" class="related-card">
+        <span class="related-emoji">🦅</span>
+        <h4>Kuşlar</h4>
+        <p>Kaybedilen kuş türlerinin akrabalarını keşfedin</p>
+        <span class="related-card-link">Keşfet →</span>
+      </a>
+      <a href="amazon-hayvanlari.html" class="related-card">
+        <span class="related-emoji">🌿</span>
+        <h4>Amazon Hayvanları</h4>
+        <p>Ormansızlaşmadan etkilenen türleri tanıyın</p>
+        <span class="related-card-link">Keşfet →</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>🌍 Hayvanlar Dünyası</h4>
+        <p>Gezegenimizin muhteşem canlılarını tanıyın. Bu site, hayvanlar alemi hakkında bilgi edinmek isteyen herkes için hazırlanmıştır.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Kategoriler</h4>
+        <ul class="footer-links">
+          <li><a href="memeliler.html">🦁 Memeliler</a></li>
+          <li><a href="kuslar.html">🦅 Kuşlar</a></li>
+          <li><a href="surungen.html">🐊 Sürüngen</a></li>
+          <li><a href="baliklar.html">🦈 Balıklar</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Diğer</h4>
+        <ul class="footer-links">
+          <li><a href="amfibiler.html">🐸 Amfibiler</a></li>
+          <li><a href="bocekler.html">🦋 Böcekler</a></li>
+          <li><a href="omurgasizlar.html">🐙 Omurgasızlar</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Keşfet</h4>
+        <ul class="footer-links">
+          <li><a href="tehlike-altinda.html">Tehlike Altındaki Türler</a></li>
+          <li><a href="turkiye-hayvanlari.html">Türkiye Hayvanları</a></li>
+          <li><a href="quiz.html">Bilgi Yarışması</a></li>
+          <li><a href="blog.html">📝 Blog</a></li>
+          <li><a href="hakkinda.html">Hakkında</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Özel Koleksiyonlar</h4>
+        <ul class="footer-links">
+          <li><a href="en-hizli-hayvanlar.html">⚡ En Hızlı Hayvanlar</a></li>
+          <li><a href="en-yavas-hayvanlar.html">🐌 En Yavaş Hayvanlar</a></li>
+          <li><a href="en-uzun-yasayanlar.html">🕰️ En Uzun Yaşayanlar</a></li>
+          <li><a href="en-zehirli-hayvanlar.html">☠️ En Zehirli Hayvanlar</a></li>
+          <li><a href="buz-devri-hayvanlari.html">🧊 Buz Devri Hayvanları</a></li>
+          <li><a href="amazon-hayvanlari.html">🌿 Amazon Hayvanları</a></li>
+          <li><a href="kutup-hayvanlari.html">❄️ Kutup Hayvanları</a></li>
+          <li><a href="afrika-hayvanlari.html">🌍 Afrika Hayvanları</a></li>
+          <li><a href="okyanus-derinlikleri.html">🌊 Okyanus Derinlikleri</a></li>
+          <li><a href="hayvan-gocleri.html">🦅 Hayvan Göçleri</a></li>
+          <li><a href="hayvan-kamufaji.html">🦎 Hayvan Kamuflajı</a></li>
+          <li><a href="en-zeki-hayvanlar.html">🧠 En Zeki Hayvanlar</a></li>
+          <li><a href="gece-avcilari.html">🌙 Gece Avcıları</a></li>
+          <li><a href="en-buyuk-hayvanlar.html">🐘 En Büyük Hayvanlar</a></li>
+          <li><a href="en-kucuk-hayvanlar.html">🐁 En Küçük Hayvanlar</a></li>
+          <li><a href="nesli-tukenen-hayvanlar.html">💀 Nesli Tükenen Hayvanlar</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Hayvanlar Dünyası &copy; 2026 - Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
