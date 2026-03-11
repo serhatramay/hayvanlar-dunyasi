@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kutup Hayvanları - Hayvanlar Dünyası</title>
+  <meta name="description" content="Kutup hayvanları - Kuzey ve Güney Kutbu'nda yaşayan, aşırı soğuğa dayanıklı türler hakkında detaylı bilgiler.">
+  <meta property="og:title" content="Kutup Hayvanları - Hayvanlar Dünyası">
+  <meta property="og:description" content="Arktik ve Antarktika'nın büyüleyici hayvanlarını keşfedin. Kutup ayısından imparator penguene, morstan kar baykuşuna kutupların zorlu yaşam koşullarına uyum sağlayan türleri tanıyın.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGASYON -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">🌍 Hayvanlar <span>Dünyası</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="memeliler.html">Memeliler</a></li>
+        <li><a href="kuslar.html">Kuşlar</a></li>
+        <li><a href="surungen.html">Sürüngen</a></li>
+        <li><a href="baliklar.html">Balıklar</a></li>
+        <li><a href="amfibiler.html">Amfibiler</a></li>
+        <li><a href="bocekler.html">Böcekler</a></li>
+        <li><a href="omurgasizlar.html">Omurgasızlar</a></li>
+        <li><a href="tehlike-altinda.html">Tehlike Altında</a></li>
+        <li><a href="turkiye-hayvanlari.html">Türkiye</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="hakkinda.html">Hakkında</a></li>
+      </ul>
+      <div class="nav-search">
+        <span class="nav-search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Hayvan ara..." autocomplete="off">
+      </div>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="search-results" id="searchResults"></div>
+
+  <!-- SAYFA HERO -->
+  <section class="page-hero hero-kutup">
+    <span class="hero-emoji">❄️</span>
+    <h1>Kutup Hayvanları</h1>
+    <p>Gezegenimizin en soğuk bölgeleri olan Kuzey ve Güney Kutupları, inanılmaz dayanıklılık gösteren canlılara ev sahipliği yapar. -60°C'ye varan sıcaklıklarda hayatta kalmayı başaran bu türler, kalın kürk, yağ tabakaları ve özel fizyolojik adaptasyonlarla donatılmıştır. Arktik buzullarından Antarktika'nın dondurucu rüzgârlarına kadar kutup yaşamının olağanüstü kahramanlarını keşfedin.</p>
+  </section>
+
+  <main class="section">
+
+    <!-- ==========================================
+         KUZEY KUTBU
+         ========================================== -->
+    <div class="subcategory" id="kuzey-kutbu">
+      <div class="subcategory-header">
+        <span class="sub-emoji">🏔️</span>
+        <h2>Kuzey Kutbu</h2>
+      </div>
+
+      <div class="animal-grid">
+
+        <!-- KUTUP AYISI -->
+        <div class="animal-card" data-animal='{"isim":"Kutup Ayısı","emoji":"🐻‍❄️","latin":"Ursus maritimus","habitat":"Arktik bölge","beslenme":"Etçil","boyut":"1.8 - 2.5 metre","agirlik":"350 - 700 kg","yasam":"25 - 30 yıl","aciklama":"Kutup ayısı, dünyanın en büyük kara yırtıcısıdır ve Arktik bölgenin en ikonik hayvanıdır. Kalın beyaz kürkü ve altındaki siyah derisi sayesinde güneş ışığını emerek vücut ısısını korur. Mükemmel bir yüzücü olan kutup ayısı, avlanmak için yüzlerce kilometre yüzebilir.","ilgincBilgiler":["Kürkü aslında beyaz değil, şeffaftır - içi boş tüyler güneş ışığını yansıtarak beyaz görünür.","Derisi siyahtır ve güneş ışığını emerek vücudunu ısıtmaya yardımcı olur.","Mükemmel bir yüzücüdür ve durmadan 100 kilometreden fazla yüzebilir.","Koku alma duyusu inanılmaz güçlüdür; bir foku buzun altında 1.5 km uzaktan koklayabilir."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐻‍❄️</span>
+            <div>
+              <h3>Kutup Ayısı</h3>
+              <span class="latin-name">Ursus maritimus</span>
+            </div>
+          </div>
+          <p>Dünyanın en büyük kara yırtıcısı. Arktik buzullarının tartışmasız kralı olan kutup ayısı, kalın kürkü ve güçlü yüzme yeteneğiyle kutup yaşamına mükemmel uyum sağlamıştır.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Arktik bölge</span>
+            <span class="tag diet">Etçil</span>
+          </div>
+        </div>
+
+        <!-- KUTUP TİLKİSİ -->
+        <div class="animal-card" data-animal='{"isim":"Kutup Tilkisi","emoji":"🦊","latin":"Vulpes lagopus","habitat":"Arktik tundra","beslenme":"Hepçil","boyut":"45 - 70 cm","agirlik":"3 - 8 kg","yasam":"3 - 6 yıl","aciklama":"Kutup tilkisi, -70°C sıcaklıklara kadar dayanabilen ve memeliler arasında en sıcak kürke sahip olan hayvandır. Kışın kar beyazı, yazın kahverengi-gri olan kürkü mükemmel bir kamuflaj sağlar. Küçük kulakları ve kısa burnu ısı kaybını en aza indirir.","ilgincBilgiler":["-70°C ye kadar dayanabilir ve titremeye ancak -40°C de başlar.","Kürkünün rengi mevsime göre değişir: kışın beyaz, yazın kahverengi-gri olur.","Kalın ve tüylü pati tabanları kar üzerinde batmadan yürümesini sağlar.","Kutup ayısının artık yiyeceklerini takip ederek beslenme stratejisi uygular."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦊</span>
+            <div>
+              <h3>Kutup Tilkisi</h3>
+              <span class="latin-name">Vulpes lagopus</span>
+            </div>
+          </div>
+          <p>Arktik'in en dayanıklı küçük avcısı. -70°C'ye kadar hayatta kalabilen kutup tilkisi, mevsime göre renk değiştiren kürkü ile mükemmel bir kamuflaj ustasıdır.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Arktik tundra</span>
+            <span class="tag diet">Hepçil</span>
+          </div>
+        </div>
+
+        <!-- MORS -->
+        <div class="animal-card" data-animal='{"isim":"Mors","emoji":"🦭","latin":"Odobenus rosmarus","habitat":"Arktik kıyılar","beslenme":"Etçil","boyut":"2.7 - 3.6 metre","agirlik":"800 - 1700 kg","yasam":"20 - 30 yıl","aciklama":"Mors, Arktik denizlerin devasa ve görkemli bir sakini olup uzun dişleri ve bıyıklarıyla kolayca tanınır. Kalın yağ tabakası dondurucu sularda vücut ısısını korurken, hassas bıyıkları deniz tabanındaki kabuklu deniz hayvanlarını bulmada kullanılır.","ilgincBilgiler":["Dişleri 1 metreye kadar uzayabilir ve buzu kırarak nefes alma delikleri açmak için kullanılır.","Bıyıkları son derece hassastır ve karanlık sularda yiyecek bulmak için parmak ucu gibi çalışır.","Derisi 5 cm kalınlığa ulaşabilir ve altındaki yağ tabakası 15 cm ye kadar çıkabilir.","Güneşlenirken derisi pembeleşir çünkü kan damarları genişleyerek ısı salınımını artırır."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦭</span>
+            <div>
+              <h3>Mors</h3>
+              <span class="latin-name">Odobenus rosmarus</span>
+            </div>
+          </div>
+          <p>Arktik'in devasa ve görkemli deniz memelisi. Uzun dişleri ve hassas bıyıklarıyla tanınan mors, 1700 kg'a kadar ağırlığa ulaşabilen etkileyici bir canlıdır.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Arktik kıyılar</span>
+            <span class="tag diet">Etçil</span>
+          </div>
+        </div>
+
+        <!-- KARİBU / REN GEYİĞİ -->
+        <div class="animal-card" data-animal='{"isim":"Karibu / Ren Geyiği","emoji":"🦌","latin":"Rangifer tarandus","habitat":"Arktik ve subarktik","beslenme":"Otçul","boyut":"1.2 - 2.2 metre","agirlik":"80 - 180 kg","yasam":"12 - 15 yıl","aciklama":"Karibu ya da ren geyiği, hem erkek hem de dişilerin boynuz taşıdığı tek geyik türüdür. Her yıl binlerce kilometre göç ederek memeliler arasındaki en uzun kara göçünü gerçekleştirir. Geniş toynak yapıları sayesinde kar üzerinde batmadan yürüyebilir.","ilgincBilgiler":["Hem erkek hem dişilerin boynuz taşıdığı tek geyik türüdür.","Yılda 5000 kilometreye kadar göç edebilir - memeliler arasındaki en uzun kara göçüdür.","Gözleri kışın mavi, yazın altın rengi olur; bu UV ışığını algılamalarına yardımcı olur.","Toynaklarının yapısı mevsime göre değişir: yazın yumuşak, kışın sert ve keskin olur."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦌</span>
+            <div>
+              <h3>Karibu / Ren Geyiği</h3>
+              <span class="latin-name">Rangifer tarandus</span>
+            </div>
+          </div>
+          <p>Kutup bölgelerinin göçmen geyiği. Yılda 5000 km'ye varan göçleriyle bilinen karibu, Arktik tundranın en önemli otçul memelilerinden biridir.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Arktik ve subarktik</span>
+            <span class="tag diet">Otçul</span>
+          </div>
+        </div>
+
+        <!-- KUTUP TAVŞANI -->
+        <div class="animal-card" data-animal='{"isim":"Kutup Tavşanı","emoji":"🐇","latin":"Lepus arcticus","habitat":"Arktik tundra","beslenme":"Otçul","boyut":"55 - 70 cm","agirlik":"2.5 - 5.5 kg","yasam":"4 - 5 yıl","aciklama":"Kutup tavşanı, Arktik bölgenin en dayanıklı küçük memelilerinden biridir. Kar beyazı kürkü mükemmel kamuflaj sağlarken, güçlü arka bacakları ile saatte 60 km hıza ulaşabilir. Kısa kulakları sayesinde ısı kaybını minimumda tutar.","ilgincBilgiler":["Saatte 60 km hıza ulaşabilir ve yırtıcılardan kaçmak için zikzak yaparak koşar.","Kışın tamamen beyaz olan kürkü, bazı bölgelerde yazın gri-kahverengiye döner.","Kar altındaki bitkileri bulmak için güçlü pençeleriyle kazma yapabilir.","Gruplar halinde yaşar ve bazen yüzlerce bireylik sürüler oluşturabilir."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐇</span>
+            <div>
+              <h3>Kutup Tavşanı</h3>
+              <span class="latin-name">Lepus arcticus</span>
+            </div>
+          </div>
+          <p>Arktik tundranın hızlı koşucusu. Kar beyazı kürkü ve güçlü arka bacaklarıyla kutup tavşanı, dondurucu soğuklara mükemmel uyum sağlamış bir hayatta kalma uzmanıdır.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Arktik tundra</span>
+            <span class="tag diet">Otçul</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ==========================================
+         GÜNEY KUTBU
+         ========================================== -->
+    <div class="subcategory" id="guney-kutbu">
+      <div class="subcategory-header">
+        <span class="sub-emoji">🧊</span>
+        <h2>Güney Kutbu</h2>
+      </div>
+
+      <div class="animal-grid">
+
+        <!-- İMPARATOR PENGUEN -->
+        <div class="animal-card" data-animal='{"isim":"İmparator Penguen","emoji":"🐧","latin":"Aptenodytes forsteri","habitat":"Antarktika","beslenme":"Etçil","boyut":"100 - 130 cm","agirlik":"22 - 45 kg","yasam":"15 - 20 yıl","aciklama":"İmparator penguen, dünyanın en büyük penguen türüdür ve Antarktika kıtasının en zorlu koşullarında yaşayan tek kuş türüdür. -60°C sıcaklıklara ve saatte 200 km rüzgârlara dayanabilir. Erkekler, dişiler avlanmaya giderken yumurtayı ayaklarının üstünde 2 ay boyunca kuluçkaya yatırır.","ilgincBilgiler":["-60°C sıcaklığa dayanabilir ve sıcaklığı korumak için sıkı gruplar halinde toplanırlar.","565 metreye kadar dalabilir ve 22 dakikaya kadar nefes tutabilir.","Erkekler, kış boyunca hiç yemek yemeden yumurtayı kuluçkaya yatırır ve bu sürede ağırlıklarının yarısını kaybeder.","Her penguen, binlerce bireyin arasından eşini sesinden tanıyabilir."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐧</span>
+            <div>
+              <h3>İmparator Penguen</h3>
+              <span class="latin-name">Aptenodytes forsteri</span>
+            </div>
+          </div>
+          <p>Dünyanın en büyük pengueni ve Antarktika'nın sembolü. -60°C'ye dayanabilen imparator penguen, hayvanlar aleminin en fedakâr ebeveynlerinden biridir.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Antarktika</span>
+            <span class="tag diet">Etçil</span>
+          </div>
+        </div>
+
+        <!-- LEOPAR FOKU -->
+        <div class="animal-card" data-animal='{"isim":"Leopar Foku","emoji":"🦭","latin":"Hydrurga leptonyx","habitat":"Antarktika suları","beslenme":"Etçil","boyut":"2.4 - 3.5 metre","agirlik":"200 - 600 kg","yasam":"12 - 15 yıl","aciklama":"Leopar foku, Antarktika sularının en tehlikeli avcısıdır ve penguenlerin baş düşmanı olarak bilinir. Güçlü çeneleri ve keskin dişleriyle avını yakalayan bu yırtıcı, suyun altında inanılmaz bir çeviklik gösterir. Adını, benekli kürkünün leoparı andırmasından alır.","ilgincBilgiler":["Penguenleri avlamak için buz kenarlarında saatlerce pusu kurar.","Katil balinadan sonra Antarktika nın en tehlikeli avcısıdır.","Şarkı söyleyerek iletişim kurar ve sesleri su altında kilometrelerce duyulabilir.","Bazen dalıcılara avladığı penguenleri sunduğu gözlemlenmiştir - bir tür öğretme davranışı olarak yorumlanır."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦭</span>
+            <div>
+              <h3>Leopar Foku</h3>
+              <span class="latin-name">Hydrurga leptonyx</span>
+            </div>
+          </div>
+          <p>Antarktika sularının korkusuz avcısı. Güçlü çeneleri ve çevik yüzme yeteneğiyle leopar foku, güney okyanusunun en üst yırtıcılarından biridir.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Antarktika suları</span>
+            <span class="tag diet">Etçil</span>
+          </div>
+        </div>
+
+        <!-- KAR BAYKUŞU -->
+        <div class="animal-card" data-animal='{"isim":"Kar Baykuşu","emoji":"🦉","latin":"Bubo scandiacus","habitat":"Arktik ve subarktik","beslenme":"Etçil","boyut":"52 - 71 cm","agirlik":"1.6 - 3 kg","yasam":"10 - 15 yıl","aciklama":"Kar baykuşu, kutup bölgelerinde yaşayan ve gündüz avlanan nadir baykuş türlerinden biridir. Bembeyaz tüyleri mükemmel kamuflaj sağlarken, keskin görüşü ve sessiz uçuşu onu etkili bir avcı yapar. Lemming adlı küçük kemirgenler ana besin kaynağını oluşturur.","ilgincBilgiler":["Diğer baykuşların aksine gündüz avlanır çünkü Arktik yazında güneş batmaz.","Bir aile bir üreme döneminde 1500 den fazla lemming tüketebilir.","Tüylü ayakları doğal kar ayakkabısı görevi görür ve soğuktan korur.","Harry Potter serisindeki Hedwig karakteri bir kar baykuşudur ve türün popülerliğini artırmıştır."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦉</span>
+            <div>
+              <h3>Kar Baykuşu</h3>
+              <span class="latin-name">Bubo scandiacus</span>
+            </div>
+          </div>
+          <p>Kutup bölgelerinin gündüz avcısı. Bembeyaz tüyleriyle karla bütünleşen kar baykuşu, Arktik tundranın en zarif yırtıcılarından biridir.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Arktik ve subarktik</span>
+            <span class="tag diet">Etçil</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <button class="modal-close">&times;</button>
+      <span class="modal-emoji"></span>
+      <h2></h2>
+      <span class="modal-latin"></span>
+      <div class="modal-info-grid"></div>
+      <p class="modal-description"></p>
+      <div class="modal-fun-facts">
+        <h4>İlginç Bilgiler</h4>
+        <ul></ul>
+      </div>
+      <div class="modal-article-link-container"></div>
+    </div>
+  </div>
+
+  <!-- İLGİLİ İÇERİKLER -->
+  <section class="ilgili-icerikler">
+    <h2>İlgili İçerikler</h2>
+    <div class="related-grid">
+      <a href="memeliler.html" class="related-card">
+        <span class="related-emoji">🦁</span>
+        <h4>Memeliler</h4>
+        <p>Kutup ayısı ve mors gibi kutup memelilerini keşfedin</p>
+        <span class="related-card-link">Keşfet →</span>
+      </a>
+      <a href="kuslar.html" class="related-card">
+        <span class="related-emoji">🦅</span>
+        <h4>Kuşlar</h4>
+        <p>Penguen ve kar baykuşu gibi kutup kuşlarını tanıyın</p>
+        <span class="related-card-link">Keşfet →</span>
+      </a>
+      <a href="hayvan-gocleri.html" class="related-card">
+        <span class="related-emoji">🦅</span>
+        <h4>Hayvan Göçleri</h4>
+        <p>Kutup hayvanlarının inanılmaz göç yolculuklarını keşfedin</p>
+        <span class="related-card-link">Keşfet →</span>
+      </a>
+      <a href="en-buyuk-hayvanlar.html" class="related-card">
+        <span class="related-emoji">🐋</span>
+        <h4>En Büyük Hayvanlar</h4>
+        <p>Kutup ayısı gibi devasa türleri tanıyın</p>
+        <span class="related-card-link">Keşfet →</span>
+      </a>
+      <a href="nesli-tukenen-hayvanlar.html" class="related-card">
+        <span class="related-emoji">🦤</span>
+        <h4>Nesli Tükenen Hayvanlar</h4>
+        <p>İklim değişikliğinden etkilenen kutup türlerini öğrenin</p>
+        <span class="related-card-link">Keşfet →</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>🌍 Hayvanlar Dünyası</h4>
+        <p>Gezegenimizin muhteşem canlılarını tanıyın. Bu site, hayvanlar alemi hakkında bilgi edinmek isteyen herkes için hazırlanmıştır.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Kategoriler</h4>
+        <ul class="footer-links">
+          <li><a href="memeliler.html">🦁 Memeliler</a></li>
+          <li><a href="kuslar.html">🦅 Kuşlar</a></li>
+          <li><a href="surungen.html">🐊 Sürüngen</a></li>
+          <li><a href="baliklar.html">🦈 Balıklar</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Diğer</h4>
+        <ul class="footer-links">
+          <li><a href="amfibiler.html">🐸 Amfibiler</a></li>
+          <li><a href="bocekler.html">🦋 Böcekler</a></li>
+          <li><a href="omurgasizlar.html">🐙 Omurgasızlar</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Keşfet</h4>
+        <ul class="footer-links">
+          <li><a href="tehlike-altinda.html">Tehlike Altındaki Türler</a></li>
+          <li><a href="turkiye-hayvanlari.html">Türkiye Hayvanları</a></li>
+          <li><a href="quiz.html">Bilgi Yarışması</a></li>
+          <li><a href="blog.html">📝 Blog</a></li>
+          <li><a href="hakkinda.html">Hakkında</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Özel Koleksiyonlar</h4>
+        <ul class="footer-links">
+          <li><a href="en-hizli-hayvanlar.html">⚡ En Hızlı Hayvanlar</a></li>
+          <li><a href="en-yavas-hayvanlar.html">🐌 En Yavaş Hayvanlar</a></li>
+          <li><a href="en-uzun-yasayanlar.html">🕰️ En Uzun Yaşayanlar</a></li>
+          <li><a href="en-zehirli-hayvanlar.html">☠️ En Zehirli Hayvanlar</a></li>
+          <li><a href="buz-devri-hayvanlari.html">🧊 Buz Devri Hayvanları</a></li>
+          <li><a href="amazon-hayvanlari.html">🌿 Amazon Hayvanları</a></li>
+          <li><a href="kutup-hayvanlari.html">❄️ Kutup Hayvanları</a></li>
+          <li><a href="afrika-hayvanlari.html">🌍 Afrika Hayvanları</a></li>
+          <li><a href="okyanus-derinlikleri.html">🌊 Okyanus Derinlikleri</a></li>
+          <li><a href="hayvan-gocleri.html">🦅 Hayvan Göçleri</a></li>
+          <li><a href="hayvan-kamufaji.html">🦎 Hayvan Kamuflajı</a></li>
+          <li><a href="en-zeki-hayvanlar.html">🧠 En Zeki Hayvanlar</a></li>
+          <li><a href="gece-avcilari.html">🌙 Gece Avcıları</a></li>
+          <li><a href="en-buyuk-hayvanlar.html">🐘 En Büyük Hayvanlar</a></li>
+          <li><a href="en-kucuk-hayvanlar.html">🐁 En Küçük Hayvanlar</a></li>
+          <li><a href="nesli-tukenen-hayvanlar.html">💀 Nesli Tükenen Hayvanlar</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Hayvanlar Dünyası &copy; 2026 - Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
