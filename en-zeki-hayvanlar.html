@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>En Zeki Hayvanlar - Hayvanlar Dünyası</title>
+  <meta name="description" content="Hayvanlar aleminin en zeki türleri - Primatlardan yunuslara, kargalardan ahtapotlara kadar olağanüstü bilişsel yeteneklere sahip hayvanları keşfedin.">
+  <meta property="og:title" content="En Zeki Hayvanlar - Hayvanlar Dünyası">
+  <meta property="og:description" content="Doğanın en zeki hayvanlarını tanıyın. Alet kullanan primatlar, problem çözen kargalar ve kamuflaj ustası ahtapotlar hakkında detaylı bilgiler.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGASYON -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">🌍 Hayvanlar <span>Dünyası</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="memeliler.html">Memeliler</a></li>
+        <li><a href="kuslar.html">Kuşlar</a></li>
+        <li><a href="surungen.html">Sürüngen</a></li>
+        <li><a href="baliklar.html">Balıklar</a></li>
+        <li><a href="amfibiler.html">Amfibiler</a></li>
+        <li><a href="bocekler.html">Böcekler</a></li>
+        <li><a href="omurgasizlar.html">Omurgasızlar</a></li>
+        <li><a href="tehlike-altinda.html">Tehlike Altında</a></li>
+        <li><a href="turkiye-hayvanlari.html">Türkiye</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="hakkinda.html">Hakkında</a></li>
+      </ul>
+      <div class="nav-search">
+        <span class="nav-search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Hayvan ara..." autocomplete="off">
+      </div>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="search-results" id="searchResults"></div>
+
+  <!-- SAYFA HERO -->
+  <section class="page-hero hero-zeki">
+    <span class="hero-emoji">🧠</span>
+    <h1>En Zeki Hayvanlar</h1>
+    <p>Hayvanlar alemi, inanılmaz bilişsel yeteneklere sahip türlerle doludur. Alet kullanan şempanzelerden, ayna testini geçen yunuslara, karmaşık problemleri çözen kargalardan, kamuflaj stratejileri geliştiren ahtapotlara kadar doğanın en zeki canlılarını keşfedin. Zekâ sadece insanlara özgü değildir; bu sayfada hayvan zekâsının sınırlarını zorlayan türleri tanıyacaksınız.</p>
+  </section>
+
+  <main class="section">
+
+    <!-- ==========================================
+         PRİMATLAR
+         ========================================== -->
+    <div class="subcategory" id="primatlar">
+      <div class="subcategory-header">
+        <span class="sub-emoji">🐒</span>
+        <h2>Primatlar</h2>
+      </div>
+
+      <div class="animal-grid">
+
+        <!-- ŞEMPANZE -->
+        <div class="animal-card" data-animal='{"isim":"Şempanze","emoji":"🐒","latin":"Pan troglodytes","habitat":"Orta ve Batı Afrika ormanları","beslenme":"Hepçil","boyut":"1.0 - 1.7 metre","agirlik":"32 - 60 kg","yasam":"40 - 50 yıl","aciklama":"Şempanze, insanın en yakın akrabası olup DNA mızın %98,7 sini paylaşır. Alet yapma ve kullanma, işaret dili öğrenme, strateji geliştirme gibi üst düzey bilişsel becerilere sahiptir. Karmaşık sosyal yapılar kurar ve kültürel davranışları nesilden nesile aktarır.","ilgincBilgiler":["İnsanlarla DNA larının %98,7 sini paylaşırlar ve insanın en yakın akrabasıdırlar.","Dalları ve taşları alet olarak kullanabilir, hatta basit mızraklar yapabilirler.","İşaret dili öğrenebilir ve 300 den fazla işareti anlayabilirler.","Kısa süreli hafızada insanlardan bile daha başarılı olabilirler - sayıları ekranda anlık gösterip hatırlama testlerinde üstün performans gösterirler."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐒</span>
+            <div>
+              <h3>Şempanze</h3>
+              <span class="latin-name">Pan troglodytes</span>
+            </div>
+          </div>
+          <p>İnsanın en yakın akrabası ve hayvanlar aleminin en zeki türlerinden biri. Alet kullanabilen, işaret dili öğrenebilen olağanüstü bir primat.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Orta ve Batı Afrika</span>
+            <span class="tag diet">Hepçil</span>
+            <span class="tag">🧠 Çok Yüksek Zekâ</span>
+          </div>
+        </div>
+
+        <!-- ORANGUTAN -->
+        <div class="animal-card" data-animal='{"isim":"Orangutan","emoji":"🦧","latin":"Pongo pygmaeus","habitat":"Borneo ve Sumatra ormanları","beslenme":"Hepçil","boyut":"1.2 - 1.5 metre","agirlik":"30 - 82 kg","yasam":"35 - 45 yıl","aciklama":"Orangutan, Güneydoğu Asya nın yağmur ormanlarında yaşayan son derece zeki bir primat türüdür. Alet kullanma konusunda ustadır ve doğada yaprak şemsiyeler, dal çubukları ve basit kaplar yapabilir. Yüz tanıma, planlama ve gelecek için hazırlık yapma gibi ileri bilişsel becerilere sahiptir.","ilgincBilgiler":["Yapraklardan şemsiye ve yağmurluk yaparak yağmurdan korunabilirler.","Her gece ağaç tepelerinde yeni bir yatak inşa ederler, bazen yastık bile yaparlar.","Doğada tıbbi bitkiler kullanarak kendi yaralarını tedavi edebildikleri gözlemlenmiştir.","İnsan bakıcılarını izleyerek kilit açmayı ve testere kullanmayı öğrenebilirler."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦧</span>
+            <div>
+              <h3>Orangutan</h3>
+              <span class="latin-name">Pongo pygmaeus</span>
+            </div>
+          </div>
+          <p>Asya nın yağmur ormanlarının zeki sakini. Alet yapımında usta olan orangutanlar, yapraklardan şemsiye yapmaktan kilit açmaya kadar birçok beceriye sahiptir.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Borneo ve Sumatra</span>
+            <span class="tag diet">Hepçil</span>
+            <span class="tag">🧠 Yüksek Zekâ</span>
+          </div>
+        </div>
+
+        <!-- BONOBO -->
+        <div class="animal-card" data-animal='{"isim":"Bonobo","emoji":"🐒","latin":"Pan paniscus","habitat":"Kongo Demokratik Cumhuriyeti ormanları","beslenme":"Hepçil","boyut":"1.0 - 1.5 metre","agirlik":"25 - 50 kg","yasam":"40 - 50 yıl","aciklama":"Bonobo, şempanzeyle birlikte insanın en yakın akrabası olan barışçıl bir primat türüdür. Toplumsal sorunları şiddet yerine sosyal bağlarla çözen bonobolar, empati ve duygusal zekâ konusunda hayvanlar aleminin en gelişmiş türlerinden biridir. Dişi liderliğindeki topluluklar halinde yaşarlar.","ilgincBilgiler":["İnsanla %98,7 DNA benzerliğine sahip olan iki türden biridir (diğeri şempanze).","Toplumsal çatışmaları barışçıl yollarla çözerler ve şiddet yerine sosyal bağları tercih ederler.","Lexigram adı verilen sembol tabloları kullanarak insanlarla iletişim kurabilirler.","Empati yetenekleri son derece gelişmiştir; üzgün bir bireyi teselli etmek için yanına giderler."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐒</span>
+            <div>
+              <h3>Bonobo</h3>
+              <span class="latin-name">Pan paniscus</span>
+            </div>
+          </div>
+          <p>Hayvanlar aleminin en empatik türlerinden biri. Barışçıl sosyal yapısı ve gelişmiş duygusal zekâsıyla dikkat çeken, insanın en yakın akrabalarından biri.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Kongo ormanları</span>
+            <span class="tag diet">Hepçil</span>
+            <span class="tag">🧠 Yüksek Zekâ</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ==========================================
+         DENİZ ZEKÂLARI
+         ========================================== -->
+    <div class="subcategory" id="deniz-zekalari">
+      <div class="subcategory-header">
+        <span class="sub-emoji">🐬</span>
+        <h2>Deniz Zekâları</h2>
+      </div>
+
+      <div class="animal-grid">
+
+        <!-- YUNUS -->
+        <div class="animal-card" data-animal='{"isim":"Yunus","emoji":"🐬","latin":"Tursiops truncatus","habitat":"Tüm okyanuslar ve denizler","beslenme":"Etçil","boyut":"2.0 - 4.0 metre","agirlik":"150 - 650 kg","yasam":"40 - 50 yıl","aciklama":"Yunus, denizlerin en zeki canlılarından biridir. Aynada kendini tanıyabilen, karmaşık sosyal ilişkiler kurabilen ve birbirleriyle ıslık dili kullanarak iletişim kurabilen yunuslar, problem çözme ve işbirliği konusunda olağanüstü yeteneklere sahiptir. Her yunusun kendine özgü bir isim ıslığı vardır.","ilgincBilgiler":["Her yunusun kendine özgü bir isim ıslığı vardır ve diğer yunusları bu ıslıkla çağırabilirler.","Ayna testini geçebilen nadir hayvan türlerinden biridir - kendilerini tanıyabilirler.","Deniz tabanında avlanırken burunlarına sünger takarak korunurlar, bu davranışı birbirlerine öğretirler.","Beyin-vücut oranı insandan sonra en yüksek olan canlılardan biridir."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐬</span>
+            <div>
+              <h3>Yunus</h3>
+              <span class="latin-name">Tursiops truncatus</span>
+            </div>
+          </div>
+          <p>Denizlerin en zeki sakini. Kendine özgü isim ıslıklarıyla iletişim kuran, aynada kendini tanıyabilen ve işbirliği yaparak avlanan olağanüstü bir canlı.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Tüm okyanuslar</span>
+            <span class="tag diet">Etçil</span>
+            <span class="tag">🧠 Çok Yüksek Zekâ</span>
+          </div>
+        </div>
+
+        <!-- AHTAPOT -->
+        <div class="animal-card" data-animal='{"isim":"Ahtapot","emoji":"🐙","latin":"Octopus vulgaris","habitat":"Tüm okyanuslar","beslenme":"Etçil","boyut":"30 - 90 cm","agirlik":"3 - 10 kg","yasam":"1 - 5 yıl","aciklama":"Ahtapot, omurgasız canlılar arasında en yüksek zekâya sahip türdür. Kavanoz kapağı açabilme, labirentten çıkabilme ve kamuflaj için renk ve doku değiştirebilme gibi inanılmaz yeteneklere sahiptir. Üç kalbi ve mavi kanıyla benzersiz bir fizyolojiye sahip olan ahtapotlar, kısa ömürlerine rağmen öğrenme kapasiteleriyle bilim insanlarını şaşırtmaktadır.","ilgincBilgiler":["Üç kalbi ve mavi renkte kanı vardır; merkezi beyinlerinin yanı sıra her kolda mini bir beyin bulunur.","Kavanoz kapaklarını içeriden açabilir ve karmaşık labirentlerden çıkabilirler.","Saniyeler içinde renk, doku ve hatta vücut şeklini değiştirerek mükemmel kamuflaj yapabilirler.","Hindistancevizi kabuklarını toplayıp taşıyarak zırh gibi kullandıkları gözlemlenmiştir - alet kullanımının omurgasızlardaki nadir örneği."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐙</span>
+            <div>
+              <h3>Ahtapot</h3>
+              <span class="latin-name">Octopus vulgaris</span>
+            </div>
+          </div>
+          <p>Omurgasızların zekâ şampiyonu. Kavanoz kapağı açabilen, labirent çözebilen ve mükemmel kamuflaj yapabilen üç kalpli kaçış ustası.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Tüm okyanuslar</span>
+            <span class="tag diet">Etçil</span>
+            <span class="tag">🧠 Yüksek Zekâ</span>
+          </div>
+        </div>
+
+        <!-- KATİL BALİNA -->
+        <div class="animal-card" data-animal='{"isim":"Katil Balina","emoji":"🐋","latin":"Orcinus orca","habitat":"Tüm okyanuslar","beslenme":"Etçil","boyut":"6 - 8 metre","agirlik":"3600 - 5400 kg","yasam":"50 - 80 yıl","aciklama":"Katil balina (orka), okyanusların en zeki ve en güçlü avcısıdır. Koordineli grup avlanma stratejileri geliştiren, kültürel davranışları nesilden nesile aktaran ve karmaşık lehçelere sahip bir iletişim sistemi kullanan orkalar, deniz memelileri arasında en gelişmiş sosyal yapıya sahiptir.","ilgincBilgiler":["Her orka sürüsünün kendine özgü bir lehçesi vardır ve farklı sürüler birbirini anlamayabilir.","Koordineli avlanma stratejileri kullanırlar; buz parçalarını dalga yaratarak devirme gibi taktikler geliştirmişlerdir.","Anne orkalar yaşam boyu yavrularıyla birlikte kalır ve büyükanne orkalar sürünün hayatta kalmasında kritik rol oynar.","Doğal ortamda insanlara saldırdıklarına dair hiçbir kayıt yoktur."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐋</span>
+            <div>
+              <h3>Katil Balina</h3>
+              <span class="latin-name">Orcinus orca</span>
+            </div>
+          </div>
+          <p>Okyanusların en zeki avcısı. Koordineli grup stratejileri geliştiren, kendine özgü lehçelerle iletişim kuran ve kültürel davranışlar aktaran muhteşem bir deniz memelisi.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Tüm okyanuslar</span>
+            <span class="tag diet">Etçil</span>
+            <span class="tag">🧠 Çok Yüksek Zekâ</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ==========================================
+         KUŞ ZEKÂSI
+         ========================================== -->
+    <div class="subcategory" id="kus-zekasi">
+      <div class="subcategory-header">
+        <span class="sub-emoji">🐦‍⬛</span>
+        <h2>Kuş Zekâsı</h2>
+      </div>
+
+      <div class="animal-grid">
+
+        <!-- KARGA -->
+        <div class="animal-card" data-animal='{"isim":"Karga","emoji":"🐦‍⬛","latin":"Corvus corone","habitat":"Avrupa, Asya, Kuzey Afrika","beslenme":"Hepçil","boyut":"44 - 51 cm","agirlik":"0.4 - 0.6 kg","yasam":"5 - 10 yıl","aciklama":"Karga, kuşlar arasında en yüksek problem çözme yeteneğine sahip türlerden biridir. Alet yapma ve kullanma, yüz tanıma ve hatta intikam alma gibi karmaşık davranışlar sergileyen kargalar, beyin-vücut oranı bakımından büyük kuşlar arasında birinci sıradadır. Karmaşık çok adımlı problemleri çözebilirler.","ilgincBilgiler":["İnsan yüzlerini tanıyabilir ve kendilerine kötü davranan kişileri yıllarca hatırlayabilirler.","Tel bükerek kanca yapıp dar yerlerden yiyecek çıkarabilirler - alet yapımının en iyi örneklerinden biri.","Trafiği kullanarak ceviz kırdıkları gözlemlenmiştir; cevizi yola bırakıp arabaların ezmesini beklerler.","Ölmüş kargaların başında toplanarak cenaze benzeri ritüeller yaptıkları gözlemlenmiştir."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐦‍⬛</span>
+            <div>
+              <h3>Karga</h3>
+              <span class="latin-name">Corvus corone</span>
+            </div>
+          </div>
+          <p>Kuş dünyasının dâhisi. Alet yapabilen, insan yüzlerini tanıyabilen ve karmaşık problemleri çok adımda çözebilen olağanüstü bir kuş.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Avrupa, Asya</span>
+            <span class="tag diet">Hepçil</span>
+            <span class="tag">🧠 Çok Yüksek Zekâ</span>
+          </div>
+        </div>
+
+        <!-- AFRİKA GRİ PAPAĞANI -->
+        <div class="animal-card" data-animal='{"isim":"Afrika Gri Papağanı","emoji":"🦜","latin":"Psittacus erithacus","habitat":"Batı ve Orta Afrika ormanları","beslenme":"Hepçil","boyut":"30 - 40 cm","agirlik":"0.4 - 0.6 kg","yasam":"40 - 60 yıl","aciklama":"Afrika gri papağanı, kuşlar arasında en gelişmiş dil yeteneğine sahip türdür. Yalnızca kelimeleri taklit etmekle kalmaz, anlamlarını kavrayarak bağlamına uygun kullanabilir. Ünlü papağan Alex, renkleri, şekilleri ve sayıları anlayabilen ve sıfır kavramını öğrenebilen ilk hayvan olmuştur.","ilgincBilgiler":["1000 den fazla kelime öğrenebilir ve kelimeleri bağlamına uygun şekilde kullanabilirler.","Ünlü papağan Alex, renkleri ve şekilleri anlayabilmiş, sıfır kavramını öğrenen ilk hayvan olmuştur.","Sahibinin duygusal durumunu sesinden anlayabilir ve buna uygun tepki verebilirler.","5 yaşındaki bir çocuğun bilişsel kapasitesine eşdeğer zekâya sahip olduğu düşünülmektedir."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🦜</span>
+            <div>
+              <h3>Afrika Gri Papağanı</h3>
+              <span class="latin-name">Psittacus erithacus</span>
+            </div>
+          </div>
+          <p>Kuşlar arasında en gelişmiş dil yeteneğine sahip tür. 1000 den fazla kelime öğrenebilen ve kelimelerin anlamını kavrayabilen harika bir kuş.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Batı ve Orta Afrika</span>
+            <span class="tag diet">Hepçil</span>
+            <span class="tag">🧠 Yüksek Zekâ</span>
+          </div>
+        </div>
+
+        <!-- KUZGUN -->
+        <div class="animal-card" data-animal='{"isim":"Kuzgun","emoji":"🐦‍⬛","latin":"Corvus corax","habitat":"Kuzey yarımküre","beslenme":"Hepçil","boyut":"54 - 67 cm","agirlik":"0.7 - 1.6 kg","yasam":"10 - 15 yıl","aciklama":"Kuzgun, karga ailesinin en büyük ve en zeki üyesidir. Gelecek için planlama yapabilen, başkalarının bakış açısını anlayabilen ve karmaşık sosyal ilişkiler kurabilen kuzgunlar, bilişsel yetenekleri açısından büyük kuyruksuz maymunlarla karşılaştırılır. Oyun oynama ve eğlenme davranışları da sergilerler.","ilgincBilgiler":["Gelecek için planlama yapabilir ve yiyeceklerini stratejik olarak saklayabilirler.","Başka kuzgunların kendilerini izlediğini fark edip sakladıkları yiyeceği gizlice başka yere taşıyabilirler.","Karda ve buzda kayarak eğlendikleri gözlemlenmiştir - oyun oynayan nadir hayvan türlerinden biridir.","Büyük kuyruksuz maymunlarla eşdeğer problem çözme yeteneğine sahip olduğu kanıtlanmıştır."],"makale":""}'>
+          <div class="animal-card-header">
+            <span class="animal-emoji">🐦‍⬛</span>
+            <div>
+              <h3>Kuzgun</h3>
+              <span class="latin-name">Corvus corax</span>
+            </div>
+          </div>
+          <p>Karga ailesinin en büyük ve en zeki üyesi. Gelecek için planlama yapabilen, oyun oynayan ve maymunlarla eşdeğer zekâya sahip olağanüstü bir kuş.</p>
+          <div class="animal-tags">
+            <span class="tag habitat">Kuzey yarımküre</span>
+            <span class="tag diet">Hepçil</span>
+            <span class="tag">🧠 Çok Yüksek Zekâ</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <button class="modal-close">&times;</button>
+      <span class="modal-emoji"></span>
+      <h2></h2>
+      <span class="modal-latin"></span>
+      <div class="modal-info-grid"></div>
+      <p class="modal-description"></p>
+      <div class="modal-fun-facts">
+        <h4>İlginç Bilgiler</h4>
+        <ul></ul>
+      </div>
+      <div class="modal-article-link-container"></div>
+    </div>
+  </div>
+
+  <!-- İLGİLİ İÇERİKLER -->
+  <section class="ilgili-icerikler">
+    <h2>İlgili İçerikler</h2>
+    <div class="related-grid">
+      <a href="memeliler.html" class="related-card">
+        <span class="related-emoji">🦁</span>
+        <h4>Memeliler</h4>
+        <p>Primatlar ve yunuslar gibi zeki memelileri keşfedin</p>
+        <span class="related-card-link">Keşfet →</span>
+      </a>
+      <a href="kuslar.html" class="related-card">
+        <span class="related-emoji">🦅</span>
+        <h4>Kuşlar</h4>
+        <p>Kargalar ve papağanlar gibi zeki kuşları tanıyın</p>
+        <span class="related-card-link">Keşfet →</span>
+      </a>
+      <a href="omurgasizlar.html" class="related-card">
+        <span class="related-emoji">🐙</span>
+        <h4>Omurgasızlar</h4>
+        <p>Ahtapot gibi zeki omurgasızları keşfedin</p>
+        <span class="related-card-link">Keşfet →</span>
+      </a>
+      <a href="afrika-hayvanlari.html" class="related-card">
+        <span class="related-emoji">🌍</span>
+        <h4>Afrika Hayvanları</h4>
+        <p>Afrika nın zeki primatlarını ve yaban hayatını tanıyın</p>
+        <span class="related-card-link">Keşfet →</span>
+      </a>
+      <a href="okyanus-derinlikleri.html" class="related-card">
+        <span class="related-emoji">🌊</span>
+        <h4>Okyanus Derinlikleri</h4>
+        <p>Denizlerin zeki canlılarını ve derin su yaşamını keşfedin</p>
+        <span class="related-card-link">Keşfet →</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>🌍 Hayvanlar Dünyası</h4>
+        <p>Gezegenimizin muhteşem canlılarını tanıyın. Bu site, hayvanlar alemi hakkında bilgi edinmek isteyen herkes için hazırlanmıştır.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Kategoriler</h4>
+        <ul class="footer-links">
+          <li><a href="memeliler.html">🦁 Memeliler</a></li>
+          <li><a href="kuslar.html">🦅 Kuşlar</a></li>
+          <li><a href="surungen.html">🐊 Sürüngen</a></li>
+          <li><a href="baliklar.html">🦈 Balıklar</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Diğer</h4>
+        <ul class="footer-links">
+          <li><a href="amfibiler.html">🐸 Amfibiler</a></li>
+          <li><a href="bocekler.html">🦋 Böcekler</a></li>
+          <li><a href="omurgasizlar.html">🐙 Omurgasızlar</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Keşfet</h4>
+        <ul class="footer-links">
+          <li><a href="tehlike-altinda.html">Tehlike Altındaki Türler</a></li>
+          <li><a href="turkiye-hayvanlari.html">Türkiye Hayvanları</a></li>
+          <li><a href="quiz.html">Bilgi Yarışması</a></li>
+          <li><a href="blog.html">📝 Blog</a></li>
+          <li><a href="hakkinda.html">Hakkında</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Özel Koleksiyonlar</h4>
+        <ul class="footer-links">
+          <li><a href="en-hizli-hayvanlar.html">⚡ En Hızlı Hayvanlar</a></li>
+          <li><a href="en-yavas-hayvanlar.html">🐌 En Yavaş Hayvanlar</a></li>
+          <li><a href="en-uzun-yasayanlar.html">🕰️ En Uzun Yaşayanlar</a></li>
+          <li><a href="en-zehirli-hayvanlar.html">☠️ En Zehirli Hayvanlar</a></li>
+          <li><a href="buz-devri-hayvanlari.html">🧊 Buz Devri Hayvanları</a></li>
+          <li><a href="amazon-hayvanlari.html">🌿 Amazon Hayvanları</a></li>
+          <li><a href="kutup-hayvanlari.html">❄️ Kutup Hayvanları</a></li>
+          <li><a href="afrika-hayvanlari.html">🌍 Afrika Hayvanları</a></li>
+          <li><a href="okyanus-derinlikleri.html">🌊 Okyanus Derinlikleri</a></li>
+          <li><a href="hayvan-gocleri.html">🦅 Hayvan Göçleri</a></li>
+          <li><a href="hayvan-kamufaji.html">🦎 Hayvan Kamuflajı</a></li>
+          <li><a href="en-zeki-hayvanlar.html">🧠 En Zeki Hayvanlar</a></li>
+          <li><a href="gece-avcilari.html">🌙 Gece Avcıları</a></li>
+          <li><a href="en-buyuk-hayvanlar.html">🐘 En Büyük Hayvanlar</a></li>
+          <li><a href="en-kucuk-hayvanlar.html">🐁 En Küçük Hayvanlar</a></li>
+          <li><a href="nesli-tukenen-hayvanlar.html">💀 Nesli Tükenen Hayvanlar</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Hayvanlar Dünyası &copy; 2026 - Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
